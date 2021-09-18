@@ -27,3 +27,15 @@ yarn serve
 ```
 
 Now go to [http://localhost:8080](http://localhost:8080)
+
+
+### To DO list:
+
+- Check Yelp vs Yarn and use the best. If Yelp needed, use it.
+- Dockerize it (Devops)
+- Existing code work only for Spacy 2. We have to support for both Spacy2 and Spacy 3.
+- Double click is not working as expected
+- Unselect option can be improved
+- Paragraph gap is missing
+- Unique keys collected has to be shown in left
+
