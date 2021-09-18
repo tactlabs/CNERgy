@@ -2,7 +2,7 @@
   <section>
     <div class="control">
       <label class="label">
-        Text separator
+        Text Delimiter
       </label>
       <div class="select">
         <select
