@@ -1,0 +1,334 @@
+{%extends 'base.html'%}
+
+{% block head%}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar">
+        <div class="dropdown">
+          <div>
+            <b> Text Delimiter </b>
+          </div>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Custom String
+          </button>
+          <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>Custom String</li>
+            </ul> -->
+        </div>
+        <br>
+        <!-- <div class="mb-3"> -->
+        <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+        <input type="text" class="form-control" id="exampleFormControlInput1" value="-----------------------------------------------------------------------">
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="card  " style="transform: none; width:70rem ;transition:none; cursor: text;">
+        <div style="position:sticky; top: 0px; z-index: 2; background-color: #f1f1f1;">
+
+          <div id="add-tag" style="padding: 1rem;">
+            <div class="tags">
+
+            </div>
+            <div class="col-md-3">
+              <div class="input-group">
+                <input class="form-control" type="text" placeholder="NER" style="text-transform:uppercase">
+                <button type="button" class="btn btn-primary" onclick="addTag()">Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div style="background-color: #fff; width:100%;"> <b> Tech Keys </b> </div> -->
+          <!-- <div class="tech-keys-container" id="tech-keys-container"
+            style="background-color: #f9fafb; opacity: 1; border: 1px solid #ced4da; padding-bottom: 0.5em; ">
+
+
+            <div class="tech-keys">
+              <span> <b>Java</b> </span>
+              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+            </div>
+
+            <div class="tech-keys">
+              <span> <b>Java</b> </span>
+              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+            </div>
+
+            <div class="tech-keys">
+              <span> <b>Spring</b> </span>
+              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+            </div>
+
+            <div class="tech-keys">
+              <span> <b>Flask</b> </span>
+              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+            </div>
+
+            <div class="tech-keys">
+              <span> <b>Elasticsearch</b> </span>
+              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+            </div>
+
+            <div class="tech-keys">
+              <span> <b>Hadoop</b> </span>
+              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+            </div>
+
+
+          </div> -->
+        </div> <br>
+
+        <div class="card-body">
+
+          <!-- <h3 style="text-align: center;"> 1/803 </h3>
+          <br> -->
+
+          <div> <b> Job Description </b> </div>
+          <div class="input-group form-control" id="job-description" style="line-height: 2.5;
+              overflow-wrap: break-word; background-color: #fbfbfb; opacity: 1;">
+            {% for word in data %}
+            <span style="padding: 0.15rem;">{{ word['text'] }} </span>
+
+            {% endfor %}
+          </div>
+
+          </br>
+
+          <center>
+            <button type="button" class="btn btn-outline-danger">Reset</button>
+            <button type="button" class="btn btn-outline-warning">Skip</button>
+            <button type="submit" id="save-btn" class="btn btn-success"
+              style="text-align: center; padding: 0.40em 1.5em;">Save</button>
+          </center>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<br>
+<br>
+
+<script>
+  function addTag() {
+    console.log($('#add-tag'));
+  }
+
+  function getSelectionText() {
+    var text = "";
+    if (window.getSelection) {
+      text = window.getSelection().toString();
+    } else if (document.selection && document.selection.type != "Control") {
+      text = document.selection.createRange().text;
+    }
+    return text;
+  }
+
+  ele = document.getElementById("job-description");
+
+  ele.onmouseup = ele.onkeyup = function addTechKey() {
+    txt = getSelectionText();
+    console.log((window.getSelection().anchorNode.parentNode));
+    if (txt.replace(/\s/g, '').length) {
+      $(window.getSelection().anchorNode.parentNode).css("background-color", "yellow");
+
+    }
+    //   // Ignoring Whitespaces
+    //    var final = '<div class="tech-keys"> <span> <b>' + txt +
+    //      '</b> </span> <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></div>';
+    //    //  console.log(techKeys)
+  }
+</script>
+
+<!-- <script>
+  function getSelectionText() {
+    var text = "";
+    if (window.getSelection) {
+      text = window.getSelection().toString();
+    } else if (document.selection && document.selection.type != "Control") {
+      text = document.selection.createRange().text;
+    }
+    return text;
+  }
+
+  ele = document.getElementById("job-description");
+
+  ele.onmouseup = ele.onkeyup = function addTechKey() {
+    txt = getSelectionText();
+    if (txt.replace(/\s/g, '').length) { // Ignoring Whitespaces
+      var final = '<div class="tech-keys"> <span> <b>' + txt +
+        '</b> </span> <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></div>';
+      document.getElementById("tech-keys-container").innerHTML += final;
+      techKeys.push(txt);
+      //  console.log(techKeys)
+      removeTechKey(); //To initialize eventlistener
+    }
+  };
+
+  function removeTechKey() {
+    var deleteButtons = document.getElementsByClassName("btn-close");
+    var activeKeys = document.getElementsByClassName("tech-keys");
+    for (var i = 0; i < techKeys.length; i++) {
+      deleteButtons[i].addEventListener("click", function (e) {
+        e.preventDefault();
+        key = $.trim($(this).prev("span").text());
+        index = techKeys.indexOf(key);
+        if (index > -1) {
+          techKeys.splice(index, 1);
+        }
+        $(this).closest(".tech-keys").remove();
+        //  console.log(techKeys)
+      });
+    }
+  }
+
+  function saveTechKeys() {
+    document.getElementById("save-btn").addEventListener("click", function () {
+      console.log(techKeys)
+      var data = {
+        "TechKeys": techKeys,
+        "Job-Id": jobId
+      };
+      $.ajax({
+        url: "/api/update/data",
+        type: "POST",
+        data: JSON.stringify(data),
+        contentType: "application/json",
+        dataType: 'json',
+        success: function (e) {
+          alert("Techlinks successfully saved");
+        },
+
+        error: () => {
+          alert("Failed to save techlinks");
+        }
+      })
+
+
+    })
+  }
+
+
+
+  var techKeys = [];
+  var jobId = [];
+  console.log(jobId);
+  saveTechKeys();
+  removeTechKey();
+</script> -->
+
+
+{%endblock%}
+
+
+<!-- Heirlume is boldly going where no one
+            has gone before: we are making the trademark search and registration process accessible to everyone.
+            Trademarking typically involves expensive lawyers and is a slow and complex process. We are greatly
+            simplifying it, with the goal of making it as straightforward as domain registration.
+
+
+            We are a rapidly growing start-up and are excited to grow our team with the addition of a Senior Backend
+            Engineer (ML) to develop backend systems that will support our machine learning platform. You will work with
+            ML scientists to learn about different machine learning algorithms and gain the understanding required to
+            manage their deployments. You will work with the entire team to develop high performance, robust, and
+            scalable systems. We are in search of a generalist, who can just as easily hop into backend code as they can
+            setup CI/CD for a variety of platforms, and then architect the ML pipelines.
+
+
+            The right person for job must embrace the concept of team. We are looking to hire someone who will grow with
+            us, taking initiative and ownership of new roles and processes. This is a phenomenal opportunity to build
+            game-changing technology as part of a tight knit, supportive team. We are an early-stage company with ample
+            opportunity for employee growth.
+
+
+            About the Job
+
+
+            Responsibilities:
+
+
+            Reporting to the CTO, you will work closely with the CTO, ML scientists and collaborate with the entire
+            development team.
+            Learn about our domain, the problems we are solving, and our product roadmap.
+            Contribute to the development, delivery and automation of scalable systems for data collection, ingestion,
+            processing, validation, model training, large-scale computation, monitoring, serving results and handling
+            upgrades.
+            Shape datasets, store data on cloud for fast million-scale semantic similarity search/ investigate ML
+            architectures, train/evaluate/tune ML models, implement end-end pipeline.
+            Leverage state-of-the-art research to deliver high quality models enabling multiple ML and prediction
+            models/projects at scale.
+            Be prepared to grow and take on increasing responsibility. We need someone who will take initiative, excel
+            at working both independently and collaboratively, and demonstrate leadership while owning our products.
+            Recommend, optimize, and document team processes to ensure we meet commitments and deliver high quality
+            software.
+            Be flexible and open, as our priorities are constantly changing.
+
+
+
+            Benefits and Compensation:
+
+
+            Remote work, with the option of working from an office in the future.
+            Flexible work hours.
+            Flexible health benefits.
+            Competitive salary.
+
+
+            Qualifications and Experience
+
+
+
+            Required:
+
+
+            5+ years of commercial software development with experience in ML.
+            Bachelor’s or further education in Mathematics, Computer Science or related field.
+            Understanding of the ML development lifecycle, including infrastructure and operations.
+            Experience building, testing, and shipping sophisticated and automated production infrastructure for a
+            variety of systems, including distributed ML models at scale.
+            Experience with cloud environments, preferably Google Cloud Platform.
+            Experience with Kubernetes, Docker and container orchestration.
+            Excellent software engineering skills in Python.
+            Strong system development skills, with a long-range system view that leverages development ranging from
+            rapid research prototypes to carefully architected complex systems.
+            Experience working with Apache Spark, TensorFlow, Caffe, Torch, Theano, PyTorch or Scikit-Learn.
+            Familiar with ML toolkits such as CNTK, TPU, GPU/CPU parallelization or others.
+            Experience with unit testing frameworks and practices highly desirable.
+            Experience with database systems.
+            Excellent debugging skills. -->
+
+<!-- Nice to Have:
+
+
+            Experience with: Java, Spring, Flask, PostgreSQL and Elasticsearch.
+            Professional experience building large software solutions for human-in-the-loop systems and/or document
+            processing solutions that leverage NLP and embedding strategies as well as computer vision techniques.
+            Solve NLP problems including punctuation correction, text segmentation, and discretization.
+            Data Mining / Automated Knowledge Acquisition, Representation and Reasoning.
+            Experience with Knowledge Graphs.
+            Experience with distributed frameworks (Hadoop, etc.).
+            Experience preprocessing, feature engineering, filtering, and presenting large quantities (Millions to
+            Billions of rows) of data from different product groups and business functions.
+
+
+
+            Join the Team
+
+
+            If you want to join a team that is building massively disruptive technology, reach out today!
+
+
+            Heirlume is a female led startup which strongly values diversity, equity, and inclusion. We are looking for
+            someone who shares these values to join our family. We are striving to build a team that is racially
+            diverse, queer-positive, and multi-able. We encourage candidates to self-identify in their cover letters. If
+            there are ways we can make the hiring process more accessible for you, please let us know.
+
+
+            To apply, send your resume and cover letter to hr@heirlumeco.com with “Senior Backend Engineer (ML)” in the -->

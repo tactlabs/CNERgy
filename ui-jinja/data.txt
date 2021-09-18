@@ -1,0 +1,26 @@
+http://prodigybank.com/job-board/
+
+Our client a world-class AI research centre. Is looking for a Machine Learning Engineering Lead to join their innovation lab in Toronto.
+
+Recognized for scientific excellence, their dedicated team of AI researchers and engineers builds AI-enabled technologies using state-of-the-art machine learning. Their research areas are diverse and include natural language processing, reinforcement learning and responsible AI.
+
+If you are passionate about solving the biggest challenges in Machine Learning and AI today, for example, how to enhance risk applications and reduce fraud, this is the right opportunity for you. Oh and did I mention you'll be working with the newest and coolest technology alongside the very smartest people in the country?
+
+
+Responsibilities include:
+
+    Lead the design, implementation and deployment of successful ML systems;
+    Directly manage a team of engineers, being responsible for planning execution and delivery of features and ML systems
+    Establish high standards and share knowledge in performance, scalability, enterprise system architecture, and engineering best practices;
+    Establish and maintain collaboration with research and business teams to converge on the best solutions;
+    Extending prototypes into fully functional, polished solutions ready for internal and/or external use;
+
+About you:
+
+    Have a bachelor’s degree in Computer Science, Software Engineering, or equivalent. A master’s or PhD in an AI sub-field, with detailed knowledge of machine learning algorithms, is an asset;
+    Have 5+ years’ industry experience;
+    2+ years of managing a team of engineers
+    Proficiency with Deep Learning packages such as Tensorflow, Theano, Keras and PyTorch;
+    Exposure to distributed computing frameworks (e.g. Hadoop, Spark) as well as SQL, NoSQL and graph databases;
+    Ability to write modular, robust, scalable software in one of the modern languages such as C++, C#, Java, Python;
+    Knowledge of scaling and performance of large systems;
