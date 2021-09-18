@@ -1,4 +1,4 @@
-## custom-ner-annotator
+## CNERgy - Custom NER Annotator
 
 ## Credits:
 Base code derived from https://github.com/tecoholic/ner-annotator
