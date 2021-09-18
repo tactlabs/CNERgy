@@ -101,7 +101,7 @@ export default {
     },
     selectTokens() {
       let selection = document.getSelection();
-
+      
       if (
         selection.anchorOffset === selection.focusOffset &&
         selection.anchorNode === selection.focusNode
@@ -129,6 +129,12 @@ export default {
       }
 
       this.tm.addNewBlock(startIdx, endIdx, this.currentClass);
+
+      console.log("class inside", this.currentClass);
+      console.log("Start",startIdx);
+      console.log("end",endIdx);
+      console.log("Trap 4040",startIdx, endIdx, this.currentClass);
+
       selection.empty();
     },
     onRemoveBlock(blockStart) {
@@ -145,6 +151,7 @@ export default {
       axios
         .post("/detokenize", { tokens: this.tm.words })
         .then((res) => {
+          // console.log(res);
           this.$store.commit("addAnnotation", [
             res.data.text,
             { entities: this.tm.exportAsAnnotation() },

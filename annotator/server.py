@@ -24,6 +24,7 @@ def tokenize():
 @cross_origin()
 def detokenize():
     tokens = request.json["tokens"]
+    print("Detokenize",{"text": TreebankWordDetokenizer().detokenize(tokens)})
     return {"text": TreebankWordDetokenizer().detokenize(tokens)}
 
 
