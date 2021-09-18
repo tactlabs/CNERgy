@@ -15,17 +15,20 @@ def read_json():
     words = f.read().split()
 
     i=0
+    id = 1000
     data = []
     for word in words:
         temp = {}
         temp["text"] = word + " "
         temp["start"] = i
+        temp["id"] = id
         for letter in word:
             i+=1
         temp["end"] = i
         i+=1
+        id+=1
         data.append(temp)
-    pprint(data)
+    # pprint(data)
     return data
         
 

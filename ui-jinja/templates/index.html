@@ -88,7 +88,7 @@
           <div class="input-group form-control" id="job-description" style="line-height: 2.5;
               overflow-wrap: break-word; background-color: #fbfbfb; opacity: 1;">
             {% for word in data %}
-            <span style="padding: 0.15rem;">{{ word['text'] }} </span>
+            <span id={{word.id}} style="padding: 0.15rem;">{{ word['text'] }} </span>
 
             {% endfor %}
           </div>
@@ -135,6 +135,7 @@
 
   ele.onmouseup = ele.onkeyup = function addTechKey() {
     txt = getSelectionText();
+    console.log(document.selection.createRange());
     console.log((window.getSelection().anchorNode.parentNode));
     if (txt.replace(/\s/g, '').length) {
       $(window.getSelection().anchorNode.parentNode).css("background-color", "yellow");
