@@ -126,21 +126,22 @@
 
 <script>
   var tokenizedData = {{ data | tojson | safe }};
-  var selectedText = []
+  var selectedText = {  }
+  selectedText["TECH"] = {};
 
   function save() {
 
-    var uniqueSelectedText = []
+    // var uniqueSelectedText = []
 
-    $.each(selectedText, function (i, el) {
+    // $.each(selectedText, function (i, el) {
 
-      if ($.inArray(el, uniqueSelectedText) === -1) uniqueSelectedText.push(el);
-    });
+    //   if ($.inArray(el, uniqueSelectedText) === -1) uniqueSelectedText.push(el);
+    // });
 
     // console.log(uniqueSelectedText);
 
     var data = {
-      "selected-data" : uniqueSelectedText,
+      "selected-data" : selectedText,
       "initial-data"  : tokenizedData
     };
     console.log(data)
@@ -184,21 +185,27 @@
   ele.onmouseup = ele.onkeyup = function addTechKey() {
     text = getSelectionText();
     console.log(text.split('\n'));
+    text = text.replaceAll('\n', ' ');
     var wordArray = text.split('\n');
-
+    highlight(wordArray);
     if (text.replace(/\s/g, '').length) {
       $(window.getSelection().anchorNode.parentNode).css("background-color", "yellow");
       var temp = {}
       textPos = window.getSelection().anchorNode.parentNode;
       while (true) {
         var start = $(textPos).attr("id");
-        temp["start"] = start;
-        temp["text"] = text;
-        temp["tag"] = "TECH";
-        selectedText.push(temp);
+        // console.log(start);
+        console.log( selectedText["TECH"]);
+       
+        selectedText["TECH"][text] =Number( start ) ;
+        console.log(selectedText);
         break;
       }
     }
+  }
+
+  function highlight(arr){
+
   }
 </script>
 
