@@ -21,7 +21,8 @@
         <br>
         <!-- <div class="mb-3"> -->
         <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-        <input type="text" class="form-control" id="exampleFormControlInput1" value="-----------------------------------------------------------------------">
+        <input type="text" class="form-control" id="exampleFormControlInput1"
+          value="-----------------------------------------------------------------------">
       </div>
     </div>
     <div class="col-md-9">
@@ -30,14 +31,20 @@
 
           <div id="add-tag" style="padding: 1rem;">
             <div class="tags">
-
+              <ul>
+                <li>
+                  <div id="color"> </div>
+                  <span style="padding-left:3px;"> TECH</span>
+                  <span class="close">&times;</span>
+                </li>
+              </ul>
             </div>
-            <div class="col-md-3">
-              <div class="input-group">
-                <input class="form-control" type="text" placeholder="NER" style="text-transform:uppercase">
-                <button type="button" class="btn btn-primary" onclick="addTag()">Add</button>
-              </div>
+            <!-- <div class="col-md-12"> -->
+            <div class="input-group">
+              <input class="form-control" type="text" id="input-tag" placeholder="NER" style="text-transform:uppercase">
+              <button type="button" class="btn btn-primary" onclick="addTag()">Add</button>
             </div>
+            <!-- </div> -->
           </div>
 
           <!-- <div style="background-color: #fff; width:100%;"> <b> Tech Keys </b> </div> -->
@@ -118,7 +125,10 @@
 
 <script>
   function addTag() {
-    console.log($('#add-tag'));
+    console.log($('#input-tag').val());
+    let tag = $('#input-tag').val();
+    $('#input-tag').val("");
+    $(".tags")
   }
 
   function getSelectionText() {

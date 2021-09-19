@@ -66,6 +66,56 @@
       height: 0.40em;
       margin-left: 0.35em;
     }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      border: 1px solid #ddd;
+      margin-top: -1px;
+      /* Prevent double borders */
+      /* width: max-content; */
+      background-color: #ffffff;
+      padding: 12px 0 12px 12px;
+      text-decoration: none;
+      font-size: 18px;
+      color: black;
+      display: inline-block;
+      position: relative;
+    }
+
+    /* ul li:hover {
+      background-color: #eee;
+    } */
+
+    .close {
+      cursor: pointer;
+      /* position: absolute; */
+      /* margin-left: 2rem; */
+      top: 50%;
+      /* right: 0%; */
+      padding: 16px 14px;
+      transform: translate(0%, -50%);
+    }
+
+    .close:hover {
+      background: #bbb;
+    }
+
+    #color{
+      height: 15px;
+      width: 15px;
+      background-color: aqua;
+      display: inline-block;
+      
+    }
   </style>
 </head>
 
