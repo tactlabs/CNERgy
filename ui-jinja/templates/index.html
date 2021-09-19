@@ -30,61 +30,30 @@
         <div style="position:sticky; top: 0px; z-index: 2; background-color: #f1f1f1;">
 
           <div id="add-tag" style="padding: 1rem;">
-            <div class="tags">
-              <ul>
-                <li>
-                  <div id="color"> </div>
-                  <span style="padding-left:3px;"> TECH</span>
-                  <span class="close">&times;</span>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <div class="input-group">
-                <input class="form-control" type="text" id="input-tag" placeholder="NER"
-                  style="text-transform:uppercase">
-                <button type="button" class="btn btn-primary" onclick="addTag()">Add</button>
+            <div class="">
+              <div class="tags">
+                <ul>
+                  <!-- <li>
+                    <div id="color"> </div>
+                    <span style="padding-left:3px;"> TECH</span>
+                    <span class="close">&times;</span>
+                  </li> -->
+                </ul>
               </div>
+              <div>
+                <div class="col-md-3">
+                  <div class="input-group">
+                    <input class="form-control" type="text" id="input-tag" placeholder="NER"
+                      style="text-transform:uppercase">
+                    <button type="button" class="btn btn-primary" onclick="addTag()">Add</button>
+                  </div>
+                </div>
+
+              </div>
+
             </div>
           </div>
 
-          <!-- <div style="background-color: #fff; width:100%;"> <b> Tech Keys </b> </div> -->
-          <!-- <div class="tech-keys-container" id="tech-keys-container"
-            style="background-color: #f9fafb; opacity: 1; border: 1px solid #ced4da; padding-bottom: 0.5em; ">
-
-
-            <div class="tech-keys">
-              <span> <b>Java</b> </span>
-              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
-            </div>
-
-            <div class="tech-keys">
-              <span> <b>Java</b> </span>
-              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
-            </div>
-
-            <div class="tech-keys">
-              <span> <b>Spring</b> </span>
-              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
-            </div>
-
-            <div class="tech-keys">
-              <span> <b>Flask</b> </span>
-              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
-            </div>
-
-            <div class="tech-keys">
-              <span> <b>Elasticsearch</b> </span>
-              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
-            </div>
-
-            <div class="tech-keys">
-              <span> <b>Hadoop</b> </span>
-              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
-            </div>
-
-
-          </div> -->
         </div> <br>
 
         <div class="card-body">
@@ -93,7 +62,7 @@
           <br> -->
 
           <div> <b> Job Description </b> </div>
-          <div class="input-group form-control" id="job-description" style="line-height: 2.5;
+          <div class="input-group form-control" id="job-description" style="line-height: 3;
               overflow-wrap: break-word; background-color: #fbfbfb; opacity: 1;">
             {% for word in data.tokens %}
             <span id={{word[0]}} style="padding: 0.15rem;">{{ word[2] }} </span>
@@ -126,8 +95,10 @@
 
 <script>
   var tokenizedData = {{ data | tojson | safe }};
-  var selectedText = {  }
-  selectedText["TECH"] = {};
+  var selectedText = {}
+  var activeTag, activeTagColor, activeTagName;
+
+  let colorCodes = ["#B6A6D9", "#EFCDE4", "#F9FAD5", "#CBE6B3", "#90D0E6", "#FF6961", "#988270"]
 
   function save() {
 
@@ -141,10 +112,10 @@
     // console.log(uniqueSelectedText);
 
     var data = {
-      "selected-data" : selectedText,
-      "initial-data"  : tokenizedData
+      "selected-data": selectedText,
+      "initial-data": tokenizedData
     };
-    console.log(data)
+    // console.log(data)
     $.ajax({
       url: "/api/save/data",
       type: "POST",
@@ -162,56 +133,38 @@
   }
 
   function addTag() {
-    console.log($('#input-tag').val());
-    let tag = $('#input-tag').val();
+    // console.log($('#input-tag').val());
+    let tag = $('#input-tag').val().toUpperCase();
     $('#input-tag').val("");
-    $(".tags ul").append("<li><div id='color'> </div> <span style='padding-left:3px;''>" + tag.toUpperCase() + "</span><span class='close'>&times;</span></li>")
+    $(".tags ul").append("<li><div class='color' style='background-color:" + colorCodes.pop() +
+      "'> </div> <span style='padding-left:3px;''>" + tag +
+      "</span><span class='close'>&times;</span></li>")
+    // console.log(selectedText[tag]);
+    closeButton();
+    selectTag();
+  }
+
+  function selectTag() {
+    $(".tags li").click(function () {
+      // console.log(this);
+      if (activeTag) {
+        $(activeTag).removeClass("active");
+      }
+      activeTagColor = $(this).find(".color").css("background-color");
+
+      console.log(activeTagColor);
+      $(this).addClass("active");
+      activeTagName = $(this).children().eq(1).text().toUpperCase();
+      selectedText[activeTagName] = {};
+      activeTag = this;
+
+      // console.log(activeTag);
+    })
   }
 
   function getSelectionText() {
     var text = "";
     // console.log("selected test ", window.getSelection().toString())
-    // if (window.getSelection) {
-      // var temp = {}
-      text = window.getSelection().toString();
-    // } else if (document.selection && document.selection.type != "Control") {
-    //   text = document.selection.createRange().text;
-    // }
-    return text;
-  }
-
-  ele = document.getElementById("job-description");
-
-  ele.onmouseup = ele.onkeyup = function addTechKey() {
-    text = getSelectionText();
-    console.log(text.split('\n'));
-    text = text.replaceAll('\n', ' ');
-    var wordArray = text.split('\n');
-    highlight(wordArray);
-    if (text.replace(/\s/g, '').length) {
-      $(window.getSelection().anchorNode.parentNode).css("background-color", "yellow");
-      var temp = {}
-      textPos = window.getSelection().anchorNode.parentNode;
-      while (true) {
-        var start = $(textPos).attr("id");
-        // console.log(start);
-        console.log( selectedText["TECH"]);
-       
-        selectedText["TECH"][text] =Number( start ) ;
-        console.log(selectedText);
-        break;
-      }
-    }
-  }
-
-  function highlight(arr){
-
-  }
-</script>
-
-<!-- <script>
-  function getSelectionText() {
-    var text = "";
     if (window.getSelection) {
       text = window.getSelection().toString();
     } else if (document.selection && document.selection.type != "Control") {
@@ -223,70 +176,107 @@
   ele = document.getElementById("job-description");
 
   ele.onmouseup = ele.onkeyup = function addTechKey() {
-    txt = getSelectionText();
-    if (txt.replace(/\s/g, '').length) { // Ignoring Whitespaces
-      var final = '<div class="tech-keys"> <span> <b>' + txt +
-        '</b> </span> <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></div>';
-      document.getElementById("tech-keys-container").innerHTML += final;
-      techKeys.push(txt);
-      //  console.log(techKeys)
-      removeTechKey(); //To initialize eventlistener
-    }
-  };
+    text = getSelectionText();
+    // console.log(text.split('\n'));
+    var wordArray = text.split('\n');
+    text = text.replaceAll('\n', ' ');
 
-  function removeTechKey() {
-    var deleteButtons = document.getElementsByClassName("btn-close");
-    var activeKeys = document.getElementsByClassName("tech-keys");
-    for (var i = 0; i < techKeys.length; i++) {
-      deleteButtons[i].addEventListener("click", function (e) {
-        e.preventDefault();
-        key = $.trim($(this).prev("span").text());
-        index = techKeys.indexOf(key);
-        if (index > -1) {
-          techKeys.splice(index, 1);
+    textPos = window.getSelection().anchorNode.parentNode;
+    if (text.replace(/\s/g, '').length) {
+      highlight(wordArray, textPos);
+      var temp = {};
+      if (activeTag) {
+        while (true) {
+          var start = $(textPos).attr("id");
+          // console.log(activeTagName);
+          // console.log(selectedText.activeTagName);
+          // console.log(start);
+          // console.log(selectedText["TECH"]);
+
+          selectedText[activeTagName][text] = Number(start);
+          // console.log(temp);
+          // selectedText[activeTagName] = temp;
+          console.log(selectedText);
+          break;
         }
-        $(this).closest(".tech-keys").remove();
-        //  console.log(techKeys)
+      }
+    }
+  }
+
+  function closeButton() {
+    var closeButtons = $('.close')
+    // console.log(closeButtons);
+    for (var i = 0; i < closeButtons.length; i++) {
+      closeButtons[i].addEventListener("click", function (e) {
+        e.preventDefault();
+        // console.log($(this).closest("li").find(".color") )
+        colorCodes.push($(this).closest("li").find(".color").css("background-color"));
+        // console.log(colorCodes);
+        $(this).closest("li").remove();
       });
     }
   }
 
-  function saveTechKeys() {
-    document.getElementById("save-btn").addEventListener("click", function () {
-      console.log(techKeys)
-      var data = {
-        "TechKeys": techKeys,
-        "Job-Id": jobId
-      };
-      $.ajax({
-        url: "/api/update/data",
-        type: "POST",
-        data: JSON.stringify(data),
-        contentType: "application/json",
-        dataType: 'json',
-        success: function (e) {
-          alert("Techlinks successfully saved");
-        },
+  function highlight(arr, pos) {
+    // console.log(arr);
+    // console.log(pos);
+    var count = arr.length;
+    for (let i in arr) {
+      if (arr[i] === "" || arr[i] === " ") {
+        count -= 1;
+      }
+    }
+    // console.log(count);
+    // console.log($(window.getSelection().anchorNode.parentNode))
+    // if (count === 1) {
+    //   let selection = $(pos).prev().nextAll().slice(0,count);
+    // }
+    // console.log($(pos).prev().nextAll().slice(0, count));
+    let selection = $(pos).prev().nextAll().slice(0, count);
+    if (activeTag) {
+      // let activeColor = $(activeTag + ".color").css("background-color");
+      if (selection) {
+        console.log(activeTagColor);
+        var id = "grp-" + $(pos).attr("id")
+        // console.log(id);
+        $(selection).wrapAll('<mark/ id="' + id + '">');
+        $("#" + id).append('<span class="badge bg-secondary">' + activeTagName +
+          '<button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>')
+        $("#" + id).css("background-color", activeTagColor)
+      }
+    } else {
+      alert("You need to select a tag!")
+    }
 
-        error: () => {
-          alert("Failed to save techlinks");
-        }
-      })
+    removeHighlights();
 
+    // console.log(selectedText);
+  }
 
+  function removeHighlights() {
+    console.log("remove highlights");
+    $(".btn-close").click(function () {
+      // console.log($(this).closest("li"));
+      var id = $(this).closest("mark").attr("id");
+      $(this).closest("span").unwrap();
+      $(this).closest("span.badge").remove();
+
+      id = id.split('-');
+      deleteObj(id[1])
     })
   }
 
-
-
-  var techKeys = [];
-  var jobId = [];
-  console.log(jobId);
-  saveTechKeys();
-  removeTechKey();
-</script> -->
+  function deleteObj(val) {
+    var obj = selectedText[activeTagName];
+    for (let i in obj) {
+      if (obj[i] == val) {
+        delete obj[i];
+        break
+      }
+    }
+    console.log( selectedText );
+  }
+</script>
 
 
 {%endblock%}
-
-

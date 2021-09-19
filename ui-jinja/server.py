@@ -52,34 +52,34 @@ def save():
 
         pprint.pprint(val)
         # res = data.update_record(val)
-        
+        save_file(val["initial-data"]["tokens"],val["selected-data"])
         return jsonify(val)
 
-def save_file():
+def save_file(tokenized_data, keys_data ):
 
 
     f = open("data.txt" , "r")
     words = f.read()
     print(type(words))
 
-    keys_data = {
-        "tech": {"execution and delivery":922,"Deep Learning":1643},
-        "location" : {"Toronto":128}
-    }
+    # keys_data = {
+    #     "tech": {"execution and delivery":922,"Deep Learning":1643},
+    #     "location" : {"Toronto":128}
+    # }
 
-    res = {}
+    # res = {}
 
-    dictToSend = {'text':words}
-    res = requests.post('http://127.0.0.1:5555/tokenize', json=dictToSend)
+    # dictToSend = {'text':words}
+    # res = requests.post('http://127.0.0.1:5555/tokenize', json=dictToSend)
 
-    dictFromServer = res.json()
-    post_result = dictFromServer
-    # print(dictFromServer)
+    # dictFromServer = res.json()
+    # post_result = dictFromServer
+    # # print(dictFromServer)
 
     count = 0
     res_list = []
     hit_list = []
-    for word in dictFromServer["tokens"]:
+    for word in tokenized_data:
 
         data = {
             "text" : word[2],
@@ -109,6 +109,7 @@ def save_file():
                 # print(word,keys_data[ner][select] )
                 for word2 in res_list:
                     # print(word2["start"],"--",word2["text"],"==", word, len(word2["text"]), len(word))
+                    # print(res_list)
 
                     if (word2["start"] == keys_data[ner][select] and prev == False) or (word in word2["text"] and prev == True and word2 == ( res_list[res_list.index(prev_value)+1])):
                         print("yes",word2)
@@ -137,20 +138,24 @@ def save_file():
     pprint.pprint(hit_list)
 
     one_page_data = {
-        "text":words,
-        "meta":{},
-        # "_input_hash":1922477360,
-        # "_task_hash":508078126,
+        "text" : words,
+        "meta" : {"section":"tech_keys"},
+        "_input_hash":1922477360,
+        "_task_hash":508078126,
         "tokens" : res_list,
-        "spans" : hit_list
+        "spans" : hit_list,
+        "answer":"accept"
         }
     # one_page_data = [json.dumps(one_page_data)]
     # dump_jsonl([one_page_data],"output.jsonl")
     print(type(one_page_data))
     with open('output.jsonl', 'w') as outfile:
-        for entry in [one_page_data,one_page_data]:
+        for entry in [one_page_data]:
             json.dump(entry, outfile)
             outfile.write('\n')
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+
