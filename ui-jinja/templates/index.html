@@ -125,6 +125,7 @@
 <br>
 
 <script>
+  var tokenizedData = {{ data | tojson | safe }};
   var selectedText = []
 
   function save() {
@@ -139,7 +140,8 @@
     // console.log(uniqueSelectedText);
 
     var data = {
-      uniqueSelectedText
+      "selected-data" : uniqueSelectedText,
+      "initial-data"  : tokenizedData
     };
     console.log(data)
     $.ajax({
@@ -182,7 +184,9 @@
   ele.onmouseup = ele.onkeyup = function addTechKey() {
     text = getSelectionText();
     console.log(text.split('\n'));
-    // if (text.replace(/\s/g, '').length) {
+    var wordArray = text.split('\n');
+
+    if (text.replace(/\s/g, '').length) {
       $(window.getSelection().anchorNode.parentNode).css("background-color", "yellow");
       var temp = {}
       textPos = window.getSelection().anchorNode.parentNode;
@@ -194,7 +198,7 @@
         selectedText.push(temp);
         break;
       }
-    // }
+    }
   }
 </script>
 

@@ -47,8 +47,8 @@ def read_json():
 def save():
     if request.method == "POST":
         val = request.get_json()
-        for i in val['uniqueSelectedText']:
-            i['text'] = i['text'].split('\n')
+        # for i in val['uniqueSelectedText']:
+        #     i['text'] = i['text'].split('\n')
 
         pprint.pprint(val)
         # res = data.update_record(val)
