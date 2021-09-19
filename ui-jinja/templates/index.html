@@ -39,12 +39,13 @@
                 </li>
               </ul>
             </div>
-            <!-- <div class="col-md-12"> -->
-            <div class="input-group">
-              <input class="form-control" type="text" id="input-tag" placeholder="NER" style="text-transform:uppercase">
-              <button type="button" class="btn btn-primary" onclick="addTag()">Add</button>
+            <div class="col-md-3">
+              <div class="input-group">
+                <input class="form-control" type="text" id="input-tag" placeholder="NER"
+                  style="text-transform:uppercase">
+                <button type="button" class="btn btn-primary" onclick="addTag()">Add</button>
+              </div>
             </div>
-            <!-- </div> -->
           </div>
 
           <!-- <div style="background-color: #fff; width:100%;"> <b> Tech Keys </b> </div> -->
@@ -94,8 +95,8 @@
           <div> <b> Job Description </b> </div>
           <div class="input-group form-control" id="job-description" style="line-height: 2.5;
               overflow-wrap: break-word; background-color: #fbfbfb; opacity: 1;">
-            {% for word in data %}
-            <span id={{word.start}} style="padding: 0.15rem;">{{ word['text'] }} </span>
+            {% for word in data.tokens %}
+            <span id={{word[0]}} style="padding: 0.15rem;">{{ word[2] }} </span>
 
             {% endfor %}
           </div>
@@ -131,6 +132,7 @@
     var uniqueSelectedText = []
 
     $.each(selectedText, function (i, el) {
+
       if ($.inArray(el, uniqueSelectedText) === -1) uniqueSelectedText.push(el);
     });
 
@@ -165,46 +167,46 @@
 
   function getSelectionText() {
     var text = "";
-    if (window.getSelection) {
-      var temp = {}
+    console.log("selected test ", window.getSelection().toString())
+    // if (window.getSelection) {
+      // var temp = {}
       text = window.getSelection().toString();
-      textPos = window.getSelection().anchorNode.parentNode;
-      while (true) {
-        var start = $(textPos).attr("id");
-        var text = $(textPos).text();
-        temp["start"] = start;
-        temp["text"] = text;
-        temp["tag"] = "TECH";
-        selectedText.push(temp);
-        break;
-      }
-      
-      console.log(selectedText);
-    } else if (document.selection && document.selection.type != "Control") {
-      text = document.selection.createRange().text;
-    }
+      // textPos = window.getSelection().anchorNode.parentNode;
+      // while (true) {
+      //   var start = $(textPos).attr("id");
+      //   var text = $(textPos).text();
+      //   temp["start"] = start;
+      //   temp["text"] = text;
+      //   temp["tag"] = "TECH";
+      //   selectedText.push(temp);
+      //   break;
+      // } 
+      // console.log(selectedText);
+    // } else if (document.selection && document.selection.type != "Control") {
+    //   text = document.selection.createRange().text;
+    // }
     return text;
   }
 
   ele = document.getElementById("job-description");
 
   ele.onmouseup = ele.onkeyup = function addTechKey() {
-    txt = getSelectionText();
-    // console.log(document.selection.createRange());
-
-    if (txt.replace(/\s/g, '').length) {
+    text = getSelectionText();
+    console.log(text);
+    // if (text.replace(/\s/g, '').length) {
       $(window.getSelection().anchorNode.parentNode).css("background-color", "yellow");
-
-    }
-
-
-
-
-
-    //   // Ignoring Whitespaces
-    //    var final = '<div class="tech-keys"> <span> <b>' + txt +
-    //      '</b> </span> <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></div>';
-    //    //  console.log(techKeys)
+      var temp = {}
+      textPos = window.getSelection().anchorNode.parentNode;
+      while (true) {
+        var start = $(textPos).attr("id");
+        temp["start"] = start;
+        temp["text"] = text;
+        console.log(temp["text"]);
+        temp["tag"] = "TECH";
+        selectedText.push(temp);
+        break;
+      }
+    // }
   }
 </script>
 

@@ -1,6 +1,6 @@
 from flask import Flask,url_for,render_template, jsonify, request
 import json
-from pprint import pprint
+import pprint
 import requests
 
 
@@ -14,31 +14,43 @@ def home():
 # @app.route('/json',methods=['GET','POST'])
 def read_json():
     f = open("data.txt" , "r")
-    words = f.read().split()
+    words = f.read()
+    # words = f.read().split()
 
-    i=0
-    id = 1000
-    data = []
-    for word in words:
-        temp = {}
-        temp["text"] = word + " "
-        temp["start"] = i
-        temp["id"] = id
-        for letter in word:
-            i+=1
-        temp["end"] = i
-        i+=1
-        id+=1
-        data.append(temp)
+
+    dictToSend = {'text':words}
+    res = requests.post('http://127.0.0.1:5555/tokenize', json=dictToSend)
+
+    dictFromServer = res.json()
+    post_result = dictFromServer
+
+    # i=0
+    # id = 1000
+    # data = []
+    # for word in words:
+    #     temp = {}
+    #     temp["text"] = word + " "
+    #     temp["start"] = i
+    #     temp["id"] = id
+    #     for letter in word:
+    #         i+=1
+    #     temp["end"] = i
+    #     i+=1
+    #     id+=1
+    #     data.append(temp)
     # pprint(data)
-    return data
+    # pprint.pprint(post_result)
+    return post_result
     # return jsonify(data)
 
 @app.route('/api/save/data', methods=['POST'])
 def save():
     if request.method == "POST":
         val = request.get_json()
-        pprint(val)
+        for i in val['uniqueSelectedText']:
+            i['text'] = i['text'].split('\n')
+
+        pprint.pprint(val)
         # res = data.update_record(val)
         
         return jsonify(val)
