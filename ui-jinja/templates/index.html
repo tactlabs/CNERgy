@@ -95,7 +95,7 @@
           <div class="input-group form-control" id="job-description" style="line-height: 2.5;
               overflow-wrap: break-word; background-color: #fbfbfb; opacity: 1;">
             {% for word in data %}
-            <span id={{word.id}} style="padding: 0.15rem;">{{ word['text'] }} </span>
+            <span id={{word.start}} style="padding: 0.15rem;">{{ word['text'] }} </span>
 
             {% endfor %}
           </div>
@@ -106,7 +106,7 @@
             <button type="button" class="btn btn-outline-danger">Reset</button>
             <button type="button" class="btn btn-outline-warning">Skip</button>
             <button type="submit" id="save-btn" class="btn btn-success"
-              style="text-align: center; padding: 0.40em 1.5em;">Save</button>
+              style="text-align: center; padding: 0.40em 1.5em;" onclick="save()">Save</button>
           </center>
 
         </div>
@@ -124,17 +124,62 @@
 <br>
 
 <script>
+  var selectedText = []
+
+  function save() {
+
+    var uniqueSelectedText = []
+
+    $.each(selectedText, function (i, el) {
+      if ($.inArray(el, uniqueSelectedText) === -1) uniqueSelectedText.push(el);
+    });
+
+    // console.log(uniqueSelectedText);
+
+    var data = {
+      uniqueSelectedText
+    };
+    console.log(data)
+    $.ajax({
+      url: "/api/save/data",
+      type: "POST",
+      data: JSON.stringify(data),
+      contentType: "application/json",
+      dataType: 'json',
+      success: function (e) {
+        alert("Techlinks successfully saved");
+      },
+
+      error: () => {
+        // alert("Failed to save techlinks");
+      }
+    })
+  }
+
   function addTag() {
     console.log($('#input-tag').val());
     let tag = $('#input-tag').val();
     $('#input-tag').val("");
-    $(".tags")
+    $(".tags ul").append("<div id='color'> </div> <span style='padding-left:3px;''>" + tag + "</span>")
   }
 
   function getSelectionText() {
     var text = "";
     if (window.getSelection) {
+      var temp = {}
       text = window.getSelection().toString();
+      textPos = window.getSelection().anchorNode.parentNode;
+      while (true) {
+        var start = $(textPos).attr("id");
+        var text = $(textPos).text();
+        temp["start"] = start;
+        temp["text"] = text;
+        temp["tag"] = "TECH";
+        selectedText.push(temp);
+        break;
+      }
+      
+      console.log(selectedText);
     } else if (document.selection && document.selection.type != "Control") {
       text = document.selection.createRange().text;
     }
@@ -145,12 +190,17 @@
 
   ele.onmouseup = ele.onkeyup = function addTechKey() {
     txt = getSelectionText();
-    console.log(document.selection.createRange());
-    console.log((window.getSelection().anchorNode.parentNode));
+    // console.log(document.selection.createRange());
+
     if (txt.replace(/\s/g, '').length) {
       $(window.getSelection().anchorNode.parentNode).css("background-color", "yellow");
 
     }
+
+
+
+
+
     //   // Ignoring Whitespaces
     //    var final = '<div class="tech-keys"> <span> <b>' + txt +
     //      '</b> </span> <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></div>';
