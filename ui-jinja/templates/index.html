@@ -162,26 +162,15 @@
     console.log($('#input-tag').val());
     let tag = $('#input-tag').val();
     $('#input-tag').val("");
-    $(".tags ul").append("<div id='color'> </div> <span style='padding-left:3px;''>" + tag + "</span>")
+    $(".tags ul").append("<li><div id='color'> </div> <span style='padding-left:3px;''>" + tag.toUpperCase() + "</span><span class='close'>&times;</span></li>")
   }
 
   function getSelectionText() {
     var text = "";
-    console.log("selected test ", window.getSelection().toString())
+    // console.log("selected test ", window.getSelection().toString())
     // if (window.getSelection) {
       // var temp = {}
       text = window.getSelection().toString();
-      // textPos = window.getSelection().anchorNode.parentNode;
-      // while (true) {
-      //   var start = $(textPos).attr("id");
-      //   var text = $(textPos).text();
-      //   temp["start"] = start;
-      //   temp["text"] = text;
-      //   temp["tag"] = "TECH";
-      //   selectedText.push(temp);
-      //   break;
-      // } 
-      // console.log(selectedText);
     // } else if (document.selection && document.selection.type != "Control") {
     //   text = document.selection.createRange().text;
     // }
@@ -192,7 +181,7 @@
 
   ele.onmouseup = ele.onkeyup = function addTechKey() {
     text = getSelectionText();
-    console.log(text);
+    console.log(text.split('\n'));
     // if (text.replace(/\s/g, '').length) {
       $(window.getSelection().anchorNode.parentNode).css("background-color", "yellow");
       var temp = {}
@@ -201,7 +190,6 @@
         var start = $(textPos).attr("id");
         temp["start"] = start;
         temp["text"] = text;
-        console.log(temp["text"]);
         temp["tag"] = "TECH";
         selectedText.push(temp);
         break;
@@ -291,107 +279,3 @@
 {%endblock%}
 
 
-<!-- Heirlume is boldly going where no one
-            has gone before: we are making the trademark search and registration process accessible to everyone.
-            Trademarking typically involves expensive lawyers and is a slow and complex process. We are greatly
-            simplifying it, with the goal of making it as straightforward as domain registration.
-
-
-            We are a rapidly growing start-up and are excited to grow our team with the addition of a Senior Backend
-            Engineer (ML) to develop backend systems that will support our machine learning platform. You will work with
-            ML scientists to learn about different machine learning algorithms and gain the understanding required to
-            manage their deployments. You will work with the entire team to develop high performance, robust, and
-            scalable systems. We are in search of a generalist, who can just as easily hop into backend code as they can
-            setup CI/CD for a variety of platforms, and then architect the ML pipelines.
-
-
-            The right person for job must embrace the concept of team. We are looking to hire someone who will grow with
-            us, taking initiative and ownership of new roles and processes. This is a phenomenal opportunity to build
-            game-changing technology as part of a tight knit, supportive team. We are an early-stage company with ample
-            opportunity for employee growth.
-
-
-            About the Job
-
-
-            Responsibilities:
-
-
-            Reporting to the CTO, you will work closely with the CTO, ML scientists and collaborate with the entire
-            development team.
-            Learn about our domain, the problems we are solving, and our product roadmap.
-            Contribute to the development, delivery and automation of scalable systems for data collection, ingestion,
-            processing, validation, model training, large-scale computation, monitoring, serving results and handling
-            upgrades.
-            Shape datasets, store data on cloud for fast million-scale semantic similarity search/ investigate ML
-            architectures, train/evaluate/tune ML models, implement end-end pipeline.
-            Leverage state-of-the-art research to deliver high quality models enabling multiple ML and prediction
-            models/projects at scale.
-            Be prepared to grow and take on increasing responsibility. We need someone who will take initiative, excel
-            at working both independently and collaboratively, and demonstrate leadership while owning our products.
-            Recommend, optimize, and document team processes to ensure we meet commitments and deliver high quality
-            software.
-            Be flexible and open, as our priorities are constantly changing.
-
-
-
-            Benefits and Compensation:
-
-
-            Remote work, with the option of working from an office in the future.
-            Flexible work hours.
-            Flexible health benefits.
-            Competitive salary.
-
-
-            Qualifications and Experience
-
-
-
-            Required:
-
-
-            5+ years of commercial software development with experience in ML.
-            Bachelor’s or further education in Mathematics, Computer Science or related field.
-            Understanding of the ML development lifecycle, including infrastructure and operations.
-            Experience building, testing, and shipping sophisticated and automated production infrastructure for a
-            variety of systems, including distributed ML models at scale.
-            Experience with cloud environments, preferably Google Cloud Platform.
-            Experience with Kubernetes, Docker and container orchestration.
-            Excellent software engineering skills in Python.
-            Strong system development skills, with a long-range system view that leverages development ranging from
-            rapid research prototypes to carefully architected complex systems.
-            Experience working with Apache Spark, TensorFlow, Caffe, Torch, Theano, PyTorch or Scikit-Learn.
-            Familiar with ML toolkits such as CNTK, TPU, GPU/CPU parallelization or others.
-            Experience with unit testing frameworks and practices highly desirable.
-            Experience with database systems.
-            Excellent debugging skills. -->
-
-<!-- Nice to Have:
-
-
-            Experience with: Java, Spring, Flask, PostgreSQL and Elasticsearch.
-            Professional experience building large software solutions for human-in-the-loop systems and/or document
-            processing solutions that leverage NLP and embedding strategies as well as computer vision techniques.
-            Solve NLP problems including punctuation correction, text segmentation, and discretization.
-            Data Mining / Automated Knowledge Acquisition, Representation and Reasoning.
-            Experience with Knowledge Graphs.
-            Experience with distributed frameworks (Hadoop, etc.).
-            Experience preprocessing, feature engineering, filtering, and presenting large quantities (Millions to
-            Billions of rows) of data from different product groups and business functions.
-
-
-
-            Join the Team
-
-
-            If you want to join a team that is building massively disruptive technology, reach out today!
-
-
-            Heirlume is a female led startup which strongly values diversity, equity, and inclusion. We are looking for
-            someone who shares these values to join our family. We are striving to build a team that is racially
-            diverse, queer-positive, and multi-able. We encourage candidates to self-identify in their cover letters. If
-            there are ways we can make the hiring process more accessible for you, please let us know.
-
-
-            To apply, send your resume and cover letter to hr@heirlumeco.com with “Senior Backend Engineer (ML)” in the -->
