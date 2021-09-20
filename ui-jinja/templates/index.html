@@ -7,22 +7,29 @@
     <div class="col-md-3">
       <div class="sidebar">
         <div class="dropdown">
-          <div>
-            <b> Text Delimiter </b>
+          <div class="card" style="padding-left: 20px;">
+            Completed:<b id="Completed">  </b>
+            <br>
+            Left:<b id="left"  >  </b>
           </div>
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
             data-bs-toggle="dropdown" aria-expanded="false">
             Custom String
-          </button>
+          </button> -->
           <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li>Custom String</li>
             </ul> -->
         </div>
         <br>
+        <a href="/export_file" target="blank">
+         <button class="btn btn-secondary " type="button" >
+            Export .jsonl
+          </button>
+        </a>
         <!-- <div class="mb-3"> -->
         <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-        <input type="text" class="form-control" id="exampleFormControlInput1"
-          value="-----------------------------------------------------------------------">
+        <!-- <input type="text" class="form-control" id="exampleFormControlInput1"
+          value="-----------------------------------------------------------------------"> -->
       </div>
     </div>
     <div class="col-md-9">
@@ -61,7 +68,7 @@
           <!-- <h3 style="text-align: center;"> 1/803 </h3>
           <br> -->
 
-          <div> <b> Job Description </b> </div>
+          <div> <b>  </b> </div>
           <div class="input-group form-control" id="job-description" style="line-height: 3;
               overflow-wrap: break-word; background-color: #fbfbfb; opacity: 1;">
             {% for word in data.tokens %}
@@ -74,7 +81,7 @@
 
           <center>
             <button type="button" class="btn btn-outline-danger">Reset</button>
-            <button type="button" class="btn btn-outline-warning">Skip</button>
+            <button type="button" class="btn btn-outline-warning" onclick="skip()">Skip</button>
             <button type="submit" id="save-btn" class="btn btn-success"
               style="text-align: center; padding: 0.40em 1.5em;" onclick="save()">Save</button>
           </center>
@@ -95,8 +102,8 @@
 
 <script>
   var untokenizedData = {{ data | tojson | safe }};
-  console.log(untokenizedData[2]);
-  var counter;
+  // console.log(untokenizedData[2]);
+  var counter = 0;
   var total = untokenizedData.length;
   var token_data;
   $(document).ready(function () {
@@ -118,7 +125,10 @@
           token_data.forEach(appendTokenizedData);
 
           function appendTokenizedData(item) {
-            $("#job-description").append('<span class="words" id='+item[0]+'>' + item[2] + '</span>')
+            $("#job-description").append('<span class="words" id='+item[0]+'>' + item[2] + '</span>');
+            document.getElementById("Completed").innerHTML = counter;
+          document.getElementById("left").innerHTML = total - counter;
+
           }
         },
 
@@ -130,7 +140,7 @@
     //"text":Yourdata
     // http://127.0.0.1:5555/tokenize
     
-    counter+=1;
+    
   });
   
     var selectedText = {}
@@ -138,6 +148,39 @@
 
     let colorCodes = ["#B6A6D9", "#EFCDE4", "#F9FAD5", "#CBE6B3", "#90D0E6", "#FF6961", "#988270"]
 
+    function skip(){
+      counter+=1;
+          
+      var text_data = {"text" : untokenizedData[counter]};
+
+      $.ajax({
+        url: "http://127.0.0.1:5555/tokenize",
+        type: "POST",
+        data: JSON.stringify(text_data),
+        contentType: "application/json",
+        dataType: 'json',
+        success: function (tokenizedData) {
+          // alert("Techlinks successfully saved");
+          // console.log(tokenizedData);
+          
+          $("#job-description").empty();
+
+          token_data = tokenizedData.tokens;
+          token_data.forEach(appendTokenizedData);
+
+          function appendTokenizedData(item) {
+            $("#job-description").append('<span class="words" id='+item[0]+'>' + item[2] + '</span>');
+            document.getElementById("Completed").innerHTML = counter;
+          document.getElementById("left").innerHTML = total - counter;
+
+          }
+        },
+
+        error: () => {
+          alert("Failed to tokenize data");
+        }
+      })
+    }
     
 
     function save() {
@@ -149,13 +192,19 @@
       //   if ($.inArray(el, uniqueSelectedText) === -1) uniqueSelectedText.push(el);
       // });
 
-      // console.log(uniqueSelectedText);
+      // console.log("counter" + untokenizedData[counter]);
+      
+      console.log("counter::::"+counter)
 
       var data = {
         "selected-data": selectedText,
-        "initial-data": {"tokens":token_data}
+        "initial-data": { "tokens" :token_data},
+        "orig_text"   : untokenizedData[counter]
       };
       // console.log(data)
+
+      console.log("untokenized data:",untokenizedData[counter]);
+
       $.ajax({
         url: "/api/save/data",
         type: "POST",
@@ -163,45 +212,32 @@
         contentType: "application/json",
         dataType: 'json',
         success: function (e) {
-          alert("Techlinks successfully saved");
+          // alert("Techlinks successfully saved");
+          counter+=1;
           
-        },
+          var text_data = {"text" : untokenizedData[counter]};
+          document.getElementById("Completed").innerHTML = counter;
+          document.getElementById("left").innerHTML = total - counter;
 
-        error: () => {
-          // alert("Failed to save techlinks");
-        }
-      })
-
-      counter+=1;
-
-      var text_data = {"text" : untokenizedData[counter]}
       
-      tokenize_data(text_data)
+          
 
-
-    }
-
-    function tokenize_data(text_data)
-    {
       $.ajax({
-        url: "/api/tokenize_data",
+        url: "http://127.0.0.1:5555/tokenize",
         type: "POST",
-        data: {"data" :JSON.stringify(text_data)},
+        data: JSON.stringify(text_data),
         contentType: "application/json",
         dataType: 'json',
-        xhrFields: {
-        withCredentials: true
-      },
-      crossDomain: true,
         success: function (tokenizedData) {
           // alert("Techlinks successfully saved");
-          console.log(tokenizedData);
-          $("#job-description").empty()
-          var token_data = tokenizedData.tokens;
+          // console.log(tokenizedData);
+          
+          $("#job-description").empty();
+
+          token_data = tokenizedData.tokens;
           token_data.forEach(appendTokenizedData);
 
           function appendTokenizedData(item) {
-            
             $("#job-description").append('<span class="words" id='+item[0]+'>' + item[2] + '</span>')
           }
         },
@@ -210,7 +246,22 @@
           alert("Failed to tokenize data");
         }
       })
+        },
+
+        error: () => {
+          // alert("Failed to save techlinks");
+        }
+      })
+
+      console.log("next counter" + counter);
+
+     
+
+     
+
+
     }
+
 
     function addTag() {
       // console.log($('#input-tag').val());

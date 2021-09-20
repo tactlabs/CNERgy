@@ -1,4 +1,5 @@
 from flask import Flask,url_for,render_template, jsonify, request, redirect
+from flask.helpers import send_file, send_from_directory
 from werkzeug.utils import  secure_filename
 import json ,os
 import pprint
@@ -44,6 +45,7 @@ def upload_file():
         # print(delimiter)
         # If the user does not select a file, the browser submits an
         # empty file without a filename.
+        print(file.filename)
         if file.filename == '':
             flash('No selected file')
             return redirect(request.url)
@@ -57,42 +59,43 @@ def upload_file():
         file_list = f.read().split(delimiter)
 
         app.config[request.remote_addr] = file_list
+        app.config[request.remote_addr+"-file_name"] = path
 
         return redirect(url_for('home',file_name = filename))
 
 
 
-# @app.route('/json',methods=['GET','POST'])
-def read_json():
-    f = open("data.txt" , "r")
-    words = f.read()
-    # words = f.read().split()
+# # @app.route('/json',methods=['GET','POST'])
+# def read_json():
+#     f = open("data.txt" , "r")
+#     words = f.read()
+#     # words = f.read().split()
 
 
-    dictToSend = {'text':words}
-    res = requests.post('http://127.0.0.1:5555/tokenize', json=dictToSend)
+#     dictToSend = {'text':words}
+#     res = requests.post('http://127.0.0.1:5555/tokenize', json=dictToSend)
 
-    dictFromServer = res.json()
-    post_result = dictFromServer
+#     dictFromServer = res.json()
+#     post_result = dictFromServer
 
-    # i=0
-    # id = 1000
-    # data = []
-    # for word in words:
-    #     temp = {}
-    #     temp["text"] = word + " "
-    #     temp["start"] = i
-    #     temp["id"] = id
-    #     for letter in word:
-    #         i+=1
-    #     temp["end"] = i
-    #     i+=1
-    #     id+=1
-    #     data.append(temp)
-    # pprint(data)
-    # pprint.pprint(post_result)
-    return post_result
-    # return jsonify(data)
+#     # i=0
+#     # id = 1000
+#     # data = []
+#     # for word in words:
+#     #     temp = {}
+#     #     temp["text"] = word + " "
+#     #     temp["start"] = i
+#     #     temp["id"] = id
+#     #     for letter in word:
+#     #         i+=1
+#     #     temp["end"] = i
+#     #     i+=1
+#     #     id+=1
+#     #     data.append(temp)
+#     # pprint(data)
+#     # pprint.pprint(post_result)
+#     return post_result
+#     # return jsonify(data)
 
 @app.route('/api/save/data', methods=['POST'])
 def save():
@@ -101,17 +104,24 @@ def save():
         # for i in val['uniqueSelectedText']:
         #     i['text'] = i['text'].split('\n')
 
-        pprint.pprint(val)
+        # pprint.pprint(val)
         # res = data.update_record(val)
-        save_file(val["initial-data"]["tokens"],val["selected-data"])
+
+        filename =app.config[request.remote_addr+"-file_name"].replace(".txt",".jsonl")
+        print(filename)
+        save_file(val["initial-data"]["tokens"],val["selected-data"], val["orig_text"], filename)
+
         return jsonify(val)
 
-def save_file(tokenized_data, keys_data ):
 
 
-    f = open("data.txt" , "r")
-    words = f.read()
-    print(type(words))
+
+def save_file(tokenized_data, keys_data , words, filename):
+
+
+    # f = open("data.txt" , "r")
+    # words = f.read()
+    # print(type(words))
 
     # keys_data = {
     #     "tech": {"execution and delivery":922,"Deep Learning":1643},
@@ -200,22 +210,34 @@ def save_file(tokenized_data, keys_data ):
     # one_page_data = [json.dumps(one_page_data)]
     # dump_jsonl([one_page_data],"output.jsonl")
     print(type(one_page_data))
-    with open('output.jsonl', 'w') as outfile:
+
+    
+    with open(filename, 'a') as outfile:
         for entry in [one_page_data]:
             json.dump(entry, outfile)
             outfile.write('\n')
+    
+
+    return True
+
+@app.route('/export_file', methods=['GET'])
+def return_files():
+    # print(app.config[request.remote_addr+"-file_name"].replace(".txt",".jsonl"))
+	
+    # return True
+
+		# return send_file(app.config[request.remote_addr+"-file_name"].replace(".txt",".jsonl"), attachment_filename='Data.jsonl')
+    file_name = app.config[request.remote_addr+"-file_name"].replace(".txt",".jsonl").split("/")[-1]
+    # print(file_name)
+    return_file = send_from_directory(UPLOAD_FOLDER,file_name , as_attachment=True)
+    os.remove(app.config[request.remote_addr+"-file_name"].replace(".txt",".jsonl"))
+    return return_file
+
+	
 
 
-@app.route('/api/tokenize_data', methods=['POST'])
-def tokenize_data():
-    val = request.json['data']
-    # for i in val['uniqueSelectedText']:
-    #     i['text'] = i['text'].split('\n')
 
-    print(val)
-    # res = data.update_record(val)
-    # save_file(val["initial-data"]["tokens"],val["selected-data"])
-    return jsonify(val)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
