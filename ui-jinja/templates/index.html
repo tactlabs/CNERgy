@@ -94,188 +94,273 @@
 <br>
 
 <script>
-  var tokenizedData = {{ data | tojson | safe }};
-  var selectedText = {}
-  var activeTag, activeTagColor, activeTagName;
-
-  let colorCodes = ["#B6A6D9", "#EFCDE4", "#F9FAD5", "#CBE6B3", "#90D0E6", "#FF6961", "#988270"]
-
-  function save() {
-
-    // var uniqueSelectedText = []
-
-    // $.each(selectedText, function (i, el) {
-
-    //   if ($.inArray(el, uniqueSelectedText) === -1) uniqueSelectedText.push(el);
-    // });
-
-    // console.log(uniqueSelectedText);
-
-    var data = {
-      "selected-data": selectedText,
-      "initial-data": tokenizedData
-    };
-    // console.log(data)
-    $.ajax({
-      url: "/api/save/data",
-      type: "POST",
-      data: JSON.stringify(data),
-      contentType: "application/json",
-      dataType: 'json',
-      success: function (e) {
-        alert("Techlinks successfully saved");
-      },
-
-      error: () => {
-        // alert("Failed to save techlinks");
-      }
-    })
-  }
-
-  function addTag() {
-    // console.log($('#input-tag').val());
-    let tag = $('#input-tag').val().toUpperCase();
-    $('#input-tag').val("");
-    $(".tags ul").append("<li><div class='color' style='background-color:" + colorCodes.pop() +
-      "'> </div> <span style='padding-left:3px;''>" + tag +
-      "</span><span class='close'>&times;</span></li>")
-    // console.log(selectedText[tag]);
-    closeButton();
-    selectTag();
-  }
-
-  function selectTag() {
-    $(".tags li").click(function () {
-      // console.log(this);
-      if (activeTag) {
-        $(activeTag).removeClass("active");
-      }
-      activeTagColor = $(this).find(".color").css("background-color");
-
-      console.log(activeTagColor);
-      $(this).addClass("active");
-      activeTagName = $(this).children().eq(1).text().toUpperCase();
-      selectedText[activeTagName] = {};
-      activeTag = this;
-
-      // console.log(activeTag);
-    })
-  }
-
-  function getSelectionText() {
-    var text = "";
-    // console.log("selected test ", window.getSelection().toString())
-    if (window.getSelection) {
-      text = window.getSelection().toString();
-    } else if (document.selection && document.selection.type != "Control") {
-      text = document.selection.createRange().text;
+  var untokenizedData = {{ data | tojson | safe }};
+  console.log(untokenizedData[2]);
+  var counter;
+  var total = untokenizedData.length;
+  var token_data;
+  $(document).ready(function () {
+    // var tokenizedData = {{ data | tojson | safe }};
+    
+    var text_data = {
+      "text" : untokenizedData[0]
     }
-    return text;
-  }
+    $.ajax({
+        url: "http://127.0.0.1:5555/tokenize",
+        type: "POST",
+        data: JSON.stringify(text_data),
+        contentType: "application/json",
+        dataType: 'json',
+        success: function (tokenizedData) {
+          // alert("Techlinks successfully saved");
+          // console.log(tokenizedData);
+          token_data = tokenizedData.tokens;
+          token_data.forEach(appendTokenizedData);
 
-  ele = document.getElementById("job-description");
+          function appendTokenizedData(item) {
+            $("#job-description").append('<span class="words" id='+item[0]+'>' + item[2] + '</span>')
+          }
+        },
 
-  ele.onmouseup = ele.onkeyup = function addTechKey() {
-    text = getSelectionText();
-    // console.log(text.split('\n'));
-    var wordArray = text.split('\n');
-    text = text.replaceAll('\n', ' ');
+        error: () => {
+          alert("Failed to tokenize data");
+        }
+      })
 
-    textPos = window.getSelection().anchorNode.parentNode;
-    if (text.replace(/\s/g, '').length) {
-      highlight(wordArray, textPos);
-      var temp = {};
-      if (activeTag) {
-        while (true) {
-          var start = $(textPos).attr("id");
-          // console.log(activeTagName);
-          // console.log(selectedText.activeTagName);
-          // console.log(start);
-          // console.log(selectedText["TECH"]);
+    //"text":Yourdata
+    // http://127.0.0.1:5555/tokenize
+    
+    counter+=1;
+  });
+  
+    var selectedText = {}
+    var activeTag, activeTagColor, activeTagName;
 
-          selectedText[activeTagName][text] = Number(start);
-          // console.log(temp);
-          // selectedText[activeTagName] = temp;
-          console.log(selectedText);
-          break;
+    let colorCodes = ["#B6A6D9", "#EFCDE4", "#F9FAD5", "#CBE6B3", "#90D0E6", "#FF6961", "#988270"]
+
+    
+
+    function save() {
+
+      // var uniqueSelectedText = []
+
+      // $.each(selectedText, function (i, el) {
+
+      //   if ($.inArray(el, uniqueSelectedText) === -1) uniqueSelectedText.push(el);
+      // });
+
+      // console.log(uniqueSelectedText);
+
+      var data = {
+        "selected-data": selectedText,
+        "initial-data": {"tokens":token_data}
+      };
+      // console.log(data)
+      $.ajax({
+        url: "/api/save/data",
+        type: "POST",
+        data: JSON.stringify(data),
+        contentType: "application/json",
+        dataType: 'json',
+        success: function (e) {
+          alert("Techlinks successfully saved");
+          
+        },
+
+        error: () => {
+          // alert("Failed to save techlinks");
+        }
+      })
+
+      counter+=1;
+
+      var text_data = {"text" : untokenizedData[counter]}
+      
+      tokenize_data(text_data)
+
+
+    }
+
+    function tokenize_data(text_data)
+    {
+      $.ajax({
+        url: "/api/tokenize_data",
+        type: "POST",
+        data: {"data" :JSON.stringify(text_data)},
+        contentType: "application/json",
+        dataType: 'json',
+        xhrFields: {
+        withCredentials: true
+      },
+      crossDomain: true,
+        success: function (tokenizedData) {
+          // alert("Techlinks successfully saved");
+          console.log(tokenizedData);
+          $("#job-description").empty()
+          var token_data = tokenizedData.tokens;
+          token_data.forEach(appendTokenizedData);
+
+          function appendTokenizedData(item) {
+            
+            $("#job-description").append('<span class="words" id='+item[0]+'>' + item[2] + '</span>')
+          }
+        },
+
+        error: () => {
+          alert("Failed to tokenize data");
+        }
+      })
+    }
+
+    function addTag() {
+      // console.log($('#input-tag').val());
+      let tag = $('#input-tag').val().toUpperCase();
+      $('#input-tag').val("");
+      $(".tags ul").append("<li><div class='color' style='background-color:" + colorCodes.pop() +
+        "'> </div> <span style='padding-left:3px;''>" + tag +
+        "</span><span class='close'>&times;</span></li>")
+      // console.log(selectedText[tag]);
+      closeButton();
+      selectTag();
+    }
+
+    function selectTag() {
+      $(".tags li").click(function () {
+        // console.log(this);
+        if (activeTag) {
+          $(activeTag).removeClass("active");
+        }
+        activeTagColor = $(this).find(".color").css("background-color");
+
+        console.log(activeTagColor);
+        $(this).addClass("active");
+        activeTagName = $(this).children().eq(1).text().toUpperCase();
+        selectedText[activeTagName] = {};
+        activeTag = this;
+
+        // console.log(activeTag);
+      })
+    }
+
+    function getSelectionText() {
+      var text = "";
+      // console.log("selected test ", window.getSelection().toString())
+      if (window.getSelection) {
+        text = window.getSelection().toString();
+      } else if (document.selection && document.selection.type != "Control") {
+        text = document.selection.createRange().text;
+      }
+      return text;
+    }
+
+    ele = document.getElementById("job-description");
+
+    ele.onmouseup = ele.onkeyup = function addTechKey() {
+      text = getSelectionText();
+      // console.log(text.split('\n'));
+      var wordArray = text.split('\n');
+      text = text.replaceAll('\n', ' ');
+
+      textPos = window.getSelection().anchorNode.parentNode;
+      if (text.replace(/\s/g, '').length) {
+        highlight(wordArray, textPos);
+        var temp = {};
+        if (activeTag) {
+          while (true) {
+            var start = $(textPos).attr("id");
+            // console.log(activeTagName);
+            // console.log(selectedText.activeTagName);
+            // console.log(start);
+            // console.log(selectedText["TECH"]);
+
+            selectedText[activeTagName][text] = Number(start);
+            // console.log(temp);
+            // selectedText[activeTagName] = temp;
+            console.log(selectedText);
+            break;
+          }
         }
       }
     }
-  }
 
-  function closeButton() {
-    var closeButtons = $('.close')
-    // console.log(closeButtons);
-    for (var i = 0; i < closeButtons.length; i++) {
-      closeButtons[i].addEventListener("click", function (e) {
-        e.preventDefault();
-        // console.log($(this).closest("li").find(".color") )
-        colorCodes.push($(this).closest("li").find(".color").css("background-color"));
-        // console.log(colorCodes);
-        $(this).closest("li").remove();
-      });
-    }
-  }
-
-  function highlight(arr, pos) {
-    // console.log(arr);
-    // console.log(pos);
-    var count = arr.length;
-    for (let i in arr) {
-      if (arr[i] === "" || arr[i] === " ") {
-        count -= 1;
+    function closeButton() {
+      var closeButtons = $('.close')
+      // console.log(closeButtons);
+      for (var i = 0; i < closeButtons.length; i++) {
+        closeButtons[i].addEventListener("click", function (e) {
+          e.preventDefault();
+          // console.log($(this).closest("li").find(".color") )
+          colorCodes.push($(this).closest("li").find(".color").css("background-color"));
+          // console.log(colorCodes);
+          $(this).closest("li").remove();
+        });
       }
     }
-    // console.log(count);
-    // console.log($(window.getSelection().anchorNode.parentNode))
-    // if (count === 1) {
-    //   let selection = $(pos).prev().nextAll().slice(0,count);
-    // }
-    // console.log($(pos).prev().nextAll().slice(0, count));
-    let selection = $(pos).prev().nextAll().slice(0, count);
-    if (activeTag) {
-      // let activeColor = $(activeTag + ".color").css("background-color");
-      if (selection) {
-        console.log(activeTagColor);
-        var id = "grp-" + $(pos).attr("id")
-        // console.log(id);
-        $(selection).wrapAll('<mark/ id="' + id + '">');
-        $("#" + id).append('<span class="badge bg-secondary">' + activeTagName +
-          '<button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>')
-        $("#" + id).css("background-color", activeTagColor)
+
+    function highlight(arr, pos) {
+      // console.log(arr);
+      // console.log(pos);
+      var count = arr.length;
+      for (let i in arr) {
+        if (arr[i] === "" || arr[i] === " ") {
+          count -= 1;
+        }
       }
-    } else {
-      alert("You need to select a tag!")
+      // console.log(count);
+      // console.log($(window.getSelection().anchorNode.parentNode))
+      // if (count === 1) {
+      //   let selection = $(pos).prev().nextAll().slice(0,count);
+      // }
+      // console.log($(pos).prev().nextAll().slice(0, count));
+      let selection = $(pos).prev().nextAll().slice(0, count);
+      if (activeTag) {
+        // let activeColor = $(activeTag + ".color").css("background-color");
+        if (selection) {
+          console.log(activeTagColor);
+          var id = "grp-" + $(pos).attr("id")
+          // console.log(id);
+          $(selection).wrapAll('<mark/ id="' + id + '">');
+          $("#" + id).append('<span class="badge bg-secondary">' + activeTagName +
+            '<button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>')
+          $("#" + id).css("background-color", activeTagColor)
+        }
+      } else {
+        alert("You need to select a tag!")
+      }
+
+      removeHighlights();
+      return selection;
+
+      // console.log(selectedText);
     }
 
-    removeHighlights();
+    function removeHighlights() {
+      console.log("remove highlights");
+      $(".btn-close").click(function () {
+        // console.log($(this).closest("li"));
+        var id = $(this).closest("mark").attr("id");
 
-    // console.log(selectedText);
-  }
+        $(this).closest("span").parent("mark");
+        $(this).closest("span").unwrap();
+        $(this).closest("span.badge").remove();
 
-  function removeHighlights() {
-    console.log("remove highlights");
-    $(".btn-close").click(function () {
-      // console.log($(this).closest("li"));
-      var id = $(this).closest("mark").attr("id");
-      $(this).closest("span").unwrap();
-      $(this).closest("span.badge").remove();
-
-      id = id.split('-');
-      deleteObj(id[1])
-    })
-  }
-
-  function deleteObj(val) {
-    var obj = selectedText[activeTagName];
-    for (let i in obj) {
-      if (obj[i] == val) {
-        delete obj[i];
-        break
-      }
+        id = id.split('-');
+        deleteObj(id[1])
+      })
     }
-    console.log( selectedText );
-  }
+
+    function deleteObj(val) {
+      var obj = selectedText[activeTagName];
+      for (let i in obj) {
+        if (obj[i] == val) {
+          delete obj[i];
+          break
+        }
+      }
+      console.log(selectedText);
+    }
+
+  // });
 </script>
 
 

@@ -1,0 +1,4237 @@
+
+
+Sources:
+https://neuvoo.ca/view/?jpos=&jp=1&id=b4e40ba3d361
+
+
+
+-----------------------------------------------------------------------
+
+# 1
+
+http://prodigybank.com/job-board/
+
+Our client a world-class AI research centre. Is looking for a Machine Learning Engineering Lead to join their innovation lab in Toronto.
+
+Recognized for scientific excellence, their dedicated team of AI researchers and engineers builds AI-enabled technologies using state-of-the-art machine learning. Their research areas are diverse and include natural language processing, reinforcement learning and responsible AI.
+
+If you are passionate about solving the biggest challenges in Machine Learning and AI today, for example, how to enhance risk applications and reduce fraud, this is the right opportunity for you. Oh and did I mention you'll be working with the newest and coolest technology alongside the very smartest people in the country?
+
+
+Responsibilities include:
+
+    Lead the design, implementation and deployment of successful ML systems;
+    Directly manage a team of engineers, being responsible for planning execution and delivery of features and ML systems
+    Establish high standards and share knowledge in performance, scalability, enterprise system architecture, and engineering best practices;
+    Establish and maintain collaboration with research and business teams to converge on the best solutions;
+    Extending prototypes into fully functional, polished solutions ready for internal and/or external use;
+
+About you:
+
+    Have a bachelor’s degree in Computer Science, Software Engineering, or equivalent. A master’s or PhD in an AI sub-field, with detailed knowledge of machine learning algorithms, is an asset;
+    Have 5+ years’ industry experience;
+    2+ years of managing a team of engineers
+    Proficiency with Deep Learning packages such as Tensorflow, Theano, Keras and PyTorch;
+    Exposure to distributed computing frameworks (e.g. Hadoop, Spark) as well as SQL, NoSQL and graph databases;
+    Ability to write modular, robust, scalable software in one of the modern languages such as C++, C#, Java, Python;
+    Knowledge of scaling and performance of large systems;
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+# 2
+
+
+Machine Learning / Natural Language Processing Engineer
+
+ 
+
+·        A degree in Computer Science/Engineering or related field.
+
+·        4+ programming experience in Python with strong grasp of software engineering standard methodologies such as code-reusability, modularity, use of repos, etc
+
+·        3+ years of applied experience in ML, deep learning and NLP
+
+·        Have expert understanding of machine learning and NLP tasks such as classification, feature engineering, information extraction, structured prediction, sentiment analysis, and topic modelling
+
+·        Fully understand different neural networks (LSTM, seq2seq, etc.), different word embedding models and transfer learning.
+
+·        Knowledge of packages such as Tensorflow, Pytorch, Keras, Scikit Learn, Pandas, and NLTK.
+
+·        Experience in a data-driven software engineering environment, with an end-to-end understanding of how to leverage data to make business decisions.
+
+·        A proven track record in building and maintaining high quality, robust and maintainable code.
+
+·        Experience building and working within a Continuous Integration framework.
+
+·        Understanding of Data Warehouse concepts, ETL strategies and best practices.
+
+·        An appetite for problem solving with a creative and resourceful approach to finding the right solution for the job.
+
+·        Strong communication and collaboration skills
+
+ 
+
+What sets you apart:
+
+·        You are a self-motivated and outgoing person who can work closely with business and IT stakeholders.
+
+·        You understand the relationship between data and business outcomes and can focus on long term strategies for data.
+
+·        Proficiency with PostgreSQL, Teradata, Hadoop and AWS is an asset.
+
+·        You have experience working as part of an Agile Team.
+
+
+Additional Information
+
+Aviva Canada is committed to providing accommodations for people with disabilities during all phases of the hiring process including the application process. If you require an accommodation because of a disability, we will work with you to meet your needs. Applicants need to make their needs known in advance. If you are selected for an interview and require an accommodation, you are encouraged to advise the Talent Acquisition Partner who will consult with you to determine an appropriate accommodation.
+
+
+
+
+
+-----------------------------------------------------------------------
+
+# 3
+
+At SoundHound Inc., we believe every brand should have a voice. As the leading innovator of conversational technologies, we’re trusted by top brands around the globe. Houndify, our independent Voice AI platform, with 70,000+ users, allows brands to create custom voice assistants that deliver results with unprecedented speed and accuracy.
+
+Our mission is to enable humans to interact with the things around them in the same way we interact with each other: by speaking naturally. We’re making that a reality through our SoundHound music discovery app and Hound voice assistant and through our strategic partnerships with brands like Mercedes-Benz, Hyundai, Deutsche Telekom, and Pandora. Today, our customized voice AI solutions allow people to talk to phones, cars, smart speakers, mobile apps, coffee machines, and every other part of the emerging ‘voice-first’ world.
+
+Our diverse team of engineers, UX/UI designers, writers, data scientists and linguists are all passionate about creating a world with more conversations. With more than 14 years of expertise in voice technology, we have hundreds of millions of end users, and a worldwide team in six countries building solutions for a voice-first world.
+
+About The Role
+
+    This is a fantastic opportunity to join the core group working on Speech Recognition at SoundHound
+    Work on building large scale Statistical Language Models, a critical system in Speech Recognition
+    Run experiments and tune parameters to improve Statistical Language Models
+    Build prototypes to explore novel methods/algorithms to improve the Statistical Language Models
+    Identify new techniques to explore, prototype them, and then implement winning ideas in production
+
+Requirements:
+
+    5+ years of relevant industry experience
+    BS/MS in Computer Science or equivalent
+    Proficient in one of Java or C++ or Python
+    Excellent algorithms skills and ability to write efficient code
+    Good understanding of Machine Learning algorithms
+    Strong problem solving and communication skills
+
+Nice-to-haves:
+
+    Experience building production systems based on Machine Learning lifecycle
+    Experience with application of Deep Neural Network methods to Natural Language Processing problems
+    Familiarity with Statistical Language Modeling
+    Familiarity with MapReduce/Spark and other relevant infrastructure
+    Experience working with Speech Recognition technology
+
+
+
+
+
+-----------------------------------------------------------------------
+
+# 4
+
+https://ca.indeed.com/viewjob?jk=4e0e22600b9a928f&tk=1f3mq7o5qt5rh800&from=serp&vjs=3
+
+About Fiix
+Fiix is on a mission to build better maintenance teams by connecting customers to the tools, resources, and technology they need to join the future of maintenance. We help our customers drive better business outcomes with easy-to-use, AI-driven maintenance software, an open ecosystem, pre-built integrations and the industry expertise they need for maintenance success. There are over 2600 maintenance teams in 90+ countries using Fiix to improve communication, asset health, and even sustainability.
+Creating positive social impact is baked into our company DNA, and as one of Canada’s fastest-growing companies and Best Workplaces, we’re transforming an industry and doing it the right way.
+
+About the team
+Our Fiixers are the key to our success. Our team is made up of professionals who bring together a variety of experiences, backgrounds and perspectives. We celebrate the diversity of our people and place a high value on creating an environment where everyone can bring their whole self to work.
+
+As a Fiixer, you will work in a caring and collaborative culture, alongside people who are passionate and purpose-driven. You’ll have the support and resources you need to grow, achieve your professional goals and develop your career for the future.
+
+In our fast-paced, high-growth environment, you’ll have the opportunity to work on challenging projects, develop your expertise and pursue leadership, within and outside of your role. Plus, as a BCorp certified organization, there are tons of opportunities to make an impact! Take paid time off to volunteer in your community, start up a new committee, join an employee resource group, or mentor other Fiixers. Best of all, you’ll have the flexibility to work remotely or come and experience our awesome office. No matter where you’re working from, we’re committed to ensuring that the Fiixer experience is best in class!
+
+We’re looking for a Machine Learning Engineer to help take Fiix’s explosive growth to a whole new level. You will be responsible to drive the research and development of statistical, machine learning and optimization models to power our product suite. This is a unique opportunity to join a team of creative and passionate individuals committed to bringing AI to the predictive maintenance world.
+What you will do:
+Working with sales and marketing stakeholders to identify opportunities where data, machine learning or operations research can enhance customer value
+Working with product managers to translate product requirements into R&D activities
+Presenting to and educating customers on product capabilities powered by statistical analysis, machine learning, and operations research
+Researching, developing, and validating models to generate predictions, recommendations, alerts, and other insights, and automate customer-facing business processes
+Conducting statistical inference and unsupervised machine learning to discover trends and correlations
+Working with engineers to collect, clean, and perform feature engineering and selection on customer data to support model R&D activities
+Working with architects and engineers to develop processes, monitoring, and testing automation frameworks to ensure data and model quality
+Working with architects and engineers on the delivery and integration of models into product
+Keeping current on the latest literature on machine learning and operations research
+What we're looking for:
+3+ years of experience in applied statistical analysis and machine learning, ideally in a high growth software development environment
+A PhD or Master’s Degree in Machine Learning, Statistics, Mathematics, Operations Research, or a related quantitative discipline
+A deep understanding of linear algebra, probability theory, statistics and multivariate calculus
+Passion for deriving insights from large datasets, and to communicate that passion to product managers and engineers
+Experience in the use of statistical analysis and machine learning tools, packages and languages such as Numpy, Pandas, Scikit-learn, TensorFlow, or PyTorch
+Strong scripting and engineering skills in Python and proficiency in using query languages such as SQL
+Knowledge of data structures and algorithms
+Equity Statement
+
+At Fiix, we recognize that people come with a wealth of experience and talent beyond just the technical requirements of a job. If your experience is close to what you see listed here, please still consider applying. Diversity of experience and skills combined with passion is a key to innovation and excellence. Therefore, we encourage people from all backgrounds to apply to our positions. Please let us know if you require accommodations during the interview process. 
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://infostellar.zohorecruit.com/jobs/Careers/581911000001799005/Senior-Software-Engineer?source=CareerSite
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://www.linkedin.com/jobs/view/1999845042/
+
+nugget.ai is recruiting and screening candidates on behalf of our partner TEEMA recruiting group.
+
+TEEMA is recruiting on behalf of a research/IT firm that provides technical support services to blue-chip clients in the online entertainment space.
+
+As a Machine Learning Engineer, he/she will be responsible for developing algorithms that will be the basis of our mathematical models used to understand and automate the trading process of sports betting markets.
+
+The candidate MUST have a strong background in Machine Learning, Statistics, and Algorithm Development experience.
+
+Responsibilities
+
+    Perform industrial research by developing math models and algorithms to be used in automated trading applications in the sports betting domain
+    Evaluate state-of-the-art statistical modelling and Machine Learning approaches using large amounts of historical data
+    Analyze, Visualize and Model large datasets using R and Python
+    Acquire, Clean, and Transform data using R and Python
+    Other duties as assigned
+
+
+What You Bring To The Team
+
+    Degree or Diploma in Computer Science, Software Engineering, Computational Statistics or equivalent degree or experience; MS or PHD in Computer Science, specializing in Machine Learning is desirable
+    Strong analytical, conceptual, and problem-solving abilities with attention to detail
+    Ability to multi-task and manage multiple assignments in a fast-paced environment
+    Strong written and oral communication skills
+    Initiative to work independently, but also able to work effectively with team members in different locations
+    Flexibility and adaptability to business requirements and priority changes
+    3+ years of relevant experience with statistical computing in R or Python
+    3+ years of experience with Machine Learning algorithms and Probabilistic Modelling
+    Strong background in statistics, preferably Bayesian Statistics
+    Experience with Bayesian Inference using Statistical Languages for MCMC such as Stan, JAGS, WinBugs is a big plus
+    Experience using cloud computing platforms such as EC2 (AWS)Domain experience in on-line gaming and entertainment industry, Financial Markets (such as Stock Exchange, Options, Bonds, ForEx, etc), or other types of 2-sided markets is a plus
+    Experience with SQL and SQL Server
+    Experience with .NET Framework and C# is preferable
+    Experience with modern R packages and technologies such as dplyr, tidyR, data.table, shinyR
+    Experience with Neural Networks or Deep Learning on large problems is a plus
+    Hadoop, MapReduce or High Performance Computing is a plus
+
+
+Desired Skills and Experience
+SQL, Python, AWS, Machine Learning, Statistics, Algorithm Development, R
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://www.linkedin.com/jobs/view/2002752107/
+
+
+Job Ref 388510, Location Toronto, ON, CA, Job Description Exciting career opportunity located in downtown Toronto, the Machine Learning
+Engineer will develop novel machine learning algorithms and data products for
+fraud detection, personalization, search and NLP. You will work with petabyte
+scale datasets and work with high throughput, low latency systems to put your
+models in production touching lives of more than 300M customers everyday.
+
+You must ooze passion, seek ownership, and have a love of building great
+things. Other team will rely heavily on your build, and you ll have a ton of
+trust and responsibility -- so, if challenges excite you, and you re ready for
+a big one, we're looking for you.
+
+Responsibilities
+
+> Work with massive data from multiple applications and 300 M+ customers
+> Own the development, training, optimizing, and deployment of machine
+learning and neural network models allows for learning the semantics of
+multimodal data
+> Contribute towards long-term research goals, while recognizing intermediate
+milestones that can be applied to product development
+> Design and evaluate novel approaches for handling high-volume real-time
+data streams in an inferencing environment
+> Develop measurement and feedback systems at web scale to improve the
+selection of features and/or algorithm design
+> Contribute and influence the relevant research/engineering communities via
+top tier publications and open source contributions
+
+Qualifications
+
+> You have +3 years working experience with software development in Scala,
+Java, Go or Python
+> You have experience in building ETL pipelines to perform feature
+engineering on large-scale dataset using Big Data technologies such as Hadoop
+or Spark
+> Strong written and verbal communication skills to describe results of
+analyses in a clear and effective manner
+> Ability to initiate and drive projects to completion with minimal guidance
+> Experience with parallel/distributed computing using CPUs/GPUs
+> You respect advanced data structures and can use them to solve your problems
+> Working knowledge of PyTorch, Tensorflow or other similar frameworks
+> You have a Masters/PhD degree or equivalent in Computer Science,
+Engineering, Mathematics or related field
+> Understand the theory and application of theory for common classification,
+clustering, language understanding, collaborative filtering and statistical
+techniques
+
+To apply, please quote the job reference code # 388510
+(please attach resume in MS Word format if possible)
+
+By applying you consent to being contacted electronically by Planet4iT
+regarding career opportunities.
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+https://www.linkedin.com/jobs/view/1995371319/
+
+
+Autodata Solutions is currently looking for an Artificial Intelligence Machine Learning Engineer to join their growing team!
+
+Position Overview
+
+The AI Machine Learning Engineer will work among our AI R&D team to streamline and reinvent the current data processes within the enterprise. This role will also collaborate with data science and software engineering teams in the US, China and other geographies to develop and deliver best-in-class data engineering solutions to support our market research and data science product and services offerings.
+
+Key Responsibilities
+
+    Lead the engineering and the management of our data assets, which are the core foundation of our new and existing product offerings;
+    Understand data assets that empower our products and services;
+    Identify inefficiencies in our current data ecosystem by working closely with our database administrators, data scientists, and software engineers;
+    Develop and deploy a scalable and robust cloud-based data ecosystem working closely with our Cloud Architect;
+    Migrate our current data assets to the new data system seamlessly and support the current product/service offerings on the new system;
+    Help expedite the development of new product/service offerings on the new system in close collaboration with data science and software engineering teams;
+    Maintain the new system to ensure on-time delivery of products and services;
+    Develop comprehensive and automated Q/A and Q/C tools for products;
+    Utilize knowledge of event based or asynchronous programming architecture, micro server architecture, or server less environment
+
+Qualifications
+
+    7-10+ years of demonstrated experience in end-to-end development of machine learning and artificial intelligence (A.I.) products and services
+    Masters or Ph.D. out of the following disciplines: Math: statistics, probability, predictions, calculus, algebra, Bayesian algorithms and logic, Sciences: physics, mechanics, cognitive learning theory, language processing ; Computer Science: data structures, programming, logic and efficiency
+    Prior experience of managing the creation and deployment of Machine Learning solutions for the retail space
+    Hands-on software development experience with object oriented and/or functional programming
+    Strong experience in predictive analytics, machine learning, optimization, and agile product development
+    Demonstrated knowledge of common frameworks and libraries in AI such as: TensorFlow /Torch, PyTorch/PyText/FastText, scikit-learn, Theano, Caffe, Keras, Microsoft Cognitive Toolkit
+    Experience in designing a production environment on Cloud, creating model scoring pipelines, and deploying AI/ML models through REST API
+    Deep experience in SQL, NoSQL databases, Python, Flask, R, Java, C++/C#, AWS and/or other Cloud products and services
+
+For more information about Autodata Solutions, check out our website at www.autodatasolutions.com
+
+When you work for an Autodata Solutions company, you join a team of dedicated professionals who are always looking for new ways to raise the bar. It takes talent, ambition and forward thinking to meet the challenges of our exciting and rapidly evolving market.
+
+Autodata Solutions is the industry leader of technology, merchandising and sales solutions for the automotive industry. We have set the industry standard by providing the most up-to-date and innovative data, content, and platform capabilities – all the essentials to create and manage engaging digital experiences for consumers and end users. We are committed to transforming the customer journey through a better vehicle consideration, purchase, and ownership experience.
+
+We thank all applicants for their interest, however, only those selected for an interview will be notified. Autodata Solutions is an equal opportunity employer. We are compliant with AODA legislation; if you require work-related accommodations, please specify.
+
+Powered by JazzHR
+
+hGYCw32QUv
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://www.linkedin.com/jobs/view/1981174381/
+
+What is the opportunity?
+
+The Digital Data & Analytics team offers the opportunity to leverage RBCs significant data assets to develop innovative solutions in support of RBC’s Digital transformation. The team has a broad mandate to support the evolution of the bank’s public websites, online banking and mobile apps using data. As RBC’s Personal and Commercial clients increasingly interact with the bank digitally there is a growing need for actionable insights to drive product and investment decision about new capabilities. Joining the Digital Data & Analytics team as a Data Scientist you will have the opportunity to analyze, design and implement data solutions using RBC’s enterprise suite of analytics tools.
+
+What will you do?
+
+    Autonomously direct data science initiatives to uncover business value using statistical, machine learning and analytics techniques
+    Utilizing the latest technologies available, designing and building data solutions to meet business needs
+    Be an active contributor to not only your individual team, but to the RBC development community
+    Work on both transformational and BAU projects delivering new value while also maintaining existing processes
+    Use deep business domain knowledge to independently lead the analytics process to identify valuable and innovative insights.
+    Create software packages that can be reused inside the enterprise.
+    Work as part of a cross functional agile team responsible for end-to-end delivery of business needs
+    Support data management processes - acquiring, transforming and storing massive volume of structured and unstructured data
+    Promote analytics across the enterprise to enable RBC to become a data-driven organization.
+
+What do you need to succeed?
+
+Must-have
+
+    Masters or PHD in Mathematics, Statistics or Computer Science
+    3+ years of experience with big data technologies - Hadoop (Pig, Hive), noSQL/SQL databases, parallel processing techniques and Apache Spark
+    3+ years of experience in Machine-Learning, data mining and statistics.
+    Strong data profiling, cleaning, and mining.
+    Expert working knowledge of Python, R, Java and SQL
+
+Nice To Have
+
+    Familiar with a Linux environment and shell scripting.
+    Expert data extract, transform, and load processes with a variety of data types
+    Ability to perform complex data analysis on large volumes of data and present findings to stakeholders.
+    Strong knowledge of design, development, and implementation experience utilizing data science technologies.
+    Contribution to research communities including publishing papers.
+
+DAI
+
+About RBC
+
+Royal Bank of Canada is Canada’s largest bank, and one of the largest banks in the world, based on market capitalization. We are one of North America’s leading diversified financial services companies, and provide personal and commercial banking, wealth management, insurance, investor services and capital markets products and services on a global basis. We have over 80,000 full- and part-time employees who serve more than 16 million personal, business, public sector and institutional clients through offices in Canada, the U.S. and 37 other countries. For more information, please visit rbc.com.
+
+Inclusion and Equal Opportunity Employment
+RBC is an equal opportunity employer committed to diversity and inclusion. We are pleased to consider all qualified applicants for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, protected veterans status, Aboriginal/Native American status or any other legally-protected factors. Disability-related accommodations during the application process are available upon request.
+
+Job Summary
+
+City: Toronto
+Address: 88 Queens Quay West
+Work Hours/Week: 37.5
+Work Environment: Office
+Employment Type: Permanent
+Career Level: Experienced Hire/Professional
+Pay Type: Salary + Variable Bonus
+Position Level: PL07
+Required Travel(%): 0
+Exempt/Non-Exempt: N/A
+People Manager: No
+Application Deadline: 08/31/2020
+Req ID: 252956
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://www.linkedin.com/jobs/view/1957826090/
+
+
+
+Machine Learning / Natural Language Processing Engineer
+
+ 
+
+·        A degree in Computer Science/Engineering or related field.
+
+·        4+ programming experience in Python with strong grasp of software engineering standard methodologies such as code-reusability, modularity, use of repos, etc
+
+·        3+ years of applied experience in ML, deep learning and NLP
+
+·        Have expert understanding of machine learning and NLP tasks such as classification, feature engineering, information extraction, structured prediction, sentiment analysis, and topic modelling
+
+·        Fully understand different neural networks (LSTM, seq2seq, etc.), different word embedding models and transfer learning.
+
+·        Knowledge of packages such as Tensorflow, Pytorch, Keras, Scikit Learn, Pandas, and NLTK.
+
+·        Experience in a data-driven software engineering environment, with an end-to-end understanding of how to leverage data to make business decisions.
+
+·        A proven track record in building and maintaining high quality, robust and maintainable code.
+
+·        Experience building and working within a Continuous Integration framework.
+
+·        Understanding of Data Warehouse concepts, ETL strategies and best practices.
+
+·        An appetite for problem solving with a creative and resourceful approach to finding the right solution for the job.
+
+·        Strong communication and collaboration skills
+
+ 
+
+What sets you apart:
+
+·        You are a self-motivated and outgoing person who can work closely with business and IT stakeholders.
+
+·        You understand the relationship between data and business outcomes and can focus on long term strategies for data.
+
+·        Proficiency with PostgreSQL, Teradata, Hadoop and AWS is an asset.
+
+·        You have experience working as part of an Agile Team.
+
+
+
+Additional Information
+
+Aviva Canada is committed to providing accommodations for people with disabilities during all phases of the hiring process including the application process. If you require an accommodation because of a disability, we will work with you to meet your needs. Applicants need to make their needs known in advance. If you are selected for an interview and require an accommodation, you are encouraged to advise the Talent Acquisition Partner who will consult with you to determine an appropriate accommodation.
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://www.linkedin.com/jobs/view/1980265857/
+
+
+Talent Tank has 2 openings for a Quantitative Data Developer or an NLP Intelligence Engineer at a global fintech intelligence firm.
+
+Location: Toronto. Will consider Canadian candidates from out of city/province if they're willing to relocate. Must be have an eligible Canadian working status (citizen, PR, open WP). We do not process work permits for out of country applicants.
+
+Must Haves
+
+Quantitative Data Developer
+
+    Mathematics, Machine Learning, Quantitative Analysis background
+    Financial markets and product experience highly preferred, fixed income, bonds, stocks, derivatives etc
+    Solutions development
+    Python Stack production experience
+    GIT / Jira
+    Hadoop SQL, Hive / Impala
+    Any python based tool kits
+    Scripting experience ( bash, tcsh, zsh, python)
+    MUST come from a real world production environment, not from research or PHD programs without production
+
+NLP Intelligence Engineer
+
+    PHD preferred, may look at Masters of Comp Sci, depending on experience
+    Deep learning, neural networks, NLP, AI. Preferred extensive research / publication experience in applying deep learning methods on NLP
+    Background in Cognitive Computing, Computational Linguistics, training Deep Neural Network models
+    NeurIPS, ICML, ICLR, CVPR, ICCV, ECCV, SIGGRAPH, KDD
+    AWS HPC stack experience
+    Deep learning, NLP
+    Production Environment experience a bonus but not a must
+
+Would love to hear from you.
+
+Thanks
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://www.linkedin.com/jobs/view/2000870776/
+
+Client JD Below
+
+We need a technical contractor to assist on building out data cleaning and manipulation tools for our machine learning system. The contractor will sit along side our data scientists to productionize and optimize the code that we have for data ingestion and optimization, and if necessary help to build out the machine learning tools that we are using. A strong background in Python and SQL is a must as that is what our systems are built upon. Additional experience with working with Google compute and cloud services is a plus as our algorithms are being calculated on those systems. We are located in the Flatiron district.
+
+SkillSoniq hires great talent for projects within SkillSoniq or with our Clients. Below is the hiring process we follow:
+
+    We review applications and resumes for relevant skills and experience
+    Profiles that get short-listed are contacted by SkillSoniq on next steps
+    You then go through a few rounds of interviews for the project
+    If you get selected, you are advised on next steps and paid by SkillSoniq
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://www.linkedin.com/jobs/view/2001592284/
+
+
+We are looking for highly skilled Data Scientist to join our team. As a Data Scientist, you will join an exciting team of actuaries, data scientists and engineers at the forefront of using data to drive decisions at every level of the organization. You will be part of a dynamic small team with exposure to different business partners and direct influence on future products and innovative solutions. The team has already developed algorithms used in production systems and you will be part of the team that expands the scope of these algorithms. If you are passionate about Data Science and leveraging your analytical prowess to tackle business challenges, this role could be for you!
+
+Responsibilities
+
+    Work on projects that range from predicting customer life-time values and optimizing customer journeys to incorporating novel data sources for building cutting-edge pricing algorithms
+    Leverage machine-learning algorithms to automate and predict claim outcomes
+    Find new and innovative ways to impact our customers
+    Exploring the frontiers of the insurance business such as how to harness the data from connected homes and cars to deliver new types of products to customers
+    Propose machine-learning and statistical models for practical applications
+    Mentor and guide peers in novel approaches and provide peer review for their work
+
+
+Requirements
+
+    5+ commercial experience developing and implementing integrations and backend connectivity
+    An educational background in computer-science or engineering, math, statistics, physics or related field. A minimum of MSc is required and Phd preferred.
+    5+ years of experience with model development and working with large datasets. This can include experience from any industry or academia (post-doc experience).
+    5+ programming experience in Python or R with good grasp of software engineering standard methodologies such as code-reusability, modularity, use of repos, etc.
+    Python/R /Dataiku
+    REST/XML/JSON/API ingestion
+    Spark/Impala/Hive
+    Expertise in machine learning theory and predictive modelling lifecycle
+    API configuration
+    Conformance/Alignment to IT/Enterprise Architecture standards (where applicable)
+    Relevant experience in P&C (preferred)
+    Shiny App development
+    Geo-analytics experience (ESRI/KML/KMZ layer development) with specialization in weather & environmental data ingestion
+
+A Successful Candidate Will Have
+
+    A growth mindset with versatile skills and able to work through problems from first-principles.
+    A portfolio of projects that demonstrate your ability to draw inferences from data. This includes participation within the broader data science community including Kaggle competitions or any personal projects with open data.
+    A can-do teammate who is willing to roll-up the sleeves and do whatever is needed to move projects forward. That means at times you will wear different hats and be a project manager, developer, modeler and chief communicator of solutions.
+    Amazing people skills and able to translate and communicate complex algorithms to non-technical individuals. Someone who understands that it is not enough to just have a phenomenal algorithm but meaningful to build an agreement for the solution from different partners
+    The best problems in the industry are yet to be articulated. We need someone who is creative, self-motivated and can lead projects independently.
+
+
+Benefits
+
+Why You'll Love Working at Prodigy
+
+    We are a collective group of people and collaboration is key to our process
+    We don’t work for our clients, we work with them
+    Easily accessible downtown location, connected to Union Station and PATH
+    Competitive compensation commensurate with experience
+    Everyone brings something valuable to the table in our supportive, challenging, and collaborative, diverse work environment
+
+
+All Employees Can Participate in
+
+    Company paid health benefits 100% medical, dental and vision coverage
+    Corporate-discounted Gym Membership through GoodLife
+    Company discount program including Travel, Shopping, Attractions, Wellness, & Sporting events, just to name a few
+    Access to an Employee & Family Assistance program (EAP)
+    Employee Referral Program
+    Employee Opportunity Program
+    Annual Performance Awards
+    Town Halls
+    Philanthropic Events
+    Social Events
+    Lunch and Learns
+
+
+Accessibility
+
+Prodigy is committed to providing equitable treatment and accommodation to ensure a barrier-free recruitment process and workplace. If you require accommodation at any stage during the recruitment process, please contact us at accessibility@prodigylabs.net or call 416-488-7700 ext. 4
+
+Inclusion & Diversity
+
+At Prodigy we foster an inclusive and diverse workforce, believing our strength stems from our individual differences. Our employees, partners, and clients continuously benefit from the innovation and creativity grounded in these values. We strive to be a company that attracts a diverse group of highly skilled people who know that their contributions will be valued and that they will be heard. We are committed to building a corporate culture with people who are excited to join our team, do their best work, and grow with us!
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://www.linkedin.com/jobs/view/1932703059/
+
+
+Duties: As an IT Expert - Data Scientist, you will be working as a part of a squad that is designed to respond to the business needs of our organization quickly. The specific role will be to perform Data Modeling analysis, run the Data Analysis, find patterns primary responsibilities:
+
+Research and implement comprehensive statistical, mathematical and computing science algorithms across business contexts including research, development and quality Investigate available tools and technologies in machine learning and deep learning Support collaboration with third parties including academia and industry Analyzing large amounts of data from several sources
+
+Skills: The skills we are searching are amongst others:
+
+Knowledge of classification techniques
+Good knowledge of data matching/entity resolution techniques Superb analytical and conceptual thinking skills, attention to details Strong problem-solving skills (taking a significant, complex problem and breaking it down into components, involve others as needed, drive resolution) Excellent communication skills/ability to interact with business stakeholders Ability to solve problems by using machine learning or deep learning techniques Quick learner and passionate about continually adapting your skills and knowledge Ability to work in the interdisciplinary area and can interpret and translate the very abstract and technical approaches to a healthcare and business-relevant solution Active team player and can work effectively in a collaborative, fast-paced, multi-tasking environment Excellent communication skills and a demonstrated ability to interact with different teams and parties of the organization, such as business, technical and academic partners Knowledge of R is essential Knowledge of Cloud environments (GCP, AWS) would be an asset
+
+Keywords
+
+Education: Advanced degree
+
+Required Skills
+
+Skills and Experience:
+
+DEEP LEARNING
+
+Excellent Communication Skills
+
+GCP
+MACHINE LEARNING
+PROBLEM-SOLVING
+
+Additional Skills
+
+TEAM PLAYER
+TRANSLATE
+ALGORITHMS
+DATA ANALYSIS
+DATA MODELING
+DATABASE
+DATABASES
+MARKETING ANALYSIS
+MODELING ANALYSIS
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://www.linkedin.com/jobs/view/1984995996/
+
+
+ About Cerebri AI Cerebri AI CVX platform uses the best Artificial Intelligence ( AI ), Operation Research ( OR ), and software to provide what is required in our digital age: value a customer's commitment to a brand and related products. It then uses these insights to then drive the selling of product and services. We use AI to answer the fundamental questions of the digital age: Who talks to the customer? Who understands the customer? How do we do this at scale when we have millions of customers?Cerebri AI CVX platform uses a 10-stage AI software pipeline manages & processes data intake thru to producing insights and actions & presenting them via our APIs, in our customers' systems, or our UX. Our AI pipeline's first five stages manage data intake, a crucial step in producing great insights. One customer journey ( CJ ) per customer means all models targeting CX and revenue KPIs and related next best actions ( NBAs ) use the same journeys.We work with companies selling to over 200 million consumers and have 24 patents filed on the Cerebri AI platform. We now have 40 employees in three offices in Austin, Toronto, and Washington DC. Over 80% of the staff are in technical roles in data science and software engineering. How do we do this? We hire the best data scientists, mathematicians, and software developers and work as a cross-disciplinary team/gang/clan. We work hard, laugh hard, and impress our peers and clients. Because we can. And because we want to. To learn more, visit cerebriai.com. In the meantime, if you think you have what it takes, give us a spin and upload resume."Cerebri AI was recognized as 2019 Cool Vendor for Customer Journey Analytics by Gartner." The ideal candidate The ideal candidate is adept at leveraging large data sets to find patterns and using modelling techniques to test the effectiveness of different actions. S/he must have strong experience using various data mining/data analysis methods, using a variety of data tools, building and implementing models, using/creating algorithms, creating/running simulations, and testing its real-time implication. S/he must be comfortable working with a wide range of stakeholders and functional teams, trading off design to help others. Responsibilities for Senior/Principal Data Scientist Design, develop, test, advocate, evangelize and build data-driven modeling approachesAssess the effectiveness and performance of modeling and data enhancement techniquesPerform feature analysisDevelop ontology for key market segmentsDevelop outcome/event taxonomy for key business modelsCoordinate with different functional teams to implement data engineering, models and monitor outcomesBuild utility code and handle miscellaneous support tasks Documenting projects and maintaining project documentation Qualifications
+Experience working with and creating data architectures
+Experience with artificial intelligence, natural language processing, machine learning
+Good understanding of selected machine learning techniques: Supervised/Unsupervised/semi-supervised Learning, SVM, Tree-based Methods, Neural Networks, Naive Bayes, k-NN, ensemble methods, CNN, RNN, NLP, Feature Engineering, hyperparameters optimization
+Knowledge of advanced statistical techniques and concepts
+Experience using statistical computer languages (Python, SQL, etc.) and conventional data science toolkits, such as PANDAS, Weka, NumPy, MATLAB
+Knowledge of professional software engineering practices and best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations
+Excellent written and verbal communication skills
+Project management
+A drive to learn and master new technologies and techniques Tools we use
+Confluence
+JIRA
+Spark
+Azure, AWS, Kubernetes
+Python, Scala
+Keras, Scikit-learn, PANDAS, Numpy
+Bit bucket, GitHub
+Jupyter Notebook
+Postgress, Parquet
+JavaScript, airflow, Pulsar Nice to haves
+Ph.D. in operations research, applied statistics, data mining, machine learning, physics or a related quantitative discipline
+Experience in operations research, applied statistics, algorithmic complexity, RDS
+Experience with time Series, econometrics
+Experience with streaming systems
+Experience with Object-oriented modeling/MVC design patternsExperience anomaly detection systems
+
+Role
+
+    Design, develop, test, advocate, evangelize and build data-driven products that help our customers improve business decisions. You will provide insight into analytic practices, design and lead iterative learning and development cycles.
+
+Responsibilities
+
+    Understanding and worked with database systems.
+    Understanding and worked with machine learning algorithms.
+    Perform feature analysis.
+    Develop ontology for key market segments.
+    Develop outcome/event taxonomy for key business models.
+    Build utility code and handle miscellaneous support tasks.
+    Documenting software projects and maintaining project documentation.
+    Working in a team environment as well as working alone.
+
+Qualifications
+
+    Experience with Big Data, artificial intelligence, natural language processing, machine learning and/or deep learning.
+    Python programming skills with two (2) years or more of Python experience.
+    Good verbal and written communication skills.
+    Knowledge of professional software engineering practices and best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations.
+    Master's degree or six (6) years related work experience delivering quality code on time.
+
+Tools we use...
+
+    Confluence
+    JIRA
+    Spark
+    Azure
+    Python
+    Keras
+    Bit bucket
+    Jupyter Notebook
+    Scala
+    PostGres
+
+Nice to haves...
+
+    Experience in some subset of the following: Java, R, Python, SQL, Scala, Spark.
+    Ph.D. in operations research, applied statistics, data mining, machine learning, physics or a related quantitative discipline.
+    Deep understanding of statistical and predictive modeling concepts, machine-learning approaches, clustering and classification techniques, supervised learning, recommendation and optimization algorithms.
+    Specify preferred location.
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://www.linkedin.com/jobs/view/1971587085/
+
+
+
+As an AI Research and Development engineer, you will work on exciting projects that develop AI technologies to solve problems in various real-world applications. Your talent in conducting innovative research and development will certainly be fulfilled in your daily work. If you love challenges as a R&D engineer, this position will keep your passion ongoing. You will certainly find out so much of what you can positively impact the world via this position and meanwhile so much of what you will learn every day from the job.
+
+Responsibilities:
+
+    Collect and analyze AI requirements from customers’ and/or potential applications.
+    Conduct research of relevant/emerging AI technologies (e.g., deep learning frameworks) in the area of computer vision (CV) and propose the best of breeds solutions to meet the specific AI requirements.
+    Tune your CV algorithms to the optimum performance to handle real-time processing requirements in production system.
+    Develop proof of concepts to assess proposed AI solutions for their applicability.
+    Publish relevant AI research papers when necessary and approved, and attend conferences for increasing public awareness of Huawei’s products.
+    Implement AI solutions for commercialization and/or integration.
+    Team with other department (e.g., hardware, big data) and provide specific feedbacks to them for improvement.
+    Assist the team lead on planning of projects and definition of technology/products development road map.
+
+ 
+
+
+Desired Skills and Experience
+
+    Master/PhD in Computer Science, Software Engineering, Math/Statistics, focusing on AI & Machine Learning/Deep Learning.
+    Working experience in computer vision/image processing/video processing.
+    Hands-on skills in programming in Tensorflow/Theano/Keras/Caffe/Caffe2/PyTorch/MXNet.
+    Hands-on skills in C++/Python programming.
+    Good documentation skills in writing internal reports and/or publishing research papers.
+    1+ year experience in optimizing performance of deep learning models is a preferred asset.
+    Solid knowledge of AI software and hardware systems, and AI workload analysis methodologies and practices is a preferred asset.
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://www.linkedin.com/jobs/view/1996891921/
+
+
+Our client is an organization that drives innovation for an $18-billion food hospitality organization. They serve over 3 billion meals per year in award-winning restaurants, corporate cafes, hospitals, schools, arenas, museums, and more.
+
+Disrupt and Delight. As part of the innovation fabric, that’s what they do. They are the ones who challenge. Who tinker. Who wonder freely and know that nothing is real until we make it. They drive the freshest possible thinking, innovating in technology to create day-changing experiences, every day.
+
+They are building hardware and software in our hospitality physical spaces that use data to improve its designs, build faster and smarter, and ultimately drive better consumer experiences. Their team is comprised of developers, user-experience designers and researchers, data scientists, technology specialists, and business analysts that comes together every day to solve the problems of their clients. They are looking for a Data Scientist to join a fun, energetic team to design strategies for database systems as well as set standards for operations, programming and security.
+
+Qualifications / Skills
+
+    Advanced analytical knowledge of data
+    Conducting big data analysis
+    Data conditioning
+    Programming advanced computing
+    Developing algorithms
+    Developing software and data models
+    Executing predictive analytics
+
+Requirements
+
+    Master’s degree in Operations Research, Industrial Engineering, Applied Mathematics, Statistics, Physics, Computer Science, or related fields
+    2-3 years of professional experience
+    Strong Python skills, Docker and experience developing custom algorithms is essential
+    Demonstrated experience applying data science methods to real-world data problems
+    Experience utilizing visualization tools to take advantage of the growing volume of available information
+
+Strategic Solutions is a dedicated technology recruitment company. Our strength is our diverse technology background, connection to the Tech community and ability to make personal and committed connections with each client. We don’t just place value on what the most sought after talent can bring from a professional perspective, but also as individuals. Our Strategic Consultants are constantly connected to the next generation of competitive technologies and the young individuals who are leaders in those fields. We strive to make connections with new recruits who hold specific and in demand skill sets that our partners need. We take the time to build meaningful relationships and gain an understanding of what each consultant’s objectives are. We don’t think it’s important to take the time to find out what our client’s needs are, with think it is absolutely essential. It is only after this exploratory process do we think it is possible to be able to match them with the right talent.
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://www.linkedin.com/jobs/view/1983081078/
+
+
+Req Id: 256871
+
+At Bell, we do more than build world-class networks, develop innovative services and create original multiplatform media content - we’re revolutionizing how Canadians communicate.
+
+If you’re ready to bring game-changing ideas to life and join a community that values bold ideas, professional growth and employee wellness, we want you on the Bell team.
+
+Bell’s forward-thinking Customer Operations team is creating the ultimate service experience for our residential, wireless and small business consumers. We lead strategic development and execution of day-to-day operations, develop tools and processes to drive service enhancements, manage customer loyalty and retention, and leverage big data and artificial intelligence to create intellectual property.
+
+We are looking for a Machine Learning Engineer who has experience productionizing, maintaining, and optimizing cloud-native applications. The successful candidate will help us define, build, and maintain a machine-learning-as-a-service environment at Bell. Our mission is to enable the customer operations team at Bell to iterate quickly on hypotheses, scale their experiments to enterprise datasets, and efficiently productionize highly-available, fault-tolerant machine learning applications. In this role you will work cross-functionally with data scientists and data engineers across the organization to enable Bell to use machine learning to drive business decisions.
+
+Key Responsibilities
+
+    Understand the business objectives and develop models that help to achieve them
+    Influencing the roadmap and decisions made by the ML team and participate to the projects development from proposal to production
+    Contribute to the delivery of ML models including models/services development and production monitoring/maintenance.
+    Research and implement best practices for improving and scaling ML operations.
+    Collaborate with data, product and data science teams to accelerate productivity and maintain products robustness
+
+Required Competencies
+
+    You are a skilled communicator with a proven ability to communicate results effectively, both verbally and visually.
+    You are organized and agile; comfortable with ambiguity and able to prioritize and troubleshoot a variety of technical issues.
+    You have experience with one or more of the following: Natural Language Processing, text understanding, classification, recommendation systems, ranking systems or similar.
+    You have a good knowledge of Machine Learning and Deep Learning as well as proven practical experience with ML/DL libraries, like Keras/TensorFlow, PyTorch, scikit-learn, xgboost, etc.
+    You have development experience with the Python scripting language and ideally one general programming language (e.g. C/C++, Java)
+    You have experience with data processing and storage frameworks like Hadoop, Spark, Redis, HBase, PostgreSQL (or equivalent technologies)
+    You are able to work in a Linux environment
+    You have working knowledge of GIT
+    You have experience with Docker containerization
+    You have experience with RESTful API and webservers
+
+Preferred Competencies
+
+    You have experience with GPU computing
+    You have experience with Kubernetes/Openshift orchestration
+
+Bilingualism is an asset (English and French); adequate knowledge of French is required for positions in Quebec.
+
+Additional Information
+
+Position Type: Management
+Job Status: Regular - Full Time
+Job Location: Canada : Ontario : Don Mills || Canada : Ontario : Toronto || Canada : Quebec : Montreal
+Application Deadline: 08/25/2020
+
+Please apply directly online to be considered for this role. Applications through email will not be accepted.
+
+At Bell, we don’t just accept difference - we celebrate it. We’re committed to fostering an inclusive, equitable, and accessible workplace where every team member feels valued, respected, and supported, and has the opportunity to reach their full potential. We welcome and encourage applications from people with disabilities.
+
+Accommodations are available on request for candidates taking part in all aspects of the selection process. For a confidential inquiry, simply email your recruiter directly or recruitment@bell.ca to make arrangements. If you have questions regarding accessible employment at Bell please email our Diversity & Inclusion Team at inclusion@bell.ca.
+
+Created: Canada, ON, Toronto
+
+Read more about why Bell is considered one of Canda's Top 100 Employers.
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://www.linkedin.com/jobs/view/1989178563/
+
+
+Healthcare and health IT systems are notoriously fragmented relying heavily on legacy networks, such as fax and phone to connect the dots. Phelix is an AI powered clinical assistant for individual primary & specialty clinics, high volume hospital departments, and scalable public health responses. We have recently closed a $1M seed investment led by significant channel partners and are growing our engineering team.
+
+ 
+
+We are looking for a Lead to take ownership of product and engineering within a small but mighty best-in-class team. As Lead, you have a broad set of technical skills, are experienced building production-grade products, and are passionate about tackling some of healthcare’s greatest technology challenges.
+
+
+
+Minimum qualifications:
+
+    Bachelor's degree in Computer Science or related technical field or equivalent practical experience.
+    4 years hands-on programming experience. 
+    Technical leadership and people management experience.
+
+ 
+
+Technical Skills:
+
+    Experience in back-end or computing languages (e.g. PHP, Java, Python, R) and JavaScript frameworks (e.g. Angular, React, Node.js)
+    Experience in relational (e.g. MySQL) and non-relational (e.g. MongoDB) databases
+    Knowledge of cloud service providers (e.g. GCP, AWS, Azure), web servers, API's, micro-services, and serverless architecture
+
+ 
+
+Preferred Qualifications:
+
+    Previous experience working with distributed architectures, microservices, API's, telecom infrastructure, or developing and deploying production level machine learning/AI products is an asset.
+    Experience with DevOps, CI/CD, security protocols, & quality control/automation. 
+    Experience working with common data science toolkits, such as NLTK, OpenCV, NumPy, etc.
+    Experience working with ML techniques and algorithms, such as kNN, RandomForest, Naive Bayes, clustering etc. is an asset. 
+    Experience working with OCR or computer vision-based document processing (such as Tesseract, Google vision, Azure vision, and AWS Textract). 
+    Experience working with NLP/NLU models, including classification, conversational AI, and named entity recognition. 
+    Experience working with telecom infrastructure (e.g. Twilio, PBX, PSTN). 
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+https://www.linkedin.com/jobs/view/1964675855/
+
+
+Xero is a beautiful, easy-to-use platform that helps small businesses and their accounting and bookkeeping advisors grow and thrive. 
+
+
+At Xero, our purpose is to make life better for people in small business, their advisors, and communities around the world. This purpose sits at the centre of everything we do. We support our people to do the best work of their lives so that they can help small businesses succeed through better tools, information and connections. Because when they succeed they make a difference, and when millions of small businesses are making a difference, the world is a more beautiful place.
+
+
+About the Team 
+
+
+The Data team is responsible for driving the adoption of data driven decision making across Xero - for both our internal users and our global audience of small business owners, bookkeepers and accountants. We create, manage and deliver a wide range of data services and products including core reporting, key data dimensions, extensible and scalable analytical data processing and storage facilities, machine learning frameworks and API driven prediction services.  We are the centre of expertise for data architecture, data modelling, machine learning, ethical data usage and artificial intelligence service design. We also lead the work to raise the data and AI literacy levels across Xero.
+
+
+
+About the role
+
+        There’s a myriad of job titles out there and the English language can only express so much in a couple of words. So role title aside, what we’re looking for is someone to: 
+        Immerse yourself in Xero’s data stores, wrangling vast quantities of messy and complex data to build a share-able understanding of the structure, content and quality and the usability of the data for data-driven product development
+        Work on analyses, proofs of concept and production grade product development using a wide variety of data science and machine learning techniques. Conduct experiments, analyze results, and generate hypotheses. Rinse and repeat.
+        Work with colleagues from the Data Applications and Data Enrichment teams to build, maintain, operate and evaluate end-to-end machine learning pipelines for training and inference at scale
+        Stay current with emerging practices, techniques and frameworks in the fields of machine learning and artificial intelligence 
+        Constantly consider the ethical application of data science and machine learning and ensure your code is always developed with the best interests of our users in mind.
+        Continually feed issues with data quality and data gaps back to our Product build teams and work with them to improve the instrumentation and data coverage of our core products and services.
+
+
+
+About you
+
+        You rejoice in identifying tough problems that can be solved with the application of scientific thinking, algorithms and analytical data processing.
+        You’re comfortable reading ML research papers, keep abreast of new work on arXiv.org and have on occasion spent your weekends tinkering around with that interesting new framework you read about recently ... but when it comes down to it, you want to solve real problems in the simplest and most robust way possible
+        You instinctively seek to understand how machine learning will impact customer experiences and society more broadly
+        You have experience working on a machine learning project (either as part of work or on a personal project)
+        You take pride in writing high quality, documented, and maintainable codeYou know your way around the ‘nix command line, ssh your way happily around your multiple running AWS instances and can write Python, Scala or similar
+
+
+
+What you'll bring with you
+
+        Ability to think about both the business and machine learning domains
+        Sound software engineering skills in Python, Scala, or similar
+        Hands on practitioner skills in one or more of: time series forecasting, natural language processing, classical machine learning, deep learning
+        Ability to grasp the mathematical concepts that underpin the domains outlined above
+        Comfortable with version control and command line
+        Strong communication skills and the ability to tailor a message for peers, and stakeholders (technical and non-technical)
+
+
+
+Why Xero?
+
+
+At Xero, we are empowered to bring our ‘whole self’ to work. Our collaborative and inclusive culture is one we’re immensely proud of. We know that a diverse workforce is a strength that enables businesses, including ours, to better understand and serve customers, attract top talent and innovate. We care about learning together and celebrate our teams’ continuous improvement and career development. 
+
+
+We offer a great remuneration package, including compelling benefits and perks, like Xero shares. We also support flexible working arrangements that allow you to balance your work, your life and your passions. Our Canadian Xero family includes Hubdoc, an automated data capture platform and we have offices in Toronto, Calgary, and Vancouver. From the moment you step through our doors, you’ll feel welcome and supported to do the best work of your life.
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://www.linkedin.com/jobs/view/1719687836/
+
+Company
+
+LG Electronics R&D
+
+Job Function
+
+Engineering
+
+At LG, we make products and services that make lives better, easier and happier through increased functionality and fun. Put simply, we offer the latest innovations to make “Life Good” – from home appliances, consumer electronics, vehicle components and mobile communications to business innovations in digital signage, air conditioning, solar and LED lighting. As a global leader, we strive for greatness in product leadership, market leadership and people leadership to realize our growth strategies.
+
+Talk about a mantra. Life’s Good with LG!
+
+AI/Machine Learning Scientist – Toronto
+
+LG is looking to push the boundaries of AI to build innovative product and service solutions to realize LG’s global vision for a connected world. As a part of this initiative, LG has set up an Advanced AI organization in North America centered in Silicon Valley. Further to this initiative, we are looking for passionate and talented AI / Machine Learning Scientists and Engineers for our Toronto AI Lab to work closely with the global AI labs.
+
+You will work on advanced research to make core ML and RL algorithms faster, more accurate and more robust. You will design experiments, invent new algorithms, and create prototype implementations focusing on applications to a variety of challenging business problems in areas of IoT, Connected Home and On Device Computing. You will be encouraged to publish high quality papers and patents and collaborate with leading academia.
+
+You will be based in our new offices in downtown Toronto and work alongside a multi-disciplinary team that includes ML/AI scientists, product managers and software developers to design and launch AI products and solutions that help predict, personalize and transform lifestyles of LG’s global footprint of devices and users.
+
+Seniority will be commensurate with experience and accomplishments.
+
+Principal Duties and Responsibilities
+
+    Research and develop advances to improve core AI/Machine Learning algorithms. The research focus includes (but is not limited to) the following:
+        Network optimization, parameter and hyper-parameter optimization, architecture search, network compression
+        Model adaptation and learning on the edge
+        Policy learning and adaptation in RL
+        Bayesian machine learning
+        Semi-supervised and unsupervised learning
+        Distributed learning
+    Read, understand, implement, and improve state-of-the-art papers in the above topics
+    Take ownership of projects and build proof-of-concepts (POCs)
+    Actively participate in the research and academic community by disseminating novel results in top conferences and journals
+    Stay up-to-date on developments in AI technologies and propose long term research plans
+
+
+Requirements
+
+    PhD in Computer Science, Electrical Engineering, Statistics or related quantitative discipline with a focus on machine learning, optimization theory, or related areas
+    Strong publication record in machine learning and deep learning at top conferences and journals
+    A demonstrable track record of developing novel algorithms, solutions, and delivering/deploying prototypes/projects
+    Experience with deep learning frameworks (e.g., Keras, Tensorflow, Tensorlite, MxNet)
+    Software engineering experience in two or more of C/C++, Python, Scala, Java, R, Matlab
+    Experience working with edge-computing frameworks like, CoreML, Greengrass etc. preferred
+    Last, but not least, a sense of ambition and passion to change the world using AI and machine Learning
+
+Email
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://www.linkedin.com/jobs/view/1958208207/
+
+
+
+A very rare opportunity to join an organisation pioneering change in the Healthcare space.
+
+ 
+
+Recognised as one of the Top 100 Hottest Start-ups and on the Global AI 100 list, this company is leading the AI Revolution by creating disruptive software and tools that leverages machine learning and 'big data' to solve critical problems.
+
+ 
+
+As an international company, they are dedicated to bringing innovation to disease/condition management around the world and provide a unified platform striving to improve health outcomes for people globally, whilst reducing costs associated with disease/condition management.
+
+ 
+
+Given their continued success and growth, they are searching for a Chief AI Officer to build and drive their data and AI competence and work with the CEO to assist in the implementation of their strategy of transforming to a data-rich and data-driven commercial organisation.
+
+ 
+
+By unifying the teams internally, you will provide technical guidance to your team and assist in setting the vision and strategy and guidance for all data management activities including; assisting with regulatory and FDA approvals, creating internal and external partnerships, identifying relevant supporting tools and technologies and leading the underlying technology platform development needed to enable data innovation across the organization.
+
+What skills do you need?
+
+ 
+
+    Previous experience within Healthcare, Biotechnology or relatable industry
+    Regulatory industry knowledge & FDA approval experience
+    Proven experience establishing and growing a data business/competence
+    Extensive knowledge of the new technology landscape – Big Data, AI, Advanced Analytics
+    Experience developing and communicating predictive and prescriptive insights / algorithms
+    Ability to apply deep learning technologies to give computers the capability to visualize, learn and respond to complex situations. 
+
+ 
+
+This is an incredibly interesting hands on opportunity to work with the leadership team to build a leading data-centred business.
+
+ 
+
+If you feel you have the requisite skills, I would love to hear from you directly to discuss the opportunity in more detail, please submit an application with your resume in attachment.
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://www.linkedin.com/jobs/view/1786901329/
+
+At Scribd ( pronounced “scribbed”), we believe reading is more important than ever. Join our cast of unique characters as we build the world’s largest and most fascinating digital library: giving subscribers access to a growing collection of ebooks, audiobooks, magazines, documents, and more.
+
+In addition to works from major publishers and top authors, we also create our own original content exclusively for Scribd users.
+
+Our community includes over 1M subscribers in more than 190 countries. Join us in turning screen time into quality time!
+
+The Opportunity
+
+We are looking for exceptional, results-oriented and passionate Machine Learning experts to join our growing Recommendation Team. As an early member of a world-class team, you will lead the way by creating and owning the next generation of machine learning algorithms and end-to-end systems that power the experience for our 6B+ monthly recommendations and 100M+ users around the world.
+
+Qualifications
+
+    4+ years of experience applying Machine Learning in industry, especially related to Personalization
+    Strong background in Machine Learning and Recommender Systems, with deep understanding of supervised and unsupervised methods (collaborative-filtering, content-based, deep learning, reinforcement learning, contextual multi-armed bandit, causal inference)
+    Great coding skills and software development experience (spark, scala, python, java, tensorflow)
+    Successful track record of ownership in challenging cross-functional projects
+    Demonstrated ability to design and build complex systems that have positively impacted the business
+    PhD or MS in Computer Science, Statistics, or related field
+
+If you are results-oriented, self-driven, motivated to succeed, and are eager to make an impact by working on cutting-edge ML products and shaping Scribd's future, please reach out to us. We are looking forward to talking to you!
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://www.linkedin.com/jobs/view/1936759742/
+
+Flieber is a Silicon Valley-based technology startup that is the missing piece in the retail revolution. We have just raised our second round of capital with leading VCs and we are now accelerating our growth.
+
+We are looking for software engineers who are motivated to disrupt the way an entire industry operates. In this position, you will have the opportunity to quickly contribute mission-critical code and help shape fundamental aspects of the product. We have a collaborative culture of close teamwork across Engineering, Product, and Business. We seek a decentralized environment to create learning opportunities and challenges during our journey. Let's start Fliebing!
+
+We are looking to hire a highly creative Data Scientist to address data analytics challenges in our organization, to collect large volumes of data from varying sources, clean and interpret data, create solutions to overcome challenges and communicate with interested parties in order to disrupt the way an entire industry operates. We seek a decentralized environment to create learning opportunities and challenges during our journey. Let's start Fliebing!
+
+Ideal Candidate
+
+To succeed in this position; you need to be curious, creative and tech savvy. You need to stay up to date with data programming software and apps, have outstanding understanding of statistics and mathematics, and be proficient in writing algorithms. Top candidates will be persistent, and have excellent analytical and problem-solving skills.
+
+Why Flieber
+
+    Early-stage startup with proven traction and high growth
+    Silicon Valley culture
+    Diverse team spread across different countries
+    Flexible work schedule
+    Aggressive stock options plan
+    Plenty of growth opportunities
+
+Main Responsibilities
+
+    Having meetings with team members regarding projects
+    Collecting and interpreting data
+    Automating and integrating processes
+    Researching solutions to overcome data analytics challenges
+    Developing complex mathematical models that integrate business rules and requirements
+    Creating machine learning models
+    Communicating and meeting with engineers and other interested parties
+    Sharing complex ideas verbally and visually in an understandable manner with non-technical stakeholders
+    Build recommendation models for decision making features
+
+Desired Qualifications
+
+    A BS, MSc, or PhD degree in Applied Mathematics, Statistics, or related fields
+    4+ years industry experience
+    Advanced coursework in machine learning and programming
+    Experience using data visualization tools
+    Experience with data querying languages, and statistical or mathematical software
+    Proficient in writing algorithms, and knowing when to apply them
+    Excellent understanding of statistics, multi-variable calculus and linear algebra
+    Outstanding communication skills
+
+About Flieber
+
+With the migration of retail from offline to online, the business dynamics is moving from high volumes and low efficiency to low volumes and high efficiency. As a result, the whole industry is having to adapt to this new reality, including all installed infrastructure, which was prepared for a world where physical stores, distribution centers and full containers were the norm.
+
+Flieber is enabling this change through the use of advanced technology and data analytics to reduce complexity in e-commerce operations. Our platform synchronizes sales velocity, supply-chain operations and inventory management, and our team executes on our client's decisions. The result is more sales, higher margins and more efficient use of capital, all with a fraction of the work.
+
+Welcome to the new way to operate e-commerce businesses!
+
+For more information, visit flieber.com.
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://www.linkedin.com/jobs/view/1999403097/
+
+
+Loopio is a workplace that unleashes learning & growth opportunities for our Loopers. We provide autonomous, challenging work that allows each employee to master their craft. We attract and retain people who are naturally curious, have grit and are eager to grow and build their careers. At Loopio, we genuinely support each other, because true success comes from working as #oneteam. We root for each other’s success and always remember to take time to celebrate, have fun, and Get Loopi!
+
+About The Role
+
+In the Machine Learning (ML) team at Loopio, ML Engineers and Data Scientists work together on a mission to transform the RFP response process into a rapid and seamless experience. Our team works across all platform portfolio features and delivers innovative solutions where it matters the most for our customers. Some of the initiatives that you will be working on will include automated language detection, intelligent project import, and search improvements based on Natural Language Processing.
+
+We are looking for an experienced ML engineer to build and support the delivery of machine learning-driven features for our platform. Our perfect candidate has deep technical skills and is comfortable working in evolving technology infrastructure. This is a unique opportunity to join a growing team of creative and passionate individuals committed to solving real world problems with modern AI practices.
+
+You will partner closely with Product Managers, Architects and Data Scientists to use Machine Learning techniques to help us take Loopio’s user value to the next level.
+
+What You'll Be Doing
+
+    Working closely with Product Managers, Architects and Data Scientists to design, build, maintain and optimize our data management and machine learning architecture
+    Develop software to deliver and integrate machine learning product capabilities into our platform through REST services
+    Working with data scientists and engineers to deploy machine learning models in production
+    Develop processes and frameworks to ensure data and model quality
+    Work with machine learning scientists to build data processing pipelines supporting data analysis and machine learning tasks, and automate data pipelines in production
+    Perform code reviews and testing to ensure software quality is high 
+
+What You'll Bring to the Team
+
+    Experience in a high growth agile software development environment
+    Experience developing machine learning-driven products
+    Interest and have done work in statistical modeling and machine learning
+    A good understanding of ETL, data warehousing, data modeling and data architecting
+    The knowledge to work with machine learning scientists and translate proof of concept models into production strength systems
+    Development skills in Python (Flask), relational databases such as MySQL or PostgreSQL, NoSQL databases, e.g, Redis or Cassandra, data processing frameworks such asSpark (DataBricks), or Presto (AWS Athena), and deep learning frameworks such as TensorFlow
+
+Bonus Qualifications
+
+    Experience with container orchestration (leveraging tools like Docker, Kubernetes)
+    Experience with MLOps and CI/CD for ML enabled applications
+    Familiarity with REST and microservice architectures
+    Experience with AWS cloud services: EC2, RDS, S3, Api Gateway, Quicksight, SageMaker etc.
+
+Where You'll Work
+
+    Right now, we’re all working from home, but when it’s safe to do so again, you’ll have the option of working where you work best
+    Do you want to work in an office most days, when public health restrictions lift? You’ll have that opportunity to hot-desk out of our beautiful Kensington Market office
+    Do you want to work from home most of the time? Sounds great - we’re all a Zoom call away.
+    You’ll collaborate with your team largely remotely. And you’ll also make in-person connections: at company events, sales kick offs, or for full-team meetings
+
+Why You'll Love Working at Loopio
+
+    You'll have a manager who coaches you through goal setting, frequent 1-on-1s, and real-time feedback
+    You’ll have tons of autonomy and responsibility; we have a results-driven environment
+    You’ll learn more than you thought was possible; our team is obsessed with personal and professional growth
+    You’ll have a piece of the pie; every Loopio employee participates in our stock option plan!
+    You’ll participate in a health and benefits plan that kicks in on day one!
+    The career growth opportunities are endless at a successful, high-growth company
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25121&siteid=5051&PageType=JobDetails&jobid=1381161&Codes=Neuvoo#jobDetails=1381161_5051
+
+Intro Statement
+
+Do you know what makes The Home Depot the largest home improvement retailer in the world? Our people. We do all we can to empower those within the Home Depot to tap into their potential and make a difference where it matters most – for our customers and for themselves.
+ 
+Do you have what it takes to make an impact on the world’s largest home improvement retailer?
+ 
+Discover what it’s like to be part of a team responsible for helping millions of people complete thousands of home improvement projects every year. Search corporate careers today.
+
+Job Description
+
+Sr Data Scientist
+ 
+Our entrepreneurial roots and maverick mentality, coupled with the resources and backing of the #1 home improvement retailer in the world, The Home Depot Canada is a unique opportunity for you to become part of a transformative retail disrupter as we continue on our mission to provide the best interconnected shopping experience to our customers. As part of the rapidly growing and highly capable Analytics team, you will be tasked with absorbing billions of rows of data from dozens of sources, organizing them, visualizing them, and analyzing them to help inform both short- and long-term decision-making, tackle problems and derive insights. The team isn’t just making monthly reports or rerunning existing statistical models, it’s doing creative work in an empowering environment with each decision backed by data to support different areas of the customer journey. We need more dreamers, innovators and big thinkers passionate about data and re-imagining the future of retail. Interested in making history with us? If so, apply today to experience what it’s like to be a part of Analytics at The Home Depot Canada. 
+ 
+Position Overview:
+ 
+The Sr Data Scientist will contribute and help develop the analytical infrastructure and computational capabilities that drive decision making and impact the bottom line performance of Home Depot Canada. By partnering with business leaders and leveraging company and industry data, this role will develop predictive systems and algorithms for identifying trends and driving business solutions. This position's primary focus is to manipulate large datasets to extract meaningful business information using statistics and machine learning techniques.
+ 
+The successful candidate will be passionate about seeing real world impact of analytics and have a solid understanding of scientific and business needs, as well as the areas of data science that can be transformative and impactful to the retail and eCommerce industry.
+ 
+Position Responsibilities:
+Own the design and development of algorithms and optimize big data architectures and data pipelines
+Establish scalable, efficient processes for large scale data analyses, model development and model implementation within a modularized architecture where applicable
+Use analytical and statistical rigor to solve complex problems and drive business decisions
+Improve upon existing machine learning methodologies by developing new data sources, developing and testing model enhancements, running computational experiments, and fine-tuning model parameters for new models.
+Present analysis and resulting recommendations to senior management; Leverage data to present a compelling business case to optimize investments and operations
+Utilize code (Python, R, Scala, etc.) for analyzing data and building statistical and machine learning models and algorithms
+Design and drive experiments, A/B testing, outlier deep dives and form actionable recommendations. Manage the implementation of those recommendations
+Collaborate with product management and engineering groups to develop new products and features
+Communicate and educate technical and non-technical employees on analytics and data-driven decision making
+ 
+Required Experience/Skills:
+Master's in Computer Science, Math or related quantitative field (or BS/BA in Computer Science, Math or related quantitative field)
+3 years of experience in data mining and statistical analysis, demonstrated ability to identify key insights from data to solve business problems
+Experience using advanced statistical and machine learning techniques (clustering, decision tree learning, artificial neural networks, regression, properties of distributions, etc.) and their real-world advantages/drawbacks
+Experience using statistical and data manipulation languages (e.g. Python, R, SQL)
+Critical thinking, effective written and verbal communication skills
+Experience with Google Cloud Platform (such as BigQuery, Compute Engine, Data Flow)
+Experience with relational (SQL) and NoSQL Databases
+Experience with developing products deployed to production
+ 
+
+Knowledge/Experience Required
+
+ 
+Required Experience/Skills: 
+Master's in Computer Science, Math or related quantitative field (or BS/BA in Computer Science, Math or related quantitative field)
+3 years of experience in data mining and statistical analysis, demonstrated ability to identify key insights from data to solve business problems
+Experience using advanced statistical and machine learning techniques (clustering, decision tree learning, artificial neural networks, regression, properties of distributions, etc.) and their real-world advantages/drawbacks
+Experience using statistical and data manipulation languages (e.g. Python, R, SQL)
+Critical thinking, effective written and verbal communication skills
+Experience with Google Cloud Platform (such as BigQuery, Compute Engine, Data Flow)
+Experience with relational (SQL) and NoSQL Databases
+Experience with developing products deployed to production
+
+Closing Statement
+
+Thank you for applying to The Home Depot Canada. Our careers allow you to “unleash your inner orange” to improve the lives of our customers and yourself by helping them to complete their projects. Please note applications will only be accepted online and only those candidates under consideration will be contacted. 
+ 
+The Home Depot Canada is committed to diversity and is an Equal Opportunity Employer.
+
+
+-----------------------------------------------------------------------
+
+
+
+Company Overview
+
+Tell us your story. Don’t go unnoticed. Explain why you’re a winning candidate. Think TD if you crave meaningful work and embrace change like we do.
+
+We are a trusted North American leader that cares about people and inspires them to grow and move forward.
+
+Stay current and competitive. Carve out a career for yourself. Grow with us. Here’s our story :
+
+Department Overview
+
+Layer 6 is a leading Canadian machine learning applied research company, a fully owned subsidiary of TD Bank Group. Layer 6 develops advanced machine learning and deep learning systems that have the power to uplift large populations while advancing the field of artificial intelligence.
+
+Our research is supported by access to massive datasets, close collaboration with world renowned academic faculty, and a uniquely scalable machine learning platform.
+
+Our technical capabilities have been publicly recognized through a number of wins in various international machine learning competitions, including the prestigious ACM RecSys Challenge (the only repeat winner in 2017 and 2018 and runner-up in 2019), Google’s Landmark Retrieval Challenge (2nd place in 2018, 3rd place in 2019), the Stanford Question Answering Dataset (2nd place in 2019), 3rd YouTube-8M Video Understanding Challenge (winner in 2019) and Open Images 2019 Visual Relationship (winner in 2019).
+
+The Machine Learning Product Engineer team at Layer 6 focuses on building industry-leading data-centric systems and model delivery systems.
+
+Our solutions include data pipelines, feature data lake, systemic data validation and automation of key activities in model delivery including model validation, shakedown, inference, and maintenance.
+
+We are looking for experienced Senior Machine Learning Product Engineers (Sr. MLPE) who have worked under tight deadlines and on challenging tasks.
+
+The ideal candidate is a master of coding and system design. They also are experts in data engineering and / or machine learning.
+
+The candidate will be the go-to person for data and model delivery. They will lead and coordinate efforts of members on the MLPE team to ensure best engineering practice in our systems.
+
+The candidate will interact with machine learning scientists, the infrastructure team and data sources team to develop systems that will satisfy the needs of machine learning projects.
+
+About This Role
+
+Meaningful work is fueled by meaningful performance and career development conversations with your manager. Here’s some of what you may be asked to perform :
+
+Lead the design and implementation of complex data-centric solutions, including extremely complex and large data set verification, transformation and feature generation, to ensure continuous high-quality input for the model development
+Lead the design and implementation of model delivery systems, including inference pipeline, automatic model validation reports generation, automatic model performance monitoring and model retraining, to ensure fast model productionization and reliable production system
+Go-to person for data and model delivery within Layer 6
+Lead and mentor Machine Learning Product Engineers to ensure best engineering practice in our systems.
+Requirements
+
+What can you bring to Layer 6? Share your credentials, but your relevant experience and knowledge can be just as likely to get our attention.
+
+It helps if you have :
+
+BSc+ in Computer Science, Math, Physics, or similar
+5+ years of extensive programming experience, at least 3 years in building production data systems
+3+ years experience of building machine learning production system
+Expert level skills in system design
+Expert in Big Data technologies and frameworks including but not limited to Hadoop, MapReduce, Spark, Cassandra, Kafka, Elasticsearch
+Strong knowledge of Machine Learning and Deep Learning
+Practical expertise in performance tuning, bottleneck problems analysis, and troubleshooting
+Experience with Big Data solutions developed in large cloud computing infrastructures such as Azure and AWS
+Strong experience with Scala and Java 8
+C++, Python experience (nice-to-have)
+Additional Information
+
+Benefits :
+
+Entrepreneurial and inclusive culture
+Excellent health coverage and pension plan
+Four weeks paid vacation
+Catered lunches twice a week over machine learning talks
+Inclusiveness
+
+At TD, we are committed to fostering an inclusive, accessible environment, where all employees and customers feel valued, respected and supported.
+
+We are dedicated to building a workforce that reflects the diversity of our customers and communities in which we live and serve.
+
+If you require an accommodation for the recruitment / interview process (including alternate formats of materials, or accessible meeting rooms or other accommodation), please let us know and we will work with you to meet your needs.
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=49fdc2f8a6d0&lang=en&k=machine+learning+engineer&nb=true&reqid=79663c562eface20fb4ea348b11efd32&splitab=1&action=emailAlert
+
+
+
+At Veeva, we build enterprise cloud technology that powers the biggest names in the pharmaceutical, biotech, consumer goods, chemical & cosmetics industries.
+
+Our customers make vaccines, life-saving medicines, and life-enhancing products that make a difference in everyday lives.
+
+Our technology has transformed these industries; enabling them to get critical products and services to market faster. Our core values, Do the Right Thing, Customer Success, Employee Success, and Speed, guide us as we make our customers more efficient and effective in everything they do.
+
+The Role
+
+Responsible for utilizing a diverse set of cloud and open-source technologies to deliver a massively scalable, robust, highly available container-based platform for Andi, Veeva’s Machine Learning Cloud platform, that is specifically built for life sciences.
+
+The ideal candidate should have extensive experience with various AWS technologies such as EC2, Auto Scaling, Elastic Load Balancing, Elastic Container Service, EKS, S3, EBS, VPC, CloudFront, RDS, Aurora, Redshift, Sagemaker, and many others.
+
+Experience with many other technologies is essential in building and maintaining our platform : Kubernetes, Docker, MySQL, Terraform, Linux, Operator Framework, Istio, and also experience writing code to pull all of these tools together to create a seamless system (Java, Python).
+
+You also will need to understand the code that the data science and engineering teams will be creating to run on the systems you’ve designed and deployed.
+
+You’re comfortable with Python, you know what a Jupyter notebook is, and you’re not afraid of Java or Golang.
+
+What You'll Do
+
+Collaborate with Data Science and Engineering team members on technical designs, solutions, and tools
+Optimize and improve the Andi ML Cloud platform
+Own all aspects of implementation for features from design to development, deployment to production, and support and maintenance
+Design and build systems that are massively scalable, highly available, and easily maintainable
+Work with other members of the Veeva operations teams to integrate with their system and conform to Veeva standards for privacy and security.
+Requirements
+
+Current hands-on development experience with open-source technologies : Java, Python, Golang, Spring, MySQL, Maven, Git, Jenkins, JUnit, Linux, Docker, Kubernetes.
+Proven ability to architect a highly available, distributed, and secure container-based system on a cloud platform (deploying a system utilizing Kubernetes in AWS or a full ML training / deployment system based on Sagemaker for example)
+Experience with Immutable Infrastructure and Infrastructure as Code patterns and technologies : Terraform, Docker, Kubernetes, Helm, Istio.
+5+ Years of commercial software development in Java, Python, or Golang
+Understanding of basic data science / machine learning terminology and methods
+Passion for learning and ability to dig for answers : read the manual, read the source, experiment
+Passion for automating anything and everything : you see a system with one-button deployments and want to automate that button
+Self-driven, proactive, and inquisitive : you see challenges as an opportunity to learn, improve the product, and develop your skills.
+Solid understanding of cloud networking and security
+Strong verbal and communication skills
+Local to GTA. We have offices in downtown Toronto
+BS in engineering / science or equivalent
+Nice to Have
+
+Experience and passion for Cloud Security
+Experience building CI / CD pipelines (Jenkins)
+Experience building / using automated test frameworks
+Experience with ML pipeline technologies : Tensorflow, Apache Beam, Spark, Sagemaker, etc
+Familiarity with Agile methodologies
+Perks & Benefits
+
+Conveniently located in downtown Toronto
+Snacks, beverages, and weekly lunches from local restaurants
+Allocations for continuous learning & development
+Health & wellness programs
+Weekly yoga classes
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=a0b8631575b2&lang=en&k=machine+learning+engineer&nb=true&reqid=a063bcb7812e5cd7b3cae91b220fa093&splitab=1&action=emailAlert
+
+
+Are you passionate about machine learning and looking for an opportunity to make an impact in healthcare?Fathom is on a mission to understand and structure the world’s medical data, starting by making sense of the terabytes of clinician notes contained within the electronic health records of health systems.
+
+We are seeking extraordinary Machine Learning Engineers to join our team, developers and scientists who can not only design machine-based systems, but also think creatively about the human interactions necessary to augment and train those systems.
+
+As a Machine Learning Engineer you will :
+
+You will develop NLP systems that help us structure and understand biomedical information and patient records
+You will work with a variety of structured and unstructured data sources
+You will imagine and implement creative data-acquisition and labeling systems, using tools & techniques like crowdsourcing and novel active learning approaches
+You will work with the latest NLP approaches (BERT, Transformer)
+You will train your models at scale (Horovod, Nvidia v100s)
+You will use and iterate on scalable and novel machine learning pipelines (Airflow on Kubernetes)
+You will read and integrate state of the art techniques into Fathom’s ML infrastructure such as Mixed Precision on Transformer networks.
+We’re looking for teammates who bring :
+
+Experience with deep learning frameworks like TensorFlow or PyTorch
+Industry or academic experience working on a range of ML problems, particularly NLP
+Strong software development skills, with a focus on building sound and scalable ML.
+Excitement about taking ground-breaking technologies and techniques to one of the most important and most archaic industries.
+A real passion for finding, analyzing, and incorporating the latest research directly into a production environment.
+Good intuition for understanding what good research looks like, and where we should focus effort to maximize outcomes
+Bonus points if you have experience with :
+
+Developing and improving core NLP components not just grabbing things off the shelf
+Leading large-scale crowd-sourcing data labeling and acquisition (Amazon Turk, Crowdflower, etc.)
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=323443e6d83e&lang=en&k=machine+learning+engineer&nb=true&reqid=65b785977dd8c59f8598a2f6c49baa15&splitab=1&action=emailAlert
+
+
+Job Overview : Qualcomm is a company of inventors that unlocked 5G ushering in an age of rapid acceleration in connectivity and new possibilities that will transform industries, create jobs, and enrich lives.
+
+But this is just the beginning. It takes inventive minds with diverse skills, backgrounds, and cultures to transform 5Gs potential into world-changing technologies and products.
+
+This is the Invention Age - and this is where you come in. General Summary no standard job description text Principal Duties & Responsibilities no standard job description text IT Core Competencies no standard job description text Required Competencies no standard job description text Additional Competencies no standard job description text Minimum Qualifications no standard job description text Preferred Qualifications no standard job description text Physical Requirements no standard job description text
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=0d03ac1e29aa&lang=en&k=machine+learning+engineer&nb=true&reqid=551ee803291a2a3f1dc34c9ea8a92793&splitab=1&action=emailAlert
+
+
+Our client a fastest growing mobile payments company with over 230 million users is currently looking for Data Engineers in Toronto, to help build data driven and AI technologies
+
+SPONSORSHIP PROVIDED TO USA CANDIDATES WILLING TO RELOCATE TO TORONTO*
+JOB DESCRIPTION
+
+Engineers with a passion to develop novel Machine Learning software systems for fraud detection, personalization and CTR prediction and deploy the systems to production, and test them to ensure all client's business needs are covered.
+
+Team of data scientists, statisticians and machine learning engineers, you will create software that are used by millions of people.
+
+You will perform ETL to build model features using petabyte scale datasets and develop high throughput and low latency systems to serve models in production touching lives of more than 300M customers everyday.
+
+You will collaborate with highly innovative engineering teams to put machine learning functionalities into production systems that we build in-house.
+
+You are someone who oozes passion, ownership, and a love of building great things. The Product and Engineering teams will rely heavily on your build.
+
+You'll have a ton of trust and responsibility.
+
+RESPONSIBILITIES
+
+Perform ETL with massive data from multiple applications and 300 M+ customers
+
+Architect, design and evaluate novel approaches for handling high-volume real-time data streams in an inferencing environment
+
+Own the development, training, optimizing, and deployment of machine learning systems
+
+Develop measurement and feedback systems at web scale to improve the selection of features and / or algorithm design
+
+QUALIFICATIONS
+
+Strong software development skills (+3 years working experience), with proficiency in Python or Scala preferred
+
+Experience in building ETL pipelines to perform feature engineering on large-scale dataset using Big Data technologies such as Spark
+
+Ability to explain and present analyses and machine learning concepts to a broad technical audience
+
+Ability to initiate and drive projects to completion with minimal guidance
+
+Knowledge in advanced data structures and can use them to solve problems
+
+You have a Masters degree or equivalent in Computer Science, Engineering, Mathematics or related field
+
+Working knowledge of PyTorch, Tensorflow or other similar frameworks is a plus
+
+Creative, collaborative, & product focused
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=e5615879ff4a&lang=en&k=machine+learning+engineer&newjob=1&nb=true&reqid=5e38afd82213c2cb08ae12e880a58eb0&splitab=1&action=emailAlert
+
+
+Join us as we pursue our disruptive new vision to make machine data accessible, usable and valuable to everyone. We are a company filled with people who are passionate about our product and seek to deliver the best experience for our customers.
+
+At Splunk, we’re committed to our work, customers, having fun and most meaningfully to each other’s success. Learn more about Splunk careers and how you can become a part of our journey!
+
+Role :
+
+Do you have a passion for building software that leverages the power of machine learning? Do you want to be part of the founding team for a new mobile first product and build something from the ground up?
+
+Splunk's Toronto Engineering team is looking for a machine learning software engineer to build an innovative solution that leverages machine learning at the edge.
+
+You will get to work with leading edge hardware accelerated AI like TPUs. You will be working with the latest streaming machine learning algorithms to do anomaly detection on environmental sensor data.
+
+You will also have the chance to work on object detection and image classification using neural networks. Ideally we are looking for someone with prior experience who can be a thought leader on our team.
+
+Requirements :
+
+8+ years of meaningful industry experience
+You have experience with streaming machine learning
+You have experience building neural networks for object detection and image classification
+You have experience with a variety of machine learning algorithms including kNN and isolation forest.
+You have experience testing and tuning machine learning algorithms
+You have experience with Tensorflow or Pytorch
+Experience writing software in Python
+Experience with embedded systems, Google Coral or Raspberry Pi is an asset
+Proven experience in leading architecture and technical design
+Comfortable working with development on Linux, Unix, and MacOS systems
+You have strong communication / interpersonal skills, both verbal and written
+You have an ability to learn new technologies quickly and understand a wide variety of technical challenges to be solved
+Nice to have
+
+You have experience with Java
+What We Offer You :
+
+A constant stream of new things for you to learn. We're always expanding into new areas, bringing in open source projects and contributing back, and exploring new technologies.
+A set of exceptionally collaborative and dedicated peers, all the way from engineering and QA to product management and customer support.
+Growth and mentorship. We believe in growing engineers through ownership and leadership opportunities. We also believe mentors help both sides of the equation.
+A stable, collaborative and supportive work environment.
+Education :
+
+BS CS / EE or equivalent Experience
+We value diversity at our company. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, or any other applicable legally protected characteristics in the location in which the candidate is applying.
+
+For job positions in San Francisco, CA, and other locations where required, we will consider for employment qualified applicants with arrest and conviction records
+
+Thank you for your interest in Splunk!
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=5d7bdecd6b6d&lang=en&k=machine+learning+engineer&nb=true&reqid=8e9ee93ee31a3440855cc7bd8cf970ae&source=neuvoosearch
+
+
+Intro Statement Do you know what makes The Home Depot the largest home improvement retailer in the world? Our people. We do all we can to empower those within the Home Depot to tap into their potential and make a difference where it matters most - for our customers and for themselves.
+
+Do you have what it takes to make an impact on the world’s largest home improvement retailer?
+
+Discover what it’s like to be part of a team responsible for helping millions of people complete thousands of home improvement projects every year.
+
+Search corporate careers today.
+
+Sr Data Scientist
+
+Our entrepreneurial roots and maverick mentality, coupled with the resources and backing of the #1 home improvement retailer in the world, The Home Depot Canada is a unique opportunity for you to become part of a transformative retail disrupter as we continue on our mission to provide the best interconnected shopping experience to our customers.
+
+As part of the rapidly growing and highly capable Analytics team, you will be tasked with absorbing billions of rows of data from dozens of sources, organizing them, visualizing them, and analyzing them to help inform both short- and long-term decision-making, tackle problems and derive insights.
+
+The team isn’t just making monthly reports or rerunning existing statistical models, it’s doing creative work in an empowering environment with each decision backed by data to support different areas of the customer journey.
+
+We need more dreamers, innovators and big thinkers passionate about data and re-imagining the future of retail. Interested in making history with us?
+
+If so, apply today to experience what it’s like to be a part of Analytics at The Home Depot Canada.
+
+Position Overview :
+
+The Sr Data Scientist will contribute and help develop the analytical infrastructure and computational capabilities that drive decision making and impact the bottom line performance of Home Depot Canada.
+
+By partnering with business leaders and leveraging company and industry data, this role will develop predictive systems and algorithms for identifying trends and driving business solutions.
+
+This position's primary focus is to manipulate large datasets to extract meaningful business information using statistics and machine learning techniques.
+
+The successful candidate will be passionate about seeing real world impact of analytics and have a solid understanding of scientific and business needs, as well as the areas of data science that can be transformative and impactful to the retail and eCommerce industry.
+
+Position Responsibilities :
+
+Own the design and development of algorithms and optimize big data architectures and data pipelines
+Establish scalable, efficient processes for large scale data analyses, model development and model implementation within a modularized architecture where applicable
+Use analytical and statistical rigor to solve complex problems and drive business decisions
+Improve upon existing machine learning methodologies by developing new data sources, developing and testing model enhancements, running computational experiments, and fine-tuning model parameters for new models.
+Present analysis and resulting recommendations to senior management; Leverage data to present a compelling business case to optimize investments and operations
+Utilize code (Python, R, Scala, etc.) for analyzing data and building statistical and machine learning models and algorithms
+Design and drive experiments, A / B testing, outlier deep dives and form actionable recommendations. Manage the implementation of those recommendations
+Collaborate with product management and engineering groups to develop new products and features
+Communicate and educate technical and non-technical employees on analytics and data-driven decision making
+Required Experience / Skills :
+
+Master's in Computer Science, Math or related quantitative field (or BS / BA in Computer Science, Math or related quantitative field)
+3 years of experience in data mining and statistical analysis, demonstrated ability to identify key insights from data to solve business problems
+Experience using advanced statistical and machine learning techniques (clustering, decision tree learning, artificial neural networks, regression, properties of distributions, etc.
+and their real-world advantages / drawbacks
+
+Experience using statistical and data manipulation languages (e.g. Python, R, SQL)
+Critical thinking, effective written and verbal communication skills
+Experience with Google Cloud Platform (such as BigQuery, Compute Engine, Data Flow)
+Experience with relational (SQL) and NoSQL Databases
+Experience with developing products deployed to production
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=c50a43c4894e&lang=en&k=machine+learning+engineer&newjob=1&nb=true&reqid=344a0effaee3c6479dd670fa24d6438e&splitab=1&action=emailAlert
+
+Exciting career opportunity located in downtown Toronto, the Machine Learning
+
+Engineer will develop novel machine learning algorithms and data products for
+
+fraud detection, personalization, search and NLP. You will work with petabyte
+
+scale datasets and work with high throughput, low latency systems to put your
+
+models in production touching lives of more than 300M customers everyday.
+
+You must ooze passion, seek ownership, and have a love of building great
+
+things. Other team will rely heavily on your build, and you ll have a ton of
+
+trust and responsibility so, if challenges excite you, and you re ready for
+
+a big one, we're looking for you.
+
+Responsibilities :
+
+Work with massive data from multiple applications and 300 M+ customers
+
+Own the development, training, optimizing, and deployment of machine
+
+learning and neural network models allows for learning the semantics of
+
+multimodal data
+
+Contribute towards long-term research goals, while recognizing intermediate
+
+milestones that can be applied to product development
+
+Design and evaluate novel approaches for handling high-volume real-time
+
+data streams in an inferencing environment
+
+Develop measurement and feedback systems at web scale to improve the
+
+selection of features and / or algorithm design
+
+Contribute and influence the relevant research / engineering communities via
+
+top tier publications and open source contributions
+
+Qualifications :
+
+You have +3 years working experience with software development in Scala,
+
+Java, Go or Python
+
+You have experience in building ETL pipelines to perform feature
+
+engineering on large-scale dataset using Big Data technologies such as Hadoop
+
+or Spark
+
+Strong written and verbal communication skills to describe results of
+
+analyses in a clear and effective manner
+
+Ability to initiate and drive projects to completion with minimal guidance
+
+Experience with parallel / distributed computing using CPUs / GPUs
+
+You respect advanced data structures and can use them to solve your problems
+
+Working knowledge of PyTorch, Tensorflow or other similar frameworks
+
+You have a Masters / PhD degree or equivalent in Computer Science,
+
+Engineering, Mathematics or related field
+
+Understand the theory and application of theory for common classification,
+
+clustering, language understanding, collaborative filtering and statistical
+
+techniques
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=520f7bdab29f&lang=en&k=machine+learning+engineer&nb=true&reqid=df9413334b248b5ce74ff250fa1edf82&splitab=1&action=emailAlert
+
+Machine Learning / Natural Language Processing Engineer
+
+A degree in Computer Science / Engineering or related field.
+4+ programming experience in Python with strong grasp of software engineering standard methodologies such as code-reusability, modularity, use of repos, etc
+3+ years of applied experience in ML, deep learning and NLP
+Have expert understanding of machine learning and NLP tasks such as classification, feature engineering, information extraction, structured prediction, sentiment analysis, and topic modelling
+Fully understand different neural networks (LSTM, seq2seq, etc.), different word embedding models and transfer learning.
+Knowledge of packages such as Tensorflow, Pytorch, Keras, Scikit Learn, Pandas, and NLTK.
+Experience in a data-driven software engineering environment, with an end-to-end understanding of how to leverage data to make business decisions.
+A proven track record in building and maintaining high quality, robust and maintainable code.
+Experience building and working within a Continuous Integration framework.
+Understanding of Data Warehouse concepts, ETL strategies and best practices.
+An appetite for problem solving with a creative and resourceful approach to finding the right solution for the job.
+Strong communication and collaboration skills
+What sets you apart :
+
+You are a self-motivated and outgoing person who can work closely with business and IT stakeholders.
+You understand the relationship between data and business outcomes and can focus on long term strategies for data.
+Proficiency with PostgreSQL, Teradata, Hadoop and AWS is an asset.
+You have experience working as part of an Agile Team.
+Aviva Canada is committed to providing accommodations for people with disabilities during all phases of the hiring process including the application process.
+
+If you require an accommodation because of a disability, we will work with you to meet your needs. Applicants need to make their needs known in advance.
+
+If you are selected for an interview and require an accommodation, you are encouraged to advise the Talent Acquisition Partner who will consult with you to determine an appropriate accommodation.
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=b535915b5d9d&lang=en&k=machine+learning+engineer&nb=true&reqid=55b2ddb9be626c3d1983a04cd5076a61&splitab=1&action=emailAlert
+
+
+Who We Are Tonal the world’s most intelligent fitness system enables you to be your strongest by providing an effective fitness program tailored to you, your goals, and your schedule.
+
+Combining cutting-edge, all-in-one equipment and personalized video guidance, it’s like having a personal trainer, on demand, in the convenience of your home.
+
+At Tonal, we are applying our collective knowledge and creativity to reimagine fitness. We know firsthand that too many hurdles stand between each of us and our fitness goals.
+
+Drawing on decades of research and a diverse team of experts, we have created the most advanced strength training system available that makes working out more efficient, effective, and engaging.
+
+We're passionate about building products that transform people's lives. What You Will Do
+
+Provide expert input on architecture of Tonal's learning systems
+Architect and build our machine learning and computer vision solutions
+Identify innovative opportunities for deep learning and computer vision
+Who You Are
+
+Advanced degree in mathematical field or equivalent experience
+3+ years of research or engineering experience in one or more of the following : generative models (GANs, VAE, Glow), segmentation, object detection, classification, tracking, NLP, or other related applications of machine learning
+Deep learning, especially generative models, e.g, GANs, Image-to-Image translation
+Industry or project experience with deep learning frameworks (e.g. PyTorch, TensorFlow, Caffe2)
+Team player with high integrity
+Experience working on a team where feedback is routinely shared as a mechanism for professional development
+High degree of self awareness
+Have worked on a distributed team across different geographies
+Extra Credit
+
+Experience with gyros and accelerometers
+Experience with deepfake technology
+Experience as a software engineer
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=0475ffb2f2bb&lang=en&k=machine+learning+engineer&nb=true&reqid=bf06cb3bf3c9c534ff7ae1525de91000&splitab=1&action=emailAlert
+
+
+
+
+gdR has partnered with one of global tech's rising stars to build their Toronto office. Our client is changing the game of compute to enable AI and deep learning.
+
+Having raised in excess of $100M venture capital, with industry leading founders, and significant customers (e.g., research labs) that are using their system (it's not just a chip), they are well positioned to grow into an industry leader that's conquered challenges that people have described as impossible.
+
+As an Algorithms Engineer, you'll create high-performance linear-algebra and machine-learning kernels for custom processors on a distributed HW architecture .
+
+This will entail low-level coding and tuning / optimizing to balance performance, compute and memory. Not exactly an opportunity that comes around that often.
+
+The following experience is required :
+
+High performance parallel programming experience.
+Strong knowledge of computer architecture fundamentals.
+Your work should display a real passion for low-level system details down to the assembly level.
+You have programming fluency and extensive experience working in C or C++ and Assembly languages
+Apply today for the Algorithms Engineer role or contact Brandon Shim-Ping, Director Talent, at brandon AT grossmandorland DOT com to learn more.
+
+About gdR
+
+Founded in 2007,’s mission is to grow the leadership capacity and capabilities of people and companies in the Canadian tech ecosystem through executive search, team recruiting and leadership development.
+
+We’re actively involved in the community by creating opportunities for people to connect and learn from one another e.g.
+
+Canadian Tech at Scale (in partnership with Shopify & Uber ATG), which brings 200+ engineering leaders together.
+
+gdR values inclusion in Canada’s tech ecosystem and partners with employers that provide equal opportunities for individuals from diverse groups.
+
+If you’re interested in moving to Canada, although we can’t sponsor you, we have put together resources to help you with your journey.
+
+Follow gdR on LinkedIn and Twitter updates on new roles in tech.
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=2898e224ca00&lang=en&k=machine+learning+engineer&nb=true&reqid=6288fba2843cc1a3d54252fd490caef5&splitab=1&action=emailAlert
+
+
+Description
+
+Int. Data Scientist to work on a analytics team using machine learning - 14867
+
+Location : Downtown Toronto (WFH During COVID19)
+
+Length : 1 Year Contract (Extensions possbile)
+
+Project Details : Looking for a candidate with either the industry experience or the educational experience listed above.
+
+Not looking for someone who has 10 years of legacy DBA experience who recently transitioned over to a Data Scientist role.
+
+Machine Learning and development / coding experience is very important for this role, will look at a former Python Developer who has bootcamp experience and transitioned over to a Data Scientist role
+
+Must Have Skills :
+
+1. Candidate needs one of the following :
+
+5 Years of industry experience as a Data Scientist or similar work
+A Masters Degree in Computer Science, Engineering, or Mathematics or a related field with 1-2 years experience as a Data Scientist or similar work
+A PHD in the above academics with course work in Machine Learning and applied knowledge during schooling
+2 Experience in Machine Learning libraries such as Python, Scikit-learn, PySpark, Tensorflow, and PyTorch
+
+3.Proven demonstrated experience applying Machine Learning practices to Real World scenarios (ie building applications)
+
+Nice to Have Skills :
+
+Boot camp experience (Machine Learning or Data Science)
+
+3.A development background that they’ve transitioned to a Data Scientist role (eg Python development)
+
+Expertise and Skills
+
+Business Intelligence, Data Scientist 5 - 7 years
+Priority Requirements
+
+5 - 7 years : Please provide an example of your experience as a Data Scientist working with Machine Learning
+Work Environment
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=60ae644c2650&lang=en&k=machine+learning+engineer&nb=true&reqid=a2b422297ceb634c2b1b18c70378812c&splitab=1&action=emailAlert
+
+
+Date Posted : July 6th, 2020
+
+Closing Date : August 31st, 2020
+
+Role : Team and Project Lead for ML Development Team
+
+Position : Part-time, approximately 5-10 hours per week. Reporting to the Director of Business Operations.
+
+Salary : Hourly, competitive.
+
+Location : Offices are in downtown Toronto, but working remotely exclusively during the Covid-19 pandemic.
+
+For several terms now we’ve employed a team of 4-6 university co-op students with ML backgrounds from varying disciplines (mainly Engineering, Math, and Computer Science) to be our ML Dev Team.
+
+This team develops and trains ML models and helps to build the related business use cases, and now we are looking to expand the team to include a team and project lead to bring focus and mentorship to the students.
+
+The students’ role is largely R&D as they explore options and test solutions to address new ML project requests
+
+from clients. We’re now looking for a resourceful self-starter who can organize and lead the projects, and summarize the progress and development steps for the management team.
+
+While we already have an experienced full-time dev team, their expertise is not in ML and so we’re looking for someone with experience in a mentoring or coaching role that the students can turn to with questions and for guidance, specifically in AI / ML.
+
+Additionally, we’re looking for someone who understands the business side of software development and can translate the students’ technical work into status reports for the client.
+
+The role is part-time and would likely consist of spending both one-one-one time with each student as well as group meetings to project manage their efforts, and would also include reporting to the management team regularly.
+
+A successful candidate could maintain this role in the longer term over multiple co-op terms, helping us to maintain continuity.
+
+There is also the possibility of this becoming a full-time position at some point if it is deemed to be mutually beneficial, and if the opportunity arises to publish findings based on the work performed, we would be in full support of this effort.
+
+Examples of the work underway include predicting unusual patterns in network traffic data sets, using multiple image recognition techniques to build user profiles in order to enhance recommendation engines in an existing business application, and interpreting PDF images for the purpose of extracting data from engineering technical specification diagrams in order to reduce manual data input.
+
+Technical skills REQUIRED :
+
+Experience with TensorFlow
+Experience with Python Programming Language
+Experience with JavaScript Object Notation (JSON) data and classes
+Knowledge of object-oriented analysis, design, and programming
+Familiarity with Linux
+Technical skills PREFERRED :
+
+Understanding of deployment steps for custom Machine Learning models hosted on Cloud platforms (Google, AWS, Azure, and Watson)
+Familiarity with Flask Web Application framework
+Familiarity with Docker containers
+Experience using public Cloud technologies programmatically, such as Google GCP and / or Amazon AWS API (services such as Compute, Vision, DLP, EC3, RDS, S3, )
+Experience with building Web Service APIs using SOAP and REST-based frameworks
+Soft skills REQUIRED :
+
+Experience in leading ML development projects and teams
+Ability to manage projects and report regularly on progress and status of all aspects of the development process
+Experience in a mentorship role for students working in ML development, for example as a
+Ability to summarize development architecture and report on the status and next steps of various components
+Ability to understand the business applications of ML projects and thereby help guide the ML Dev team in their research and development tasks
+Education REQUIRED :
+
+Minimum requirement is current enrolment in a post-graduate degree program in a related field
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=60ae644c2650&lang=en&k=machine+learning+engineer&nb=true&reqid=a2b422297ceb634c2b1b18c70378812c&splitab=1&action=emailAlert
+
+Date Posted : July 6th, 2020
+
+Closing Date : August 31st, 2020
+
+Role : Team and Project Lead for ML Development Team
+
+Position : Part-time, approximately 5-10 hours per week. Reporting to the Director of Business Operations.
+
+Salary : Hourly, competitive.
+
+Location : Offices are in downtown Toronto, but working remotely exclusively during the Covid-19 pandemic.
+
+For several terms now we’ve employed a team of 4-6 university co-op students with ML backgrounds from varying disciplines (mainly Engineering, Math, and Computer Science) to be our ML Dev Team.
+
+This team develops and trains ML models and helps to build the related business use cases, and now we are looking to expand the team to include a team and project lead to bring focus and mentorship to the students.
+
+The students’ role is largely R&D as they explore options and test solutions to address new ML project requests
+
+from clients. We’re now looking for a resourceful self-starter who can organize and lead the projects, and summarize the progress and development steps for the management team.
+
+While we already have an experienced full-time dev team, their expertise is not in ML and so we’re looking for someone with experience in a mentoring or coaching role that the students can turn to with questions and for guidance, specifically in AI / ML.
+
+Additionally, we’re looking for someone who understands the business side of software development and can translate the students’ technical work into status reports for the client.
+
+The role is part-time and would likely consist of spending both one-one-one time with each student as well as group meetings to project manage their efforts, and would also include reporting to the management team regularly.
+
+A successful candidate could maintain this role in the longer term over multiple co-op terms, helping us to maintain continuity.
+
+There is also the possibility of this becoming a full-time position at some point if it is deemed to be mutually beneficial, and if the opportunity arises to publish findings based on the work performed, we would be in full support of this effort.
+
+Examples of the work underway include predicting unusual patterns in network traffic data sets, using multiple image recognition techniques to build user profiles in order to enhance recommendation engines in an existing business application, and interpreting PDF images for the purpose of extracting data from engineering technical specification diagrams in order to reduce manual data input.
+
+Technical skills REQUIRED :
+
+Experience with TensorFlow
+Experience with Python Programming Language
+Experience with JavaScript Object Notation (JSON) data and classes
+Knowledge of object-oriented analysis, design, and programming
+Familiarity with Linux
+Technical skills PREFERRED :
+
+Understanding of deployment steps for custom Machine Learning models hosted on Cloud platforms (Google, AWS, Azure, and Watson)
+Familiarity with Flask Web Application framework
+Familiarity with Docker containers
+Experience using public Cloud technologies programmatically, such as Google GCP and / or Amazon AWS API (services such as Compute, Vision, DLP, EC3, RDS, S3, )
+Experience with building Web Service APIs using SOAP and REST-based frameworks
+Soft skills REQUIRED :
+
+Experience in leading ML development projects and teams
+Ability to manage projects and report regularly on progress and status of all aspects of the development process
+Experience in a mentorship role for students working in ML development, for example as a
+Ability to summarize development architecture and report on the status and next steps of various components
+Ability to understand the business applications of ML projects and thereby help guide the ML Dev team in their research and development tasks
+Education REQUIRED :
+
+Minimum requirement is current enrolment in a post-graduate degree program in a related field
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=60ae644c2650&lang=en&k=machine+learning+engineer&nb=true&reqid=a2b422297ceb634c2b1b18c70378812c&splitab=1&action=emailAlert
+
+Date Posted : July 6th, 2020
+
+Closing Date : August 31st, 2020
+
+Role : Team and Project Lead for ML Development Team
+
+Position : Part-time, approximately 5-10 hours per week. Reporting to the Director of Business Operations.
+
+Salary : Hourly, competitive.
+
+Location : Offices are in downtown Toronto, but working remotely exclusively during the Covid-19 pandemic.
+
+For several terms now we’ve employed a team of 4-6 university co-op students with ML backgrounds from varying disciplines (mainly Engineering, Math, and Computer Science) to be our ML Dev Team.
+
+This team develops and trains ML models and helps to build the related business use cases, and now we are looking to expand the team to include a team and project lead to bring focus and mentorship to the students.
+
+The students’ role is largely R&D as they explore options and test solutions to address new ML project requests
+
+from clients. We’re now looking for a resourceful self-starter who can organize and lead the projects, and summarize the progress and development steps for the management team.
+
+While we already have an experienced full-time dev team, their expertise is not in ML and so we’re looking for someone with experience in a mentoring or coaching role that the students can turn to with questions and for guidance, specifically in AI / ML.
+
+Additionally, we’re looking for someone who understands the business side of software development and can translate the students’ technical work into status reports for the client.
+
+The role is part-time and would likely consist of spending both one-one-one time with each student as well as group meetings to project manage their efforts, and would also include reporting to the management team regularly.
+
+A successful candidate could maintain this role in the longer term over multiple co-op terms, helping us to maintain continuity.
+
+There is also the possibility of this becoming a full-time position at some point if it is deemed to be mutually beneficial, and if the opportunity arises to publish findings based on the work performed, we would be in full support of this effort.
+
+Examples of the work underway include predicting unusual patterns in network traffic data sets, using multiple image recognition techniques to build user profiles in order to enhance recommendation engines in an existing business application, and interpreting PDF images for the purpose of extracting data from engineering technical specification diagrams in order to reduce manual data input.
+
+Technical skills REQUIRED :
+
+Experience with TensorFlow
+Experience with Python Programming Language
+Experience with JavaScript Object Notation (JSON) data and classes
+Knowledge of object-oriented analysis, design, and programming
+Familiarity with Linux
+Technical skills PREFERRED :
+
+Understanding of deployment steps for custom Machine Learning models hosted on Cloud platforms (Google, AWS, Azure, and Watson)
+Familiarity with Flask Web Application framework
+Familiarity with Docker containers
+Experience using public Cloud technologies programmatically, such as Google GCP and / or Amazon AWS API (services such as Compute, Vision, DLP, EC3, RDS, S3, )
+Experience with building Web Service APIs using SOAP and REST-based frameworks
+Soft skills REQUIRED :
+
+Experience in leading ML development projects and teams
+Ability to manage projects and report regularly on progress and status of all aspects of the development process
+Experience in a mentorship role for students working in ML development, for example as a
+Ability to summarize development architecture and report on the status and next steps of various components
+Ability to understand the business applications of ML projects and thereby help guide the ML Dev team in their research and development tasks
+Education REQUIRED :
+
+Minimum requirement is current enrolment in a post-graduate degree program in a related field
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+https://neuvoo.ca/view/?jpos=&jp=1&l=Toronto%2C+ON&id=60ae644c2650&lang=en&k=machine+learning+engineer&nb=true&reqid=a2b422297ceb634c2b1b18c70378812c&splitab=1&action=emailAlert
+
+
+Date Posted : July 6th, 2020
+
+Closing Date : August 31st, 2020
+
+Role : Team and Project Lead for ML Development Team
+
+Position : Part-time, approximately 5-10 hours per week. Reporting to the Director of Business Operations.
+
+Salary : Hourly, competitive.
+
+Location : Offices are in downtown Toronto, but working remotely exclusively during the Covid-19 pandemic.
+
+For several terms now we’ve employed a team of 4-6 university co-op students with ML backgrounds from varying disciplines (mainly Engineering, Math, and Computer Science) to be our ML Dev Team.
+
+This team develops and trains ML models and helps to build the related business use cases, and now we are looking to expand the team to include a team and project lead to bring focus and mentorship to the students.
+
+The students’ role is largely R&D as they explore options and test solutions to address new ML project requests
+
+from clients. We’re now looking for a resourceful self-starter who can organize and lead the projects, and summarize the progress and development steps for the management team.
+
+While we already have an experienced full-time dev team, their expertise is not in ML and so we’re looking for someone with experience in a mentoring or coaching role that the students can turn to with questions and for guidance, specifically in AI / ML.
+
+Additionally, we’re looking for someone who understands the business side of software development and can translate the students’ technical work into status reports for the client.
+
+The role is part-time and would likely consist of spending both one-one-one time with each student as well as group meetings to project manage their efforts, and would also include reporting to the management team regularly.
+
+A successful candidate could maintain this role in the longer term over multiple co-op terms, helping us to maintain continuity.
+
+There is also the possibility of this becoming a full-time position at some point if it is deemed to be mutually beneficial, and if the opportunity arises to publish findings based on the work performed, we would be in full support of this effort.
+
+Examples of the work underway include predicting unusual patterns in network traffic data sets, using multiple image recognition techniques to build user profiles in order to enhance recommendation engines in an existing business application, and interpreting PDF images for the purpose of extracting data from engineering technical specification diagrams in order to reduce manual data input.
+
+Technical skills REQUIRED :
+
+Experience with TensorFlow
+Experience with Python Programming Language
+Experience with JavaScript Object Notation (JSON) data and classes
+Knowledge of object-oriented analysis, design, and programming
+Familiarity with Linux
+Technical skills PREFERRED :
+
+Understanding of deployment steps for custom Machine Learning models hosted on Cloud platforms (Google, AWS, Azure, and Watson)
+Familiarity with Flask Web Application framework
+Familiarity with Docker containers
+Experience using public Cloud technologies programmatically, such as Google GCP and / or Amazon AWS API (services such as Compute, Vision, DLP, EC3, RDS, S3, )
+Experience with building Web Service APIs using SOAP and REST-based frameworks
+Soft skills REQUIRED :
+
+Experience in leading ML development projects and teams
+Ability to manage projects and report regularly on progress and status of all aspects of the development process
+Experience in a mentorship role for students working in ML development, for example as a
+Ability to summarize development architecture and report on the status and next steps of various components
+Ability to understand the business applications of ML projects and thereby help guide the ML Dev team in their research and development tasks
+Education REQUIRED :
+
+Minimum requirement is current enrolment in a post-graduate degree program in a related field
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------

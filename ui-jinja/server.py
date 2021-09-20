@@ -1,15 +1,66 @@
-from flask import Flask,url_for,render_template, jsonify, request
-import json
+from flask import Flask,url_for,render_template, jsonify, request, redirect
+from werkzeug.utils import  secure_filename
+import json ,os
 import pprint
 import requests
 
 
 app=Flask(__name__)
 
+UPLOAD_FOLDER = 'static/uploads'
+ALLOWED_EXTENSIONS = {'txt'}
+
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+
 @app.route('/',methods=['GET','POST'])
+def base():
+    return render_template('home.html')
+
+@app.route('/view',methods=['GET'])
 def home():
-    data = read_json()
+    # data = read_json()
+    data = app.config[request.remote_addr]
+    
     return render_template('index.html' , data = data)
+
+
+@app.route('/upload', methods=['POST','GET'])
+def upload_file():
+    if request.method == 'POST':
+        print("File Upload")
+        # check if the post request has the file part
+        if 'file' not in request.files:
+            
+            return redirect(request.url)
+        file = request.files['file']
+        delimiter = request.values.get('delimiter')
+        # print(delimiter)
+        # If the user does not select a file, the browser submits an
+        # empty file without a filename.
+        if file.filename == '':
+            flash('No selected file')
+            return redirect(request.url)
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+
+        path = os.path.join(app.config['UPLOAD_FOLDER'],filename)
+        f = open(path , "r")
+        # words = f.read()
+        file_list = f.read().split(delimiter)
+
+        app.config[request.remote_addr] = file_list
+
+        return redirect(url_for('home',file_name = filename))
+
+
 
 # @app.route('/json',methods=['GET','POST'])
 def read_json():
@@ -153,6 +204,18 @@ def save_file(tokenized_data, keys_data ):
         for entry in [one_page_data]:
             json.dump(entry, outfile)
             outfile.write('\n')
+
+
+@app.route('/api/tokenize_data', methods=['POST'])
+def tokenize_data():
+    val = request.json['data']
+    # for i in val['uniqueSelectedText']:
+    #     i['text'] = i['text'].split('\n')
+
+    print(val)
+    # res = data.update_record(val)
+    # save_file(val["initial-data"]["tokens"],val["selected-data"])
+    return jsonify(val)
 
 if __name__ == '__main__':
     app.run(debug=True)
