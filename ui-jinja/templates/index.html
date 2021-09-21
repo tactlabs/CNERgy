@@ -1,16 +1,57 @@
 {%extends 'base.html'%}
 
 {% block head%}
+<style>
 
+.count {
+  /* background-color: #000; */
+  width: 100%;
+  padding: 20px;
+  /* position: relative; */
+  /* transform: translate(-50%, -50%); */
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0px 5px rgba(30, 21, 49, 0.4);
+}
+
+.count p {
+  /* color: #a0a0a0; */
+}
+
+.count h5 {
+  /* color: #fff; */
+  font-size: 32px;
+}
+
+</style>
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-3">
       <div class="sidebar">
         <div class="dropdown">
-          <div class="card" style="padding-left: 20px;">
+          <!-- <div class="card" style="padding-left: 20px;">
             Completed:<b id="Completed">  </b>
             <br>
             Left:<b id="left"  >  </b>
+
+            
+          </div> -->
+          <div class="count">
+            <div>
+              <h5 id="Completed"></h5>
+              <p>Completed</p>
+            </div>
+            <div>
+              <h5 id="left"></h5>
+              <p>Left</p>
+            </div>
+            <div>
+              <h5 id="skipped"></h5>
+              <p>Skipped</p>
+            </div>
           </div>
           <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
             data-bs-toggle="dropdown" aria-expanded="false">
@@ -106,6 +147,7 @@
   var counter = 0;
   var total = untokenizedData.length;
   var token_data;
+  var skipped_count = 0;
   $(document).ready(function () {
     // var tokenizedData = {{ data | tojson | safe }};
     
@@ -128,6 +170,8 @@
             $("#job-description").append('<span class="words" id='+item[0]+'>' + item[2] + '</span>');
             document.getElementById("Completed").innerHTML = counter;
           document.getElementById("left").innerHTML = total - counter;
+          document.getElementById("skipped").innerHTML = skipped_count;
+
 
           }
         },
@@ -150,7 +194,7 @@
 
     function skip(){
       counter+=1;
-          
+      skipped_count +=1;
       var text_data = {"text" : untokenizedData[counter]};
 
       $.ajax({
@@ -172,6 +216,8 @@
             $("#job-description").append('<span class="words" id='+item[0]+'>' + item[2] + '</span>');
             document.getElementById("Completed").innerHTML = counter;
           document.getElementById("left").innerHTML = total - counter;
+          document.getElementById("skipped").innerHTML = skipped_count;
+
 
           }
         },
