@@ -264,19 +264,101 @@ def export_files():
 
     return return_file
 
+@app.route('/converter')
+def converter_page():
+    # files = os.listdir(app.config['UPLOAD_FOLDER'])
+    return render_template('converter.html', files="none")
+
+@app.route('/to_json', methods=['POST'])
+def upload_files():
+    file = request.files['file']
+    filename = secure_filename(file.filename)
+
+    # if filename != '':
+    #     file_ext = os.path.splitext(filename)[1]
+    #     uploaded_file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+ 
+    # return '', 204
+
+    if file :
+            filename = secure_filename(file.filename)
+            print(filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+    
+    # f = open(os.path.join(app.config['UPLOAD_FOLDER'], filename) , "r")
+    # file_data = f.read()
+    # print(list(file_data))    
 
 
+    with open(os.path.join(app.config['UPLOAD_FOLDER'], filename), 'r') as json_file:
+        json_list = list(json_file)
 
+    json_dict={}
+    json_count = 1
 
+    for json_str in json_list:
+        result = json.loads(json_str)
+        # result = f"{result}"
+        json_dict["line_"+str(json_count)] = result
+        json_count+=1
 
+   
+    #     json_count+=1
+
+    # pprint.pprint(json_dict)
+
+    with open(os.path.join(app.config['UPLOAD_FOLDER'], filename.replace(".jsonl",".json")), "w") as outfile:
+        json.dump(json_dict, outfile, indent=4)
 
     # file_name = app.config[request.remote_addr+"-file_name"].replace(".txt",".jsonl").split("/")[-1]
     # print(file_name)
-    # return_file = send_from_directory(UPLOAD_FOLDER,file_name , as_attachment=True)
-    # os.remove(app.config[request.remote_addr+"-file_name"].replace(".txt",".jsonl"))
-    # return return_file
+    return_file = send_from_directory(app.config['UPLOAD_FOLDER'],filename.replace(".jsonl",".json") , as_attachment=True)
 
-	
+    os.remove(os.path.join(app.config['UPLOAD_FOLDER'], filename.replace(".jsonl",".json")))
+    os.remove(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+
+    return return_file
+
+
+@app.route('/to_jsonl', methods=['POST'])
+def to_jsonl_file():
+    file = request.files['json_file']
+    filename = secure_filename(file.filename)
+
+
+
+    if file :
+            filename = secure_filename(file.filename)
+            print(filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+
+    f = open(os.path.join(app.config['UPLOAD_FOLDER'], filename),)
+    
+ 
+    data = json.load(f)
+
+   
+
+    with open(os.path.join(app.config['UPLOAD_FOLDER'], filename.replace(".json",".jsonl")), 'a') as outfile:
+        for entry in data:
+            # print(pattern_data)
+            json.dump(data[entry], outfile)
+            outfile.write('\n')
+
+
+
+    
+    # pprint.pprint(json_dict)
+
+   
+    return_file = send_from_directory(app.config['UPLOAD_FOLDER'],filename.replace(".json",".jsonl") , as_attachment=True)
+    
+    os.remove(os.path.join(app.config['UPLOAD_FOLDER'], filename.replace(".json",".jsonl")))
+    os.remove(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+
+    return return_file
+
+
 
 
 

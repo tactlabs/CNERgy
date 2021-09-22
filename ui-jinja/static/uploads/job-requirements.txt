@@ -1,0 +1,1757 @@
+
+Sources : https://ca.indeed.com/jobs?q=machine%20learning%20engineer&l=Toronto%2C%20ON&vjk=97336b41aec6440f
+
+-----------------------------------------------------------------------
+
+Staff Machine Learning Engineer, Shopping Discovery
+
+Millions of people across the world come to Pinterest to find new ideas every day. It's where they get inspiration, dream about new possibilities and plan for what matters most. Our mission is to help those people find their inspiration and create a life they love. In your role, you'll be challenged to take on work that upholds this mission and pushes Pinterest forward. You'll grow as a person and leader in your field, all the while helping Pinners make their lives better in the positive corner of the internet.
+
+Shopping is at the core of Pinterest’s mission to help people create a life they love. The shopping discovery team at Pinterest is inventing a brand new, more visual and personalized shopping experience for 350M+ users worldwide. The team is responsible for delivering mid-funnel shopping experience on shopping surfaces like Product Detail Page, Shopping Search, Shopping on Board etc. As an engineer of the team you will be working on the most cutting edge recommendation algorithms to develop diverse types of shopping recommendations that will be displayed across different shopping surfaces on Pinterest.
+
+You’ll also be responsible for optimizing the whole page layout by appropriately selecting and slotting the UI templates and recommendation modules optimizing towards a shopping metric. As an engineer of the team you’ll be running experiments and directly improving the shopping metrics contributing to the bottom line of the company.
+
+If you are excited about large scale machine learning problems in the area of recommendation, search and whole page optimization then you must consider this role
+
+What you'll do:
+
+Develop large scale shopping recommendation algorithms
+Build data pipelines to do data analysis and collect training data
+Train deep learning models to improve quality and engagement of shopping recommenders
+Work on backend and infrastructure to build, deploy and serve machine learning models
+Develop algorithms to optimize the whole page layout of the shopping surfaces
+Drive the roadmap for next generation of shopping recommenders
+What we're looking for:
+
+6+ years working experience in the area of applied Machine Learning
+Interest or experience working on a large-scale search, recommendation and ranking problems
+Interest and experience in doing full stack ML, including backend and ML infrastructure
+Experience is any of the following areas
+Developing large scale recommender systems
+Contextual bandit algorithms
+Reinforcement learning
+#LI-JY1
+
+
+Not Specified
+0
+
+-----------------------------------------------------------------------
+
+Machine Learning Engineer
+
+About the role:
+
+We are looking for a Machine Learning Engineer who will be responsible for the development of algorithms, which will form the basis for our mathematical models to automate trading platforms for sports betting markets. The candidate must have a strong background in Machine Learning, Statistics and Algorithm Development experience.
+
+Our ideal candidate should have:
+
+Degree or Diploma in Computer Science, Software Engineering, Computational Statistics or equivalent degree or experience. MS or PHD in Computer Science, specializing in Machine Learning is desirable.
+Minimum 3 years of relevant experience with statistical computing in R or Python. (Experience with modern R packages and technologies such as dplyr, tidyR, data.table, shinyR preferred).
+Minimum 3 years of experience with Machine Learning algorithms and Probabilistic Modelling.
+Strong background in statistics, preferably Bayesian Statistics — experience with Bayesian Inference using Statistical Languages for MCMC such as Stan, JAGS, WinBugs is a big plus.
+Experience with SQL and SQL Server.
+Experience with .NET Framework and C# is preferable.
+Experience using cloud computing platforms such as EC2 (AWS).
+Domain experience in on-line gaming and entertainment industry, Financial Markets (such as Stock Exchange, Options, Bonds, Forex, etc.), or other types of 2-sided markets.
+Experience with Neural Networks or Deep Learning on large problems – a plus.
+Experience with Hadoop, Map Reduce or High Performance Computing – a plus.
+We offer:
+
+An environment passionate about growth and learning
+Competitive salary with bonus
+Fitness subsidy program
+Free beverages in the office
+Workplace that is conveniently located along the Yonge/Sheppard line
+What we are looking for:
+
+This is a key role within the team and would suit someone who is passionate about working with data and building predictive models. We are looking for someone with strong background in statistics, modelling and algorithms (machine learning or other) and who has the ability to convey complex information through data visualization. Strong communication in both verbal and written is required. We are also looking for someone with strong analytical, conceptual, and problem-solving abilities with attention to detail, has ability to multi-task, and manage multiple assignments in a fast-paced environment. This individual must have initiative to work independently, but also able to work effectively with team members in different locations. Flexibility and adaptability to business requirements and priority changes a must. A thorough understanding and passion for sports and sports betting markets is ideal. Experience working with dual markets is a preferred. Experience with cloud computing as well as python a plus. Experience with development highly preferred.
+
+The above is intended to describe the general nature and level of work being performed. They are not intended to be an exhaustive list of all responsibilities, duties and skills required. For a full description, please contact us directly.
+
+Crescendo Technology thanks all candidates applying but only those selected for an interview will be contacted. Selected candidates may be asked to complete an on-line technical assessment.
+
+Crescendo Technology is an equal opportunity employer, which values diversity in the workplace, and we encourage candidates. Should you require an accommodation for the recruitment or interview process, please do not hesitate to reach out to us.
+
+If interested, please apply through the portal:
+
+Apply
+Job Features
+Job Category
+Development
+
+-----------------------------------------------------------------------
+
+Machine Learning Engineer (All levels)
+
+About Us
+Deep Genomics is a Toronto-based startup company that is building an AI-powered discovery and development platform to significantly expand the universe of medicines available for genetically defined diseases. Founded in 2015, Deep Genomics brings together a multidisciplinary team of world-leading experts in machine learning, genomics, chemistry, and biology. Together we are on a mission to rapidly discover and develop oligonucleotide drugs for the treatment of patients with severe disorders of the liver, central nervous system, and eye.
+
+Ideal Candidate
+Our predictive systems group brings together world-leading experts in biology, genomics, medicine, and machine learning. We are working on several ambitious projects to develop pioneering AI technology for understanding complex genetic diseases and enabling the discovery of novel targets as well as therapies. We are looking for an experienced machine learning engineer to lead the design and development of new models and pipelines and the infrastructure for scaling it up to the next level.
+What You’ll Be Doing:
+Working with our ML scientists to develop highly scalable models and algorithms for predicting molecular phenotypes using state-of-the-art neural network methodologies.
+Developing evaluation, visualization, and productivity tools for streamlining machine learning research
+Adapting our algorithms and architectures to best exploit modern cloud computing environments
+Working with our software engineers, biologists and geneticists to operationalize and deploy research output to match the needs of stakeholders.
+What You Bring:
+Solid Engineering and Computer Science fundamentals, ideally with a degree in CS, Math, or equivalent experience.
+Senior candidates should have experience in architecting, developing, and deploying large software systems in a leading position
+Experience in building, testing, training, and deploying production-ready ML workflows.
+Experience developing machine learning algorithms or machine learning infrastructure in Python or C/C++.
+Experience with frameworks like PyTorch, Caffe2, Tensorflow, Keras, JAX, Chainer, etc.
+Experience in the operationalization of Machine Learning projects (MLOps) using at least one of the popular frameworks or platforms (e.g. Kubeflow, AWS Sagemaker, Google AI Platform, Azure Machine Learning).
+What we offer:
+Leading role in developing the future of drug development to cure genetically defined diseases.
+A highly competitive salary and meaningful equity compensation.
+Exceptional opportunities for learning and growth.
+A bright, collegial, highly motivated team working at the intersection of the most exciting areas of science and technology.
+Deep Genomics thanks all applicants, however only those selected for an interview will be contacted.
+
+Deep Genomics welcomes and encourages applications from people with disabilities. Accommodations are available on request for candidates taking part in all aspects of the selection process.
+
+-----------------------------------------------------------------------
+
+Machine Learning Engineer (Developer)
+
+What is the opportunity?
+
+
+Corporate Systems helps RBC functions & businesses achieve business objectives through app development & technology support. We’re also the centre of excellence for employee social collaboration & mobile apps. We’re building a team that embraces innovation & enthusiasm to bring fresh perspectives. We’ve been on a journey to build out high performing, highly resilient technology platforms that can grow with the continuous demands from Group Risk, Human Resources, Chief Administrative Office & Audit, Capital Markets, P&CB and Wealth.
+
+
+We’re looking for talented and passionate technologists to join our team! With an engineering mind-set you will work as part of an agile team to deliver high performing applications built on a cloud platform and streaming technologies. We believe in continuous growth and expanding your capabilities. Join our team today and have a big impact influencing the strength of our advanced insight and analytics.
+
+
+What will you do?
+
+Develop and support highly scalable, high performance components within an Agile development team
+Ensure high code quality through automated unit and functional testing
+Automate processes within the development pipeline; identify opportunities for efficiency gains and reducing time-to-market, and enabling continuous delivery
+Design and develop code structures to promote reusability across many applications
+Lead and mentor other developers to elevate the entire team’s skillset and mind-set. Coach others on the team.
+Be open-minded and look beyond your stack to solve complex problems
+Proactively seek out knowledge about new technologies and how they can be used to solve current and foreseeable challenges
+Communicate effectively and distill technical details into human terms
+
+What do you need to succeed?
+
+Must Have:
+
+As a baseline, we are interested in candidates who have hands-on exposure to Java/Python programming, Big Data technologies (HDP/CDP, HDFS/HIVE), and experience designing/writing/building REST APIs.
+
+In addition to the above fundamental skillsets, we are looking for candidates who have hands-on experience with at least ONE or more of the following:
+
+Kafka
+ElasticSearch
+Cloudera
+OpenShift (Docker, Kubernetes)
+AWS/Azure
+
+Nice to Have:
+
+Any additional knowledge or experience with Feedzai – Pulse, Watson, or Kx would be considered a definite asset
+
+What’s in it for you?
+
+We thrive on the challenge to be our best, progressive thinking to keep growing, and working together to deliver trusted advice to help our clients thrive and communities prosper. We care about each other, reaching our potential, making a difference to our communities, and achieving success that is mutual.
+
+A comprehensive Total Rewards Program including bonuses and flexible benefits, competitive compensation, commissions, and stock where applicable
+Leaders who support your development through coaching and managing opportunities
+Ability to make a difference and lasting impact
+Work in a dynamic, collaborative, progressive, and high-performing team
+Flexible work/life balance options
+Opportunities to take on progressively greater accountabilities
+Opportunities to building close relationships with clients
+
+Learn more about RBC Tech Jobs
+
+Join our Talent Community
+Stay in-the-know about great career opportunities at RBC. Sign up and get customized info on our latest jobs, career tips and Recruitment events that matter to you.
+
+Expand your limits and create a new future together at RBC. Find out how we use our passion and drive to enhance the well-being of our clients and communities at rbc.com/careers.
+
+JOB SUMMARY
+City: Toronto
+Address: 88 Queens Quay W
+Work Hours/Week: 37.5
+Work Environment: Office
+Employment Type: Permanent
+Career Level: Experienced Hire/Professional
+Pay Type: Salary + Variable Bonus
+Required Travel(%): 0-25
+Exempt/Non-Exempt: N/A
+People Manager: Yes
+Application Deadline: 09/30/2021
+Platform: Technology and Operations
+Req ID: 339138
+Ad Code(s):
+
+-----------------------------------------------------------------------
+
+Machine Learning Engineer
+
+Overview:
+
+Ignition Tax is a team of full-stack developers, project managers, and technology trailblazers who pride themselves on creativity and innovation. Tasked with leading KPMG Canada and our clients through digital transformation, Ignition Tax is focused on tax innovation to unlock value and prepare our clients for the future. KPMG Ignition Tax helps organizations realize opportunities through our far-reaching intelligence capabilities that allow for the development of modern software solutions.
+In a fast-paced, experimental environment, our team collaborates with strategic partners and tax leaders across Canada to build next-generation solutions. By fostering a startup culture within a welcoming nurturing environment and support of KPMG's world-class firm, Ignition Tax approaches each project with a unique perspective, a multitude of complementary skill sets, and expertise that allow them to build technology solutions that shape the future of tax.
+
+Videos :
+EN – https://players.brightcove.net/3755095886001/default_default/index.html?videoId=6258238495001
+
+Why join Ignition Tax
+Competitive compensation package & flexible work arrangements
+Commitment to learning and development
+An opportunity to solve real problems by building products from the ground up
+You love working collaboratively with like-minded entrepreneurs
+Thrive in a "start-up culture" vibe
+Ignition Tax is looking for a Machine Learning Engineer to help us extract value from our clients’ data. You will design and build tools through experimentation and collaboration with our product owners and managers and development team.
+What you will do:
+
+Research, design & develop Machine Learning models
+Suggest, collect and synthesize requirements and create effective features
+Research and implement appropriate ML algorithms and tools
+Develop machine learning applications, select appropriate datasets and data representation methods
+Run machine learning tests and experiments and perform statistical analysis and fine-tuning using test results
+Train and retrain systems when necessary
+Extend existing ML libraries and frameworks
+Automate applications and infrastructure deployments.
+What you bring to this role:
+
+3+ years of experience implementing and deploying Machine Learning solutions using various models, such as Linear/Logistic Regression, Support Vector Machines, (Deep) Neural Networks, Hidden Markov Models, Conditional Random Fields, Topic Modeling, Game Theory, Mechanism Design
+Background in statistical analysis & modeling distributions, hypothesis testing, probability theory
+Experience with statistical packages and ML libraries e.g. R, Python scikit learn, Spark MLlib
+Effective data exploration and visualization abilities e.g. Excel, Power BI, Tableau, Qlik, etc.
+Developing and debugging expertise in C#, Scala, Python, and or R
+Exposure to AI / ML and data pipeline building
+Preferred Qualifications:
+Familiarity with relational and NoSQL databases; big data frameworks (Hadoop or Spark) and or cloud infrastructures
+Stream processing frameworks such as Stream Analytics, Kinesis Data Streams, and Kafka Streams
+Experience with managed machine learning platforms such as Azure Machine Learning
+Our Values, The KPMG Way:
+Integrity, we do what is right | Excellence, we never stop learning and improving | Courage, we think and act boldly | Together, we respect each other and draw strength from our differences | For Better, we do what matters
+
+KPMG in Canada is a proud equal opportunities employer and we are committed to creating a respectful, inclusive and barrier-free workplace that allows all of our people to reach their full potential. A diverse workforce is key to our success and we believe in bringing your whole self to work. We welcome all qualified candidates to apply and hope you will choose KPMG in Canada as your employer of choice.
+
+For general recruitment-related inquiries, please contact the HR Delivery Centre at cafmcdnhrsthotline@kpmg.ca.
+
+If you have a question about accessible employment at KPMG, or to begin a confidential conversation about your individual accessibility or accommodation needs through the recruitment process, we encourage you to contact us at cafmcdnhrsthotline@kpmg.ca or phone: 416-777-8002 or toll free 1-888-466-4778.
+
+-----------------------------------------------------------------------
+
+Machine Learning Scientist
+
+We’re Ada. We’re an ambitious global team that enables businesses around the world to provide incredible customer experience. Our AI-powered platform has automated over 1 billion customer interactions for some notable enterprises, including Zoom, Facebook and Shopify. We recently raised Series C funding of $130M by Spark Capital (early investors of Twitter, Slack, Snapchat), and we're officially a Canadian unicorn with a $1.2B valuation!
+
+You can learn more about the founding of our company here. Just as the field of machine learning continues to advance, so do we. And it is the passion of our people and dedication to our craft that continues to drive our dramatic growth.
+
+We are inspired every day by the opportunity to pioneer a new industry, and welcome those who want to join us.
+
+As a Machine Learning Scientist on our ML team, you will design, experiment, and deploy data science solutions that will be integrated into Ada’s product. You will work closely with Product Designers, Engineers and other ML Scientists to create delightful and impactful experiences for millions of customers.
+
+We're looking for someone who is passionate about data science and about contributing to a world class chat automation platform. You will be expected to develop product features involving ML, and will be responsible for writing data pipelines, modelling and experimentation, all the way through to deployment. You will be given the opportunity to contribute to improving the data science, and ML engineering practices on the team.
+About You
+1-3 years (or equivalent) experience as a Data Scientist/Machine Learning Developer/Engineer
+Strong understanding of ML. Preferably worked on NLP problems before but not required
+Experienced in designing and tracking efficient and thorough data science experiments
+Skilled in Python and Pytorch
+Strong software and data engineering practices
+Outcomes
+Help contribute improvements and maintenance for Ada’s underlying ML technologies
+Execute on our ambitious Machine Learning product roadmap through the implementation of features
+Review the team’s code and experiments, seek and provide feedback, and improve your understanding of the field
+Help identify areas of opportunity and innovation within our product
+#LI-FT
+
+About Us
+
+Ada is a rapidly growing digital first company in a thriving AI ecosystem. We optimize our communication, collaboration and generally, the way we work for the digital world instead of in-person. With flexible working hours, together we'll determine a schedule that fits your style and the requirements of your role.
+
+We are backed by world-class investors, including Spark, Accel, FirstMark, Bessemer Venture Partners and Version One. We provide our employees with competitive compensation, great health benefits, and ownership in our company. Our work is rooted in authenticity, courage, empathy, and simplicity. We use these values to create a culture that encourages groundbreaking results, career progression, and community investment.
+
+Ada is an equal opportunity employer. In fact, diversity is what drives our success – it’s at the core of how we hire, communicate, and work. Like our Platform, we are inclusive to all, and combine our diverse backgrounds, skill sets and thinking to build the best experiences for our clients and their customers.
+
+-----------------------------------------------------------------------
+
+Machine Learning Engineer
+
+Profile
+
+The machine learning engineer designs, develops and deploys machine learning solutions to meet enterprise goals and support experimentation and innovation. The engineer collaborates with developers and data scientists to identify innovative machine learning solutions that leverage data to meet business goals. The machine learning engineer ensures infrastructure and data pipelines are structured to deploy machine learning solutions.
+
+
+Key Responsibilities
+
+Understands and translates business and functional needs into machine learning problem statements
+Translates complex machine learning problem statements into specific deliverables and requirements
+Designs and develops scalable solutions that leverage machine learning and deep learning models to meet enterprise requirements
+Works closely with data scientists and data engineers to develop machine learning algorithms
+Works closely with UX designers and product teams to improve the product user experience
+Translates machine learning algorithms into production-level code
+Collaborates with development teams to test and deploy machine learning models
+Creates metrics to continuously evaluate the performance of machine learning solutions
+Maintains and improves the performance of existing machine learning solutions
+Ensures adherence to performance standards and compliance to data security requirements
+Keeps abreast with new tools, algorithms and techniques in machine learning and works to implement them in the organization
+
+Skills
+
+Proficiency in machine learning algorithms such as multi-class classifications, decision trees, support vector machines and deep learning
+Strong understanding of probability and statistical models (generative and descriptive models)
+Advanced programming skills with C/C++, Python, Java or R
+Ability to run experiments scientifically and analyze results
+Ability to effectively communicate technical concepts and results to technical and business audiences in a comprehensive manner
+Ability to collaborate effectively across multiple teams and stakeholders, including analytics teams, development teams, product management and operations
+
+
+Experience
+
+More than two years of experience in developing and deploying enterprise-scale machine learning solutions.
+Experience training and deploying models using cloud-based infrastructure.
+Experience with Microsoft Azure Cognitive Services is desirable.
+Experience with microservices architecture, Docker and Kubernetes is desirable
+
+Education Requirements
+
+Bachelor's degree in data science, applied mathematics, computer science or otherwise research-based field; Master’s degree preferred
+
+
+-----------------------------------------------------------------------
+
+Senior Machine Learning Engineer
+
+Wattpad is a global multiplatform entertainment company whose vision is to entertain and connect the world through stories. Since 2006, we’ve been on a mission to use the power of community and technology to unleash the full potential of stories to the world. Every month 90 million people around the world spend over 23 billion minutes on Wattpad to share and discover stories they can’t find anywhere else. Our brand banner includes: Wattpad, Wattpad Labs, Wattpad WEBTOON Studios, Wattpad Books and Wattpad Brand Partnerships. We’re proudly based in Toronto, but our reach is global. Come build the future of entertainment and storytelling, and write your next chapter with us!
+
+At Wattpad, we have a massive scale and reach across our global users; this is what makes us unique. It’s been an exciting time of growth, change and development for Wattpad. Wattpad has a large and unique dataset - our goal of entertaining the world through stories means that we have not just a large corpus of stories, but also the comments, engagements and conversations that our users and writers have had in the telling of popular fiction like ‘After’, ‘The Kissing Booth’ and ‘I am a Gay Wizard” and many others.
+
+Our data scientists and researchers build models that allow our business to understand and grow our users’ experiences, and that help our writers to tell more compelling and engaging stories. Our StoryDNA team is focused on exactly this problem and we are looking for a strong, platform engineer with a machine learning bent, who can help us to enhance our existing machine learning pipelines, and to create new ones. Are you that engineer? Are you excited by large scale platform challenges, particularly those associated with natural language processing? Do you envision a world beyond search and simple question and answer systems? If so, Wattpad and StoryDNA may be the place for you.
+What you'll be doing:
+Creating a seamless experience for our data scientists - you’ll be working with our data scientists and data engineers to understand the models that they are working on. You’ll take these models and build the corresponding ML services, microservices, datasets, and pipelines to deliver these experiences to our users
+Build to last - working with the platform and infrastructure teams you and our other ML engineers work to incorporate your learnings from deploying these models into our platforms, our tooling, and our infrastructure. Our ML engineers are building one of the world’s largest user generated AI platforms - we want you to do it right, and to do it at scale.
+End-to-end construction - in short, you’ll be working with our data science and applied research teams to frame problems, architect the solutions, design the data and processing pipelines, and automate all of them as much as you can. Each model is different, so expect a changing, challenging landscape.
+What we're looking for:
+You have 5+ years experience building full-stack ML systems. You’ve got experience supporting these systems in the development lifecycle and in production. You are interested in working with (or have worked with) You’ve not intimidated by complex back-ends (a mix of monoliths and microservices) or infrastructure (Kubernetes, Spark, EMR, and hybrid hosting)
+You have a passion for, and a solid understanding of, data engineering best practices, and you’re looking to learn how to break some of the rules
+You’ve cut your teeth on basic software engineering principles, you’ve got the fundamentals down cold, and you’re looking for an opportunity to use them in the ML / AI / NLP space.
+If you’ve got an advanced degree like a Master’s or a PhD that’s a plus, but by no means a constraint
+You’re proficient with cloud technologies, primarily in the AWS stack. You understand how they relate to Data Science and Machine learning in the large (e.g. EMR, ECR, EKS would be a plus)
+You’re proficient in python, SQL, and *nix environments. If you’ve worked with Go, PHP, Hack or other backend languages that would be a plus.
+You’ve been working with cloud services or a related industry for 3+ years, you are able to wrangle microservices, integrate with internal and external APIs. Having experience with AWS architectural patterns, particularly for Data Lakes and Data Services would be a plus.
+Ideally, you’re familiar with a few different ML and Deep Learning toolkits; we use Tensorflow Serving, but experience with PyTorch, MLFlow, Sagemaker, Kubeflow, MLflow, DataBricks would help you succeed quicker. Regardless of your experience, you are able to articulate the strengths and weaknesses of these solutions, and to reason with compromises required for systems at scale.
+What we offer:
+Competitive salary
+Medical insurance
+RRSP matching
+Career development; we believe in mentorship and supporting you to achieve your goals, including a learning and development budget for conferences.
+$200/month Transit and Home Office Allowance, choice of hardware, flexible hours
+Subsidized gym membership for you and your family
+A beautiful office in downtown Toronto, with easy access to transit
+And a whole lot more!
+Wattpad is conducting all interviews in a distributed manner using applicable third party software where needed and using visual interface tools such as Google Hangouts and Zoom.
+
+About Wattpad
+
+Who are we? Entrepreneurs and Do-ers. Our vision is to entertain and connect the world through stories, and our mission is to use the power of community and technology to unleash the full potential of stories to the world.
+What does that mean? We are visionaries, community builders, passionate problem solvers, storytellers, coffee snobs (tea drinkers, too!), curious by nature, and culturally diverse.
+What are we obsessed with? Our users. Solving complex problems and maximizing flow. Learning constantly. Building the next great storytelling product. Finding the greatest stories ever told. Dogs (and cats), coffee, and good snacks.
+How do we work? Autonomously, collaboratively, respectfully. Balancing with work, family, and play...and all while having a great time.
+
+Wattpad is a remote friendly company and encourages remote candidates to apply as long as they are located and authorized to work in either the US or Canada as a precondition of employment.
+
+Culture and Diversity
+
+Wattpad is an equal opportunity employer. We do not discriminate. Period.
+
+Wattpad welcomes and encourages applications from people with disabilities. Accommodations are available on request for candidates taking part in all aspects of the selection process. We have taken a leadership position on creating a culture and an organization that truly values diversity. We are committed to fostering a global team that reflects the diversity of the Wattpad community. At Wattpad, we believe cultural fit doesn’t mean culturally identical, and diversity of thought helps us to challenge one another to think big and think differently. We consider employment applicants without regard to age, race, colour, national origin, citizenship, religion, creed, sex, sexual orientation, veteran status, marital status, disability status or any other protected status.
+
+If you have any special needs or accessibility requirements, please let us know. We will do our utmost to accommodate, in accordance with applicable local legislation.
+
+-----------------------------------------------------------------------
+
+Machine Learning Product Engineer
+
+TD Description
+
+Tell us your story. Don't go unnoticed. Explain why you're a winning candidate. Think "TD" if you crave meaningful work and embrace change like we do. We are a trusted North American leader that cares about people and inspires them to grow and move forward.
+
+Stay current and competitive. Carve out a career for yourself. Grow with us.
+
+Department Overview
+
+Layer 6 is a leading Canadian machine learning applied research company, a fully owned subsidiary of TD Bank Group. Layer 6 develops advanced machine learning and deep learning systems that have the power to uplift large populations while advancing the field of artificial intelligence. Our research is supported by access to massive datasets, close collaboration with world renowned academic faculty, and a uniquely scalable machine learning platform.
+
+Our technical capabilities have been publicly recognized through a number of wins in various international machine learning competitions, including the prestigious ACM RecSys Challenge (the only repeat winner in 2017 and 2018 and runner-up in 2019), Google’s Landmark Retrieval Challenge (2nd place in 2018, 3rd place in 2019), the Stanford Question Answering Dataset (2nd place in 2019), 3rd YouTube-8M Video Understanding Challenge (winner in 2019) and Open Images 2019 - Visual Relationship (winner in 2019).
+
+Job Description
+
+Develops and maintains technical solutions that adhere to engineering and architectural design principles while meeting business requirements. Provides technical expertise with a focus on efficiency, reliability, scalability, and security; includes planning, evaluating, recommending, designing, operationalizing, and supporting solutions in compliance with enterprise and industry standards.
+
+Customer Accountabilities:
+
+Leverage deep technology expertise for own area of specialization to deliver and ensure that all areas across the organization that provision, manage and support various technologies have the necessary tools, processes and documentation required to effectively execute on their respective mandates
+Execute on Engineering strategy as it relates to the introduction of tools and the automation of build, test, release and configure activities across Application, Platform and Infrastructure
+Partner with the Operations team to automatically integrate with appropriate tools and processes as part of automated/self-serve Application, Platform or Infrastructure releases
+Work with partners across Technology and apply in-depth understanding of relevant business needs to identify and leverage synergies across the various areas
+Act as the expert or lead innovator and agent of change for the programs and services under management
+Work with other teams to implement best practices for engineering and management
+Work with vendor platform providers and engineering peers to keep abreast of trends, products, frameworks, and applications
+Identify and effectively manage stakeholder engagement and impacts across the enterprise
+Interpret client needs, assess engineering related requirements and identify solutions to non-standard requests
+Shareholder Accountabilities:
+
+Apply best practices and knowledge of internal / external business issues to improve products or services in own discipline
+Monitor and control costs within own work
+May interact with governance and control groups, (e.g. regulatory / operational risk, compliance and audit) to provide subject matter expertise and consult on risk issues / items related to Engineering technology and tools
+May develop and/or contribute to negotiations of third party contracts/agreements
+Maintain knowledge and understanding of external development, engineering and emerging solutions, market conditions and their impact
+Proactively identify emerging technologies and innovative solutions for building more robust platform domains
+The Machine Learning Product Engineer team at Layer 6 focuses on building industry-leading data-centric systems and model delivery systems. Our solutions include data pipelines, feature data lake, systemic data validation and automation of key activities in model delivery including model validation, shakedown, inference, and maintenance.
+
+We are looking for experienced Machine Learning Product Engineers (MLPE) who have worked under tight deadlines and on challenging tasks. The ideal candidate is a strong coder with solid data engineering experience. They should also have expertise in machine learning, system design and devops.
+
+The candidate will design and implement components of data and model delivery system and lead by example. The candidate will interact with machine learning scientists, the infrastructure team and data sources team to develop systems that will satisfy the needs of machine learning projects.
+
+Implement complex data-centric solutions, including extremely complex and large data set verification, transformation and feature generation, to ensure continuous high-quality input for the model development
+Build model delivery systems, including inference pipeline, automatic model validation reports generation, automatic model performance monitoring and model retraining, to ensure fast model productionization and reliable production system
+Maintain the model in production and ensure the data/model related knowledge continuation within L6
+Job Requirements
+
+Employee/Team Accountabilities:
+
+Continuously enhance knowledge/expertise in own area and keep current with emerging industry trends, new technologies and best practices in the external market that can contribute to delivering effective client solutions
+Prioritize and manage own workload in order to deliver quality results and meet timelines
+Support a positive work environment that promotes service to the business, quality, innovation and teamwork and ensure timely communication of issues/ points of interest
+Participate in knowledge transfer with senior management, the team, other technical areas and business units
+Work effectively as a team, supporting other members of the team in achieving business objectives and providing client services
+Identify and recommend opportunities to enhance productivity, effectiveness and operational efficiency of the business unit and/or team
+Breadth and Depth:
+
+Expert knowledge of specific domain or range of engineering frameworks, technology, tools, processes and procedures, as well as organization issues
+Expert knowledge of TD applications, systems, networks, innovation, design activities, best practices, business / organization, Bank standards, and may fulfill a governance role
+Expert knowledge and experience in own discipline; integrates knowledge of business and functional priorities
+Acts as a key contributor in a complex and critical environment
+May provide leadership to teams or projects; shares expertise
+Applies in-depth skills and broad knowledge of the business to address complex problems and non-standard situations
+Generally reports to a Senior Manager or above
+Experience and/or Education:
+
+University or post-graduate degree
+Strong academic background (e.g., computer science, engineering)
+7 + years relevant experience
+Additional Information
+
+Required Technical Skills
+
+BSc+ in Computer Science, Math, Physics, or similar
+2+ years of extensive programming experience, at least 1 year in building production data systems
+1+ year experience of building machine learning production system
+Strong experience with major Big Data technologies and frameworks including but not limited to Hadoop, MapReduce, Spark, Cassandra, Kafka, Elasticsearch
+Good knowledge of Machine Learning and Deep Learning
+Practical expertise in performance tuning, bottleneck problems analysis, and troubleshooting
+Strong experience with Scala and Java 8
+Nice to have Skills
+
+C++, Python experience
+Experience in systems/infrastructure projects on AWS and Azure
+Benefits
+
+Entrepreneurial and inclusive culture
+Excellent health coverage and pension plan
+Four weeks paid vacation
+Catered lunches twice a week over machine learning talks
+Inclusiveness
+
+At TD, we are committed to fostering an inclusive, accessible environment, where all employees and customers feel valued, respected and supported. We are dedicated to building a workforce that reflects the diversity of our customers and communities in which we live and serve. If you require an accommodation for the recruitment/interview process (including alternate formats of materials, or accessible meeting rooms or other accommodation), please let us know and we will work with you to meet your needs.
+
+Job Family
+
+Advanced Analytics & Modelling
+Job Category - Primary
+
+Technology Solutions
+Job Category(s)
+
+Technology Solutions
+Hours
+
+37.5
+Business Line
+
+Corporate
+Time Type
+
+Full Time
+Employment Type
+
+Regular
+Country
+
+Canada
+**Province/State (Primary)
+
+Ontario
+City (Primary)
+
+Toronto
+Work Location
+
+661 University Avenue
+Job Expires
+
+10-Oct-2021
+
+-----------------------------------------------------------------------
+
+Machine Learning Engineer
+
+We are witnessing a massive shift of consumer presence from offline to online. With it, there is a need for technologies that enable online businesses to thrive. Bolt is at the center of this universe leading the next generation of ecommerce, having created a best-in-class buying experience from checkout to fraud detection, payments and more. With our help, retailers can successfully compete with the online retail giants that have the means to invest in technology.
+
+The Data Platform team works closely with all teams and cross-functional partners (including product, engineering, and data analysts) to build a foundational data stack powering business analytics.
+
+We are looking for someone to play a mission-critical role in designing and building the machine models (fraud detection, categorization, recommendation, personalization, price analysis, etc) that powers Bolt. This should someone with experience, creativity, and passion for producing world-class technology. Companies and consumers alike will rely heavily on what you build, and you’ll have a ton of trust and responsibility. If challenges excite you, and you’re ready for a large one, let us know.
+
+Check out our Engineering Blog!
+You will:
+Build production ready machine learning models; your models will be the engine that powers all online commerce through Bolt
+Conduct data analysis to determine which policies we adopt and help inform strategic growth
+Build machine learning infrastructure, data pipelines and production ready services to serve live traffic
+Work with other teams at Bolt to engineer new features for models or new product features that help improve Bolt business
+About you:
+Passion to improve e-commerce businesses
+Strong communication skills in a cross-functional team
+Unrelenting focus on impact
+Bachelor's degree in relevant technical discipline (or equivalent experience)
+Software Engineering background in a team-oriented software development environment
+4+ years of machine learning experience
+Mastery of a scientific computing language (R or Python) and SQL; experience with data analysis and statistics
+Our stack:
+AWS Lambda for data ingestion and Kinesis Firehose to transport them into S3
+Step functions and Lambdas to coordinate workflows
+AWS Redshift as the data warehouse + Spark on EMR for doing ETL
+Terraform for maintaining infra
+Jenkins & CircleCI for build pipelines
+Postgres RDS is our application database
+Our code base is primarily in Golang & Typescript. However, our data bits are mostly in Python.
+Benefits:
+Competitive Pay
+Flexible PTO
+Retirement plans
+Cell phone reimbursement
+Wifi reimbursement
+Comprehensive health coverage: Medical, dental and vision
+Monthly wellness stipend
+Paid parental leave
+Monthly (virtual) team events
+
+Bolt is proud to be an equal opportunity workplace. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. Pursuant to the San Francisco Fair Chance Ordinance, we will consider for employment qualified applicants with arrest and conviction records. If you have a disability or special need that requires accommodation, please let us know
+
+Check out our Engineering Blog!
+
+-----------------------------------------------------------------------
+
+Machine Learning Engineer
+
+Title: Machine Learning Engineer
+
+Overview of Position
+
+
+We are looking for a machine learning engineer to join a team building the next generation of image-based AI models to impact healthcare. You will be building, maintaining and improving all parts of the AI development pipeline from data ingestion to production. You will enjoy working with a highly talented and diverse team of data scientists and engineers specializing in deep learning on one of the richest data sets in US healthcare
+
+The ideal candidate will have a background in cloud-native development, have experience building web applications and Machine Learning Platforms, and deploying data-driven solutions. You are focused on results, a self-starter, able to put the team first, and have demonstrated success working with data scientists to develop and deploy solutions with a focus on impact.
+
+
+What will be my duties and responsibilities in this job?
+
+Provide technical leadership, implementation, and maintenance for Software Engineering projects supporting our AI and machine learning goals
+Modifies, implements, tests, and supports all product-related technology and functionality, including software infrastructure in a GCP hosted environment
+Demonstrates strong drive to learn and advocate for development best practices (TDD, code reviews, CI/CD, etc.)
+Design, build, and launch efficient & reliable data pipelines to move and transform data (both large and small amounts)
+Self-starter that will take tasks and accomplish them with little oversight according to timelines and budgets agreed upon with business and technology stakeholders
+
+What are the requirements needed for this position?
+
+3+ years of professional software deployment experience with cloud-based software (Preferably GCP)
+3+ years professional experience with JavaScript, Node.js, React
+3+ years experience building/consuming REST web services
+1+ years professional experience with Kubernetes, NGINX, VM, Database, GKE
+1+ years of experience in Python
+Proficiency with TDD and CI/CD processes
+Bachelor’s degree in Computer Science, Engineering or a related field or equivalent experiences
+What other skills/experience would be helpful to have?
+
+Basic understanding or willingness to learn machine learning techniques
+Demonstrated ability to achieve stretch goals in a highly innovative and fast-paced environment
+Proven leadership abilities in an engineering environment in driving operational excellence and best practices
+Basic understanding of cloud security software engineering
+Experience with ML infrastructure development cycles
+Familiarity with ML tools such as Tensorflow, Pytorch, MLFlow
+What are the working conditions and physical requirements of this job?
+
+General office demands
+
+#li-remote
+
+Join our team today where we are creating a better coordinated, increasingly collaborative, and more efficient healthcare system!
+
+-----------------------------------------------------------------------
+
+Senior Machine Learning Engineer
+
+Toronto
+
+Affinity stitches together billions of data points from massive datasets to create a powerful, accurate representation of the world's professional relationship graph. Based on this data, we offer our users the insights and visibility they need to nurture and tap into the opportunities in their team's network.
+In this role, you'll help create the magic that underlies Affinity's industry-leading relationship intelligence. You'll define how Affinity uses our massive datasets (including email messages, calendar events, and data pulled from around the public internet) to extract actionable information and insights for our users.
+What you'll achieve:
+
+Take projects from concept to production, including feature engineering, model construction, deployment, and model observability and evaluation.
+Help define our data roadmap. Which problems are amenable to AI/ML techniques, and which are better solved via simpler non-statistical methods? How might we define and evaluate data quality? Which models and techniques are best suited to our domain? You'll collaborate with our product and engineering teams to help to answer these questions and more.
+Collaborate with the rest of our data pipeline engineering team to build the robust, high-scale systems that underlie all of our data processing.
+
+We'd love to hear from you if:
+
+You have 5+ years of experience in software development
+You have a minimum of 2 years of experience with machine learning in production.
+You have experience with NLP techniques and domains, including Named Entity Recognition, Sentiment Analysis are assets
+You are a builder and care deeply about building systems and products that deliver meaningful value to users
+You have experience working with large, multi-terabyte datasets, and are comfortable with tools for high-scale data ingestion, transformation, analysis, and prediction
+You take pride in delivering exceptionally high quality, in terms of data accuracy, performance, and reliability
+You're excited to work collaboratively within engineering and across functional teams
+You’re eager to contribute your ideas and experiences to help Affinity continuously improve as a product and as a company
+
+Join us in enabling every professional on the planet to succeed by harnessing the power of their relationships.
+Tech stack
+On the back end, we use Ruby and PostgreSQL; our infrastructure is hosted by AWS and runs on Kubernetes. To learn more about our tech, check out our Building Affinity blog.
+About Affinity
+Affinity is all about innovation. Our technology ingests, analyzes, structures, and enriches billions of data points across a team’s digital communications to offer the insights needed to grow their most valuable relationships and discover untapped opportunities. This enables the companies we serve (over 1000 and growing!) to unlock introductions, manage their deal flow and get automated, unique insights into the opportunities in their network. While capturing nearly 40% of the global venture capital market, and expanding into other financial services and relationship-driven industries, we have facilitated millions of introductions and processed billions of communications.
+We have raised over $40M and are backed by some of Silicon Valley’s best firms. We have hubs in both San Francisco and Toronto and are a remote-friendly company. We care personally about our employees and want individuals to work in an environment that sets them up to thrive.
+Since day one, our top priority has been investing in our people and our culture. We've been certified by Great Places to Work with a 98% approval rating, and have been named a top workplace by Inc., Fortune, and more.
+The more diverse our team is, the more we’ll be able to learn from each other, and the better our company and our product will be. Whatever your gender, race, sexual orientation, religion, age, veteran status, favorite Spotify playlist, or social, cultural, and economic background, we can’t wait to welcome you to Affinity!
+
+Job Type: Full-time
+
+Work Location: Multiple Locations
+
+-----------------------------------------------------------------------
+
+Senior Machine Learning Engineer, Deep Learning & NLP
+
+At Forethought, we're solving the world's hardest problems in Natural Language Understanding to build an "answer engine" for the enterprise. Customers use our answer engine to give employees and customers access to the right information at the right time. Our mission is to "enable everyone to become a genius at their job".
+
+Founded in 2017, Forethought is funded by some of the top VC's and Angel Investors in Silicon Valley. (Hint: We're backed by some of the same investors as Twilio, Lyft, and Front)
+
+We're looking for world-class Deep Learning and Natural Language Processing ML Engineers to come join our team! We're looking for folks with a growth mindset, who love to solve the world's hardest problems, and want to have an impact on the world.
+
+You will be responsible for researching and implementing state-of-the-art algorithms in Question Answering, Machine Reading Comprehension, Recognizing Textual Entailment, Document Classification, Text Analytics, Sentiment Analysis, and Automated Knowledge Graph Extraction.
+
+What a typical week may look like at Forethought:
+Improve our core Question Answering algorithm
+Reading and researching state-of-the-art papers in NLU problems
+Inventing new NLU algorithms
+Working with a unique dataset of 1M+ customer documents, support tickets, and natural / unstructured data sources
+Build Deep Learning models in TensorFlow for GPUs and CPUs
+Work with Backend Engineers to ship your models to production
+Work to publish new research in top papers (e.g.: NIPS) and Arxiv
+
+What we require in a Deep Learning & NLP ML Engineer:
+MSc or PhD in Computer Science, Mathematics, or a related technical field, or equivalent work experience
+2+ years industry experience in Machine Learning teams
+Proficiency in Python, R, or Java and a framework like tensorflow, pytorch or keras
+Experience in modern Deep Learning and Natural Language Processing / Natural Language Understanding (NLP, NLU), including Neural Networks, RNNs, seq2seq+attention models, and real world machine learning in TensorFlow (incl. regularization, cross-validation, dropout)
+Experience building production-ready NLP systems
+Familiarity with non-standard machine intelligence models (Reinforcement Learning, Hierarchical Temporal Memory, Capsule Networks) is a plus
+Familiarity with Distributed systems (Docker, Kubernetes, Kafka, Spark, Redis, AWS S3/EC2/RDS/KMS, MongoDB, or Lucene) is a plus
+Adaptable, humble, and interested in pushing the boundaries of what's possible
+
+What you get:
+A fast-paced and collaborative environment
+Work with world class talent (our team has experience from Facebook, Palantir, and LinkedIn Data Science; we have 2 ACM ICPC World Finalists; and Researchers from Harvard, Waterloo, EPFL, and University of Alberta)
+A chance to be a defining/founding member of the team, with equity to match
+A chance to work on the edge of research
+A mix between research and industry, at a startup!
+Medical, dental and vision coverage
+Unlimited PTO policy
+
+-----------------------------------------------------------------------
+
+Machine Learning Engineer (Remote)
+
+TradeRev has changed the automotive industry with its revolutionary product. Built as a multi-platform live auction app, TradeRev’s online automotive remarketing system has made a huge impact in the industry and has acquired quick user adoption with a fast-growing client base. As a subsidiary of KAR Auction Services, Inc. and partnering with our sister company ADESA, we are continuing to expand TradeRev’s footprint in the dealer-to-dealer online space in the US and Canadian markets.
+
+Why Work with Us?
+
+Whether your Fun is in working with new technology, learning skills, collaborating with awesomely talented people or growing into a Specialist, Team Lead or People Manager, we want to feed this fire in you. If you have the work ethic, skill and motivation, we will help you find a path that leads you where your passion wants to go. So come on; let's have Fun together.
+
+Our Core Values: We are FHAB. Fun. Honest. Accountable. Brave.
+
+Position Overview
+
+At TradeRev we use Machine Learning for a wide range of problems, from regression models used for forecasting and prediction, recommender systems based on preference and collaborative filtering, CNNs for object detection and image classification and RNNs for NLP problems.
+About Our Candidate:
+Can think for themselves and discover new and insightful ways to solve difficult problems without having a clear roadmap laid out
+Can communicate effectively with data science teammates and non-technical audiences alike
+Can deliver quality code in an Agile framework that ships to a production environment
+Has confidence, hustle, energy, and drive – accountability is key and the impact of your work is crucial to our success
+What You Will Be Doing:
+Build machine learning engineering systems required to efficiently operate our data science services (including computer vision, recommendations, and optimization systems)
+Partner with our data scientists and site reliability engineers to improve model performance
+Work in an Agile environment with team members, delivering solutions quickly and continuously exploring ways to improve our results
+Work closely with colleagues in Product, Operations, and Sales to structure problems and understand the impact across various departments within the company
+What You Need to Be Successful:
+Candidates tend to have at least a Bachelor's Degree in a quantitative field
+Experience (roughly 2 years) in a Data Science or Data Engineering position, specifically in building data science products and services in a production environment
+Experience designing and implementing machine learning models that are production-ready
+Familiarity with designing and implementing neural networks for computer vision models
+Experience coding with Python and SQL
+Experience with developing within an Amazon Web Services environment
+Familiarity with the Agile framework for software delivery
+We thank all applicants for their interest. Only candidates selected for an interview will be considered.
+
+TradeRev is an equal opportunity employer committed to diversity. TradeRev is committed to providing employment in accordance with the Ontario Human Rights Code and the Accessibility for Ontarians with Disabilities Act. Any assessment and selection materials or processes used during the recruitment process will be available in an accessible format to applicants with disabilities, upon request. If contacted for an interview, please advise Human Resources if you require disability-related accommodation.
+
+-----------------------------------------------------------------------
+
+Principal Machine Learning Engineer
+
+Job Requisition ID #
+
+21WD50977
+Position Overview
+
+
+With Autodesk software, you have the power to Make Anything. The future of making is here, bringing with its radical changes in the way things are designed, made, and used. Our software is used by everyone - from design professionals, engineers and architects to digital artists, students and hobbyists. We constantly explore new ways to integrate all the dimensions of diversity across our employees, customers, partners, and communities. Our ultimate goal is to expand opportunities for anyone to imagine, design, and make a better world.
+
+AutoCAD® is computer-aided design (CAD) software that architects, engineers, and construction professionals rely on to create precise 2D and 3D drawings. This globally leading product is currently used by millions to design objects from electrical panels to construction floor plans. This team is at the center of a company-wide transformation to build the next generation of features that leverage Artificial Intelligence and Machine Learning technology.
+
+We are seeking an experienced engineer to join our AutoCAD machine learning team that is focused on building a new suite of features that help our customers work more efficiently and effectively than ever before. We are looking for a passionate, creative, collaborative and experienced person who can both mentor and bring domain expertise to the team. As a technical leader, we value your knowledge in applying appropriate machine learning, deep learning, predictive modeling and optimization to prototype, build and deploy solutions to new problem spaces.
+
+Responsibilities
+
+Research, design and building machine learning and deep learning solutions to new problems.
+Provide technical leadership to support the team in defining the strategic direction and roadmap.
+Mentor other engineers to scale our machine learning team in terms of knowledge, technology and process.
+Advocate and implement the best practices to ensure the team is working effectively to deliver customer value while also constantly learning to remain up to date in a rapidly changing domain.
+Collaborate effectively with product management, engineering, design and other stakeholders to deliver products that have a quantifiable impact on Autodesk’s business.
+Minimum Requirements
+
+A degree in a related field (Data Science, Computer Science, Statistics or a quantitative-related field) or equivalent professional experience.
+Proven track record overseeing machine learning projects at all stages, from initial conception to implementation and optimization
+Collaborative, respectful, and inclusive engineer who is interested to work in a diverse and global team
+Preferred Requirements
+
+MS/Ph.D. in a related field (Data Science, Computer Science, Statistics, or a quantitative-related field)
+4+ years’ experience in developing and shipping machine learning, natural language processing or deep learning models.
+Experience in Python
+Experience in deep learning libraries, such as Pytorch and tensorflow
+Experience working with big data platforms (Hadoop, Spark, Hive) and orchestration frameworks (Airflow) and analytic environments (Databricks, Sagemaker)
+Expertise with ML, DL and statistical modeling tools such as Pytorch, Tensorflow, Pandas, SciKitLearn, pyspark (in IDEs like PyCharm, RStudio, Jupyter, Databricks)
+Strong communicator who can explain complex topics to both a technical and non-technical audience
+Excellent communication skills, project management skills, and technical management skills.
+At Autodesk, we're building a diverse workplace and an inclusive culture to give more people the chance to imagine, design, and make a better world. Autodesk is proud to be an equal opportunity employer and considers all qualified applicants for employment without regard to race, color, religion, age, sex, sexual orientation, gender, gender identity, national origin, disability, veteran status or any other legally protected characteristic. We also consider for employment all qualified applicants regardless of criminal histories, consistent with applicable law.
+
+Are you an existing contractor or consultant with Autodesk? Please search for open jobs and apply internally (not on this external site). If you have any questions or require support, contact Autodesk Careers .
+
+-----------------------------------------------------------------------
+
+Machine Learning Engineer - NLP (Remote)
+
+BenchSci's vision is to help scientists bring novel medicine to patients 50% faster by 2025. We do this by empowering scientists to run more successful experiments with the world's most advanced, easy to use biomedical artificial intelligence software platform, thereby avoiding delays that slow the progress of medicine to clinical trials. Backed by F-Prime, Inovia, Golden Ventures, and Google's AI fund, Gradient Ventures, we provide an indispensable tool for more than 41,000 scientists that accelerates research at 15 top 20 pharmaceutical companies and over 4,300 leading academic centers. We're a CIX Top 10 Growth company, certified Great Place to Work®, and top-ranked company on Glassdoor.
+
+We are seeking a Machine Learning Engineer - NLP to join our growing R&D team! You will work on complex and challenging NLP problems that will have an impact on the 41,000+ scientists across the world who rely on BenchSci for their research.
+
+Reporting to the Engineering Manager, R&D, you’ll apply your domain expertise to build advanced machine learning algorithms, collaborate with data engineers to build benchmarking and data preparation pipelines, and work with core infrastructure engineers to deploy and monitor your models in our production system. In this role, you will have the opportunity to apply state-of-the-art solutions that will shape the future of scientific discovery.
+You will:
+Build innovative ML models that enhance the speed and quality of life-saving research
+Collaborate with data and core infrastructure engineers to solve the complex problems of extracting insights from biomedical text data
+Continuously improve our machine learning workflow by keeping up to date with the latest PyTorch optimizations and expanding our usage of modern tools such as DVC
+Own the solutions and long-term technical investments that will drive innovation at BenchSci
+Work with BenchSci's R&D scientists and Chief Science Officer to learn, model, and capture the nuances of biology
+Be empowered to own your solutions
+Participate in sprint planning, estimation, and design/code reviews
+Work with on-site PhD scientists that give immediate feedback on models
+Work with fresh datasets that are custom curated and constantly updated
+Receive one-on-one coaching and investment in your personal and professional growth
+You have:
+3+ years of experience working as a professional developer or researcher applying machine learning techniques to solve business problems
+Strong experience with Python and programming fundamentals
+Extensive experience with NLP and PyTorch
+Experience with data manipulation and processing using SQL or pandas
+A growth mindset and a constant desire to learn
+Strong cross-team communication and collaboration skills
+Experience recreating and applying state-of-the-art NLP research
+Nice to haves, but not mandatory qualifications:
+A background in Life Science
+Working knowledge of data versioning tools such as DVC for machine learning
+Working knowledge of distributed systems and data processing fundamentals
+Knowledge of distributed data processing abstractions like Beam or Spark
+Working knowledge of machine learning data fundamentals such as data splits, training-serving skew, common data representations such as embeddings or multi-hot encodings, sampling strategies for active learning
+Working knowledge of how to evaluate classification model quality, such as precision, recall, F1, PR/ROC curves
+We will provide you with:
+Lambda machine with a 48GB GPU
+16" MacBook Pro or Linux Laptop
+Access to Google Cloud Platform resources
+Our benefits and perks:
+An engaging remote-first culture that hires the best talent from around the world
+A competitive compensation package that includes BenchSci equity options
+Comprehensive health and dental benefits with an emphasis on mental health
+An annual Executive Health Assessment at Medcan for proactive health awareness
+Three weeks of vacation plus an additional day for every completed year
+Generous parental leave benefits with a top-up plan or paid time off options
+Additional time-off: Winter Holiday (Dec 25-Jan 1), Summer Holiday, your birthday, and more!
+An Oculus Quest 2 to connect with your team members in Virtual Reality
+An executive coach for managers to assist in leading high-performing teams
+Complimentary Headspace account to support mental wellness and focus
+Complimentary genome sequencing from 23andMe to better understand your health through your DNA
+
+Our Culture:
+We believe culture is critical to success and invest accordingly. We live and promote our FASTT values of focused, advancement with speed, tenacity, and transparency. We work hard to maintain an engaging, supportive environment where everyone can do their best work. To learn more, read our culture deck.
+
+Diversity, Equity and Inclusion:
+We're committed to creating an inclusive environment where people from all backgrounds can thrive. We believe that improving diversity, equity and inclusion is our collective responsibility, and this belief guides our DEI journey. To learn more, read about our DEI initiatives.
+
+Accessibility Accommodations:
+BenchSci provides accessibility accommodations during the recruitment process. Should you require any accommodation, we will work with you to meet your needs.
+
+#LI-Remote
+
+-----------------------------------------------------------------------
+
+Data Engineer (Cloud)
+
+The Data Engineer (Cloud) will play a key role at StackPros, required to help create and maintain industry-leading quality and efficiency of service and software delivery.
+
+StackPros will rely on the Data Engineer to support the Data Systems team, in both data engineering and data science-related workflows. The Data Engineer will be expected to meet and exceed StackPros' quality standards, while helping the organization rapidly expand complex Machine Learning and related applications.
+
+*Key Responsibilities:
+Data Engineering-Specific Responsibilities*
+
+Participate in continuous delivery pipeline to fully automate deployment of the highly available cloud platform that supports multiple projects
+Design and develop ETL workflows and datasets to be used in data visualization tools
+Write complex SQL queries with multiple joins to automate and manipulate data extracts
+Perform end to end Data Validation to maintain accuracy of data sets
+Build tools for deployment, monitoring and operations
+Troubleshoot and resolve issues in the development, test and production environments
+Develop reusable processes that can be leveraged and standardized for multiple instances
+Prepare technical specifications and documentation for projects
+Stay up-to-date on relevant technologies, plug into user groups, understand trends and opportunities to ensure we are using the best possible techniques and tools
+Understand, implement, and automate security controls, governance processes, and compliance validation
+Design, manage, and maintain tools to automate operational processes
+Company-Wide Responsibilities:
+
+Maintain and exceed client satisfaction with StackPros Inc.’s deliverables, day-to-day work and overall value as a partner
+Cultivate opportunities for company growth, always seek areas where StackPros Inc.’s role could be expanded
+Adapt to ever-changing client needs and expectations
+Maintain dedication toward achieving excellence in StackPros Inc.’s delivery against client needs, and overall success as an organization
+Be an enthusiastic, positive and generally awesome team mate, mentor & constantly curious learner
+Qualifications:
+
+4+ years experience in Data Engineering
+Understanding of digital ecosystems including online data collection, cloud systems and analytics tools (Google Stack, Facebook, AWS, Salesforce, Adobe Suite etc.) a strong asset
+Strong technical understanding of a range of marketing concepts such as cookie-based data collection, setting and leveraging audience segments, attribution modelling, AB/N & multivariate
+Excellent written & verbal communication skills are essential; candidate should be comfortable presenting and participating in group discussions of concepts with internal and external stakeholders
+Candidate must exhibit an analytical, detail-oriented approach to problem solving
+Experience with Jira / Atlassian project management tools is an asset
+WHAT’S IN IT FOR YOU?
+
+100% employer-paid benefits package
+Monthly yoga and meditation classes onsite
+Regular Lunch and Learns from your Team Mates
+Fun Employee Events and Activities
+Participation in Community Engagement
+Job Type: Full-time
+
+-----------------------------------------------------------------------
+
+Machine Learning Engineer, Shopping Content Mining
+
+About Pinterest:
+
+Millions of people across the world come to Pinterest to find new ideas every day. It's where they get inspiration, dream about new possibilities and plan for what matters most. Our mission is to help those people find their inspiration and create a life they love. In your role, you'll be challenged to take on work that upholds this mission and pushes Pinterest forward. You'll grow as a person and leader in your field, all the while helping Pinners make their lives better in the positive corner of the internet.
+
+Pinterest is aiming to build a world-class shopping experience for our users, and has a unique advantage to succeed due to the high shopping intent of Pinners. The new Shopping Content Mining team being founded in Toronto plays a critical role in this journey. This team is responsible for building a brand new platform for mining and understanding product data, including extracting high quality product attributes from web pages and free texts that come from all major retailers across the world, mining product reviews and product relationships, product classification, etc. The rich product data generated by this platform is the foundation of the unified product catalog, which powers all shopping experiences at Pinterest (e.g., product search & recommendations, product detail page, shop the look, shopping ads).
+
+There are unique technical challenges for this team: building large scale systems that can process billions of products, Machine Learning models that require few training examples to generate wrappers for web pages, NLP models that can extract information from free-texts, easy-to-use human labelling tools that generate high quality labeled data. Your work will have a huge impact on improving the shopping experience of 400M+ Pinners and driving revenue growth for Pinterest.
+
+What you’ll do:
+
+As a ML engineer, you will design and build large scale ML systems that can process billions of products
+ML models for wrapper induction that require few training examples, NLP models for understanding free-texts
+Drive cross functional collaborations with partner teams working on shopping
+What we’re looking for:
+
+3+ years of industry experience
+Hands-on experience on large scale machine learning systems (full ML stack from modelling to deployment at scale.)
+Hands-on experience with big data technologies (e.g., Hadoop/Spark) and scalable realtime systems that process stream data
+Nice to have: PhD in Machine Learning or related areas, publication on top ML conferences, Familiarity with information extraction techniques for web-pages and free-texts, Experience working with shopping data is a plus
+#LI-EA1
+
+
+Not Specified
+0
+
+-----------------------------------------------------------------------
+
+Sr Machine Learning Product Engineer (Layer 6)
+
+TD Description
+
+Tell us your story. Don't go unnoticed. Explain why you're a winning candidate. Think "TD" if you crave meaningful work and embrace change like we do. We are a trusted North American leader that cares about people and inspires them to grow and move forward.
+
+Stay current and competitive. Carve out a career for yourself. Grow with us.
+
+Department Overview
+
+Layer 6 is a leading Canadian machine learning applied research company, a fully owned subsidiary of TD Bank Group. Layer 6 develops advanced machine learning and deep learning systems that have the power to uplift large populations while advancing the field of artificial intelligence. Our research is supported by access to massive datasets, close collaboration with world renowned academic faculty, and a uniquely scalable machine learning platform.
+
+Our technical capabilities have been publicly recognized through a number of wins in various international machine learning competitions, including the prestigious ACM RecSys Challenge (the only repeat winner in 2017 and 2018 and runner-up in 2019), Google’s Landmark Retrieval Challenge (2nd place in 2018, 3rd place in 2019), the Stanford Question Answering Dataset (2nd place in 2019), 3rd YouTube-8M Video Understanding Challenge (winner in 2019) and Open Images 2019 - Visual Relationship (winner in 2019).
+
+
+Job Description
+
+About the job
+
+The Machine Learning Product Engineer team at Layer 6 focuses on building industry-leading data-centric systems and model delivery systems. Our solutions include data pipelines, feature data lake, systemic data validation and automation of key activities in model delivery including model validation, shakedown, inference, and maintenance.
+
+We are looking for experienced Senior Machine Learning Product Engineers (Engineering Lead) who have worked under tight deadlines and guided teams towards successful deliveries. The ideal candidate is a master of coding and system design with track record of technical leadership. They also are experts in data engineering and/or machine learning.
+
+The candidate will be the go-to person for data and model delivery. They will lead and coordinate efforts of members on the MLPE team to ensure best engineering practice in our systems. The candidate will interact with machine learning scientists, the infrastructure team and data sources team to develop systems that will satisfy the needs of machine learning projects.
+
+What are your main responsibilities?
+
+Lead the design and implementation of complex data-centric solutions, including extremely complex and large data set verification, transformation and feature generation, to ensure continuous high-quality input for the model development
+
+Lead the design and implementation of model delivery systems, including inference pipeline, automatic model validation reports generation, automatic model performance monitoring and model retraining, to ensure fast model productionization and reliable production system
+
+Go-to person for data and model delivery within Layer 6
+
+Lead and mentor Machine Learning Product Engineers to ensure best engineering practice in our systems.
+
+Job Requirements
+
+Required Technical Skills
+
+BSc+ in Computer Science, Math, Physics, or similar
+
+5+ years of extensive programming experience, at least 3 years in building production data systems
+
+3+ years experience of building machine learning production system
+
+Expert level skills in system design
+
+Expert in Big Data technologies and frameworks including but not limited to Hadoop, MapReduce, Spark, Cassandra, Kafka, Elasticsearch
+
+Strong knowledge of Machine Learning and Deep Learning
+
+Practical expertise in performance tuning, bottleneck problems analysis, and troubleshooting
+
+Experience with Big Data solutions developed in large cloud computing infrastructures such as Azure and AWS
+
+Strong experience with Scala and Java 8
+
+Nice to have Skills
+
+C++, Python experience
+
+Additional Information
+
+Benefits
+
+Entrepreneurial and inclusive culture
+
+Excellent health coverage and pension plan
+
+Four weeks paid vacation
+
+Catered lunches twice a week over machine learning talks
+
+Inclusiveness
+
+At TD, we are committed to fostering an inclusive, accessible environment, where all employees and customers feel valued, respected and supported. We are dedicated to building a workforce that reflects the diversity of our customers and communities in which we live and serve. If you require an accommodation for the recruitment/interview process (including alternate formats of materials, or accessible meeting rooms or other accommodation), please let us know and we will work with you to meet your needs.
+
+Job Family
+
+Advanced Analytics & Modelling
+Job Category - Primary
+
+Product Management & Development
+Job Category(s)
+
+Product Management & Development
+Hours
+
+37.5
+Business Line
+
+Corporate
+Time Type
+
+Full Time
+Employment Type
+
+Regular
+Country
+
+Canada
+**Province/State (Primary)
+
+Ontario
+City (Primary)
+
+Toronto
+Work Location
+
+661 University Avenue
+Job Expires
+
+10-Oct-2021
+
+-----------------------------------------------------------------------
+
+Deep Learning Engineer
+
+Numerator is a data and tech company bringing speed and scale to market research. Headquartered in Chicago, IL, Numerator has more than 2,000 employees worldwide. The company blends proprietary data with advanced technology to create unique insights for the market research industry that has been slow to change. The majority of Fortune 100 companies are Numerator clients.
+
+Here at Numerator, we've made all corporate roles have maximum flexibility between office and remote work, except for rare situations when the role requires coming into an office regularly. In those situations, the recruiter of that role will clarify at the beginning of the process if that is the case. In fully remote situations, the company will provide technical equipment necessary to be successful in the role. In addition to maximum flexibility of return-to-office, the company also provides generous PTO, Internally Quiet Focus Time, and other recharge efforts to give time back to employees.
+
+Job Description
+
+Numerator is looking for a Deep Learning Engineer to join our growing Research and Development team. This is a unique opportunity where you will get a chance to work with an established and rapidly evolving platforms that handles millions of requests and massive amounts of events, and other data. In this position, you will be responsible for taking on new initiatives to automate, enhance, maintain, and scale services in a rapidly-scaling environment.
+
+As a member of our Deep Learning team, you will make an immediate impact as you help build out and expand our technology platforms across several software products. This is a high growth and impact role that will give you tons of opportunity to drive decisions for projects from inception through production.
+
+What you'll get to do
+
+Develop and train deep learning models on computing clusters to perform visual recognition tasks, such as segmentation and detection, or NLP-related tasks, such as applying both pre-trained and custom transformers for NER, sequence classification, language modeling, etc
+Build and maintain systems, APIs, and end-to-end data pipelines to deliver deep learning insights throughout all of Numerator’s products and platforms
+Work closely with deep learning engineers, software engineers, product managers, and other teams, both internal and external stakeholders, owning a large part of the process from problem understanding to shipping the solution
+Have the freedom to suggest and drive organization-wide initiatives while being part of providing the technical vision and strategy at Numerator
+
+
+
+Skills & Requirements
+
+What you bring
+
+Strong background in the foundations of deep learning with a proven track record of building high throughput, production quality deep learning pipelines for NLP, computer vision, information extraction, or related practice
+Expertise with at least one deep learning framework (PyTorch, TensorFlow, or equivalent)
+Knowledge in the latest NLP-related algorithms and methods such as transformers, sequence-to-sequence models, word and sentence embeddings, attention, etc
+Fluency in Python
+Familiar with SQL
+Experienced Software Engineering and Data Modeling fundamentals
+A Masters or Ph.D. in Computer Science, Mathematics, Statistics, or another quantitative discipline or 3+ years equivalent industry experience
+Nice to haves
+
+You are familiar with monitoring and deployment tools and platforms, such as, Docker, Kubernetes, Terraform, AWS Services.
+Experience with C++
+Demonstrated ability to drive selection of machine learning approaches to solve specific problems coupled with the ability to clearly communicate tradeoffs
+Experience working with a MPP data warehouse (aka Redshift, Snowflake)
+Experience configuring and optimizing data pipelines
+Experience in Marketing Analytics field
+Experience on AWS Sagemaker stack & pattern
+General software design patterns (REST, MVC, Auto-scaling, etc.)
+What we offer you
+
+More data than you could imagine to play with!
+Data that matters and that is shaping the impact of billion dollar brands.
+Brillant, motivated and passionate colleagues with whom to spend your time.
+An inclusive and collaborative company culture- we work in an open environment while working together to get things done, and adapt to the changing needs as they come.
+Market competitive total compensation package.
+Volunteer time off and charitable donation matching.
+Regular hackathons to build your own projects and work with people across the entire company
+Strong support for career growth, including mentorship programs, leadership training, access to conferences and employee resource groups.
+Great benefits package including health/vision/dental, exceptional maternity leave coverage, unlimited PTO, flexible schedule, 401K/RRSPs matching and much more.
+If this sounds like something you would like to be part of, we’d love for you to apply! Don't worry if you think that you don't meet all the qualifications here. The tools, technology, and methodologies we use are constantly changing and we value talent and interest over specific experience.
+
+While this position can be remote, Numerator is only able to hire in many, but not all, states and provinces. In certain cases, if you are not located in a specific area where Numerator is able to hire, you may not be eligible for employment.
+
+We are an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability status, protected veteran status, or any other characteristic protected by the law.
+
+-----------------------------------------------------------------------
+
+Senior Machine Learning Engineer (Remote)
+
+Who We Are:
+
+KAR Global powers the world’s most trusted automotive marketplaces through innovation, technology and people. Our end-to-end platform serves the remarketing needs of the world’s largest OEMs, dealers, fleet operators, rental companies and financial institutions.
+We’re a technology company delivering next generation tools to accelerate and simplify remarketing.
+We’re an analytics company leveraging data to inform and empower our customers with clear, actionable insights.
+And we’re an auction company powering the world’s most advanced and integrated mobile, digital and physical auction marketplaces.
+
+KAR Data Services (KDS) is comprised of a team that is passionate about the intersection of data, technology and cars. This team of data scientists and analysts creates new products to help power the company’s physical, online, and digital/mobile automotive auction marketplaces.
+
+About Our Team:
+
+At our core, we are an analytics company. The insights we gain from our analyses guide our strategic path forward as we grow revenue, enter new markets, and strengthen our customer relationships. The Data Science team proactively leads and collaborates to identify the most valuable problems to solve, constructs a Roadmap to delivery, and executes our plan. All of the outputs of the Data Science team models will feed into the Product portfolio, aiding tens of thousands of internal and external stakeholders in their decision-making processes.
+About Our Candidate:
+Can think for themselves and discover new and insightful ways to solve difficult problems without having a clear roadmap laid out
+Can communicate effectively with data science teammates and non-technical audiences alike
+Can deliver quality code in an Agile framework that ships to a production environment
+Has confidence, hustle, energy, and drive – accountability is key and the impact of your work is crucial to our success
+What You Will Be Doing:
+Build machine learning engineering systems required to efficiently operate our data science services (including computer vision, recommendations, and optimization systems)
+Partner with our data scientists and site reliability engineers to improve model performance
+Own the architecture decisions and implementation details for specific data science services that you will have responsibility over
+Work in an Agile environment with team members, delivering solutions quickly and continuously exploring ways to improve our results
+Work closely with colleagues in Product, Operations, and Sales to structure problems and understand the impact across various departments within the company
+What You Need to Be Successful:
+Candidates tend to have at least a Bachelor's Degree in a quantitative field
+Significant experience (roughly 5 years) in a Data Science or Data Engineering position, specifically in building data science products and services in a production environment
+Experience designing and implementing machine learning models that are production-ready
+Familiarity with designing and implementing neural networks for computer vision models
+Experience coding with Python and SQL
+Experience with developing within an Amazon Web Services environment
+Familiarity with the Agile framework for software delivery
+
+-----------------------------------------------------------------------
+
+Data Engineer
+
+At FIRST Insurance Funding of Canada (FIRST Canada), we are proud to promote a workplace that fosters growth and innovation.
+
+We employ a dedicated team of enthusiastic individuals who thrive in an entrepreneurial, fast-paced environment. Our open concept and creative culture fosters team work and presents opportunities for growth within the organization.
+
+Essential Duties and Responsibilities :
+
+Regularly work with analysts to create scrubbed data sets for their various uses
+Work with analysts to create data sets to allow for predictive capabilities, including any related machine learning processes
+Research and develop statistical learning models for analysis
+Align data management and structure with business goals and structure
+Regular cleansing of all data
+Aid in the creation and maintenance of our data governance framework
+Regular monitoring of our data and report any inconsistencies or issues
+Aid in the support of SAS administration and related server requirements
+Maintain business knowledge to create ad hoc solutions which will enhance efficiencies and solve automation issues.
+Documentation of all databases and related source information
+Documentation of all queries and related calculations
+Knowledge/ Skills/ Abilities Required:
+
+Experience with coding and querying, preferably in the SAS environment
+SAS certification is a benefit
+Excellent written and verbal communication skills
+Previous database administration experience
+Strong time management, organizational, prioritization and abstract reasoning skills
+A proactive, energetic and enthusiastic approach to your work, and a desire to go the extra mile in aiding customers, both internal and external
+Self motivation and strong attention to detail
+The ability to build strong relationships with team members and internal and external customers
+Strong organizational, and abstract reasoning skills
+Ability to multitask in a high volume environment
+A flexible attitude towards change and the ability to adapt to new situations
+3-5 years direct experience
+
+-----------------------------------------------------------------------
+
+Machine Learning/Analytics Engineer - Data Lake
+
+MORE ABOUT THIS JOB:
+YOUR IMPACT
+
+Data Lake is the Firm’s strategic repository for enterprise data. Technology teams across the Firm are clients, participating in providing and consuming data to & from the lake. You will be part of the data lake machine learning and analytics team that leverages machine learning alongside big data engineering developers to continuously turn data into action.
+
+Your role would be to apply machine learning and statistical techniques to predict, analyze and improve the performance of this highly complex big-data platform. You will be rapidly applying analytics/ML to predict trends of various components of the lake to drive strategical improvements of significant business value. You will also be designing these high impact models to run on big data and put them in production at scale.
+
+You will be collaborating daily with big data developers in the lake to understand their requirements, and convert them into real-world applied ML/analytics problems to drive major business impact and cost savings. As part of understanding the problems of lake developers, you will work with latest technologies like Apache Spark, Flink, Elastic Search, HDFS, AWS to understand complex distributed applications which handle large data sets.
+
+The Data Lake is being adopted by technology teams across the Firm at a very high rate. As a result, the platform is growing and evolving, and with it, its analytical/ML needs to monitor, predict and correct its behavior automatically from vast sources of data.
+RESPONSIBILITIES AND QUALIFICATIONS:
+Basic Qualifications
+Upto one year of industry experience
+Experience in applied machine learning and statistics on real world problem statements. (An internship or strong ML projects in college, passion for looking at data and deriving conclusions about trends)
+Good working knowledge of jupyterhub and machine learning techniques.
+Working knowledge of scripting languages, linux, networking and file systems.
+Strong technical skills, analytical mindset, self-motivated, independent, creative, can solve interesting and sometimes difficult technical problems under time pressure and resource constraints.
+Ability to stay commercially focused and to always push for quantifiable commercial impact.
+Ability to collaborate effectively across global teams and communicate complex ideas in a simple manner.
+
+Preferred Qualifications
+Machine learning educational background.
+Knowledge of big data technical area/pyspark
+ABOUT GOLDMAN SACHS:
+The Goldman Sachs Group, Inc. is a leading global investment banking, securities and investment management firm that provides a wide range of financial services to a substantial and diversified client base that includes corporations, financial institutions, governments and individuals. Founded in 1869, the firm is headquartered in New York and maintains offices in all major financial centers around the world.
+
+Â© The Goldman Sachs Group, Inc., 2021. All rights reserved Goldman Sachs is an equal employment/affirmative action employer Female/Minority/Disability/Vet.
+
+-----------------------------------------------------------------------
+
+Senior Data Engineer (Remote, Canada)
+
+Company Description
+
+Shopify is the leading omni-channel commerce platform. Merchants use Shopify to design, set up, and manage their stores across multiple sales channels, including mobile, web, social media, marketplaces, brick-and-mortar locations, and pop-up shops. The platform also provides merchants with a powerful back-office and a single view of their business, from payments to shipping. The Shopify platform was engineered for reliability and scale, making enterprise-level technology available to businesses of all sizes.
+
+
+Job Description
+
+Our Data Platform Engineering group builds and maintains the platform that delivers accessible data to power decision-making at Shopify for over a million merchants. We’re hiring high-impact developers across teams:
+
+The Engine group organizes all merchant and Shopify data into our data lake in highly-optimized formats for fast query processing, and maintaining the security + quality of our datasets.
+The Analytics group builds products that leverage the Engine primitives to deliver simple and useful products that power scalable transformation of data at Shopify in batch, or streaming, or for machine learning. This group is focused on making it really simple for our users to answer three questions: What happened in the past? What is happening now? And, what will happen in the future?
+The Data Experiences group builds end-user experiences for experimentation, data discovery, and business intelligence reporting.
+The Reliability group operates the data platform efficiently in a consistent and reliable manner. They build tools for other teams at Data Platform to leverage to encourage consistency and they champion reliability across the platform.
+
+Qualifications
+
+While our teams value specialized skills, they've also got a lot in common. We're looking for a(n):
+
+High-energy self-starter with experience and passion for data and big data scale processing. You enjoy working in fast-paced environments and love making an impact.
+Exceptional communicator with the ability to translate technical concepts into easy to understand language for our stakeholders.
+Excitement for working with a remote team; you value collaborating on problems, asking questions, delivering feedback, and supporting others in their goals whether they are in your vicinity or entire cities apart.
+Solid software engineer: experienced in building and maintaining systems at scale.
+A Senior Data Developer at Shopify typically has 4-6 years of experience in one or more of the following areas:
+
+Working with the internals of a distributed compute engine (Spark, Presto, DBT, or Flink/Beam)
+Query optimization, resource allocation and management, and data lake performance (Presto, SQL)
+Cloud infrastructure (Google Cloud, Kubernetes, Terraform)
+Security products and methods (Apache Ranger, Apache Knox, OAuth, IAM, Kerberos)
+Deploying and scaling ML solutions using open-source frameworks (MLFlow, TFX, H2O, etc.)
+Building full-stack applications (Ruby/Rails, React, TypeScript)
+Background and practical experience in statistics and/or computational mathematics (Bayesian and Frequentist approaches, NumPy, PyMC3, etc.)
+Modern Big-Data storage technologies (Iceberg, Hudi, Delta)
+
+#Senior Software Developer- Distributed Systems #Senior Software Developer- Data Engineering #Senior Data App Developer #Senior Data Reliability Engineer #Senior Software Developer- Reliability
+
+Additional Information
+
+At Shopify, we are committed to building and fostering an environment where our employees feel included, valued, and heard. Our belief is that a strong commitment to diversity and inclusion enables us to truly make commerce better for everyone. We strongly encourage applications from Indigenous people, racialized people, people with disabilities, people from gender and sexually diverse communities and/or people with intersectional identities.
+
+Shopify is now permanently remote and working towards a future that is digital by design. Learn more
+
+#LI-REMOTE
+
+-----------------------------------------------------------------------
+
+Senior Data Engineer
+
+Why WestJet:
+
+
+Every WestJet journey has the potential to enrich lives; a career with us is no exception.
+
+
+WestJet arrived on the Canadian airline scene in 1996 and changed the industry for the better. We made air travel more affordable for Canadians and now we're going global.
+
+
+Join us and love where you’re going.
+
+
+Remote Work:
+
+
+This position is eligible for remote work, within Canada, under our mobile workforce program.
+
+
+Overview of the role:
+
+
+As WestJet becomes more complex and dynamic, we are seeking a Senior Data Engineer reporting to our Manager of Data Management. This individual exhibits a high standard of excellence, enjoys challenges, and is results-driven. The incumbent must be highly motivated and demonstrate the ability to work in an agile environment.
+
+
+As Data Engineer, this role will be responsible for designing and executing data strategy, building data pipelines, and helping to drive projects from inception to implementation. This role will also be responsible for ensuring the Data Engineering solution designs align to strategic roadmaps & be focusing on implementing data products using modern technologies like Spark, Kafka, Snowflake.
+
+
+This position can be based in Calgary AB, Toronto ON, or can work remotely from anywhere within Canada.
+
+
+Key deliverables include:
+
+The primary focus of this position is to provide development, best practices, and support expertise for the existing WestJet’s Data operations; including data warehousing, transformations, dashboards, scorecards, and other BI solution components that exist within the organization.
+Select and integrate any Data Engineering tools and frameworks required to provide requested capabilities
+Provide a research and development capability for WestJet to aid in the investigation, research, and introduction of new technologies.
+Promote policy and best practices across software development.
+Provide a physical implementation of the best practice across the areas of responsibilities.
+Collaborate with the Data, BI, and Architecture teams to improve consistency
+Participate in technology selection and architecture review to ensure minimized downtime
+Encourage and enforce best practices to enable rapid new feature development while maintaining multiple functioning capabilities
+Provide technical guidance and business intelligence know-how in addressing business needs.
+Implement ETL process for both streaming and batch data
+Monitor performance and advice on any necessary infrastructure changes
+Test developed components including ensuring conformance to security requirements.
+Provide support to other team members and business power users.
+You actively strive for “software craftsmanship” and take pride in inspiring and motivating those around you.
+
+Experience & Qualifications:
+
+Bachelors degree in computer science, Engineering, Statistics, Mathematics or related field.
+5 years of Data Warehouse and Business Intelligence experience in a project environment.
+3+ years of demonstrated data engineering and/or data streaming development experience.
+Experience with Azure and/or AWS data cloud solutions.
+Experience working in very large data warehouse environments.
+Experience in designing and delivering
+cross-functional custom reporting solutions.
+Experience with R, Python, Weka, SAS, Matlab, or other statistical/machine learning software.
+Be proficient in using Python, Java & SQL.
+Experience integrating with Advanced Analytic teams a plus (Integrate BI Solutions with Machine Learning/Predictive processing solutions).
+Deep hands on experience with BI and data processing; having participated in the full lifecycle of activities.
+Comprehensive understanding of BI and Data Warehouse design principles, techniques, and standards (e.g. Dimensional modelling, Data Vault, etc).
+Strong data related analytical, critical thinking, and problem-solving skills.
+Experience delivering custom solutions using the Scrum delivery methodology.
+Strong ability to develop meaningful, repeatable, and consistent quality checks throughout the development process.
+Proven experience in database design, development of data schemas, data curation & data wrangling ability from a variety of structured or unstructured sources.
+Strong ability to understand analytic specifications, translate specifications into visualizations and/or underlying code.
+Working knowledge of statistics.
+Working knowledge of Business Intelligence (BI) concepts.
+Must have experience in data analysis and data mining.
+Able to independently design, visualize and implement data visualization solutions using data visualization best practices.
+A work ethic based on a strong desire to exceed expectations.
+Proven ability to meet tight deadlines, multi-task, and prioritize workload.
+Experience delivering custom solutions using the Agile delivery methodology.
+Experience with reporting tools – ie: Cognos, Tableau, Power BI.
+Excellent oral and written communication skills including the ability to communicate effectively with both technical and non-technical stakeholders.
+Skilled in data modeling.
+Ability to proficiently deal with multiple competing priorities.
+Strong critical thinker with an aptitude for problem solving.
+
+The benefits of being a WestJetter:
+
+WestJet provides all WestJetters with a competitive total rewards package. On top of that, we offer:
+
+A fun and friendly culture with colleagues who work together to win
+Travel privileges for you and your family, effective from your start date
+Savings and Benefit programs that are flexible to meet your specific needs
+
+Think we are a fit? Apply now!
+
+
+About WestJet Group of Companies
+
+Together with WestJet's regional airline, WestJet Encore, we offer scheduled service to more than 100 destinations in North America, Central America, the Caribbean and Europe and to more than 175 destinations in over 20 countries through our airline partnerships.
+
+
+Our Safety Promise
+
+At WestJet, the safety and security of our people and our guests is a core value and at the heart of what we do. As safety and security is a shared responsibility, it is expected that you will use safe work practices to ensure your well-being and the safety of others.
+
+
+WestJet recognizes that the use of Alcohol and Drugs can adversely impact a safe work environment and the well-being of others including guests, suppliers and the public, as well as place WestJet's operations at risk. All roles that are identified as safety sensitive are required to pass a Pre-Employment Alcohol and Drug Test as per WestJet's Alcohol and Drug Policy.
+
+
+As a federally regulated company, the WestJet group of companies is required to comply with all federal mandates. In order to be compliant with the recently-announced vaccination mandate, and to keep our guests/employees safe, all employees will be required to be fully vaccinated against Covid-19 as a condition of employment.
+
+
+Our Commitment to Diversity and Inclusion
+
+We embrace what makes us each unique, and what makes us uniquely WestJet. WestJet is committed to inclusiveness, equity, and accessibility and if you require accommodation during the selection process, please let our Talent Acquisition team know. We encourage all qualified candidates to apply. We thank all applicants for their interest in WestJet; however, only those candidates who are selected will be contacted.
+
+
+For more information about everything WestJet, please visit WestJet.com.
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
