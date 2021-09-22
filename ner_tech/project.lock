@@ -1,49 +1,49 @@
 preprocess:
   cmd: python -m spacy run preprocess
   script:
-    - python scripts/preprocess.py assets/drugs_training.jsonl corpus/drugs_training.spacy
-    - python scripts/preprocess.py assets/drugs_eval.jsonl corpus/drugs_eval.spacy
+    - python scripts/preprocess.py assets/tech_training.jsonl corpus/tech_training.spacy
+    - python scripts/preprocess.py assets/tech_eval.jsonl corpus/tech_eval.spacy
   deps:
-    - path: assets/drugs_training.jsonl
-      md5: 4461081e67d8160cab4624e61448f371
-    - path: assets/drugs_eval.jsonl
-      md5: 4d730f6132de46fad3f76720ce9794f7
+    - path: assets/tech_training.jsonl
+      md5: cd176a587e3e25c63cf5773a7b7fda30
+    - path: assets/tech_eval.jsonl
+      md5: cd176a587e3e25c63cf5773a7b7fda30
     - path: scripts/preprocess.py
       md5: a1a912a37d5a490951cd6b8f819652ab
   outs:
-    - path: corpus/drugs_training.spacy
-      md5: 64ee10b371282c3fd2f0e947a6480c91
-    - path: corpus/drugs_eval.spacy
-      md5: 0ffa8d28f223fab18e9934041a112495
+    - path: corpus/tech_training.spacy
+      md5: 19b22221eb484b39c997903d18749896
+    - path: corpus/tech_eval.spacy
+      md5: 19b22221eb484b39c997903d18749896
   spacy_version: 3.1.2
   spacy_git_version: e1f88de72
 train:
   cmd: python -m spacy run train
   script:
-    - python -m spacy train configs/config.cfg --output training/ --paths.train corpus/drugs_training.spacy
-      --paths.dev corpus/drugs_eval.spacy --paths.vectors en_core_web_md
+    - python -m spacy train configs/config.cfg --output training/ --paths.train corpus/tech_training.spacy
+      --paths.dev corpus/tech_eval.spacy --paths.vectors en_core_web_md
   deps:
-    - path: corpus/drugs_training.spacy
-      md5: 64ee10b371282c3fd2f0e947a6480c91
-    - path: corpus/drugs_eval.spacy
-      md5: 0ffa8d28f223fab18e9934041a112495
+    - path: corpus/tech_training.spacy
+      md5: 19b22221eb484b39c997903d18749896
+    - path: corpus/tech_eval.spacy
+      md5: 19b22221eb484b39c997903d18749896
   outs:
     - path: training/model-best
-      md5: 70a234060c2749b560e645277056acfe
+      md5: d5e34c945123c865219c22935653f56a
   spacy_version: 3.1.2
   spacy_git_version: e1f88de72
 evaluate:
   cmd: python -m spacy run evaluate
   script:
-    - python -m spacy evaluate training/model-best corpus/drugs_eval.spacy --output
+    - python -m spacy evaluate training/model-best corpus/tech_eval.spacy --output
       training/metrics.json
   deps:
-    - path: corpus/drugs_eval.spacy
-      md5: 0ffa8d28f223fab18e9934041a112495
+    - path: corpus/tech_eval.spacy
+      md5: 19b22221eb484b39c997903d18749896
     - path: training/model-best
-      md5: 70a234060c2749b560e645277056acfe
+      md5: d5e34c945123c865219c22935653f56a
   outs:
     - path: training/metrics.json
-      md5: 34c111cce2432f2d1ed7bd3b6359de0e
+      md5: 63a9a35cb2d08ced8e73c2d2297ef983
   spacy_version: 3.1.2
   spacy_git_version: e1f88de72
