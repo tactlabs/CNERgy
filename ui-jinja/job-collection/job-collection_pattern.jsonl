@@ -1,0 +1,36 @@
+{"label": "TECH", "pattern": [{"lower": "machine learning"}]}
+{"label": "TECH", "pattern": [{"lower": "ml"}]}
+{"label": "TECH", "pattern": [{"lower": "python "}]}
+{"label": "TECH", "pattern": [{"lower": "c/c++"}]}
+{"label": "TECH", "pattern": [{"lower": "pytorch"}]}
+{"label": "TECH", "pattern": [{"lower": "caffe2"}]}
+{"label": "TECH", "pattern": [{"lower": "tensorflow"}]}
+{"label": "TECH", "pattern": [{"lower": "keras"}]}
+{"label": "TECH", "pattern": [{"lower": "jax"}]}
+{"label": "TECH", "pattern": [{"lower": "chainer"}]}
+{"label": "TECH", "pattern": [{"lower": "mlops"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning "}]}
+{"label": "TECH", "pattern": [{"lower": "kubeflow"}]}
+{"label": "TECH", "pattern": [{"lower": "aws sagemaker "}]}
+{"label": "TECH", "pattern": [{"lower": "google ai platform"}]}
+{"label": "TECH", "pattern": [{"lower": "azure machine learning"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning"}]}
+{"label": "TECH", "pattern": [{"lower": "python "}]}
+{"label": "TECH", "pattern": [{"lower": "tensorflow"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning "}]}
+{"label": "TECH", "pattern": [{"lower": "azure machine learning"}]}
+{"label": "TECH", "pattern": [{"lower": "machine"}]}
+{"label": "TECH", "pattern": [{"lower": "java/python"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learnin"}]}
+{"label": "TECH", "pattern": [{"lower": "openshift"}]}
+{"label": "TECH", "pattern": [{"lower": "docker"}]}
+{"label": "TECH", "pattern": [{"lower": "kubernetes"}]}
+{"label": "TECH", "pattern": [{"lower": "azure"}]}
+{"label": "TECH", "pattern": [{"lower": "hdp"}]}
+{"label": "TECH", "pattern": [{"lower": "hive"}]}
+{"label": "TECH", "pattern": [{"lower": "rest"}]}
+{"label": "TECH", "pattern": [{"lower": "pytorch"}]}
+{"label": "TECH", "pattern": [{"lower": "caffe2"}]}
+{"label": "TECH", "pattern": [{"lower": "tensorflow"}]}
+{"label": "TECH", "pattern": [{"lower": "keras"}]}
+{"label": "TECH", "pattern": [{"lower": "jax"}]}

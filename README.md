@@ -7,23 +7,23 @@ We have added more features to suppor Spacy3 and more custom requirements
 
 
 
-## Starting the application
+## Starting the application (Spacy 3)
 
 1. Install the dependencies and start the Python Backend server
 
 ```sh
-python -m venv env
+python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
 python annotator/server.py
 ```
 
-2. Open another terminal and start the server for the UI
+2. Open another terminal and start the jinja server for the UI
 
 ```sh
-cd ui
-yarn install
-yarn serve
+source env/bin/activate
+cd ui-jinja
+python server.py
 ```
 
 Now go to [http://localhost:8080](http://localhost:8080)
