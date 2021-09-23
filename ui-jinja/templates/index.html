@@ -62,7 +62,7 @@
             </ul> -->
         </div>
         <br>
-        <a href="/exportt" target="blank">
+        <a href="/exp" target="blank">
          <button class="btn btn-secondary " type="button" >
             Export .jsonl
           </button>
@@ -155,7 +155,7 @@
       "text" : untokenizedData[0]
     }
     $.ajax({
-        url: "http://127.0.0.1:5555/tokenize",
+        url: "http://localhost:5001/tokenize",
         type: "POST",
         data: JSON.stringify(text_data),
         contentType: "application/json",
@@ -182,7 +182,7 @@
       })
 
     //"text":Yourdata
-    // http://127.0.0.1:5555/tokenize
+    // http://localhost:5001/tokenize
     
     
   });
@@ -198,7 +198,7 @@
       var text_data = {"text" : untokenizedData[counter]};
 
       $.ajax({
-        url: "http://127.0.0.1:5555/tokenize",
+        url: "http://localhost:5001/tokenize",
         type: "POST",
         data: JSON.stringify(text_data),
         contentType: "application/json",
@@ -269,7 +269,7 @@
           
 
       $.ajax({
-        url: "http://127.0.0.1:5555/tokenize",
+        url: "http://localhost:5001/tokenize",
         type: "POST",
         data: JSON.stringify(text_data),
         contentType: "application/json",
