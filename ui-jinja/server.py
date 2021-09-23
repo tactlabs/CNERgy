@@ -288,7 +288,7 @@ def to_jsonl_file():
     with open(os.path.join(app.config['UPLOAD_FOLDER'], filename.replace(".json",".jsonl")), 'a') as outfile:
         for entry in data:
             # print(pattern_data)
-            json.dump(data[entry], outfile)
+            json.dumps(data[entry], outfile)
             outfile.write('\n')
 
     # pprint.pprint(json_dict)
