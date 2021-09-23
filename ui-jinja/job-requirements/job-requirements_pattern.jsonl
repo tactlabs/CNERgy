@@ -13,3 +13,4 @@
 {"label": "TECH", "pattern": [{"lower": "learning%20engineer"}]}
 {"label": "TECH", "pattern": [{"lower": "learning%20engineer"}]}
 {"label": "TECH", "pattern": [{"lower": "machinelearning"}]}
+{"label": "ADSF", "pattern": [{"lower": "q=machine%20learning"}]}
