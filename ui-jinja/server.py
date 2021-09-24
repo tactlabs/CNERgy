@@ -181,8 +181,10 @@ def save_file(tokenized_data, keys_data , words, filename):
 
     return True
 
-@app.route('/exp', methods=['GET'])
+@app.route('/exp', methods=['POST'])
 def export_files():
+    val = request.get_json()
+    print("val", val)
     filename =app.config[request.remote_addr+"-file_name"].replace(".txt",".jsonl")
     folder_path = filename.replace(".jsonl","")
     zip_name = filename.replace(".jsonl",".zip")

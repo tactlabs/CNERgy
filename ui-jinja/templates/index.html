@@ -62,8 +62,8 @@
             </ul> -->
         </div>
         <br>
-        <a href="/exp" target="blank">
-         <button class="btn btn-secondary " type="button" >
+        <a href="/exp" target="blank"></a>
+         <button class="btn btn-secondary " type="button" onclick="export_file()">
             Export .jsonl
           </button>
         </a>
@@ -148,6 +148,10 @@
   var total = untokenizedData.length;
   var token_data;
   var skipped_count = 0;
+  var skipped_indexes = [];
+  var completed_indexes = [];
+  var tags_list = [];
+
   $(document).ready(function () {
     // var tokenizedData = {{ data | tojson | safe }};
     
@@ -193,10 +197,10 @@
     let colorCodes = ["#B6A6D9", "#EFCDE4", "#F9FAD5", "#CBE6B3", "#90D0E6", "#FF6961", "#988270"]
 
     function skip(){
+      skipped_indexes.push(counter);
       counter+=1;
       skipped_count +=1;
       var text_data = {"text" : untokenizedData[counter]};
-
       $.ajax({
         url: "http://0.0.0.0:5555/tokenize",
         type: "POST",
@@ -248,6 +252,8 @@
         "orig_text"   : untokenizedData[counter]
       };
       // console.log(data)
+
+      completed_indexes.push(counter);
 
       console.log("untokenized data:",untokenizedData[counter]);
 
@@ -308,10 +314,35 @@
 
     }
 
+    function export_file() {
+      var checksum_data = {
+        "skipped"  : skipped_indexes,
+        "completed" : completed_indexes,
+        "tags"      : tags_list
+
+      };
+      $.ajax({
+        url: "/exp",
+        type: "POST",
+        data: JSON.stringify(checksum_data),
+        contentType: "application/json",
+        dataType: 'json',
+        success: function (returned_data) {
+          // alert("Techlinks successfully saved");
+          // console.log(tokenizedData);
+         
+        },
+
+        error: () => {
+          // alert("Failed to tokenize data");
+        }
+      })
+    }
 
     function addTag() {
       // console.log($('#input-tag').val());
       let tag = $('#input-tag').val().toUpperCase();
+      tags_list.push(tag);
       $('#input-tag').val("");
       $(".tags ul").append("<li><div class='color' style='background-color:" + colorCodes.pop() +
         "'> </div> <span style='padding-left:3px;''>" + tag +
