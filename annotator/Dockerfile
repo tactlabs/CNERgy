@@ -13,10 +13,8 @@ RUN pip install -r requirements.txt
 
 RUN python -m spacy download en_core_web_sm
 
-RUN chmod 400 ./run.sh
-
 EXPOSE 5555
 
-CMD ["./run.sh"]
+CMD ["python3","server.py"]
 
 
