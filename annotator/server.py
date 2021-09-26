@@ -26,7 +26,7 @@ def detokenize():
     tokens = request.json["tokens"]
     return {"text": TreebankWordDetokenizer().detokenize(tokens)}
 
-@app.route("/tokenize", methods=["POST"])
+# @app.route("/tokenize", methods=["POST"])
 
 
 if __name__ == "__main__":

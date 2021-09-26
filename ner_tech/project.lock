@@ -15,8 +15,8 @@ preprocess:
       md5: 19b22221eb484b39c997903d18749896
     - path: corpus/tech_eval.spacy
       md5: 19b22221eb484b39c997903d18749896
-  spacy_version: 3.1.2
-  spacy_git_version: e1f88de72
+  spacy_version: 3.1.3
+  spacy_git_version: 8bda39f08
 train:
   cmd: python -m spacy run train
   script:
@@ -29,9 +29,9 @@ train:
       md5: 19b22221eb484b39c997903d18749896
   outs:
     - path: training/model-best
-      md5: d5e34c945123c865219c22935653f56a
-  spacy_version: 3.1.2
-  spacy_git_version: e1f88de72
+      md5: f65d429e842b321b889a948283365ede
+  spacy_version: 3.1.3
+  spacy_git_version: 8bda39f08
 evaluate:
   cmd: python -m spacy run evaluate
   script:

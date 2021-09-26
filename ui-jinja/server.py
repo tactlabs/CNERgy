@@ -150,6 +150,28 @@ def save_file(tokenized_data, keys_data , words, filename):
 
     # pprint.pprint(hit_list)
 
+
+
+    ## overlap fix
+
+    tokens = res_list
+    leng = len(tokens)
+    new_tokens = []
+    for tok in range(leng):
+
+        prev_token = tokens[tok - 1] if tok > 0 else {'start' : -1, 'end' : -1}
+        curr_token = tokens[tok]
+        if curr_token['start'] == prev_token['end']:
+            prev_diff = prev_token['end'] - prev_token['start']
+            curr_diff = curr_token['end'] - curr_token['start']
+            if curr_diff > prev_diff:
+                new_tokens.append(curr_token)
+        else:
+            new_tokens.append(curr_token)
+
+    res_list = new_tokens
+
+
     one_page_data = {
         "text" : words,
         "meta" : {"section":"tech_keys"},
@@ -159,6 +181,7 @@ def save_file(tokenized_data, keys_data , words, filename):
         "spans" : hit_list,
         "answer":"accept"
         }
+
     pattern_filename = filename.replace(".jsonl","_pattern.jsonl")
     folder_path = filename.replace(".jsonl","")
     print(folder_path)
@@ -304,6 +327,26 @@ def to_jsonl_file():
 
 
 
+
+
+
+
+
+@app.route('/login', methods=['GET'])
+def login_page():
+    
+    return render_template("login.html")
+
+
+@app.route('/dashboard', methods=['GET'])
+def dash_page():
+    
+    return render_template("dash.html")
+
+@app.route('/annotator', methods=['GET'])
+def annotator_new():
+    
+    return render_template("annotator_new.html")
 
 
 
