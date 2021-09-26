@@ -9,9 +9,13 @@ RUN apk update && apk add python3-dev \
 WORKDIR /code
 
 COPY . /code
+
 RUN pip install -r requirements.txt
+
+RUN chmod 400 ./annotator/run.sh
 
 EXPOSE 5555
 
-CMD ["python","server.py"]
+CMD ["./annotator/run.sh"]
+
 

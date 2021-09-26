@@ -11,7 +11,7 @@ app = Flask(__name__)
 nlp = spacy.load("en_core_web_sm")
 # nlp = English()
 
-USE_LOCAL_TOKENIZER = True
+USE_LOCAL_TOKENIZER = False
 
 def get_tokens_local(text):
 
@@ -83,6 +83,6 @@ def startpy():
 
 if __name__ == "__main__":
 
-    # app.run(host = '0.0.0.0', port = 5555, debug = True)
+    app.run(host = '0.0.0.0', port = 5555, debug = True)
 
-    startpy()
+    # startpy()
