@@ -1,21 +1,25 @@
-FROM python:3-alpine3.13
+FROM ubuntu:latest
 
+RUN apt-get update -y
+RUN apt-get -y install python3.9
+RUN apt-get -y install python3-pip
+RUN apt install python3-dev \
+                        build-essential  zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev \
+                        libreadline-dev libffi-dev wget \
+                        linux-libc-dev
 
-
-RUN apk update && apk add python3-dev \
-                        gcc \
-                        libc-dev
+ADD . /code
 
 WORKDIR /code
 
-COPY . /code
-
 RUN pip install -r requirements.txt
 
-RUN chmod 400 ./annotator/run.sh
+RUN python -m spacy download en_core_web_sm
+
+RUN chmod 400 ./run.sh
 
 EXPOSE 5555
 
-CMD ["./annotator/run.sh"]
+CMD ["./run.sh"]
 
 
