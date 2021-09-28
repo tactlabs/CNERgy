@@ -12,10 +12,16 @@ load_dotenv()
 
 from flask_bcrypt import Bcrypt
 
+from flask_pymongo import PyMongo, pymongo
+
+
 bcrypt = Bcrypt()
 
 
 app=Flask(__name__)
+
+
+mongo = PyMongo(app)
 
 UPLOAD_FOLDER = 'static/uploads'
 ALLOWED_EXTENSIONS = {'txt'}
@@ -360,8 +366,13 @@ def login_page():
 @app.route('/login', methods=['POST'])
 def page_login_post():
 
-    username = request.values.get('email')
+    username = request.values.get('username')
     password = request.values.get('password')
+
+    ###############
+
+
+
 
 
 @app.route('/dashboard', methods=['GET'])
