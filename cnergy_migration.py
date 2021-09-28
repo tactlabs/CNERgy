@@ -5,7 +5,9 @@ import pymongo.errors as pymon_err
 
 from datetime import date, datetime, timedelta
 
+from dotenv import load_dotenv
 
+load_dotenv()
 
 mongo_uri = "mongodb+srv://admin:vYVcVL8ROCz4HyIQ@cluster0.xhchx.mongodb.net/cner_dev?retryWrites=true&w=majority"
 
@@ -298,6 +300,44 @@ def create_c12_annotators():
 
         return False
 
+def populate_dummy_data():
+
+    collection_name = 'c12_annotators'
+    new_collection = database[collection_name]
+
+    current_datetime = datetime.now()
+
+    name_list = ['ajesh','talha','vedha','prakash','ana']
+
+    for i in range(5):
 
 
-create_c12_annotators()
+        user_gift_entry_dict = {
+            "annotator_id"           : i+2,
+            "annotator_name"         : name_list[i],
+            "cluster_id"        : 1,
+            "password"          : "password",
+            "email"          : f"{name_list[i]}@tactii.com",
+
+            "created_at"        : current_datetime,
+            "updated_at"        : current_datetime,
+        }
+
+        try:
+            x = new_collection.insert_one(user_gift_entry_dict)
+            print(x)
+
+        except pymon_err.DuplicateKeyError as e:
+            # print(e)
+            print('Duplicate Error')
+
+            return False
+
+
+
+
+if __name__ == '__main__':
+
+    # create_c12_annotators()
+
+    populate_dummy_data()
