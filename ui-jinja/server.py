@@ -25,7 +25,7 @@ def allowed_file(filename):
 
 @app.route('/',methods=['GET','POST'])
 def base():
-    return render_template('home.html')
+    return render_template('home_new.html')
 
 @app.route('/view',methods=['GET'])
 def home():

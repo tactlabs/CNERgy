@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        NER Text Annotator
+    </title>
+    <!-- Favicon -->
+
+    <link href="{{ url_for('static', filename='img/brand/favicon.png') }}" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+
+    <link href="{{ url_for('static', filename='js/plugins/nucleo/css/nucleo.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="{{ url_for('static', filename='css/argon-dashboard.css') }}" rel="stylesheet" />
+
+    <!-- Recorder Custom CSS Files -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.css">
+
+
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+        .bg {
+            /* background-image: url('static/img/brand/machine.jpg') ; */
+            background-repeat: no-repeat;
+            background-size:contain;
+            max-width: 50%;
+            
+            padding-left: 30rem; 
+            padding-top: 2%;
+            
+            
+        }
+
+
+    header[role="banner"] {
+      background: linear-gradient(109.6deg, rgba(62, 161, 219, 1) 11.2%, rgba(93, 52, 236, 1) 100.2%);
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    header[role="banner"] h1 {
+      margin: 0;
+      font-weight: 300;
+      padding: 1rem;
+      text-align: center;
+      color: white;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      padding: 30px;
+      /* background-image: url('static/img/brand/technology-face-circuit-diagram-background_1017-18300.jpg'); */
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    </style>
+    
+</head>
+
+<body class="">
+
+<br>
+    <img style="width:60px; margin:10px;" src="static/img/brand/download.png"
+    alt=""> TactLabs
+
+  
+
+    <a class="navbar-brand" href=""> | CNERGY Text Annotator</a>
+    <header role="banner">
+        <br>
+        <h1>CNERGY Text Annotator</h1>  
+        <div class="text-center">
+        <p style="color:white;">Annotate text for SpaCy NER Model training</p>
+        </div>
+    </header> 
+
+<br><br>
+  
+
+   
+      
+
+
+            <div class="images">
+                <img src=static/img/brand/machine-01.png style="padding-left: 1rem; padding-top: 2%; width: 60rem;">
+              </div>
+         
+            <div class="row" style="margin-left:55rem ;margin-top: -45rem;"  >
+
+            
+           </div>
+     
+            </div>
+
+
+                    <div class="card text-center" style="width: 35rem; margin-left: 70rem; border-width: 2px;margin-top: 8rem; ">
+                    
+                      <br>
+                      <h5 class="card-title " style="">CNERGY Text annotator</h5>
+
+                      <form action="/upload" method="POST" enctype="multipart/form-data">
+                      <div class="card-body text-center">
+                      <input type="file" class="form-control" name = "file" id="file" style="border:none;margin: auto;width:50%;" required/>
+                      <br>
+
+                        <input type="text" name= "delimiter" placeholder="Enter Delimiter" style="margin-left: -5px;" required>
+                        <br>
+                        <br>
+                        <!-- <a href="#" class="btn btn-primary" style="margin-left: -5px;" >Submit</a> -->
+                        <button type="submit" class="btn btn-primary text-center" style="margin-left: -5px;height:30px;">Start</button>
+                    </form>
+                      </div>
+                    </div>
+                  
+
+
+           
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--   Core   -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/plugins/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <!--   Optional JS   -->
+    <!--   Argon JS   -->
+    <script src="{{ url_for('static', filename='js/argon-dashboard.min.js') }}"></script>
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script>
+        window.TrackJS &&
+            TrackJS.install({
+                token: "ee6fab19c5a04ac1a32a645abde4613a",
+                application: "argon-dashboard-free"
+            });
+    </script>
+    <!-- Hello                    -->
+</body>
+
+</html>
