@@ -390,13 +390,14 @@ def page_login_post():
     collection_name = 'c12_annotators'
     new_collection = database[collection_name]
 
-    user = new_collection.find()
+    user = new_collection.find_one({"annotator_name" : username})
 
-    # if not user:
-    #     return "NO USER FOUND"
-    for i in user:
-        print(i["email"])
-    return str("user")
+    if not user:
+        return "NO USER FOUND"
+
+    if match_password(user["password"],password):
+        return redirect("/dashboard")
+    return "WRONG PASSWORD"
 
 
 @app.route('/dashboard', methods=['GET'])
