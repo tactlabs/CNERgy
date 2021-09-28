@@ -164,6 +164,7 @@ def create_c12_pages():
   
     user_gift_entry_dict = {
         "page_id"           : 1,
+        "page_num"          : 1,
         "batch_id"         : 1,
         "page_data"        : None,
         "file_id"          : 1,
