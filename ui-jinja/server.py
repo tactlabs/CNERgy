@@ -46,6 +46,12 @@ client = MongoClient(F12R_MONGO_URI)
 DB_NAME = 'cner_dev'
 database = client[DB_NAME]
 
+c12_annotators = database['c12_annotators']
+c12_batches = database['c12_batches']
+c12_clusters = database['c12_clusters']
+c12_files = database['c12_files']
+c12_pages = database['c12_pages']
+
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -355,10 +361,39 @@ def to_jsonl_file():
 
 def get_page_data_for_annotator(annotator_id):
 
-    
+    annotator_aggregated_data = c12_annotators.aggregate([
+                                                { "$match": { "annotator_id": annotator_id } },
+                                                {
+                                                    "$lookup": {
+                                                        "from": "c12_clusters",
+                                                        "localField": "cluster_id",
+                                                        "foreignField": "cluster_id",
+                                                        "as": "cluster_data"
+                                                    }
+                                                },
+                                                { "$unwind": "$cluster_data" }
+                                                ])
 
-    pass
+    annotator_aggregated_data  = list(annotator_aggregated_data)[0]
 
+    print(annotator_aggregated_data)
+
+    del annotator_aggregated_data['_id']
+
+    del annotator_aggregated_data['cluster_data']['_id']
+
+    batch_id = annotator_aggregated_data['cluster_data']['batch_id']
+
+    batches_aggregated_data = c12_batches.find_one([
+                                                { "$match": { "batch_id": batch_id } }
+                                                ])
+
+
+    all_files_in_batch = batches_aggregated_data['file_id']
+
+    page_data = None
+
+    return all_files_in_batch
 
 
 ## cluster stuff ###
@@ -411,9 +446,14 @@ def annotator_new():
     
     return render_template("annotator_new.html")
 
+@app.route('/tester', methods=['GET','POST'])
+def tester():
 
-
-
+    result = {
+        "ping" : get_page_data_for_annotator(2)
+    }
+    
+    return jsonify(result)
 
 
 if __name__ == '__main__':
