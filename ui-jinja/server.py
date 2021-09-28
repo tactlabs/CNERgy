@@ -1,3 +1,4 @@
+import datetime
 from flask import Flask,url_for,render_template, jsonify, request, redirect
 from flask.globals import session
 from flask.helpers import send_file, send_from_directory
@@ -56,12 +57,17 @@ c12_batches = database['c12_batches']
 c12_clusters = database['c12_clusters']
 c12_files = database['c12_files']
 c12_pages = database['c12_pages']
+c12_annotations = database['c12_annotations']
+
 
 
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+def get_annotator_id():
+
+    return session["annotator_id"]
 
 @app.route('/',methods=['GET','POST'])
 def base():
@@ -474,9 +480,170 @@ def dash_page():
     
     return render_template("dash.html")
 
+
+@app.route('/get_next_page', methods=['GET'])
+def get_next_page():
+    
+    next_text_data = get_page_data_for_annotator(get_annotator_id())
+
+
+    URL = "http://backend-service:5555/tokenize"
+    
+    
+
+    # print(next_text_data)
+   
+    PARAMS = {'text':next_text_data["page_data"]}
+    
+
+    r = requests.post(url = URL, json = PARAMS)
+    
+    # extracting data in json format
+    data = r.json()
+
+    # print(data)
+    return {"result" : data, "page_id" : next_text_data["page_id"] }
+
+def get_last_annotation_id():
+    last_annotation_id = c12_annotations.find().sort([('annotation_id', -1)]).limit(1)
+    try:
+        last_annotation_id = last_annotation_id[0]['annotation_id']
+    except Exception as err:
+        print("error while getting last annotation_id : ", err)
+        last_annotation_id = 0
+
+    return last_annotation_id
+
+
+@app.route('/save_annotations', methods=['POST'])
+def save_annotations_db():
+    if request.method == "POST":
+        val = request.get_json()
+        print(val)
+        tokenized_data = val["initial-data"]["tokens"]
+        keys_data = val["selected-data"]
+        page_id = val["page_id"]
+        words = val["orig_text"]
+        count = 0
+        res_list = []
+        hit_list = []
+        for word in tokenized_data:
+
+            data = {
+                "text" : word[2],
+                "start" : word[0],
+                "end" : word[1],
+                "id" : count
+            }
+
+            
+
+            res_list.append(data)
+            count+=1
+        pattern_data = []
+
+        # pprint.pprint(res_list)
+        for ner in keys_data:
+            # print(keys_data[ner])
+            for select in keys_data[ner]:
+
+                prev = False
+                prev_value = None
+                token_start = None
+                token_end = None
+                selected_words = select.split()
+                # print(select,selected_words)
+                hit = None
+
+
+                for word in selected_words:
+                    # print(word,keys_data[ner][select] )
+                    # print("word", select)
+                    for word2 in res_list:
+                        # print(word2["start"],"--",word2["text"],"==", word, len(word2["text"]), len(word))
+                        # print(res_list)
+
+                        if (word2["start"] == keys_data[ner][select] and prev == False) or (word in word2["text"] and prev == True and word2 == ( res_list[res_list.index(prev_value)+1])):
+                            print("yes",word2)
+                            hit = word2
+                            if prev == False:
+                                token_start = word2["id"]
+                                pattern_data.append({"label": ner ,"pattern":[{"lower": select.lower()}]})
+                            else:
+                                token_end = word2["id"]
+                            prev_value = word2
+                            prev=True
+                            break
+                
+                if not token_end:
+                    token_end = token_start
+
+                data = {
+                    "start" : word2["start"],
+                    "end" : word2["end"],
+                    "token_start" : token_start,
+                    "token_end" : token_end,
+                    "label" : ner
+                    }
+                
+                hit_list.append(data)
+
+        # pprint.pprint(hit_list)
+
+
+
+        ## overlap fix
+
+        tokens = res_list
+        leng = len(tokens)
+        new_tokens = []
+        for tok in range(leng):
+
+            prev_token = tokens[tok - 1] if tok > 0 else {'start' : -1, 'end' : -1}
+            curr_token = tokens[tok]
+            if curr_token['start'] == prev_token['end']:
+                prev_diff = prev_token['end'] - prev_token['start']
+                curr_diff = curr_token['end'] - curr_token['start']
+                if curr_diff > prev_diff:
+                    new_tokens.append(curr_token)
+            else:
+                new_tokens.append(curr_token)
+
+        res_list = new_tokens
+
+
+        one_page_data = {
+            "text"      : words,
+            "meta"      : {"section":"tech_keys"},
+            "_input_hash": 1922477360,
+            "_task_hash": 508078126,
+            "tokens"    : res_list,
+            "spans"     : hit_list,
+            "answer"    : "accept"
+            }
+        
+        annotation_data = {
+            "annotation_id" : get_last_annotation_id() + 1,
+            "annotator_id"  : get_annotator_id(),
+            "annotation_data" : one_page_data,
+            "page_id"       : page_id,
+            "created_at"    : datetime.datetime.now(),
+            "updated_at"    : datetime.datetime.now()
+        }
+
+        c12_annotations.insert_one(annotation_data)
+
+        return "True"
+
+
+
+
 @app.route('/annotator', methods=['GET'])
 def annotator_new():
+
+    # page_data = get_page_data_for_annotator(int(session["annotator_id"]))
     
+    # tokenized_data = 
     return render_template("annotator_new.html")
 
 @app.route('/tester', methods=['GET','POST'])
