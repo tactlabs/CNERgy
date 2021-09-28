@@ -6,6 +6,9 @@ import pprint
 import requests
 import zipfile
 import hashlib
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from flask_bcrypt import Bcrypt
 
