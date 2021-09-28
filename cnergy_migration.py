@@ -2,6 +2,7 @@ from pymongo import MongoClient
 import pymongo
 import os
 import pymongo.errors as pymon_err
+import random
 
 from datetime import date, datetime, timedelta
 
@@ -300,7 +301,7 @@ def create_c12_annotators():
 
         return False
 
-def populate_dummy_data():
+def populate_dummy_annotator_data():
 
     collection_name = 'c12_annotators'
     new_collection = database[collection_name]
@@ -313,9 +314,9 @@ def populate_dummy_data():
 
 
         user_gift_entry_dict = {
-            "annotator_id"           : i+2,
+            "annotator_id"           : i+6,
             "annotator_name"         : name_list[i],
-            "cluster_id"        : 1,
+            "cluster_id"        : random.randint(1,3),
             "password"          : "password",
             "email"          : f"{name_list[i]}@tactii.com",
 
@@ -333,6 +334,74 @@ def populate_dummy_data():
 
             return False
 
+def populate_dummy_batches_data():
+
+    collection_name = 'c12_batches'
+    new_collection = database[collection_name]
+
+    # database[collection_name].create_index([
+    #     ("gift_id", pymongo.ASCENDING),
+    #     ("userid", pymongo.ASCENDING),
+    # ], unique = True)
+
+
+    current_datetime = datetime.now()
+    
+    
+    for i in range(5):
+
+        file_id = [x for x in range((i)*5,(i+1)*5)]
+
+        user_gift_entry_dict = {
+            "batch_id"      : i+1,
+            "file_id"       : file_id,
+            "created_at"    : current_datetime,
+            "updated_at"    : current_datetime,
+        }
+
+        try:
+            x = new_collection.insert_one(user_gift_entry_dict)
+            print(x)
+
+        except pymon_err.DuplicateKeyError as e:
+            # print(e)
+            print('Duplicate Error')
+
+            return False
+
+def populate_dummy_cluster_data():
+
+    collection_name = 'c12_clusters'
+    new_collection = database[collection_name]
+
+    # database[collection_name].create_index([
+    #     ("gift_id", pymongo.ASCENDING),
+    #     ("userid", pymongo.ASCENDING),
+    # ], unique = True)
+
+
+    current_datetime = datetime.now()
+    
+    for i in range(2):
+
+
+        user_gift_entry_dict = {
+            "cluster_id"  : i+2,
+            "cluster_name"       : i+2,
+            "batch_id"        : 1,
+            "created_at"    : current_datetime,
+            "updated_at"    : current_datetime,
+        }
+
+        try:
+            x = new_collection.insert_one(user_gift_entry_dict)
+            print(x)
+
+        except pymon_err.DuplicateKeyError as e:
+            # print(e)
+            print('Duplicate Error')
+
+            return False
 
 
 
@@ -340,4 +409,8 @@ if __name__ == '__main__':
 
     # create_c12_annotators()
 
-    populate_dummy_data()
+    # populate_dummy_annotator_data()
+
+    # populate_dummy_cluster_data()
+
+    populate_dummy_batches_data()
