@@ -413,4 +413,6 @@ if __name__ == '__main__':
 
     # populate_dummy_cluster_data()
 
-    populate_dummy_batches_data()
+    # populate_dummy_batches_data()
+
+    pass
