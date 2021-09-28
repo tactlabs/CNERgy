@@ -6,6 +6,9 @@ import pprint
 import requests
 import zipfile
 import hashlib
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from flask_bcrypt import Bcrypt
 
@@ -335,7 +338,9 @@ def to_jsonl_file():
 
     return return_file
 
+def get_page_data_for_annotator(annotator_id):
 
+    pass
 
 
 
