@@ -7,6 +7,11 @@ import requests
 import zipfile
 import hashlib
 
+from flask_bcrypt import Bcrypt
+
+bcrypt = Bcrypt()
+
+
 app=Flask(__name__)
 
 UPLOAD_FOLDER = 'static/uploads'
@@ -330,11 +335,30 @@ def get_page_data_for_annotator(annotator_id):
 
 
 
+## cluster stuff ###
+
+
+
+def match_password(db_password, password):
+
+    return bcrypt.check_password_hash(db_password, password)
+
+
+
+
+
 
 @app.route('/login', methods=['GET'])
 def login_page():
     
     return render_template("login.html")
+
+
+@app.route('/login', methods=['POST'])
+def page_login_post():
+
+    username = request.values.get('email')
+    password = request.values.get('password')
 
 
 @app.route('/dashboard', methods=['GET'])
@@ -346,6 +370,9 @@ def dash_page():
 def annotator_new():
     
     return render_template("annotator_new.html")
+
+
+
 
 
 
