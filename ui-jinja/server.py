@@ -324,10 +324,9 @@ def to_jsonl_file():
 
     return return_file
 
+def get_page_data_for_annotator(annotator_id):
 
-
-
-
+    pass
 
 
 
