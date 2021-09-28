@@ -1,4 +1,5 @@
 from flask import Flask,url_for,render_template, jsonify, request, redirect
+from flask.globals import session
 from flask.helpers import send_file, send_from_directory
 from werkzeug.utils import  secure_filename
 import json ,os
@@ -6,6 +7,7 @@ import pprint
 import requests
 import zipfile
 import hashlib
+import session_utils
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -21,6 +23,9 @@ bcrypt = Bcrypt()
 app=Flask(__name__)
 
 
+app.secret_key = 'smite$me$oh$mighty$smiter'
+
+SESSION_ID_KEY  = "sid"
 
 
 UPLOAD_FOLDER = 'static/uploads'
@@ -388,7 +393,6 @@ def get_page_data_for_annotator(annotator_id):
                                                 { "$match": { "batch_id": batch_id } }
                                                 ])
 
-
     all_files_in_batch = batches_aggregated_data['file_id']
 
     page_data = None
@@ -427,14 +431,18 @@ def page_login_post():
     collection_name = 'c12_annotators'
     new_collection = database[collection_name]
 
-    user = new_collection.find()
+    user = new_collection.find_one({"annotator_name" : username})
 
-    # if not user:
-    #     return "NO USER FOUND"
-    for i in user:
-        print(i["email"])
-    return str("user")
+    if not user:
+        return "NO USER FOUND"
 
+    if not match_password(user["password"],password):
+        return "WRONG PASSWORD"
+
+    sid = session_utils.created_sessionid(user["annotator_id"])
+    session[SESSION_ID_KEY]      = sid
+    session["annotator_id"]      = user["annotator_id"]
+    return redirect("/dashboard")
 
 @app.route('/dashboard', methods=['GET'])
 def dash_page():
