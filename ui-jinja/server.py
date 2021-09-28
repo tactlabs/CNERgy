@@ -12,7 +12,7 @@ load_dotenv()
 
 from flask_bcrypt import Bcrypt
 
-from flask_pymongo import PyMongo, pymongo
+from pymongo import MongoClient
 
 
 bcrypt = Bcrypt()
@@ -21,7 +21,7 @@ bcrypt = Bcrypt()
 app=Flask(__name__)
 
 
-mongo = PyMongo(app)
+
 
 UPLOAD_FOLDER = 'static/uploads'
 ALLOWED_EXTENSIONS = {'txt'}
@@ -30,6 +30,21 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['CHECKSUM_FOLDER'] = 'static/uploads'
 
 
+def get_mongo_uri():
+    
+    mongo_uri = os.environ['MONGO_URI']
+    # print(mongo_uri)
+
+    return mongo_uri
+
+F12R_MONGO_URI = get_mongo_uri()
+
+# creating a MongoClient object  
+client = MongoClient(F12R_MONGO_URI)  
+
+# accessing the database  
+DB_NAME = 'cner_dev'
+database = client[DB_NAME]
 
 
 def allowed_file(filename):
@@ -371,10 +386,19 @@ def page_login_post():
     username = request.values.get('username')
     password = request.values.get('password')
 
+    print(username,password)
     ###############
 
+    collection_name = 'c12_annotators'
+    new_collection = database[collection_name]
 
+    user = new_collection.find()
 
+    # if not user:
+    #     return "NO USER FOUND"
+    for i in user:
+        print(i["email"])
+    return str("user")
 
 
 @app.route('/dashboard', methods=['GET'])
