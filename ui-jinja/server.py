@@ -381,23 +381,48 @@ def get_page_data_for_annotator(annotator_id):
 
     annotator_aggregated_data  = list(annotator_aggregated_data)[0]
 
-    print(annotator_aggregated_data)
-
     del annotator_aggregated_data['_id']
 
     del annotator_aggregated_data['cluster_data']['_id']
 
     batch_id = annotator_aggregated_data['cluster_data']['batch_id']
 
-    batches_aggregated_data = c12_batches.find_one([
-                                                { "$match": { "batch_id": batch_id } }
-                                                ])
+    batches_aggregated_data = c12_batches.find_one({ "batch_id": batch_id })
 
     all_files_in_batch = batches_aggregated_data['file_id']
 
-    page_data = None
+    all_files_data = list(c12_files.find({ "file_id": { "$in": all_files_in_batch }}))
 
-    return all_files_in_batch
+    for single_file in all_files_data:
+
+        del single_file['_id']
+
+        if single_file['assigned_status'] != 'completed':
+
+            required_file_id = single_file['file_id']
+
+            break
+
+    all_pages_data = list(c12_pages.find({ "file_id": required_file_id}))
+
+    for single_page in all_pages_data:
+
+        del single_page['_id']
+
+        if not single_page['page_status']:
+
+            required_page_id = single_page['page_id']
+
+            required_page_data = single_page['page_data']
+
+            break     
+
+    result = {
+        "page_id"   : required_page_id,
+        "page_data" : required_page_data
+    }
+
+    return result
 
 
 ## cluster stuff ###
@@ -458,7 +483,7 @@ def annotator_new():
 def tester():
 
     result = {
-        "ping" : get_page_data_for_annotator(2)
+        "ping" : get_page_data_for_annotator(annotator_id = 3)
     }
     
     return jsonify(result)
