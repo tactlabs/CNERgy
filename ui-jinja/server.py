@@ -1,4 +1,5 @@
 from flask import Flask,url_for,render_template, jsonify, request, redirect
+from flask.globals import session
 from flask.helpers import send_file, send_from_directory
 from werkzeug.utils import  secure_filename
 import json ,os
@@ -6,6 +7,7 @@ import pprint
 import requests
 import zipfile
 import hashlib
+import session_utils
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -21,6 +23,9 @@ bcrypt = Bcrypt()
 app=Flask(__name__)
 
 
+app.secret_key = 'smite$me$oh$mighty$smiter'
+
+SESSION_ID_KEY  = "sid"
 
 
 UPLOAD_FOLDER = 'static/uploads'
@@ -355,8 +360,6 @@ def to_jsonl_file():
 
 def get_page_data_for_annotator(annotator_id):
 
-    
-
     pass
 
 
@@ -397,10 +400,13 @@ def page_login_post():
     if not user:
         return "NO USER FOUND"
 
-    if match_password(user["password"],password):
-        return redirect("/dashboard")
-    return "WRONG PASSWORD"
+    if not match_password(user["password"],password):
+        return "WRONG PASSWORD"
 
+    sid = session_utils.created_sessionid(user["annotator_id"])
+    session[SESSION_ID_KEY]      = sid
+    session["annotator_id"]      = user["annotator_id"]
+    return redirect("/dashboard")
 
 @app.route('/dashboard', methods=['GET'])
 def dash_page():
