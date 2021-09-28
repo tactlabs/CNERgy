@@ -1,9 +1,16 @@
 FROM python:3-alpine3.13
 
+ADD ./requirements.txt /code/requirements.txt
+
+RUN pip install -r /code/requirements.txt
+
 WORKDIR /code
 
 COPY . /code
-RUN pip install -r requirements.txt
+
+ARG CRYPTOGRAPHY_DONT_BUILD_RUST=1
+
+
 
 EXPOSE 8080
 
