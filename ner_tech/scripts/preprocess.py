@@ -4,7 +4,7 @@ from pathlib import Path
 from spacy.util import get_words_and_spaces
 from spacy.tokens import Doc, DocBin
 import spacy
-
+from spacy.util import filter_spans 
 
 def main(
     input_path: Path = typer.Argument(..., exists=True, dir_okay=False),
@@ -18,10 +18,16 @@ def main(
         tokens = [token["text"] for token in eg["tokens"]]
         words, spaces = get_words_and_spaces(tokens, eg["text"])
         doc = Doc(nlp.vocab, words=words, spaces=spaces)
-        doc.ents = [
-            doc.char_span(s["start"], s["end"], label=s["label"])
-            for s in eg.get("spans", [])
-        ]
+        #print(eg.get("spans"))
+        entities = []
+        for s in eg.get("spans"):
+            entities.append(doc.char_span(s["start"], s["end"], label=s["label"]))
+        try:
+            doc.ents = list(set(entities))
+        except Exception as err:
+            print(err)
+            print(entities)
+            exit()
         doc_bin.add(doc)
     doc_bin.to_disk(output_path)
     print(f"Processed {len(doc_bin)} documents: {output_path.name}")

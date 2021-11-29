@@ -191,7 +191,7 @@ def export_files():
     with open(os.path.join(folder_path, filename),'r') as file_to_check:
                 # read contents of the file
                 json_l = list(file_to_check)
-               
+                print("This is from export files", json_l)
                 data = (file_to_check.read()).encode('utf-8') 
                 # pipe contents of the file through
                 md5_returned = hashlib.md5(data).hexdigest()
@@ -238,12 +238,12 @@ def upload_files():
 
     if file :
             filename = secure_filename(file.filename)
-            print(filename)
+            print("This is from upload files" , filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
     
     with open(os.path.join(app.config['UPLOAD_FOLDER'], filename), 'r') as json_file:
         json_list = list(json_file)
-
+        print(json_list)
     json_dict={}
     json_count = 1
 

@@ -18,3 +18,7 @@
 {"label": "TECH", "pattern": [{"lower": "ai technology"}]}
 {"label": "TECH", "pattern": [{"lower": "tensorflow"}]}
 {"label": "TECH", "pattern": [{"lower": "docker"}]}
+{"label": "TECH", "pattern": [{"lower": " machine learning"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning"}]}
+{"label": "TECH", "pattern": [{"lower": "deep learning"}]}
+{"label": "TECH", "pattern": [{"lower": "full stack"}]}

@@ -9,7 +9,7 @@ services:
     ports:
       - 5555:5555
     hostname: backend-service
-
+  
   ui-jinja:
     build: ./ui-jinja
     volumes:
@@ -18,3 +18,5 @@ services:
       - 8080:8080
     depends_on:
       - annotator
+    environment:
+      - PYTHONUNBUFFERED=1 

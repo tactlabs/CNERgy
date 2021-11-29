@@ -5,18 +5,18 @@ preprocess:
     - python scripts/preprocess.py assets/tech_eval.jsonl corpus/tech_eval.spacy
   deps:
     - path: assets/tech_training.jsonl
-      md5: cd176a587e3e25c63cf5773a7b7fda30
+      md5: 161f1fa762d5d2f6aefd0e9f2f731b4b
     - path: assets/tech_eval.jsonl
-      md5: cd176a587e3e25c63cf5773a7b7fda30
+      md5: 161f1fa762d5d2f6aefd0e9f2f731b4b
     - path: scripts/preprocess.py
-      md5: a1a912a37d5a490951cd6b8f819652ab
+      md5: 65f8564338801f89fc346b17ca775594
   outs:
     - path: corpus/tech_training.spacy
-      md5: 19b22221eb484b39c997903d18749896
+      md5: 70cb93cb8e74774793567320ff3229f0
     - path: corpus/tech_eval.spacy
-      md5: 19b22221eb484b39c997903d18749896
-  spacy_version: 3.1.2
-  spacy_git_version: e1f88de72
+      md5: 70cb93cb8e74774793567320ff3229f0
+  spacy_version: 3.0.7
+  spacy_git_version: 034ac0acf
 train:
   cmd: python -m spacy run train
   script:
@@ -24,14 +24,14 @@ train:
       --paths.dev corpus/tech_eval.spacy --paths.vectors en_core_web_md
   deps:
     - path: corpus/tech_training.spacy
-      md5: 19b22221eb484b39c997903d18749896
+      md5: 70cb93cb8e74774793567320ff3229f0
     - path: corpus/tech_eval.spacy
-      md5: 19b22221eb484b39c997903d18749896
+      md5: 70cb93cb8e74774793567320ff3229f0
   outs:
     - path: training/model-best
-      md5: d5e34c945123c865219c22935653f56a
-  spacy_version: 3.1.2
-  spacy_git_version: e1f88de72
+      md5: 813a0d83918b7aa3d0172b44deff7a32
+  spacy_version: 3.0.7
+  spacy_git_version: 034ac0acf
 evaluate:
   cmd: python -m spacy run evaluate
   script:
@@ -39,11 +39,11 @@ evaluate:
       training/metrics.json
   deps:
     - path: corpus/tech_eval.spacy
-      md5: 19b22221eb484b39c997903d18749896
+      md5: 70cb93cb8e74774793567320ff3229f0
     - path: training/model-best
-      md5: d5e34c945123c865219c22935653f56a
+      md5: 813a0d83918b7aa3d0172b44deff7a32
   outs:
     - path: training/metrics.json
-      md5: 63a9a35cb2d08ced8e73c2d2297ef983
-  spacy_version: 3.1.2
-  spacy_git_version: e1f88de72
+      md5: cf021ca922615ee67040e5d4da0e8971
+  spacy_version: 3.0.7
+  spacy_git_version: 034ac0acf
