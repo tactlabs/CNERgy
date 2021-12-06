@@ -5,16 +5,16 @@ preprocess:
     - python scripts/preprocess.py assets/tech_eval.jsonl corpus/tech_eval.spacy
   deps:
     - path: assets/tech_training.jsonl
-      md5: 161f1fa762d5d2f6aefd0e9f2f731b4b
+      md5: 481ca0cfb4b09714fdb27f3f12cdff93
     - path: assets/tech_eval.jsonl
-      md5: 161f1fa762d5d2f6aefd0e9f2f731b4b
+      md5: 481ca0cfb4b09714fdb27f3f12cdff93
     - path: scripts/preprocess.py
       md5: 65f8564338801f89fc346b17ca775594
   outs:
     - path: corpus/tech_training.spacy
-      md5: 70cb93cb8e74774793567320ff3229f0
+      md5: 2806580de9eedb4f1975d7cea7fd505a
     - path: corpus/tech_eval.spacy
-      md5: 70cb93cb8e74774793567320ff3229f0
+      md5: 2806580de9eedb4f1975d7cea7fd505a
   spacy_version: 3.0.7
   spacy_git_version: 034ac0acf
 train:
@@ -24,12 +24,12 @@ train:
       --paths.dev corpus/tech_eval.spacy --paths.vectors en_core_web_md
   deps:
     - path: corpus/tech_training.spacy
-      md5: 70cb93cb8e74774793567320ff3229f0
+      md5: 2806580de9eedb4f1975d7cea7fd505a
     - path: corpus/tech_eval.spacy
-      md5: 70cb93cb8e74774793567320ff3229f0
+      md5: 2806580de9eedb4f1975d7cea7fd505a
   outs:
     - path: training/model-best
-      md5: 813a0d83918b7aa3d0172b44deff7a32
+      md5: 87e9f2e004a332ee5e9071900853fafd
   spacy_version: 3.0.7
   spacy_git_version: 034ac0acf
 evaluate:

@@ -2,7 +2,9 @@ from flask import Flask,url_for,render_template, jsonify, request, redirect
 from flask.helpers import send_file, send_from_directory
 from werkzeug.utils import  secure_filename
 import json ,os
+import zipfile
 import shutil
+from time import sleep
 
 app=Flask(__name__)
 
@@ -159,62 +161,45 @@ def save_file(tokenized_data, keys_data , words, filename):
     
     return True
 
-# @app.route('/export', methods=['GET'])
-# def export_files():
-#     print('''
-# *****************************************************************************************8
+@app.route('/delExport', methods = ['GET'])
+def deleteFile():
+    sleep(3)
+    base_path =  'static/uploads/'
+    all_files = os.listdir(base_path)
+    try:
+        for file in all_files:
+            os.remove(base_path + file)
 
-#                we are here in export files 
-   
-# *****************************************************************************************8
-# ''')
-    filename =app.config[request.remote_addr+"-file_name"].replace(".txt",".jsonl")
-    folder_path = filename.replace(".jsonl","")
+        return jsonify({'success' : 200})
+    except:
+        return jsonify({'error' : 404})
+
+@app.route('/exporto', methods=['GET'])
+def export_files():
+    
+    filename = app.config[request.remote_addr+"-file_name"].replace(".txt",".jsonl")
+    dirname = filename.replace(".jsonl","")
+    base_path =  'static/uploads/'
     zip_name = filename.replace(".jsonl",".zip")
-    print("hey",zip_name)   
-    print('hey', folder_path)
-    print('hey', filename)
+    
 
-    # with open(os.path.join(folder_path, filename),'r') as file_to_check:
-    #             json_l = list(file_to_check)
-    #             data = (file_to_check.read()).encode('utf-8') 
-    #             md5_returned = hashlib.md5(data).hexdigest()
-    #             with open("checksum.json", "r+") as outfile:
-    #                 print(outfile)
-    #                 print(json_l)
-    #                 file_data = json.load(outfile)
-    #                 file_data[md5_returned] = json_l[-1]
-    #                 print(f'this is checksom file data : {file_data}')
-    #                 outfile.seek(0)
-    #                 json.dump(file_data, outfile, indent=4)
+    zipfolder = zipfile.ZipFile(base_path + zip_name,'w', compression = zipfile.ZIP_STORED) # Compression type 
 
-    # zipfolder = zipfile.ZipFile(zip_name,'w', compression = zipfile.ZIP_STORED) # Compression type 
-
-    # zip all the files which are inside in the folder
-    # for root,dirs, files in os.walk(folder_path):
-    #     for file in files:
-    #         print("file:",file)
-    #         zipfolder.write(folder_path+"/"+file)
-    # zipfolder.close()
-
-    shutil.make_archive(folder_path, 'zip', folder_path)
-    return_file = send_file(zip_name,
-            mimetype = 'zip',
-            attachment_filename= zip_name,
-            as_attachment = True)
+    for root,dirs, files in os.walk(dirname):
+        for file in files:
+            print("file:",file)
+            zipfolder.write(dirname + "/" + file)
+    zipfolder.close()
 
     try:
-        os.remove(zip_name)
-        shutil.rmtree(folder_path)
-        os.remove(os.path.join(app.config['UPLOAD_FOLDER'], app.config[request.remote_addr+"-file_name"]))
+        shutil.rmtree( dirname )
+        os.remove( base_path + app.config[request.remote_addr+ "-file_name"])
     except Exception as err:
         print(err)
     
-    return return_file  
+    return jsonify({'success' : 200})
 
-@app.route('/converter')
-def converter_page():
-    return render_template('converter.html', files="none")
+
 
 @app.route('/to_json', methods=['POST'])
 def upload_files():
@@ -287,3 +272,33 @@ if __name__ == '__main__':
 
 
 
+
+
+# ============================================== unused code =============================================
+
+
+# @app.route('/converter')
+# def converter_page():
+#     return render_template('converter.html', files="none")
+
+# with open(os.path.join(folder_path, filename),'r') as file_to_check:
+    #             json_l = list(file_to_check)
+    #             data = (file_to_check.read()).encode('utf-8') 
+    #             md5_returned = hashlib.md5(data).hexdigest()
+    #             with open("checksum.json", "r+") as outfile:
+    #                 print(outfile)
+    #                 print(json_l)
+    #                 file_data = json.load(outfile)
+    #                 file_data[md5_returned] = json_l[-1]
+    #                 print(f'this is checksom file data : {file_data}')
+    #                 outfile.seek(0)
+    #                 json.dump(file_data, outfile, indent=4)
+
+    # zipfolder = zipfile.ZipFile(zip_name,'w', compression = zipfile.ZIP_STORED) # Compression type 
+
+    # zip all the files which are inside in the folder
+    # for root,dirs, files in os.walk(folder_path):
+    #     for file in files:
+    #         print("file:",file)
+    #         zipfolder.write(folder_path+"/"+file)
+    # zipfolder.close()

@@ -59,15 +59,53 @@
             </ul> -->
         </div>
         <br>
-        <a href="/export">
-         <button class="btn btn-secondary" type="button">
+        <!-- <a href="/export" target="_blank"> -->
+         <button class="btn btn-secondary" onclick="exportFile()">
             Export 
           </button>
-        </a>
-        <!-- <div class="mb-3"> -->
-        <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-        <!-- <input type="text" class="form-control" id="exampleFormControlInput1"
-          value="-----------------------------------------------------------------------"> -->
+        <!-- </a> -->
+
+        <a href="/">
+          <button class="btn btn-secondary" type="button">
+             home 
+           </button>
+         </a>
+        <script>
+          console.log('this is idnasidnasid;...')
+          const test = () => {
+            console.log(getFileDetails())
+          }
+
+          const getFileDetails = () => {
+            const url = window.location.href;
+            var filename = url.split('=')[1];
+            const filepath = '/static/uploads/' + filename.split('.')[0] + '.zip'
+            filename = filepath.split('/')[3]
+            fileDetails = {
+              fname : filename,
+              fpath : filepath
+            }
+            return fileDetails;
+          }
+
+          function downloadURI() {
+                const fDetails = getFileDetails()
+                // e.preventDefault();
+                const uri = fDetails['fpath']
+                const name = fDetails['fname']
+                // window.location.href = uri
+                var link = document.createElement("a");
+                link.download = name;
+                link.href = uri;
+                link.click();
+            }
+        </script>
+
+          <!-- <button class="btn btn-secondary" onclick="test()"> -->
+          <!-- <button class="btn btn-secondary" onclick="downloadURI()" id="exportBtn">
+             test 
+          </button> -->
+        
       </div>
     </div>
     <div class="col-md-9">
@@ -153,6 +191,7 @@
     }
     $.ajax({
         url: "http://0.0.0.0:5555/tokenize",
+        // url : '/tokenize',
         type: "POST",
         data: JSON.stringify(text_data),
         contentType: "application/json",
@@ -177,9 +216,6 @@
           alert("Failed to tokenize data");
         }
       })
-
-    //"text":Yourdata
-    // http://0.0.0.0:5555/tokenize
     
     
   });
@@ -196,6 +232,7 @@
 
       $.ajax({
         url: "http://0.0.0.0:5555/tokenize",
+        // url : '/tokenize',
         type: "POST",
         data: JSON.stringify(text_data),
         contentType: "application/json",
@@ -224,6 +261,42 @@
         }
       })
     }
+
+    function deleteExportFile() {
+      $.ajax({
+        url: "http://0.0.0.0:8080/delExport",
+        type: "GET",
+        contentType: "application/json",
+        dataType: 'json',
+        success: () => {
+          console.log('deleted files successfully')
+        },
+
+        error: () => {
+          alert("Failed to delete files");
+        }
+      })
+    }
+
+    function exportFile() {
+      $.ajax({
+        url: "http://0.0.0.0:8080/exporto",
+        type: "GET",
+        contentType: "application/json",
+        dataType: 'json',
+        success: () => {
+            console.log('exported files successfully');
+            const expBtn = document.getElementById('exportBtn');
+            expBtn.click();
+            deleteExportFile();
+        },
+
+        error: () => {
+          alert("Failed to Export data");
+        }
+      })
+    }
+    
     
 
     function save() {
@@ -267,6 +340,7 @@
 
       $.ajax({
         url: "http://0.0.0.0:5555/tokenize",
+        // url: '/tokenize',
         type: "POST",
         data: JSON.stringify(text_data),
         contentType: "application/json",
@@ -338,7 +412,6 @@
 
     function getSelectionText() {
       var text = "";
-      // console.log("selected test ", window.getSelection().toString())
       if (window.getSelection) {
         text = window.getSelection().toString();
       } else if (document.selection && document.selection.type != "Control") {
