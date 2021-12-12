@@ -1,0 +1,486 @@
+Postman testcases:
+1)) **Get all Certificates**
+// Source: https://learning.getpostman.com/docs/postman/scripts/test_examples/
+
+test("Status code is 200", function () {
+pm.response.to.have.status(200);
+});
+
+test("Content-Type header is present", function () {
+pm.response.to.have.header("Content-Type");
+});
+
+test("Status code name has string", function () {
+pm.response.to.have.status("OK");
+});
+
+clog(pm.response.code);
+
+if(pm.response.code == 200){
+
+```
+var jsonData = pm.response.json();
+
+//clog(jsonData);  
+
+test("Check Error Code", function () {
+    expect(jsonData).to.have.property('error_code');
+});
+
+test("Check Error Message", function () {
+    expect(jsonData).to.have.property('error_message');
+});
+
+test("Check result", function () {
+    expect(jsonData).to.have.property('result');
+});
+
+// Error code 0
+test("Check error code is zero", function () {
+    expect(jsonData.error_code).to.eql(0);
+}); 
+```
+
+}
+
+
+----------------------------------------------------------------------/
+
+CLI Configuration --error
+
+token = dbutils.notebook.entry_point.getDbutils().notebook().getContext().apiToken().get()
+dbutils.fs.put("[file:///root/.databrickscfg","[DEFAULT]\nhost=](file:///root/.databrickscfg%22,%22%5BDEFAULT%5D%5Cnhost=)[https://community.cloud.databricks.com](https://community.cloud.databricks.com/)\ntoken = "+token,overwrite=True)
+
+
+----------------------------------------------------------------------/
+UI -Serkinti (Balloons)
+
+$(function() {   for (var i=0; i < 100; i++) {     $
+
+KaTeX parse error: Expected '}', got 'EOF' at end of input: …00; i++) {     
+
+KaTeX parse error: Expected '}', got 'EOF' at end of input: …00; i++) {
+
+KaTeX parse error: Expected '}', got 'EOF' at end of input: …00; i++) {
+
+('.balloons').append("<div class='balloon balloon" + i + "'></div>");
+  }
+});
+
+
+----------------------------------------------------------------------/
+
+Usage: docker-machine create [OPTIONS] [arg...]
+
+Create a machine
+
+Description:
+   Run '/snap/docker/796/bin/docker-machine create --driver name --help' to include the create flags for that driver in the help text.
+
+Options:
+   
+   --driver, -d "virtualbox"										Driver to create machine with. [$MACHINE_DRIVER]
+   --engine-env [--engine-env option --engine-env option]						Specify environment variables to set in the engine
+   --engine-insecure-registry [--engine-insecure-registry option --engine-insecure-registry option]	Specify insecure registries to allow with the created engine
+   --engine-install-url "https://get.docker.com"							Custom URL to use for engine installation [$MACHINE_DOCKER_INSTALL_URL]
+   --engine-label [--engine-label option --engine-label option]						Specify labels for the created engine
+   --engine-opt [--engine-opt option --engine-opt option]						Specify arbitrary flags to include with the created engine in the form flag=value
+   --engine-registry-mirror [--engine-registry-mirror option --engine-registry-mirror option]		Specify registry mirrors to use [$ENGINE_REGISTRY_MIRROR]
+   --engine-storage-driver 										Specify a storage driver to use with the engine
+   --swarm												Configure Machine to join a Swarm cluster
+   --swarm-addr 											addr to advertise for Swarm (default: detect and use the machine IP)
+   --swarm-discovery 											Discovery service to use with Swarm
+   --swarm-experimental											Enable Swarm experimental features
+   --swarm-host "tcp://0.0.0.0:3376"									ip/socket to listen on for Swarm master
+   --swarm-image "swarm:latest"										Specify Docker image to use for Swarm [$MACHINE_SWARM_IMAGE]
+   --swarm-join-opt [--swarm-join-opt option --swarm-join-opt option]					Define arbitrary flags for Swarm join
+   --swarm-master											Configure Machine to be a Swarm master
+   --swarm-opt [--swarm-opt option --swarm-opt option]							Define arbitrary flags for Swarm master
+   --swarm-strategy "spread"										Define a default scheduling strategy for Swarm
+   --tls-san [--tls-san option --tls-san option]							Support extra SANs for TLS certs
+   --virtualbox-boot2docker-url 									The URL of the boot2docker image. Defaults to the latest available version [$VIRTUALBOX_BOOT2DOCKER_URL]
+   --virtualbox-cpu-count "1"										number of CPUs for the machine (-1 to use the number of CPUs available) [$VIRTUALBOX_CPU_COUNT]
+   --virtualbox-disk-size "20000"									Size of disk for host in MB [$VIRTUALBOX_DISK_SIZE]
+   --virtualbox-host-dns-resolver									Use the host DNS resolver [$VIRTUALBOX_HOST_DNS_RESOLVER]
+   --virtualbox-hostonly-cidr "192.168.99.1/24"								Specify the Host Only CIDR [$VIRTUALBOX_HOSTONLY_CIDR]
+   --virtualbox-hostonly-nicpromisc "deny"								Specify the Host Only Network Adapter Promiscuous Mode [$VIRTUALBOX_HOSTONLY_NIC_PROMISC]
+   --virtualbox-hostonly-nictype "82540EM"								Specify the Host Only Network Adapter Type [$VIRTUALBOX_HOSTONLY_NIC_TYPE]
+   --virtualbox-hostonly-no-dhcp									Disable the Host Only DHCP Server [$VIRTUALBOX_HOSTONLY_NO_DHCP]
+   --virtualbox-import-boot2docker-vm 									The name of a Boot2Docker VM to import [$VIRTUALBOX_BOOT2DOCKER_IMPORT_VM]
+   --virtualbox-memory "1024"										Size of memory for host in MB [$VIRTUALBOX_MEMORY_SIZE]
+   --virtualbox-nat-nictype "82540EM"									Specify the Network Adapter Type [$VIRTUALBOX_NAT_NICTYPE]
+   --virtualbox-no-dns-proxy										Disable proxying all DNS requests to the host [$VIRTUALBOX_NO_DNS_PROXY]
+   --virtualbox-no-share										Disable the mount of your home directory [$VIRTUALBOX_NO_SHARE]
+   --virtualbox-no-vtx-check										Disable checking for the availability of hardware virtualization before the vm is started [$VIRTUALBOX_NO_VTX_CHECK]
+   --virtualbox-share-folder 										Mount the specified directory instead of the default home location. Format: dir:name [$VIRTUALBOX_SHARE_FOLDER]
+   --virtualbox-ui-type "headless"									Specify the UI Type: (gui|sdl|headless|separate) [$VIRTUALBOX_UI_TYPE]
+Error: No machine name specified
+
+
+
+----------------------------------------------------------------------/
+
+ERROR: Couldn't connect to Docker daemon - you might need to run `docker-machine start default`.
+
+
+----------------------------------------------------------------------/
+
+Spaceishare
+
+There was an error in processing your upload.
+
+This file has processing errors.
+Invalid CSV format at row 3.
+Row 5 only includes 1 columns out of expected 25.
+Row 6 only includes 1 columns out of expected 25.
+Invalid CSV format at row 7.
+Invalid CSV format at row 9.
+Row 11 only includes 2 columns out of expected 25.
+Row 12 only includes 2 columns out of expected 25.
+Row 13 only includes 1 columns out of expected 25.
+Row 14 only includes 2 columns out of expected 25.
+Invalid CSV format at row 14.
+Invalid CSV format at row 34.
+Invalid CSV format at row 36.
+Invalid CSV format at row 47.
+Row 49 only includes 1 columns out of expected 25.
+Invalid CSV format at row 49.
+Invalid CSV format at row 58.
+Invalid CSV format at row 59.
+Invalid CSV format at row 67.
+Row 69 only includes 1 columns out of expected 25.
+Row 70 only includes 1 columns out of expected 25.
+Invalid CSV format at row 71.
+Invalid CSV format at row 73.
+Row 75 only includes 2 columns out of expected 25.
+Row 76 only includes 2 columns out of expected 25.
+Row 77 only includes 1 columns out of expected 25.
+Row 78 only includes 2 columns out of expected 25.
+Invalid CSV format at row 78.
+Invalid CSV format at row 98.
+Invalid CSV format at row 100.
+Invalid CSV format at row 111.
+Row 113 only includes 1 columns out of expected 25.
+Invalid CSV format at row 113.
+Invalid CSV format at row 122.
+Invalid CSV format at row 123.
+Invalid CSV format at row 131.
+Row 133 only includes 1 columns out of expected 25.
+Row 134 only includes 1 columns out of expected 25.
+Invalid CSV format at row 135.
+Invalid CSV format at row 137.
+Row 139 only includes 2 columns out of expected 25.
+Row 140 only includes 2 columns out of expected 25.
+Row 141 only includes 1 columns out of expected 25.
+Row 142 only includes 2 columns out of expected 25.
+Invalid CSV format at row 142.
+Invalid CSV format at row 162.
+Invalid CSV format at row 164.
+Invalid CSV format at row 175.
+Row 177 only includes 1 columns out of expected 25.
+Invalid CSV format at row 177.
+Invalid CSV format at row 186.
+Invalid CSV format at row 187.
+Invalid CSV format at row 222.
+Row 224 only includes 1 columns out of expected 25.
+Invalid CSV format at row 224.
+Invalid CSV format at row 228.
+Row 230 only includes 3 columns out of expected 25.
+Invalid CSV format at row 230.
+Invalid CSV format at row 231.
+Invalid CSV format at row 232.
+Invalid CSV format at row 241.
+Row 244 only includes 1 columns out of expected 25.
+Row 246 only includes 1 columns out of expected 25.
+Row 248 only includes 1 columns out of expected 25.
+Row 250 only includes 2 columns out of expected 25.
+Invalid CSV format at row 251.
+Invalid CSV format at row 255.
+Invalid CSV format at row 257.
+Invalid CSV format at row 258.
+Row 261 only includes 5 columns out of expected 25.
+Row 263 only includes 1 columns out of expected 25.
+Row 265 only includes 2 columns out of expected 25.
+Row 267 only includes 1 columns out of expected 25.
+Row 269 only includes 4 columns out of expected 25.
+Invalid CSV format at row 270.
+Invalid CSV format at row 276.
+Invalid CSV format at row 277.
+Invalid CSV format at row 280.
+Invalid CSV format at row 281.
+Invalid CSV format at row 305.
+Row 307 only includes 1 columns out of expected 25.
+Row 308 only includes 1 columns out of expected 25.
+Row 309 only includes 1 columns out of expected 25.
+Row 310 only includes 1 columns out of expected 25.
+Row 311 only includes 1 columns out of expected 25.
+Row 312 only includes 1 columns out of expected 25.
+Row 314 only includes 1 columns out of expected 25.
+Row 315 only includes 1 columns out of expected 25.
+Row 316 only includes 1 columns out of expected 25.
+Row 318 only includes 1 columns out of expected 25.
+Row 319 only includes 1 columns out of expected 25.
+Row 320 only includes 1 columns out of expected 25.
+Row 321 only includes 1 columns out of expected 25.
+Invalid CSV format at row 322.
+Invalid CSV format at row 340.
+Row 343 only includes 1 columns out of expected 25.
+Row 344 only includes 3 columns out of expected 25.
+Row 346 only includes 1 columns out of expected 25.
+Row 348 only includes 1 columns out of expected 25.
+Invalid CSV format at row 349.
+Invalid CSV format at row 350.
+
+Every file you upload to a given data set must have exactly the same structure, with the same fields in the same order. The "invalid CSV format" error can be caused by column headers in the file that are improperly formatted, in the wrong order, or missing.
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------/
+
