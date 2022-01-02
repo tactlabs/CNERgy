@@ -70,6 +70,35 @@
              home 
            </button>
          </a>
+
+        <style>
+          .sidebar2 {
+            /* border : 2px solid black; */
+            margin-top: 20px;
+          }
+
+          .sidebar2 .title {
+            margin: auto;
+          }
+
+          .sidebar2 .iframes {
+            border: 2px solid black;
+            height: 300px;
+          }
+
+          .sidebar2 iframe {
+            width: 100%;
+            height: 100%;
+          }
+        </style>
+
+        <div class="sidebar2">
+          <b class='title'>Annotated words</b>
+         <div class="iframes" id='iframes'>
+         <!-- <iframe frameborder="0" class="iframeAnnot" id='iframeAnnot'> -->
+          </div>
+        </div>
+         </iframe>
         <script>
           console.log('this is idnasidnasid;...')
           const test = () => {
@@ -184,6 +213,72 @@
   var total = untokenizedData.length;
   var token_data;
   var skipped_count = 0;
+  var TokenizedState = {
+    annotated : []
+  }
+  var displayedTextEndIndex = -1
+  var iframeIdx = 1
+
+  // function findby(txt) {
+  //   var found = false;
+  //   for
+  // }
+
+  function find(arr, find) {
+    var found = false;
+    for(i of arr) {
+      if (i === find) {
+        found = true;
+        break;
+      }
+    }
+
+    return found
+  }
+  function addAnnotatedTextToState(txt) {
+    if (txt.length > 0)
+      if (!find(TokenizedState['annotated'], txt))
+        TokenizedState['annotated'].push(txt)
+  }
+
+  function getAnnotatedTextsFromState() {
+
+    
+    const iframeid = 'iframeAnnot'
+    // delete old iframe 
+    oldIframe = document.getElementById(iframeid)
+    if (oldIframe)
+      oldIframe.parentNode.removeChild(oldIframe)
+
+    // creating new iframe 
+    const iframe = document.createElement('iframe');
+    iframe.setAttribute('id', iframeid) 
+    $(`#iframes`).append(iframe);
+    console.log(iframe)
+
+    // appending the annotated text inside newly created iframe 
+    const atxts  = TokenizedState['annotated']
+    atxts.map((text, index) => {
+      // console.log(text, index)
+      if (displayedTextEndIndex < index) {
+      const dt = document.createElement('div');
+      dt.innerHTML = text
+      dt.setAttribute("id", `text${index}`);
+      dt.setAttribute("name", text);
+      // iframe.append(dt)
+      $(`#${iframeid}`).contents().find('body').append(dt);
+      // displayedTextEndIndex += 1;
+      } 
+    })
+  }
+
+  function removeAnnotatedTextFromState(txt) {
+    const atxts = TokenizedState['annotated']
+    TokenizedState['annotated'] = atxts.filter(text => text != txt)
+    getAnnotatedTextsFromState()
+    // displayedTextEndIndex = -1
+  }
+
   $(document).ready(function () {
     // var tokenizedData = {{ data | tojson | safe }};
     
@@ -418,6 +513,8 @@
       } else if (document.selection && document.selection.type != "Control") {
         text = document.selection.createRange().text;
       }
+      addAnnotatedTextToState(text);
+      getAnnotatedTextsFromState();
       return text;
     }
 
@@ -457,6 +554,7 @@
       for (var i = 0; i < closeButtons.length; i++) {
         closeButtons[i].addEventListener("click", function (e) {
           e.preventDefault();
+          console.log('close button in line 487 is called')
           // console.log($(this).closest("li").find(".color") )
           colorCodes.push($(this).closest("li").find(".color").css("background-color"));
           // console.log(colorCodes);
@@ -511,16 +609,22 @@
         $(this).closest("span").parent("mark");
         $(this).closest("span").unwrap();
         $(this).closest("span.badge").remove();
-
-        id = id.split('-');
-        deleteObj(id[1])
+        
+        console.log('id in remove highlights is : ' + id)
+        if (id){
+          id = id.split('-');
+          deleteObj(id[1])
+        }
       })
     }
 
     function deleteObj(val) {
       var obj = selectedText[activeTagName];
+      console.log('delect obj is called and deleting the obj ...')
       for (let i in obj) {
         if (obj[i] == val) {
+          console.log('val and obj[i] match', obj[i], val, i)
+          removeAnnotatedTextFromState(i)
           delete obj[i];
           break
         }

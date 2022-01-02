@@ -156,6 +156,7 @@ def save_file(tokenized_data, keys_data , words, filename):
     # saving a pattern for tokenization
     with open(os.path.join(folder_path, pattern_filename), 'a') as outfile:
         for entry in pattern_data:
+            print(entry)
             json.dump(entry, outfile)
             outfile.write('\n')
     
