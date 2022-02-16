@@ -1,34 +1,250 @@
-{"label": "ADSFADSF", "pattern": [{"lower": "e%20learning%2"}]}
-{"label": "DFSFD", "pattern": [{"lower": "0learning%20en"}]}
-{"label": "ADSFASDF", "pattern": [{"lower": "g%20engineer&l=toro"}]}
-{"label": "TECH", "pattern": [{"lower": "machinelearning"}]}
-{"label": "TECH", "pattern": [{"lower": "deeplearning"}]}
-{"label": "TECH", "pattern": [{"lower": "fullstackml"}]}
-{"label": "TECH", "pattern": [{"lower": "machinelearning"}]}
-{"label": "TECH", "pattern": [{"lower": "fullstackml"}]}
-{"label": "TECH", "pattern": [{"lower": "deeplearning"}]}
-{"label": "TECH", "pattern": [{"lower": "machinelearning"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning "}]}
+{"label": "TECH", "pattern": [{"lower": "engineer"}]}
+{"label": "TECH", "pattern": [{"lower": "algorithms"}]}
+{"label": "TECH", "pattern": [{"lower": "deep learning "}]}
 {"label": "TECH", "pattern": [{"lower": "ml"}]}
-{"label": "TECH", "pattern": [{"lower": "machinelearning"}]}
-{"label": "TECH", "pattern": [{"lower": "mcmc"}]}
-{"label": "TECH", "pattern": [{"lower": "bayesianinference"}]}
-{"label": "TECH", "pattern": [{"lower": "r"}]}
-{"label": "TECH", "pattern": [{"lower": "python"}]}
-{"label": "TECH", "pattern": [{"lower": "computationalstatistics"}]}
-{"label": "TECH", "pattern": [{"lower": "machine"}]}
-{"label": "TECH", "pattern": [{"lower": "dplyr"}]}
-{"label": "TECH", "pattern": [{"lower": "tidyr"}]}
-{"label": "TECH", "pattern": [{"lower": "shinyr"}]}
-{"label": "TECH", "pattern": [{"lower": "statisticalcomputing"}]}
-{"label": "TECH", "pattern": [{"lower": "stan"}]}
+{"label": "TECH", "pattern": [{"lower": "full stack"}]}
+{"label": "TECH", "pattern": [{"lower": "reinforcement learning"}]}
+{"label": "TECH", "pattern": [{"lower": "deep learning "}]}
+{"label": "TECH", "pattern": [{"lower": "full stack"}]}
+{"label": "TECH", "pattern": [{"lower": "probabilistic modelling"}]}
+{"label": "TECH", "pattern": [{"lower": "statistics"}]}
+{"label": "TECH", "pattern": [{"lower": "bayesian statistics"}]}
 {"label": "TECH", "pattern": [{"lower": "jags"}]}
-{"label": "TECH", "pattern": [{"lower": "winbugs"}]}
 {"label": "TECH", "pattern": [{"lower": "sql"}]}
-{"label": "TECH", "pattern": [{"lower": "sqlserver"}]}
 {"label": "TECH", "pattern": [{"lower": "net"}]}
-{"label": "TECH", "pattern": [{"lower": "c#"}]}
+{"label": "TECH", "pattern": [{"lower": "framework"}]}
+{"label": "TECH", "pattern": [{"lower": "c #"}]}
 {"label": "TECH", "pattern": [{"lower": "ec2"}]}
-{"label": "TECH", "pattern": [{"lower": "neuralnetworks"}]}
-{"label": "TECH", "pattern": [{"lower": "deeplearning"}]}
+{"label": "TECH", "pattern": [{"lower": "aws"}]}
+{"label": "TECH", "pattern": [{"lower": "neural networks"}]}
+{"label": "TECH", "pattern": [{"lower": "deep learning"}]}
 {"label": "TECH", "pattern": [{"lower": "hadoop"}]}
+{"label": "TECH", "pattern": [{"lower": "map reduce"}]}
+{"label": "TECH", "pattern": [{"lower": "computing"}]}
+{"label": "TECH", "pattern": [{"lower": "sql"}]}
+{"label": "TECH", "pattern": [{"lower": "net"}]}
+{"label": "TECH", "pattern": [{"lower": "c #"}]}
+{"label": "TECH", "pattern": [{"lower": "tensorflow"}]}
+{"label": "TECH", "pattern": [{"lower": "caffe2"}]}
+{"label": "TECH", "pattern": [{"lower": "pytorch"}]}
+{"label": "TECH", "pattern": [{"lower": "keras"}]}
+{"label": "TECH", "pattern": [{"lower": "jax"}]}
+{"label": "TECH", "pattern": [{"lower": "chainer"}]}
+{"label": "TECH", "pattern": [{"lower": "python"}]}
+{"label": "TECH", "pattern": [{"lower": "ml scientists "}]}
+{"label": "TECH", "pattern": [{"lower": "c/c++"}]}
+{"label": "TECH", "pattern": [{"lower": "visualization"}]}
+{"label": "TECH", "pattern": [{"lower": "deep learning "}]}
+{"label": "TECH", "pattern": [{"lower": "reinforcement learning"}]}
+{"label": "TECH", "pattern": [{"lower": "jags"}]}
+{"label": "TECH", "pattern": [{"lower": "tensorflow"}]}
+{"label": "TECH", "pattern": [{"lower": "python"}]}
+{"label": "TECH", "pattern": [{"lower": "big data"}]}
+{"label": "TECH", "pattern": [{"lower": "technologies"}]}
+{"label": "TECH", "pattern": [{"lower": "programming"}]}
+{"label": "TECH", "pattern": [{"lower": "java/python "}]}
+{"label": "TECH", "pattern": [{"lower": "/"}]}
+{"label": "TECH", "pattern": [{"lower": "docker"}]}
+{"label": "TECH", "pattern": [{"lower": "kubernetes"}]}
+{"label": "TECH", "pattern": [{"lower": "kafka"}]}
+{"label": "TECH", "pattern": [{"lower": "elasticsearch"}]}
+{"label": "TECH", "pattern": [{"lower": "cloudera"}]}
+{"label": "TECH", "pattern": [{"lower": "openshift"}]}
+{"label": "TECH", "pattern": [{"lower": "ml"}]}
+{"label": "TECH", "pattern": [{"lower": "full stack"}]}
+{"label": "TECH", "pattern": [{"lower": "probabilistic modelling"}]}
+{"label": "TECH", "pattern": [{"lower": "framework"}]}
+{"label": "TECH", "pattern": [{"lower": "hadoop"}]}
+{"label": "TECH", "pattern": [{"lower": "python"}]}
+{"label": "TECH", "pattern": [{"lower": "kafka"}]}
+{"label": "TECH", "pattern": [{"lower": "spark"}]}
+{"label": "TECH", "pattern": [{"lower": "ai"}]}
+{"label": "TECH", "pattern": [{"lower": "r"}]}
+{"label": "TECH", "pattern": [{"lower": "scala"}]}
+{"label": "TECH", "pattern": [{"lower": "c # "}]}
+{"label": "TECH", "pattern": [{"lower": "scikit learn "}]}
+{"label": "TECH", "pattern": [{"lower": "mllib"}]}
+{"label": "TECH", "pattern": [{"lower": "deep learning "}]}
+{"label": "TECH", "pattern": [{"lower": "ml"}]}
+{"label": "TECH", "pattern": [{"lower": "full stack"}]}
+{"label": "TECH", "pattern": [{"lower": "caffe2"}]}
+{"label": "TECH", "pattern": [{"lower": "pytorch"}]}
+{"label": "TECH", "pattern": [{"lower": "python"}]}
+{"label": "TECH", "pattern": [{"lower": "pytorch"}]}
+{"label": "TECH", "pattern": [{"lower": "software"}]}
+{"label": "TECH", "pattern": [{"lower": "data engineering"}]}
+{"label": "TECH", "pattern": [{"lower": "ml scientists"}]}
+{"label": "TECH", "pattern": [{"lower": "engineers"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning"}]}
+{"label": "TECH", "pattern": [{"lower": "algorithms"}]}
+{"label": "TECH", "pattern": [{"lower": "probabilistic modelling"}]}
+{"label": "TECH", "pattern": [{"lower": "jags"}]}
+{"label": "TECH", "pattern": [{"lower": "sql"}]}
+{"label": "TECH", "pattern": [{"lower": "aws"}]}
+{"label": "TECH", "pattern": [{"lower": "deep learning"}]}
+{"label": "TECH", "pattern": [{"lower": "computing"}]}
+{"label": "TECH", "pattern": [{"lower": "python"}]}
+{"label": "TECH", "pattern": [{"lower": "docker"}]}
+{"label": "TECH", "pattern": [{"lower": "kubernetes"}]}
+{"label": "TECH", "pattern": [{"lower": "elasticsearch"}]}
+{"label": "TECH", "pattern": [{"lower": "cloudera"}]}
+{"label": "TECH", "pattern": [{"lower": "r"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning"}]}
+{"label": "TECH", "pattern": [{"lower": "probability"}]}
+{"label": "TECH", "pattern": [{"lower": "java"}]}
+{"label": "TECH", "pattern": [{"lower": "c"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning "}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning engineer"}]}
+{"label": "TECH", "pattern": [{"lower": "data science"}]}
+{"label": "TECH", "pattern": [{"lower": "computer science"}]}
+{"label": "TECH", "pattern": [{"lower": "jags"}]}
+{"label": "TECH", "pattern": [{"lower": "sql"}]}
+{"label": "TECH", "pattern": [{"lower": "net"}]}
+{"label": "TECH", "pattern": [{"lower": "c #"}]}
+{"label": "TECH", "pattern": [{"lower": "ec2"}]}
+{"label": "TECH", "pattern": [{"lower": "aws"}]}
+{"label": "TECH", "pattern": [{"lower": "deep learning"}]}
+{"label": "TECH", "pattern": [{"lower": "caffe2"}]}
+{"label": "TECH", "pattern": [{"lower": "pytorch"}]}
+{"label": "TECH", "pattern": [{"lower": "jax"}]}
+{"label": "TECH", "pattern": [{"lower": "ml scientists "}]}
+{"label": "TECH", "pattern": [{"lower": "kubernetes"}]}
+{"label": "TECH", "pattern": [{"lower": "kafka"}]}
+{"label": "TECH", "pattern": [{"lower": "spark"}]}
+{"label": "TECH", "pattern": [{"lower": "software"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning "}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning engineer"}]}
+{"label": "TECH", "pattern": [{"lower": "computer science"}]}
+{"label": "TECH", "pattern": [{"lower": "data scientists "}]}
+{"label": "TECH", "pattern": [{"lower": "emr"}]}
+{"label": "TECH", "pattern": [{"lower": "python"}]}
+{"label": "TECH", "pattern": [{"lower": "go"}]}
+{"label": "TECH", "pattern": [{"lower": "php"}]}
+{"label": "TECH", "pattern": [{"lower": "backend languages "}]}
+{"label": "TECH", "pattern": [{"lower": "apis"}]}
+{"label": "TECH", "pattern": [{"lower": "mlflow"}]}
+{"label": "TECH", "pattern": [{"lower": "sagemaker"}]}
+{"label": "TECH", "pattern": [{"lower": "kubeflow"}]}
+{"label": "TECH", "pattern": [{"lower": "mlflow"}]}
+{"label": "TECH", "pattern": [{"lower": "databricks"}]}
+{"label": "TECH", "pattern": [{"lower": "reinforcement learning"}]}
+{"label": "TECH", "pattern": [{"lower": "sql"}]}
+{"label": "TECH", "pattern": [{"lower": "aws"}]}
+{"label": "TECH", "pattern": [{"lower": "hadoop"}]}
+{"label": "TECH", "pattern": [{"lower": "chainer"}]}
+{"label": "TECH", "pattern": [{"lower": "python"}]}
+{"label": "TECH", "pattern": [{"lower": "kubernetes"}]}
+{"label": "TECH", "pattern": [{"lower": "kafka"}]}
+{"label": "TECH", "pattern": [{"lower": "spark"}]}
+{"label": "TECH", "pattern": [{"lower": "scala"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning"}]}
+{"label": "TECH", "pattern": [{"lower": "java"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning engineer"}]}
+{"label": "TECH", "pattern": [{"lower": "computer science"}]}
+{"label": "TECH", "pattern": [{"lower": "python"}]}
+{"label": "TECH", "pattern": [{"lower": "go"}]}
+{"label": "TECH", "pattern": [{"lower": "php"}]}
+{"label": "TECH", "pattern": [{"lower": "apis"}]}
+{"label": "TECH", "pattern": [{"lower": "sagemaker"}]}
+{"label": "TECH", "pattern": [{"lower": "kubeflow"}]}
+{"label": "TECH", "pattern": [{"lower": "mlflow"}]}
 {"label": "TECH", "pattern": [{"lower": "mapreduce"}]}
+{"label": "TECH", "pattern": [{"lower": "cassandra"}]}
+{"label": "TECH", "pattern": [{"lower": "elasticsearch"}]}
+{"label": "TECH", "pattern": [{"lower": "deep learning "}]}
+{"label": "TECH", "pattern": [{"lower": "+"}]}
+{"label": "TECH", "pattern": [{"lower": "azure"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning"}]}
+{"label": "TECH", "pattern": [{"lower": "ml"}]}
+{"label": "TECH", "pattern": [{"lower": "aws"}]}
+{"label": "TECH", "pattern": [{"lower": "map reduce"}]}
+{"label": "TECH", "pattern": [{"lower": "python"}]}
+{"label": "TECH", "pattern": [{"lower": "c/c++"}]}
+{"label": "TECH", "pattern": [{"lower": "spark"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning "}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning engineer"}]}
+{"label": "TECH", "pattern": [{"lower": "typescript"}]}
+{"label": "TECH", "pattern": [{"lower": "engineer"}]}
+{"label": "TECH", "pattern": [{"lower": "ml"}]}
+{"label": "TECH", "pattern": [{"lower": "reinforcement learning"}]}
+{"label": "TECH", "pattern": [{"lower": "deep learning"}]}
+{"label": "TECH", "pattern": [{"lower": "tensorflow"}]}
+{"label": "TECH", "pattern": [{"lower": "python"}]}
+{"label": "TECH", "pattern": [{"lower": "/"}]}
+{"label": "TECH", "pattern": [{"lower": "kubernetes"}]}
+{"label": "TECH", "pattern": [{"lower": "ai"}]}
+{"label": "TECH", "pattern": [{"lower": "pytorch"}]}
+{"label": "TECH", "pattern": [{"lower": "c"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning engineer"}]}
+{"label": "TECH", "pattern": [{"lower": "mlflow"}]}
+{"label": "TECH", "pattern": [{"lower": "nginx"}]}
+{"label": "TECH", "pattern": [{"lower": "rest"}]}
+{"label": "TECH", "pattern": [{"lower": "node"}]}
+{"label": "TECH", "pattern": [{"lower": "react"}]}
+{"label": "TECH", "pattern": [{"lower": "vm"}]}
+{"label": "TECH", "pattern": [{"lower": "database"}]}
+{"label": "TECH", "pattern": [{"lower": "computer science"}]}
+{"label": "TECH", "pattern": [{"lower": "engineering"}]}
+{"label": "TECH", "pattern": [{"lower": "ml"}]}
+{"label": "TECH", "pattern": [{"lower": "full stack"}]}
+{"label": "TECH", "pattern": [{"lower": "statistics"}]}
+{"label": "TECH", "pattern": [{"lower": "framework"}]}
+{"label": "TECH", "pattern": [{"lower": "ec2"}]}
+{"label": "TECH", "pattern": [{"lower": "aws"}]}
+{"label": "TECH", "pattern": [{"lower": "deep learning"}]}
+{"label": "TECH", "pattern": [{"lower": "map reduce"}]}
+{"label": "TECH", "pattern": [{"lower": "chainer"}]}
+{"label": "TECH", "pattern": [{"lower": "programming"}]}
+{"label": "TECH", "pattern": [{"lower": "kubernetes"}]}
+{"label": "TECH", "pattern": [{"lower": "r"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning "}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning engineer"}]}
+{"label": "TECH", "pattern": [{"lower": "data scientists "}]}
+{"label": "TECH", "pattern": [{"lower": "php"}]}
+{"label": "TECH", "pattern": [{"lower": "typescript"}]}
+{"label": "TECH", "pattern": [{"lower": "database"}]}
+{"label": "TECH", "pattern": [{"lower": "postgresql"}]}
+{"label": "TECH", "pattern": [{"lower": "ruby"}]}
+{"label": "TECH", "pattern": [{"lower": "nlp"}]}
+{"label": "TECH", "pattern": [{"lower": "algorithms"}]}
+{"label": "TECH", "pattern": [{"lower": "net"}]}
+{"label": "TECH", "pattern": [{"lower": "aws"}]}
+{"label": "TECH", "pattern": [{"lower": "neural networks"}]}
+{"label": "TECH", "pattern": [{"lower": "computing"}]}
+{"label": "TECH", "pattern": [{"lower": "chainer"}]}
+{"label": "TECH", "pattern": [{"lower": "python"}]}
+{"label": "TECH", "pattern": [{"lower": "/"}]}
+{"label": "TECH", "pattern": [{"lower": "kubernetes"}]}
+{"label": "TECH", "pattern": [{"lower": "kafka"}]}
+{"label": "TECH", "pattern": [{"lower": "spark"}]}
+{"label": "TECH", "pattern": [{"lower": "pytorch"}]}
+{"label": "TECH", "pattern": [{"lower": "software"}]}
+{"label": "TECH", "pattern": [{"lower": "ml scientists"}]}
+{"label": "TECH", "pattern": [{"lower": "engineers"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning engineer"}]}
+{"label": "TECH", "pattern": [{"lower": "rest"}]}
+{"label": "TECH", "pattern": [{"lower": "react"}]}
+{"label": "TECH", "pattern": [{"lower": "vm"}]}
+{"label": "TECH", "pattern": [{"lower": "nlp"}]}
+{"label": "TECH", "pattern": [{"lower": "nlu"}]}
+{"label": "TECH", "pattern": [{"lower": "rnns"}]}
+{"label": "TECH", "pattern": [{"lower": "seq2seq+attention models"}]}
+{"label": "TECH", "pattern": [{"lower": "tensorflow"}]}
+{"label": "TECH", "pattern": [{"lower": "reinforcement learning"}]}
+{"label": "TECH", "pattern": [{"lower": "redis"}]}
+{"label": "TECH", "pattern": [{"lower": "mongodb"}]}
+{"label": "TECH", "pattern": [{"lower": "deep learning "}]}
+{"label": "TECH", "pattern": [{"lower": "sql"}]}
+{"label": "TECH", "pattern": [{"lower": "jax"}]}
+{"label": "TECH", "pattern": [{"lower": "python"}]}
+{"label": "TECH", "pattern": [{"lower": "visualization"}]}
+{"label": "TECH", "pattern": [{"lower": "data engineering"}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning "}]}
+{"label": "TECH", "pattern": [{"lower": "machine learning engineer"}]}
+{"label": "TECH", "pattern": [{"lower": "computer science"}]}
+{"label": "TECH", "pattern": [{"lower": "postgresql"}]}
+{"label": "TECH", "pattern": [{"lower": "nlu"}]}
+{"label": "TECH", "pattern": [{"lower": "reinforcement learning"}]}
+{"label": "TECH", "pattern": [{"lower": "data science"}]}

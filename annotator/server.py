@@ -11,6 +11,8 @@ app = Flask(__name__)
 @app.route("/tokenize", methods=["POST"])
 @cross_origin()
 def tokenize():
+    print("This is from tokenize func")
+    print(request.json)
     text = request.json["text"]
     try:
         spans = list(TreebankWordTokenizer().span_tokenize(text))
