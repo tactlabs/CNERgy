@@ -3,20 +3,20 @@ version: '3'
 services:
   
   annotator:
-    build: ./annotator
+    build: ../annotator
     volumes:
-      - ./annotator:/code
+      - ../annotator:/code
     ports:
       - 5555:5555
     hostname: backend-service
   
   ui-jinja:
-    build: ./ui-jinja
+    build: ../ui-jinja
     volumes:
-      - ./ui-jinja:/code
+      - ../ui-jinja:/code
     ports:
       - 8080:8080
     depends_on:
       - annotator
     environment:
-      - PYTHONUNBUFFERED=1 
+      PYTHONUNBUFFERED: ${PYTHONUNBUFFERED}
