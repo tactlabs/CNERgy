@@ -40,3 +40,10 @@ Now go to [http://localhost:8080](http://localhost:8080)
 - [] Paragraph gap is missing
 - [] Unique keys collected has to be shown in left
 - [] CSV file support
+
+
+## Known Limitations:
+
+- USE_LOCAL_TOKENIZER should currently be False when running this until our new patch has been tested.
+- Data with special characters can not be used for now.
+- 
