@@ -2,48 +2,50 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>
-        NER Text Annotator
-    </title>
-    <!-- Favicon -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    NER Text Annotator
+  </title>
+  <!-- Favicon -->
 
-    <link href="{{ url_for('static', filename='img/brand/favicon.png') }}" rel="icon" type="image/png">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <!-- Icons -->
+  <link href="{{ url_for('static', filename='img/brand/favicon.png') }}" rel="icon" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
 
-    <link href="{{ url_for('static', filename='js/plugins/nucleo/css/nucleo.css') }}" rel="stylesheet" />
-    <link href="{{ url_for('static', filename='js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
-    <!-- CSS Files -->
-    <link href="{{ url_for('static', filename='css/argon-dashboard.css') }}" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='js/plugins/nucleo/css/nucleo.css') }}" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}"
+    rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="{{ url_for('static', filename='css/argon-dashboard.css') }}" rel="stylesheet" />
 
-    <!-- Recorder Custom CSS Files -->
-    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
-
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.css">
+  <!-- Recorder Custom CSS Files -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
 
 
- 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <style>
-        .bg {
-            /* background-image: url('static/img/brand/machine.jpg') ; */
-            background-repeat: no-repeat;
-            background-size:contain;
-            max-width: 50%;
-            
-            padding-left: 30rem; 
-            padding-top: 2%;
-            
-            
-        }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.css">
 
-  
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <style>
+    .bg {
+      /* background-image: url('static/img/brand/machine.jpg') ; */
+      background-repeat: no-repeat;
+      background-size: contain;
+      max-width: 50%;
+
+      padding-left: 30rem;
+      padding-top: 2%;
+
+
+    }
+
+
     header[role="banner"] {
       background-color: #5e72e4;
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
@@ -56,7 +58,7 @@
       padding: 1rem;
       text-align: center;
       color: white;
-      font-family:Arial, Helvetica, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       font-weight: 500;
 
     }
@@ -68,91 +70,134 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
-    </style>
-    
+
+    .form__label {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.2rem;
+      margin-left: 2rem;
+      margin-top: 0.7rem;
+      display: block;
+      transition: all 0.3s;
+      transform: translateY(0rem);
+    }
+
+    .form__input {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      font-size: 1.25rem;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      border-radius: 0.2rem;
+      background-color: rgb(234, 245, 255);
+      border: none;
+      width: 50%;
+      display: block;
+      border-bottom: 0.3rem solid transparent;
+      transition: all 0.3s;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;    }
+
+    .form__input:placeholder-shown+.form__label {
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transform: translateY(-4rem);
+      transform: translateY(-4rem);
+    }
+    .btn {
+      border-radius: 12px;
+          background-color: rgb(0, 76, 255);
+          text-transform: capitalize;
+          font-weight: bold;
+          background-position: right center;
+          height:60px; width:100px ; margin-top: -60px; font-size: 22px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;          
+    }
+
+  </style>
+
 </head>
 
 <body class="">
 
-<br>
+  <br>
 
-    <img style="width:90px; margin:10px;" src="static/img/brand/download.png"
-    alt=""> 
-
-  
-    <a class="navbar-brand" href=""> CNERGY |</a>
-    <img src="http://www.tactii.com/static/img/logo.png">
-        <br>
-    <header role="banner">
-        <h1>CNERGY</h1>  
-        <div class="text-center">
-        <p style="color:white;">Annotate text for SpaCy NER Model training</p>
-        </div>
-    </header> 
-
-<br><br>
-  
-
-   
-      
+  <img style="width:90px; margin:10px;" src="static/img/brand/download.png" alt="">
 
 
-            <div class="images">
-                <img src=static/img/brand/machine-01.png style="padding-left: 1rem; padding-top: 2%; width: 60rem;">
-              </div>
-         
-            <div class="row" style="margin-left:55rem ;margin-top: -45rem;"  >
-
-            
-           </div>
-     
-            </div>
-
-
-                    <div class="card text-center" style="width: 35rem; margin-left: 70rem; border-width: 2px;margin-top: 8rem; ">
-                    
-                      <br>
-                      <h5 class="card-title " style="">CNERGY</h5>
-
-                      <form action="/upload" method="POST" enctype="multipart/form-data">
-                      <div class="card-body text-center">
-                      <input type="file" class="form-control" name = "file" id="file" style="border:none;margin: auto;width:50%;" required/>
-                      <br>
-
-                        <input type="text" name= "delimiter" placeholder="Enter Delimiter" style="margin-left: -5px;" required>
-                        <br>
-                        <br>
-                        <!-- <a href="#" class="btn btn-primary" style="margin-left: -5px;" >Submit</a> -->
-                        <button type="submit" class="btn btn-primary text-center" style="margin-left: -5px;height:30px;">Start</button>
-                    </form>
-                      </div>
-                    </div>
-                  
-
-
-           
-                </div>
-            </footer>
-        </div>
+  <a class="navbar-brand" href=""> CNERGY |</a>
+  <img src="http://www.tactii.com/static/img/logo.png">
+  <br>
+  <header role="banner">
+    <h1>CNERGY</h1>
+    <div class="text-center">
+      <p style="color:white;">Annotate text for SpaCy NER Model training</p>
     </div>
-    <!--   Core   -->
+  </header>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.js"></script>
+  <br><br>
 
-    <script src="{{ url_for('static', filename='js/plugins/jquery/dist/jquery.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-    <!--   Optional JS   -->
-    <!--   Argon JS   -->
-    <script src="{{ url_for('static', filename='js/argon-dashboard.min.js') }}"></script>
-    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-    <script>
-        window.TrackJS &&
-            TrackJS.install({
-                token: "ee6fab19c5a04ac1a32a645abde4613a",
-                application: "argon-dashboard-free"
-            });
-    </script>
-    <!-- Hello                    -->
+
+
+
+
+
+  <div class="images">
+    <img src=static/img/brand/machine-01.png style="padding-left: 1rem; padding-top: 2%; width: 60rem;">
+  </div>
+
+  <div class="row" style="margin-left:55rem ;margin-top: -45rem;">
+
+
+  </div>
+
+  </div>
+
+
+  <div class="card text-center" style="width: 35rem; margin-left: 70rem; border-width: 2px;margin-top: 8rem; ">
+
+    <br>
+    <h5 class="card-title " style="">CNERGY</h5>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <div class="card-body text-center">
+        <input type="file" class="form-control" name="file" id="file" style="border:none;margin: auto;width:50%;"
+          required />
+        <br>
+        <input type="text" class="form__input" name= "delimiter" placeholder="Enter Delimiter" required="" style="border-color:#5e72e4" />
+        <label for="name" class="form__label">ENTER DELIMITER</label>
+        <!-- <input type="text" name= "delimiter" placeholder="Enter Delimiter" style="margin-left: -5px;" required> -->
+        <br>
+        <br>
+        <!-- <a href="#" class="btn btn-primary" style="margin-left: -5px;" >Submit</a> -->
+        <button type="submit" class="btn btn-primary text-center" >Start</button>
+    </form>
+  </div>
+  </div>
+
+
+
+
+  </div>
+  </footer>
+  </div>
+  </div>
+  <!--   Core   -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.js"></script>
+
+  <script src="{{ url_for('static', filename='js/plugins/jquery/dist/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+  <!--   Optional JS   -->
+  <!--   Argon JS   -->
+  <script src="{{ url_for('static', filename='js/argon-dashboard.min.js') }}"></script>
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS &&
+      TrackJS.install({
+        token: "ee6fab19c5a04ac1a32a645abde4613a",
+        application: "argon-dashboard-free"
+      });
+  </script>
+  <!-- Hello                    -->
 </body>
 
 </html>
