@@ -286,7 +286,7 @@
       "text" : untokenizedData[0]
     }
     $.ajax({
-        url: "http://3.84.17.67:5555/tokenize",
+        url: "http://0.0.0.0:5555//tokenize",
         // url : '/tokenize',
         type: "POST",
         data: JSON.stringify(text_data),
@@ -327,7 +327,7 @@
       var text_data = {"text" : untokenizedData[counter]};
 
       $.ajax({
-        url: "http://3.84.17.67:5555/tokenize",
+        url: "http://0.0.0.0:5555/tokenize",
         // url : '/tokenize',
         type: "POST",
         data: JSON.stringify(text_data),
@@ -360,7 +360,7 @@
 
     function deleteExportFile() {
       $.ajax({
-        url: "http://3.84.17.67:5555/delExport",
+        url: "http://0.0.0.0:5555/delExport",
         type: "GET",
         contentType: "application/json",
         dataType: 'json',
@@ -435,7 +435,7 @@
           
 
       $.ajax({
-        url: "http://3.84.17.67:5555/tokenize",
+        url: "http://0.0.0.0:5555/tokenize",
         // url: '/tokenize',
         type: "POST",
         data: JSON.stringify(text_data),
