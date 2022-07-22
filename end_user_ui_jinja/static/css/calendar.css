@@ -1,0 +1,284 @@
+.calendar-layout {
+	outline: none
+}
+
+.search-result-container {
+	min-height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 32px
+}
+
+.calendar-grid {
+	max-width: 990px;
+	margin: 8px auto 0 auto;
+	min-height: 642px;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center
+}
+
+.loader-container {
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+.fallback-panel {
+	background: #f4f4f4;
+	background: linear-gradient(135deg, #fafafa 45%, #fff 50%, #f0f0f0 55%);
+	animation: fallback-panel-animation 5s ease-in-out infinite;
+	background-position: 0 0;
+	background-size: 800% 800%
+}
+
+.fallback-panel:nth-child(2n) {
+	animation-delay: .25s;
+	opacity: .5
+}
+
+.fallback-panel:nth-child(3n) {
+	animation-delay: .5s
+}
+
+.fallback-panel:nth-child(4n) {
+	animation-delay: .75s;
+	opacity: .5
+}
+
+.fallback-panel:nth-child(5n) {
+	animation-delay: 1s
+}
+
+.fallback-panel:nth-child(6n) {
+	animation-delay: 1.25s;
+	opacity: .5
+}
+
+.fallback-panel:nth-child(7n) {
+	animation-delay: 1.5s
+}
+
+.fallback-panel:nth-child(8n) {
+	animation-delay: 1.75s;
+	opacity: .5
+}
+
+.fallback-panel:nth-child(9n) {
+	animation-delay: 2s
+}
+
+.fallback-panel:nth-child(10n) {
+	animation-delay: 2.25s;
+	opacity: .5
+}
+
+.fallback-panel:nth-child(11n) {
+	animation-delay: 2.5s
+}
+
+.fallback-panel:nth-child(12n) {
+	animation-delay: 2.75s;
+	opacity: .5
+}
+
+@keyframes fallback-panel-animation {
+	0% {
+		background-position: 0% 53%
+	}
+	50% {
+		background-position: 100% 48%
+	}
+	100% {
+		background-position: 0% 53%
+	}
+}
+
+.month {
+	width: 240px;
+	height: 210px;
+	display: inline-block;
+	font-family: "Arial", sans-serif;
+	border-spacing: 0;
+	margin: 0;
+	padding: 0 15px;
+	vertical-align: bottom
+}
+
+.month .month-blank-day-container {
+	width: 30px;
+	height: 30px
+}
+
+.month .month-title {
+	font-size: 75%;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 8px;
+	text-align: center
+}
+
+.month .month-day-container {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 75%;
+	vertical-align: middle;
+	color: #666;
+	position: relative
+}
+
+.month .month-day-container.exist {
+	cursor: pointer
+}
+
+.month .month-day-container.highlighted {
+	cursor: pointer;
+	z-index: 32
+}
+
+.month .month-day-container .position {
+	position: absolute;
+	top: 50%;
+	left: 50%
+}
+
+.month .month-week {
+	display: flex
+}
+
+.month .month-week .month-day {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 75%;
+	vertical-align: middle;
+	color: #666;
+	position: relative
+}
+
+.month .month-week .month-day .position {
+	position: absolute;
+	top: 50%;
+	left: 50%
+}
+
+.month-body-container {
+	position: relative
+}
+
+.month-body-container .caption-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 150px;
+	opacity: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center
+}
+
+.month-body-container .caption-container .caption {
+	text-align: center;
+	opacity: 1;
+	background: white
+}
+
+.month-body-container .month-week {
+	opacity: .5
+}
+
+.month-body-container .error-and-retry {
+	display: flex;
+	align-items: center;
+	background: white;
+	justify-content: space-evenly
+}
+
+.calendar-day {
+	cursor: pointer
+}
+
+.calendar-day .measure {
+	position: relative;
+	height: 100%;
+	left: -50%;
+	top: -50%;
+	opacity: .3;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	z-index: -1;
+	transition: opacity 300ms;
+	background-color: #1eafec;
+	border-radius: 50%
+}
+
+.calendar-day .measure.s3xx {
+	background-color: green
+}
+
+.calendar-day .measure.s4xx {
+	background-color: orange
+}
+
+.calendar-day .measure.s5xx {
+	background-color: red
+}
+
+.apidown-day {
+	cursor: pointer
+}
+
+.apidown-day .measure {
+	position: relative;
+	height: 100%;
+	left: -50%;
+	top: -50%;
+	opacity: .3;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	z-index: -1;
+	transition: opacity 300ms;
+	background-color: #E4002B;
+	border-radius: 50%
+}
+
+.calendar-day>a {
+	color: #000;
+	font-weight: 700;
+	text-decoration: none
+}
+
+.calendar-day>.position {
+	pointer-events: none
+}
+
+.highlighted .calendar-day .measure {
+	opacity: .9;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70)
+}
+
+.highlighted .calendar-day a {
+	font-size: 1.3em
+}
+
+.calendar-day-reference {
+	position: absolute;
+	top: 0;
+	width: 30px;
+	height: 30px
+}
+
+.capture-details {
+	text-align: center;
+	min-height: 40px
+}
+
+/*# sourceMappingURL=calendar.d59960068e6d07d16276.chunk.css.map*/

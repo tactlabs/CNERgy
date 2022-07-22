@@ -1,0 +1,633 @@
+{%extends 'base.html'%}
+
+{% block head%}
+<style>
+
+.count {
+  /* background-color: #000; */
+  width: 100%;
+  padding: 20px;
+  /* position: relative; */
+  /* transform: translate(-50%, -50%); */
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0px 5px rgba(30, 21, 49, 0.4);
+}
+
+.count h5 {
+  /* color: #fff; */
+  font-size: 32px;
+}
+
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar">
+        <div class="dropdown">
+          <!-- <div class="card" style="padding-left: 20px;">
+            Completed:<b id="Completed">  </b>
+            <br>
+            Left:<b id="left"  >  </b>
+
+            
+          </div> -->
+          <div class="count">
+            <div>
+              <h5 id="Completed"></h5>
+              <p>Completed</p>
+            </div>
+            <div>
+              <h5 id="left"></h5>
+              <p>Left</p>
+            </div>
+            <div>
+              <h5 id="skipped"></h5>
+              <p>Skipped</p>
+            </div>
+          </div>
+          <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Custom String
+          </button> -->
+          <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>Custom String</li>
+            </ul> -->
+        </div>
+        <br>
+        <!-- <a href="/export" target="_blank"> -->
+         <button class="btn btn-secondary" onclick="exportFile()">
+            Export 
+          </button>
+        <!-- </a> -->
+
+        <a href="/">
+          <button class="btn btn-secondary" type="button">
+             home 
+           </button>
+         </a>
+
+        <style>
+          .sidebar2 {
+            /* border : 2px solid black; */
+            margin-top: 20px;
+          }
+
+          .sidebar2 .title {
+            margin: auto;
+          }
+
+          .sidebar2 .iframes {
+            border: 2px solid black;
+            height: 300px;
+          }
+
+          .sidebar2 iframe {
+            width: 100%;
+            height: 100%;
+          }
+        </style>
+
+        <div class="sidebar2">
+          <b class='title'>Annotated words</b>
+         <div class="iframes" id='iframes'>
+         <!-- <iframe frameborder="0" class="iframeAnnot" id='iframeAnnot'> -->
+          </div>
+        </div>
+         </iframe>
+        <script>
+          console.log('this is idnasidnasid;...')
+          const test = () => {
+            console.log(getFileDetails())
+          }
+
+          const getFileDetails = () => {
+            const url = window.location.href;
+            var filename = url.split('=')[1];
+            const filepath = '/static/uploads/' + filename.split('.')[0] + '.zip'
+            filename = filepath.split('/')[3]
+            fileDetails = {
+              fname : filename,
+              fpath : filepath
+            }
+            return fileDetails;
+          }
+
+          function downloadURI() {
+                const fDetails = getFileDetails()
+                // e.preventDefault();
+                const uri = fDetails['fpath']
+                const name = fDetails['fname']
+                // window.location.href = uri
+                var link = document.createElement("a");
+                link.download = name;
+                link.href = uri;
+                link.click();
+            }
+        </script>
+
+
+          <!-- <button class="btn btn-secondary" onclick="test()"> -->
+          <button class="btn btn-secondary" onclick="downloadURI()" id="exportBtn" style="display: none;">
+             test 
+          </button>
+        
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="card  " style="transform: none; width:70rem ;transition:none; cursor: text;">
+        <div style="position:sticky; top: 0px; z-index: 2; background-color: #f1f1f1;">
+
+          <div id="add-tag" style="padding: 1rem;">
+            <div class="">
+              <div class="tags">
+                <ul>
+                  <!-- <li>
+                    <div id="color"> </div>
+                    <span style="padding-left:3px;"> TECH</span>
+                    <span class="close">&times;</span>
+                  </li> -->
+                </ul>
+              </div>
+              <div>
+                <div class="col-md-3">
+                  <div class="input-group">
+                    <input class="form-control" type="text" id="input-tag" placeholder="NER"
+                      style="text-transform:uppercase">
+                    <button type="button" class="btn btn-primary" onclick="addTag()">Add</button>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div> <br>
+
+        <div class="card-body">
+
+          <!-- <h3 style="text-align: center;"> 1/803 </h3>
+          <br> -->
+
+          <div> <b>  </b> </div>
+          <div class="input-group form-control" id="job-description" style="line-height: 3;
+              overflow-wrap: break-word; background-color: #fbfbfb; opacity: 1;">
+            {% for word in data.tokens %}
+            <span id={{word[0]}} style="padding: 0.15rem;">{{ word[2] }} </span>
+
+            {% endfor %}
+          </div>
+
+          </br>
+
+          <center>
+            <button type="button" class="btn btn-outline-danger">Reset</button>
+            <button type="button" class="btn btn-outline-warning" onclick="skip()">Skip</button>
+            <button type="submit" id="save-btn" class="btn btn-success"
+              style="text-align: center; padding: 0.40em 1.5em;" onclick="save()">Save</button>
+          </center>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<br>
+<br>
+
+<script>
+  var untokenizedData = {{ data | tojson | safe }};
+  // console.log(untokenizedData[2]);
+  var counter = 0;
+  var total = untokenizedData.length;
+  var token_data;
+  var skipped_count = 0;
+  var TokenizedState = {
+    annotated : []
+  }
+  var displayedTextEndIndex = -1
+  var iframeIdx = 1
+
+  // function findby(txt) {
+  //   var found = false;
+  //   for
+  // }
+
+  function find(arr, find) {
+    var found = false;
+    for(i of arr) {
+      if (i === find) {
+        found = true;
+        break;
+      }
+    }
+
+    return found
+  }
+  function addAnnotatedTextToState(txt) {
+    if (txt.length > 0)
+      if (!find(TokenizedState['annotated'], txt))
+        TokenizedState['annotated'].push(txt)
+  }
+
+  function getAnnotatedTextsFromState() {
+
+    
+    const iframeid = 'iframeAnnot'
+    // delete old iframe 
+    oldIframe = document.getElementById(iframeid)
+    if (oldIframe)
+      oldIframe.parentNode.removeChild(oldIframe)
+
+    // creating new iframe 
+    const iframe = document.createElement('iframe');
+    iframe.setAttribute('id', iframeid) 
+    $(`#iframes`).append(iframe);
+    console.log(iframe)
+
+    // appending the annotated text inside newly created iframe 
+    const atxts  = TokenizedState['annotated']
+    atxts.map((text, index) => {
+      // console.log(text, index)
+      if (displayedTextEndIndex < index) {
+      const dt = document.createElement('div');
+      dt.innerHTML = text
+      dt.setAttribute("id", `text${index}`);
+      dt.setAttribute("name", text);
+      // iframe.append(dt)
+      $(`#${iframeid}`).contents().find('body').append(dt);
+      // displayedTextEndIndex += 1;
+      } 
+    })
+  }
+
+  function removeAnnotatedTextFromState(txt) {
+    const atxts = TokenizedState['annotated']
+    TokenizedState['annotated'] = atxts.filter(text => text != txt)
+    getAnnotatedTextsFromState()
+    // displayedTextEndIndex = -1
+  }
+
+  $(document).ready(function () {
+    // var tokenizedData = {{ data | tojson | safe }};
+    
+    var text_data = {
+      "text" : untokenizedData[0]
+    }
+    $.ajax({
+        url: "http://0.0.0.0:5555//tokenize",
+        // url : '/tokenize',
+        type: "POST",
+        data: JSON.stringify(text_data),
+        contentType: "application/json",
+        dataType: 'json',
+        success: function (tokenizedData) {
+          // alert("Techlinks successfully saved");
+          // console.log(tokenizedData);
+          token_data = tokenizedData.tokens;
+          token_data.forEach(appendTokenizedData);
+
+          function appendTokenizedData(item) {
+            $("#job-description").append('<span class="words" id='+item[0]+'>' + item[2] + '</span>');
+            document.getElementById("Completed").innerHTML = counter-skipped_count;
+          document.getElementById("left").innerHTML = total - counter;
+          document.getElementById("skipped").innerHTML = skipped_count;
+
+
+          }
+        },
+
+        error: () => {
+          alert("Failed to tokenize data");
+        }
+      })
+    
+    
+  });
+  
+    var selectedText = {}
+    var activeTag, activeTagColor, activeTagName;
+
+    let colorCodes = ["#B6A6D9", "#EFCDE4", "#F9FAD5", "#CBE6B3", "#90D0E6", "#FF6961", "#988270"]
+
+    function skip(){
+      counter+=1;
+      skipped_count +=1;
+      var text_data = {"text" : untokenizedData[counter]};
+
+      $.ajax({
+        url: "http://0.0.0.0:5555/tokenize",
+        // url : '/tokenize',
+        type: "POST",
+        data: JSON.stringify(text_data),
+        contentType: "application/json",
+        dataType: 'json',
+        success: function (tokenizedData) {
+          // alert("Techlinks successfully saved");
+          // console.log(tokenizedData);
+          
+          $("#job-description").empty();
+
+          token_data = tokenizedData.tokens;
+          token_data.forEach(appendTokenizedData);
+
+          function appendTokenizedData(item) {
+            $("#job-description").append('<span class="words" id='+item[0]+'>' + item[2] + '</span>');
+            document.getElementById("Completed").innerHTML = counter-skipped_count;
+          document.getElementById("left").innerHTML = total - counter;
+          document.getElementById("skipped").innerHTML = skipped_count;
+
+
+          }
+        },
+
+        error: () => {
+          alert("Failed to tokenize data");
+        }
+      })
+    }
+
+    function deleteExportFile() {
+      $.ajax({
+        url: "http://0.0.0.0:5555/delExport",
+        type: "GET",
+        contentType: "application/json",
+        dataType: 'json',
+        success: () => {
+          console.log('deleted files successfully')
+        },
+
+        error: () => {
+          alert("Failed to delete files");
+        }
+      })
+    }
+
+    function exportFile() {
+      $.ajax({
+        url: "http://0.0.0.0:8080/exporto",
+        type: "GET",
+        contentType: "application/json",
+        dataType: 'json',
+        success: () => {
+            console.log('exported files successfully');
+            const expBtn = document.getElementById('exportBtn');
+            expBtn.click();
+            deleteExportFile();
+        },
+
+        error: () => {
+          alert("Failed to Export data");
+        }
+      })
+    }
+    
+    
+
+    function save() {
+
+      // var uniqueSelectedText = []
+
+      // $.each(selectedText, function (i, el) {
+
+      //   if ($.inArray(el, uniqueSelectedText) === -1) uniqueSelectedText.push(el);
+      // });
+
+      // console.log("counter" + untokenizedData[counter]);
+      
+      console.log("counter::::"+counter)
+
+      var data = {
+        "selected-data": selectedText,
+        "initial-data": { "tokens" :token_data},
+        "orig_text"   : untokenizedData[counter]
+      };
+      // console.log(data)
+
+      console.log("untokenized data:",untokenizedData[counter]);
+
+      $.ajax({
+        url: "/api/save/data",
+        type: "POST",
+        data: JSON.stringify(data),
+        contentType: "application/json",
+        dataType: 'json',
+        success: function (e) {
+          // alert("Techlinks successfully saved");
+          counter+=1;
+          
+          var text_data = {"text" : untokenizedData[counter]};
+          document.getElementById("Completed").innerHTML = counter-skipped_count;
+          document.getElementById("left").innerHTML = total - counter;
+
+      
+          
+
+      $.ajax({
+        url: "http://0.0.0.0:5555/tokenize",
+        // url: '/tokenize',
+        type: "POST",
+        data: JSON.stringify(text_data),
+        contentType: "application/json",
+        dataType: 'json',
+        success: function (tokenizedData) {
+          // alert("Techlinks successfully saved");
+          // console.log(tokenizedData);
+          
+          $("#job-description").empty();
+
+          token_data = tokenizedData.tokens;
+          token_data.forEach(appendTokenizedData);
+
+          function appendTokenizedData(item) {
+            $("#job-description").append('<span class="words" id='+item[0]+'>' + item[2] + '</span>')
+          }
+        },
+
+        error: () => {
+          alert("Failed to tokenize data");
+        }
+      })
+        },
+
+        error: () => {
+          // alert("Failed to save techlinks");
+        }
+      })
+
+      console.log("next counter" + counter);
+    }
+
+
+    function addTag() {
+      // console.log($('#input-tag').val());
+      let tag = $('#input-tag').val().toUpperCase();
+      $('#input-tag').val("");
+      $(".tags ul").append("<li><div class='color' style='background-color:" + colorCodes.pop() +
+        "'> </div> <span style='padding-left:3px;''>" + tag +
+        "</span><span class='close'>&times;</span></li>")
+      // console.log(selectedText[tag]);
+      closeButton();
+      selectTag();
+    }
+
+    function selectTag() {
+      $(".tags li").click(function () {
+        // console.log(this);
+        if (activeTag) {
+          $(activeTag).removeClass("active");
+        }
+        activeTagColor = $(this).find(".color").css("background-color");
+
+        console.log(activeTagColor);
+        $(this).addClass("active");
+        activeTagName = $(this).children().eq(1).text().toUpperCase();
+        selectedText[activeTagName] = {};
+        activeTag = this;
+
+        // console.log(activeTag);
+      })
+    }
+
+    function getSelectionText() {
+      var text = "";
+      if (window.getSelection) {
+        text = window.getSelection().toString();
+      } else if (document.selection && document.selection.type != "Control") {
+        text = document.selection.createRange().text;
+      }
+      addAnnotatedTextToState(text);
+      getAnnotatedTextsFromState();
+      return text;
+    }
+
+    ele = document.getElementById("job-description");
+
+    ele.onmouseup = ele.onkeyup = function addTechKey() {
+      text = getSelectionText();
+      // console.log(text.split('\n'));
+      var wordArray = text.split('\n');
+      text = text.replaceAll('\n', ' ');
+
+      textPos = window.getSelection().anchorNode.parentNode;
+      if (text.replace(/\s/g, '').length) {
+        highlight(wordArray, textPos);
+        var temp = {};
+        if (activeTag) {
+          while (true) {
+            var start = $(textPos).attr("id");
+            // console.log(activeTagName);
+            // console.log(selectedText.activeTagName);
+            // console.log(start);
+            // console.log(selectedText["TECH"]);
+
+            selectedText[activeTagName][text] = Number(start);
+            // console.log(temp);
+            // selectedText[activeTagName] = temp;
+            console.log(selectedText);
+            break;
+          }
+        }
+      }
+    }
+
+    function closeButton() {
+      var closeButtons = $('.close')
+      // console.log(closeButtons);
+      for (var i = 0; i < closeButtons.length; i++) {
+        closeButtons[i].addEventListener("click", function (e) {
+          e.preventDefault();
+          console.log('close button in line 487 is called')
+          // console.log($(this).closest("li").find(".color") )
+          colorCodes.push($(this).closest("li").find(".color").css("background-color"));
+          // console.log(colorCodes);
+          $(this).closest("li").remove();
+        });
+      }
+    }
+
+    function highlight(arr, pos) {
+      // console.log(arr);
+      // console.log(pos);
+      var count = arr.length;
+      for (let i in arr) {
+        if (arr[i] === "" || arr[i] === " ") {
+          count -= 1;
+        }
+      }
+      // console.log(count);
+      // console.log($(window.getSelection().anchorNode.parentNode))
+      // if (count === 1) {
+      //   let selection = $(pos).prev().nextAll().slice(0,count);
+      // }
+      // console.log($(pos).prev().nextAll().slice(0, count));
+      let selection = $(pos).prev().nextAll().slice(0, count);
+      if (activeTag) {
+        // let activeColor = $(activeTag + ".color").css("background-color");
+        if (selection) {
+          console.log(activeTagColor);
+          var id = "grp-" + $(pos).attr("id")
+          // console.log(id);
+          $(selection).wrapAll('<mark/ id="' + id + '">');
+          $("#" + id).append('<span class="badge bg-secondary">' + activeTagName +
+            '<button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>')
+          $("#" + id).css("background-color", activeTagColor)
+        }
+      } else {
+        alert("You need to select a tag!")
+      }
+
+      removeHighlights();
+      return selection;
+
+      // console.log(selectedText);
+    }
+
+    function removeHighlights() {
+      console.log("remove highlights");
+      $(".btn-close").click(function () {
+        // console.log($(this).closest("li"));
+        var id = $(this).closest("mark").attr("id");
+
+        $(this).closest("span").parent("mark");
+        $(this).closest("span").unwrap();
+        $(this).closest("span.badge").remove();
+        
+        console.log('id in remove highlights is : ' + id)
+        if (id){
+          id = id.split('-');
+          deleteObj(id[1])
+        }
+      })
+    }
+
+    function deleteObj(val) {
+      var obj = selectedText[activeTagName];
+      console.log('delect obj is called and deleting the obj ...')
+      for (let i in obj) {
+        if (obj[i] == val) {
+          console.log('val and obj[i] match', obj[i], val, i)
+          removeAnnotatedTextFromState(i)
+          delete obj[i];
+          break
+        }
+      }
+      console.log(selectedText);
+    }
+
+  // });
+</script>
+
+
+{%endblock%}

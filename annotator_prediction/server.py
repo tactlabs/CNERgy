@@ -40,6 +40,7 @@ def train():
 
         words    =   data['words']
         print(words)
+        tagged_words    =   []
 
         for idx in range(len(words)):
             word    =   words[idx]
@@ -47,6 +48,7 @@ def train():
             print(word)
             if(word in text):
                 text    =   text.replace(word,f'<mark>{word}</mark>')
+                tagged_words.append(word)
 
 
     # file    =   open('./collection.txt')
@@ -85,7 +87,8 @@ def train():
 
     result  =   {
 
-        'text'              :   text
+        'text'              :   text,
+        'tagged_words'      :   tagged_words
     }
 
     return result

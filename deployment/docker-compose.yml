@@ -27,3 +27,14 @@ services:
       - ../annotator_prediction:/code
     ports:
       - 5050:5050
+  
+  end_user_ui-jinja:
+    build: ../end_user_ui_jinja
+    volumes:
+      - ../end_user_ui_jinja:/code
+    ports:
+      - 8060:8060
+    depends_on:
+      - annotator_prediction
+    environment:
+      PYTHONUNBUFFERED: ${PYTHONUNBUFFERED}

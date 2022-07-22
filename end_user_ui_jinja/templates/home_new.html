@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    NER Text Annotator
+  </title>
+  <!-- Favicon -->
+
+  <link href="{{ url_for('static', filename='img/brand/favicon.png') }}" rel="icon" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+
+  <link href="{{ url_for('static', filename='js/plugins/nucleo/css/nucleo.css') }}" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}"
+    rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="{{ url_for('static', filename='css/argon-dashboard.css') }}" rel="stylesheet" />
+
+  <!-- Recorder Custom CSS Files -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.css">
+
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <style>
+    .bg {
+      /* background-image: url('static/img/brand/machine.jpg') ; */
+      background-repeat: no-repeat;
+      background-size: contain;
+      max-width: 50%;
+      padding-left: 30rem;
+      padding-top: 2%;
+
+
+    }
+
+
+    header[role="banner"] {
+      background: linear-gradient(109.6deg, rgba(62, 161, 219, 1) 11.2%, rgba(93, 52, 236, 1) 100.2%);
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+      padding: 50px;
+      /* margin-left: -30px; */
+      width: 100%;
+    }
+
+    header[role="banner"] h1 {
+      margin: 0px;
+      padding: 1rem;
+      text-align: center;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      /* background-image: url('static/img/brand/technology-face-circuit-diagram-background_1017-18300.jpg'); */
+    }
+
+    .card-title {
+      font-size: 30px;
+      font-weight: 600;
+
+    }
+
+
+    .form__label {
+      font-family: 'Roboto', sans-serif;
+
+
+      font-size: 1.5rem;
+      margin-left: 2rem;
+      margin-top: 1rem;
+      display: block;
+      transition: all 0.3s;
+      transform: translateY(0rem);
+    }
+
+
+
+    .form__input {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      font-size: 1.5rem;
+      margin: 4rem;
+      margin-left: 8rem;
+      padding: 1rem 2rem;
+      border-radius: 0.2rem;
+      background-color: rgb(234, 245, 255);
+      background: #ffffff;
+      border: none;
+      width: 70%;
+      height: auto;
+      display: block;
+      border-bottom: 0.3rem solid transparent;
+      transition: all 0.3s;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+
+    /* 
+    .form__input:placeholder-shown+.form__label {
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transform: translateY(-4rem);
+      transform: translateY(-4rem);
+    } */
+
+    @import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
+    /* body {
+  margin:0;
+  padding:0;
+  font-family: "Lato", sans-serif; 
+  
+  display: flex;
+
+  min-height: 100vh; */
+
+
+    /* .form {
+      width: 400px;
+      
+    } */
+
+    /* .file-upload-wrapper {
+      position: relative;
+      width: 640px;
+      height: 70px;
+      cursor: pointer;
+
+      margin-left: 140px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        
+    }
+    .file-upload-wrapper::after {
+      content: attr(data-text);
+      font-size: 18px;
+      position: absolute;
+      top: 0;
+      background: #fff;
+      padding: 10px 15px;
+      display: block;
+      width: calc(100% - 40px);
+      pointer-events: none;
+      z-index: 20;
+      height: 40px;
+      line-height: 40px;
+      color: #999;
+      border-radius: 5px 10px 10px 5px;
+      font-weight: 300;
+    }
+
+    .file-upload-wrapper::before {
+      content: "Upload";
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      height: 70px;
+      background: blue;
+      color: #fff;
+      font-weight: 700;
+      z-index: 25;
+      font-size: 16px;
+      line-height: 45px;
+      padding: 15px;
+      text-transform: uppercase;
+      pointer-events: none;
+      border-radius: 0 5px 5px 0;
+      transition: 0.5s ease-in-out;
+    }
+
+
+
+
+
+    .file-upload-wrapper input {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 99;
+      height: 40px;
+      margin: 0;
+      padding: 0;
+      display: block;
+      cursor: pointer;
+      width: 100%;
+    } */
+
+    .file-upload {
+      border: 2px solid gray;
+      color: rgb(0, 0, 0);
+      background-color: whitesmoke;
+      padding: 15px 20px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 3rem;
+      width: 665px;
+      display: inline-block;
+
+
+    }
+    .file-upload:hover {
+      background-color: whitesmoke;
+      cursor: pointer;
+    }
+
+
+    .upload-btn-wrapper {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      margin-left: -40px;
+    }
+  
+    
+    .btn {
+      border-radius: 12px;
+      background-color: rgb(0, 76, 255);
+      text-transform: capitalize;
+      font-weight: bold;
+      background-position: right center;
+      height: 60px;
+      width: 100px;
+      margin-top: -60px;
+      font-size: 22px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+
+    .navbar-brand {
+      font-size: 20px;
+      margin-left: -15px;
+
+
+    }
+
+    
+  </style>
+
+</head>
+
+<body>
+  <img style="height:55px; margin:10px;" src="static/img/brand/download.png" alt="">
+
+
+  <a class="navbar-brand" href=""> CNERgy</a>
+
+  <br>
+  <header role="banner" style="max-width:100%;">
+    <h1 style="font-weight:500 ;">CNERgy</h1>
+    <div class="text-center">
+      <p style="color:white;">Annotate text for SpaCy NER Model training</p>
+    </div>
+  </header>
+
+  <br><br>
+
+
+
+
+
+
+  <div class="images">
+    <img src=static/img/brand/machine-01.png style="padding-left: 2rem; padding-top: 2%; width: 40rem;">
+  </div>
+
+  <div class="row" style="margin-top: -45rem;">
+
+
+  </div>
+
+  </div>
+
+
+  <div class="card text-center"
+    style="width: 60rem; height: 30rem; margin-left: 50rem; border-width: 2px;margin-top: 17rem; margin-right: 50px; ">
+
+    <br>
+    <h5 class="card-title ">CNERgy</h5>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+
+      <div class="upload-btn-wrapper">  
+        <input type="file" name="file" class="file-upload " />
+        
+      </div>
+
+      <!-- <input type = "text" name = "delimiter"> -->
+      <input type="text" class="form__input" name="delimiter" placeholder="Enter Delimiter" required=""
+        style="border-color:#5e72e4" />
+      <!-- <label for="name" class="form__label">ENTER DELIMITER</label> -->
+
+      <input type="submit" class="btn btn-primary text-center" />
+    </form>
+
+
+  </div>
+  </div>
+
+
+
+
+  </div>
+  </footer>
+  </div>
+  </div>
+  <!--   Core   -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.js"></script>
+
+  <script src="{{ url_for('static', filename='js/plugins/jquery/dist/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+  <!--   Optional JS   -->
+  <!--   Argon JS   -->
+  <script src="{{ url_for('static', filename='js/argon-dashboard.min.js') }}"></script>
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS &&
+      TrackJS.install({
+        token: "ee6fab19c5a04ac1a32a645abde4613a",
+        application: "argon-dashboard-free"
+      });
+  </script>
+  <!-- Upload file -->
+  <!-- $("form").on("change", ".file-upload-field", function(){
+    $(this).parent(".file-upload-wrapper").attr("data-text",$(this).val().replace(/.*(\/|\\)/,''));
+}) -->
+
+</body>
+
+</html>

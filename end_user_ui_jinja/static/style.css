@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(to bottom, #0769c3 0%, #0769c3 40%, #ddd 0%, #ddd 100%);
+    
+}
+
+h1 {
+    color: white;
+    
+}
+
+.dropzone {
+    color: white;
+    background: grey;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    min-height: 50px; 
+    /* position: absolute;
+	top: 12%;
+	left: 650px; */
+    box-align: center;
+    border-radius : 8px;
+    
+} 
+
+.form-control {
+    position: absolute;
+	top: 50%;
+	left: 170%;
+}
+
