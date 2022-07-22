@@ -35,16 +35,18 @@ def train():
     #     'federally',
     #     'companies'
     # ]
+    with open('./words/words.json') as jsonfile:
+        data = json.load(jsonfile)
 
-    tagged_words    =   json.loads('annotator_prediction/words/words.json')
-    # words    =   tagged_words['words']
-    print(tagged_words)
-    # for idx in range(len(words)):
-    #     word    =   words[idx]
-    #     word    =   word.lower()
-    #     print(word)
-    #     if(word in text):
-    #         text    =   text.replace(word,f'<mark>{word}</mark>')
+        words    =   data['words']
+        print(words)
+
+        for idx in range(len(words)):
+            word    =   words[idx]
+            word    =   word.lower()
+            print(word)
+            if(word in text):
+                text    =   text.replace(word,f'<mark>{word}</mark>')
 
 
     # file    =   open('./collection.txt')

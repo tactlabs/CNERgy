@@ -95,6 +95,7 @@
 
         <div class="d-flex justify-content-center">
             <textarea class="text-area" id="review"  name="w3review" rows="30" cols="100"></textarea>
+            <p id="text-area" class="text-area"></p>
         </div>
         <br>
         <div class="d-flex justify-content-center">
@@ -130,9 +131,11 @@
         }),
         contentType: "application/json",
         dataType: 'json',
-        crossDomain: true,
+            crossDomain: true,
+
         success: function (tokenizedData) {
-          document.querySelector('#review').value  = tokenizedData.text
+          document.querySelector('#review').style.display   ="none"
+          document.querySelector('#text-area').innerHTML  = tokenizedData.text
           console.log(tokenizedData.text)
         },
 
