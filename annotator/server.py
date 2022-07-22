@@ -19,7 +19,9 @@ def tokenize():
     except LookupError:
         nltk.download('punkt')
         spans = list(TreebankWordTokenizer().span_tokenize(text))
+    print([(s[0], s[1], text[s[0]:s[1]]) for s in spans])
     return {"tokens": [(s[0], s[1], text[s[0]:s[1]]) for s in spans]}
+
 
 
 @app.route("/detokenize", methods=["POST"])
