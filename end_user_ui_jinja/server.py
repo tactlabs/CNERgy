@@ -2,13 +2,11 @@ from flask import Flask,url_for,render_template, jsonify, request, redirect
 from flask.helpers import send_file, send_from_directory
 from werkzeug.utils import  secure_filename
 from time import sleep
-
+import requests
 app=Flask(__name__)
 
 
-@app.route('/', methods=['GET'])
-def home():
-    return redirect('/gettag')
+
 
 
 
@@ -19,7 +17,15 @@ def get_paragraph():
 
 @app.route('/view/tag/data', methods=['GET'])
 def get_taggged_data():
-    return render_template('dummy.html')
+
+    # URL = "http://0.0.0.0:5050/get/annotation"
+    # r = requests.get(url='http://0.0.0.0:5050/get/annotation')
+
+    # data = r.json()
+    r={}
+
+
+    return render_template('end.html',data=r)
 
 
 

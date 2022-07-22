@@ -35,7 +35,7 @@ def train():
     #     'federally',
     #     'companies'
     # ]
-    with open('./words/words.json') as jsonfile:
+    with open('./common/words.json') as jsonfile:
         data = json.load(jsonfile)
 
         words    =   data['words']
@@ -51,53 +51,41 @@ def train():
                 tagged_words.append(word)
 
 
-    # file    =   open('./collection.txt')
-    # # lines=[]
-    # # for line in file:
-    # #     lines.append(line.strip())
-    # file_list   =   file.read().split('-----------------------------------------------------------------------')
-    # print(file_list)
-
-    # print(lines)
-    # highlight_words =   []
-
-    # for line in file_list:
-    # line    =   text.split(',')
-    # for idx in range(len(line)):
-    #     word    =   line[idx]
-    #     # print(word)
-    #     if(word in tagged_words):
-    #         word    =   f'<mark class="mark">{word}</mark>'
-    #         line[idx] = word
-    #         print(word)
-
-    # for idx in range(len(file_list)):
-    #     line    =   text[idx]
-    #     for word in line.split(' '):
-    #         if(word in words):
-    #         # highlight_words.append(word)
-    #             word    =   f'<mark id="mark {idx}"></mark>'
-
-      
-  
+   
 
     '''
     '''
 
 
     result  =   {
-
-        'text'              :   text,
-        'tagged_words'      :   tagged_words
+            'status'    :   'success'
     }
 
+    res_dict    =   {
+        'text'          :   text,
+        'tagged_words'  :   tagged_words
+    }
+
+    res_json    =   json.dumps(res_dict)
+
+    with open("./common/data.json", "w") as out_file:
+        out_file.write(res_json)
     return result
 
 
-@app.route('/annotation',methods=['GET','POST'])
+@app.route('/get/annotation',methods=['GET','POST'])
+@cross_origin()
 def get_annotation():
     
-    
+    with open('./common/data.json') as jsonfile:
+        data = json.load(jsonfile)
+        print(data)
+        result  =   {
+            'status'    :   'success',
+            'text'      :   data['text'],
+            'tagged_words'  :   data['tagged_words']
+        }
+        return result    
     return ""
 
 if __name__ == "__main__":
