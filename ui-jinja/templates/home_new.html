@@ -50,7 +50,7 @@
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
       padding: 50px;
       /* margin-left: -30px; */
-      max-width: 100%;
+      width: 100%;
     }
 
     header[role="banner"] h1 {
@@ -71,15 +71,17 @@
     .card-title {
       font-size: 30px;
       font-weight: 600;
-    
+
     }
-    
+
 
     .form__label {
       font-family: 'Roboto', sans-serif;
+
+
       font-size: 1.5rem;
       margin-left: 2rem;
-      margin-top: 0.7rem;
+      margin-top: 1rem;
       display: block;
       transition: all 0.3s;
       transform: translateY(0rem);
@@ -91,7 +93,8 @@
       font-family: 'Roboto', sans-serif;
       color: #333;
       font-size: 1.5rem;
-      margin: 0 auto;
+      margin: 4rem;
+      margin-left: 8rem;
       padding: 1rem 2rem;
       border-radius: 0.2rem;
       background-color: rgb(234, 245, 255);
@@ -105,12 +108,13 @@
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     }
 
+    /* 
     .form__input:placeholder-shown+.form__label {
       opacity: 0;
       visibility: hidden;
       -webkit-transform: translateY(-4rem);
       transform: translateY(-4rem);
-    }
+    } */
 
     @import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
     /* body {
@@ -121,14 +125,14 @@
   display: flex;
 
   min-height: 100vh; */
-    
 
-    .form {
+
+    /* .form {
       width: 400px;
       
-    }
+    } */
 
-    .file-upload-wrapper {
+    /* .file-upload-wrapper {
       position: relative;
       width: 640px;
       height: 70px;
@@ -138,7 +142,6 @@
       margin-top: 50px;
       margin-bottom: 20px;
       border-radius: 5px;
-      /* box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px; */
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         
     }
@@ -182,10 +185,7 @@
 
 
 
-    /* .file-upload-wrapper:hover::before {
-      background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);
-      background: linear-gradient(to right, #514A9D, #24C6DC);
-    } */
+
 
     .file-upload-wrapper input {
       opacity: 0;
@@ -201,8 +201,36 @@
       display: block;
       cursor: pointer;
       width: 100%;
+    } */
+
+    .file-upload {
+      border: 2px solid gray;
+      color: rgb(0, 0, 0);
+      background-color: whitesmoke;
+      padding: 15px 20px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 3rem;
+      width: 665px;
+      display: inline-block;
+
+
+    }
+    .file-upload:hover {
+      background-color: whitesmoke;
+      cursor: pointer;
     }
 
+
+    .upload-btn-wrapper {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      margin-left: -40px;
+    }
+  
+    
     .btn {
       border-radius: 12px;
       background-color: rgb(0, 76, 255);
@@ -220,7 +248,10 @@
       font-size: 20px;
       margin-left: -15px;
 
+
     }
+
+    
   </style>
 
 </head>
@@ -258,18 +289,27 @@
   </div>
 
 
-  <div class="card text-center" style="width: 60rem; height: 30rem; margin-left: 50rem; border-width: 2px;margin-top: 17rem; margin-right: 50px; ">
+  <div class="card text-center"
+    style="width: 60rem; height: 30rem; margin-left: 50rem; border-width: 2px;margin-top: 17rem; margin-right: 50px; ">
 
     <br>
     <h5 class="card-title ">CNERgy</h5>
-    <form action = "/upload" method = "POST" 
-        enctype = "multipart/form-data">
-        <input type = "file" name = "file" />
-        <input type = "text" name = "delimiter">
-        <input type = "submit"/>
-     </form>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
 
-   
+      <div class="upload-btn-wrapper">  
+        <input type="file" name="file" class="file-upload " />
+        
+      </div>
+
+      <!-- <input type = "text" name = "delimiter"> -->
+      <input type="text" class="form__input" name="delimiter" placeholder="Enter Delimiter" required=""
+        style="border-color:#5e72e4" />
+      <!-- <label for="name" class="form__label">ENTER DELIMITER</label> -->
+
+      <input type="submit" class="btn btn-primary text-center" />
+    </form>
+
+
   </div>
   </div>
 
