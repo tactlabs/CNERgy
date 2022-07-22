@@ -262,31 +262,14 @@
 
     <br>
     <h5 class="card-title ">CNERgy</h5>
+    <form action = "/upload" method = "POST" 
+        enctype = "multipart/form-data">
+        <input type = "file" name = "file" />
+        <input type = "text" name = "delimiter">
+        <input type = "submit"/>
+     </form>
 
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-      <div class="card-body text-center">
-        <!-- <input type="file" class="form-control" name="file" id="file" style="border:none;margin: auto;width:50%;"
-          required /> -->
-        <form class="form">
-          <!-- <div class="file-upload-wrapper" data-text="Select your file!">
-              <input name="file-upload-field" type="file" class="file-upload-field" value="">
-            </div> -->
-          <form class="form" >
-            <div class="file-upload-wrapper" data-text="Select your file!">
-              <input name="file-upload-field" type="file" class="file-upload-field" value="">
-            </div>
-          </form>
-        </form>
-        <br>
-        <input type="text" class="form__input" name="delimiter" placeholder="Enter Delimiter" required=""
-          style="border-color:#5e72e4" />
-        <label for="name" class="form__label">ENTER DELIMITER</label>
-        <!-- <input type="text" name= "delimiter" placeholder="Enter Delimiter" style="margin-left: -5px;" required> -->
-        <br>
-        <br>
-        <!-- <a href="#" class="btn btn-primary" style="margin-left: -5px;" >Submit</a> -->
-        <button type="submit" class="btn btn-primary text-center">Start</button>
-    </form>
+   
   </div>
   </div>
 
