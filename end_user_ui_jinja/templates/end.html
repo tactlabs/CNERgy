@@ -105,13 +105,28 @@
 
         <div class="d-flex justify-content-between">
             <p class="annotation-area" id="w3review" name="w3review" ></p>
-
-            <p class="text-area" id="w3review" name="w3review" style="min-width:1100px ;">{{data}}</p>
+            <p class="text-area" id="review" name="w3review" style="min-width:1100px ;color:#000"></p>
+            <div>
+                
+            </div>
         </div>
        
     <!-- </form> -->
 
+    <script>
 
+        let ConvertStringToHTML = function (str) {
+        let parser = new DOMParser();
+        let doc = parser.parseFromString(str, 'text/html');
+        return doc.body;
+        };
+        var text            =   JSON.stringify({{data.text}})
+        // var text_content    =   `<div>${text}</div>`
+        text.replace
+
+        // document.getElementById('review').append((text_content))
+
+    </script>
 
 
 </body>

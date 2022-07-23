@@ -1,9 +1,15 @@
+from http import client
+from unittest import result
 from flask import Flask,url_for,render_template, jsonify, request, redirect
 from flask.helpers import send_file, send_from_directory
 from werkzeug.utils import  secure_filename
 from time import sleep
 import requests
+import consumer
+
+
 app=Flask(__name__)
+
 
 
 
@@ -17,15 +23,19 @@ def get_paragraph():
 
 @app.route('/view/tag/data', methods=['GET'])
 def get_taggged_data():
-
-    # URL = "http://0.0.0.0:5050/get/annotation"
-    # r = requests.get(url='http://0.0.0.0:5050/get/annotation')
-
-    # data = r.json()
-    r={}
+    # result      =       request.args.get()
+    URL = "http://0.0.0.0:5050/get/annotation"
+    r = requests.get(url='http://annotator_prediction:5050/get/annotation')
+    data = r.json()
 
 
-    return render_template('end.html',data=r)
+    # client      =   consumer.Client()
+    # res_json    =   client.process_get('/get/annotation')
+    
+    
+
+
+    return render_template('end.html',data=data)
 
 
 

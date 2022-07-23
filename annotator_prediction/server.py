@@ -4,7 +4,7 @@ from unittest import result
 
 import requests
 from werkzeug.utils import  secure_filename
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, redirect
 from flask_cors import cross_origin
 import os
 import json
@@ -79,13 +79,13 @@ def get_annotation():
     
     with open('./common/data.json') as jsonfile:
         data = json.load(jsonfile)
-        print(data)
+        print("data",data)
         result  =   {
             'status'    :   'success',
             'text'      :   data['text'],
             'tagged_words'  :   data['tagged_words']
         }
-        return result    
+        return result
     return ""
 
 if __name__ == "__main__":
