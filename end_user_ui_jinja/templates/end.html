@@ -82,6 +82,10 @@
         .navbar-brand {
             margin-left: 15px;
         }
+        mark{
+            /* background-color: red; */
+            /* color: aqua; */
+        }
     </style>
 </head>
 
@@ -105,7 +109,18 @@
 
         <div class="d-flex justify-content-between">
             <p class="annotation-area" id="w3review" name="w3review" ></p>
-            <p class="text-area" id="review" name="w3review" style="min-width:1100px ;color:#000"></p>
+            <p class="text-area" id="review" name="w3review" style="min-width:1100px ;color:#000">
+                <!-- {{data}} -->
+
+                {%for line in data.text.split('\n')%}
+                    {%for word in line.split(' ')%}
+                       
+                        <mark>
+                            {{word}}
+                        </mark>        
+                    {%endfor%}
+                {%endfor%}
+            </p>
             <div>
                 
             </div>

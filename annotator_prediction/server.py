@@ -1,14 +1,12 @@
-from cgitb import text
-from crypt import methods
-from unittest import result
 
+from tracemalloc import start
 import requests
 from werkzeug.utils import  secure_filename
 from flask import Flask, request, send_file, redirect
 from flask_cors import cross_origin
 import os
 import json
-
+import random
 
 app = Flask(__name__)
 
@@ -20,57 +18,69 @@ def ping():
     }
 
 
-@app.route('/train',methods=['POST'])
+@app.route('/predict',methods=['POST'])
 @cross_origin()
 def train():
 
-    # print(request.json)
     text    =   request.json['text']
-    text    =   text.lower()
-    # tagged_words   =   [
-    #     'Machine Learning',
-    #     'Stan',
-    #     'Jags',
-    #     'WinBugs',
-    #     'federally',
-    #     'companies'
-    # ]
+    result  =  {
+        "content"   :   text,
+        "keys"      :   []
+    }
+    text      =   text.lower()
     with open('./common/words.json') as jsonfile:
         data = json.load(jsonfile)
 
         words    =   data['words']
         print(words)
-        tagged_words    =   []
 
-        for idx in range(len(words)):
-            word    =   words[idx]
+        for  word in words:
             word    =   word.lower()
-            print(word)
-            if(word in text):
-                text    =   text.replace(word,f'<mark>{word}</mark>')
-                tagged_words.append(word)
+            print(f"word {word} index {text.find(word)}")
+            try:
+                if(text.index(word)):
+                    start           =   text.index(word)
+                    random_color    =    ["#"+''.join([random.choice('ABCDEF0123456789') for i in range(6)])][0]
+                    result['keys'].append(
+                        {
 
+                        
+                            'tech':{
+                                word     :   [start,start+len(word)],
+                                "color"  :    random_color
+                            }
+                        }
+                    )
+            except  ValueError as e:
+                print(e) 
+        res_json    =   json.dumps(result)
+
+        with open("./common/data.json", "w") as out_file:
+            out_file.write(res_json)   
+        
+        return {
+            'status'    :   'success'
+        }
 
    
 
-    '''
-    '''
+    # '''
+    # '''
 
 
-    result  =   {
-            'status'    :   'success'
-    }
+    # result  =   {
+    #         'status'    :   'success'
+    # }
 
-    res_dict    =   {
-        'text'          :   text,
-        'tagged_words'  :   tagged_words
-    }
+    # res_dict    =   {
+    #     'text'          :   text,
+    # }
 
-    res_json    =   json.dumps(res_dict)
+    # res_json    =   json.dumps(res_dict)
 
-    with open("./common/data.json", "w") as out_file:
-        out_file.write(res_json)
-    return result
+    # with open("./common/data.json", "w") as out_file:
+    #     out_file.write(res_json)
+    # return res_dict
 
 
 @app.route('/get/annotation',methods=['GET','POST'])
@@ -82,8 +92,8 @@ def get_annotation():
         print("data",data)
         result  =   {
             'status'    :   'success',
-            'text'      :   data['text'],
-            'tagged_words'  :   data['tagged_words']
+            'content'      :   data['content'],
+            'keys'  :   data['keys']
         }
         return result
     return ""
